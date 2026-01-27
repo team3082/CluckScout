@@ -37,7 +37,7 @@ class AutoScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   GameActionWindow(
-                    getScoreString: (provider) =>
+                    getScoreString: (provider) =>   
                         provider.getAutoActionString(),
                     deleteFunction: (provider) => provider.removeAutoAction(),
                     actionWindowWidth: double.infinity,

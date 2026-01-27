@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                         children: const [
                           Icon(Icons.home, size: 30),
                           Text(
-                            " CluckScout 2025",
+                            " CluckScout 2026",
                             style: TextStyle(
                                 fontSize: 30, fontWeight: FontWeight.bold),
                           )
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
 
                       // Description text
                       const Text(
-                        "This is FRC team 3082’s scouting app.\n\nScouting is an extremely important role at competitions because the data will help us make the best decisions for who to bring onto our alliance in playoffs.\n\nWith quality scouting data, we will have more information about the other teams in order to create the strongest possible alliances.\n\nWe can also determine which other teams have strategies that will work with ours, so that our alliance will work well together in playoffs and increase our chances of winning.",
+                        "This is FRC team 3082’s scouting app.\n\nScouting is a very important role at competitions because the data will help us make the best decisions for who to bring onto our alliance in playoffs.\n\nWith quality scouting data, we will have more information about the other teams in order to create the strongest possible alliances.\n\nWe can also determine which other teams have strategies that will work with ours, so that our alliance will work well together in playoffs and increase our chances of winning.",
                         style: TextStyle(fontSize: 17),
                       ),
 
