@@ -16,7 +16,6 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   // Auto Actions
   List<ActionType> autoActions = List<ActionType>.empty(growable: true);
-  bool autoLeave;
   int autoScore;
 
   // Teleop Actions
@@ -37,7 +36,6 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.teamNumber = 0,
     required this.position,
     required this.scouterName,
-    this.autoLeave = false,
     this.autoScore = 0,
     this.teleopScore = 0,
     this.endStatus = EndStatus.none,
@@ -57,77 +55,50 @@ class MatchScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  //------Start Edits-------------------------------------------------------------------
   MatchData _createMatchData() {
     return MatchData(
       matchNumber: matchNumber,
       teamNumber: teamNumber,
       position: position,
       scouterName: scouterName,
-      autoCoralL1: _countOccurrences(
+      autoL1: _countOccurrences(
         autoActions,
-        ActionType.coralL1,
+        ActionType.L1,
       ),
-      autoCoralL2: _countOccurrences(
+      autoL2: _countOccurrences(
         autoActions,
-        ActionType.coralL2,
+        ActionType.L2,
       ),
-      autoCoralL3: _countOccurrences(
+      autoL3: _countOccurrences(
         autoActions,
-        ActionType.coralL3,
+        ActionType.L3,
       ),
-      autoCoralL4: _countOccurrences(
-        autoActions,
-        ActionType.coralL4,
-      ),
-      autoDropped: _countOccurrences(
-        autoActions,
-        ActionType.dropped,
-      ),
-      autoNetAlgae: _countOccurrences(
-        autoActions,
-        ActionType.netAlgae,
-      ),
-      autoAlgaeRemoved: _countOccurrences(
-        autoActions,
-        ActionType.removeAlgae,
-      ),
-      autoProcessorAlgae: _countOccurrences(
-        autoActions,
-        ActionType.processorAlgae,
-      ),
-      autoLeave: autoLeave,
-      teleopCoralL1: _countOccurrences(
+      //----------------------------------Needs Work!!!---------------------------------
+      // Does this work???
+      double AutoShootingTime = 0;
+      for (var i=0; i<HubDuration.length;i++){
+        autoShootingTime = autoShootingTime + HubDuration[i];
+      }
+      double autoHubDuration = autoShootingTime;
+      /*
+      autoHubTimeStamp: _countOccurrences(
         teleopActions,
-        ActionType.coralL1,
+        ActionType.HubTimeStamp,
       ),
-      teleopCoralL2: _countOccurrences(
+      */
+      // Does this work???
+      double teleopShootingTime = 0;
+      for (var i=0; i<HubDuration.length;i++){
+        teleopShootingTime = teleopShootingTime + HubDuration[i];
+      }
+      double teleopHubDuration = teleopShootingTime;
+      /*
+      teleopHubTimeStamp: _countOccurrences(
         teleopActions,
-        ActionType.coralL2,
+        ActionType.HubTimeStamp,
       ),
-      teleopCoralL3: _countOccurrences(
-        teleopActions,
-        ActionType.coralL3,
-      ),
-      teleopCoralL4: _countOccurrences(
-        teleopActions,
-        ActionType.coralL4,
-      ),
-      teleopDropped: _countOccurrences(
-        teleopActions,
-        ActionType.dropped,
-      ),
-      teleopNetAlgae: _countOccurrences(
-        teleopActions,
-        ActionType.netAlgae,
-      ),
-      teleopProcessorAlgae: _countOccurrences(
-        teleopActions,
-        ActionType.processorAlgae,
-      ),
-      teleopAlgaeRemoved: _countOccurrences(
-        teleopActions,
-        ActionType.removeAlgae,
-      ),
+      */
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -140,28 +111,23 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actions.where((currentAction) => currentAction == action).length;
   }
 
+  // Calculates Auto Score... hopefully
   void _updateAutoScore() {
-    int autoCoralL1Points =
-        _countOccurrences(autoActions, ActionType.coralL1) * 3;
-    int autoCoralL2Points =
-        _countOccurrences(autoActions, ActionType.coralL2) * 4;
-    int autoCoralL3Points =
-        _countOccurrences(autoActions, ActionType.coralL3) * 6;
-    int autoCoralL4Points =
-        _countOccurrences(autoActions, ActionType.coralL4) * 7;
-    int autoNetAlgaePoints =
-        _countOccurrences(autoActions, ActionType.netAlgae) * 4;
-    int autoProcessorAlgaePoints =
-        _countOccurrences(autoActions, ActionType.processorAlgae) * 6;
-    int autoLeavePoints = autoLeave ? 3 : 0;
+    int autoL1Points =
+        _countOccurrences(autoActions, ActionType.L1) * 15;
+    int autoL2Points =
+        _countOccurrences(autoActions, ActionType.L2) * 15;
+    int autoL3Points =
+        _countOccurrences(autoActions, ActionType.L3) * 15;
 
-    autoScore = autoCoralL1Points +
-        autoCoralL2Points +
-        autoCoralL3Points +
-        autoCoralL4Points +
-        autoNetAlgaePoints +
-        autoProcessorAlgaePoints +
-        autoLeavePoints;
+    //----------------------------------Needs Work!!!-----------------------------------
+    // still need something instead of count occurrences
+    int autoHubPoints = AutoHubDuration; // Need to multiply by robot scoring rate!!!
+    
+    autoScore = autoL1Points +
+        autoL2Points +
+        autoL3Points +
+        autoHubPoints
   }
 
   void resetFields() {
@@ -169,7 +135,6 @@ class MatchScoutingProvider extends ChangeNotifier {
     teamNumber = 0;
 
     autoActions.clear();
-    autoLeave = false;
     autoScore = 0;
 
     teleopActions.clear();
@@ -206,22 +171,16 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actionTypes
         .map((action) {
           switch (action) {
-            case ActionType.coralL1:
-              return "Coral L1";
-            case ActionType.coralL2:
-              return "Coral L2";
-            case ActionType.coralL3:
-              return "Coral L3";
-            case ActionType.coralL4:
-              return "Coral L4";
-            case ActionType.dropped:
-              return "Dropped";
-            case ActionType.netAlgae:
-              return "Net Algae";
-            case ActionType.processorAlgae:
-              return "Processor Algae";
-            case ActionType.removeAlgae:
-              return "Removed Algae";
+            case ActionType.L1:
+              return "L1";
+            case ActionType.L2:
+              return "L2";
+            case ActionType.L3:
+              return "L3";
+              //----------------------------------Needs Work!!!-------------------------
+              // Is this different for a list of times???
+            //case ActionType.HubDuration:
+              //return "Hub Duration";
           }
         })
         .toList()
@@ -240,12 +199,6 @@ class MatchScoutingProvider extends ChangeNotifier {
       _updateAutoScore();
       notifyListeners();
     }
-  }
-
-  void setAutoLeave(bool bool) {
-    autoLeave = bool;
-    _updateAutoScore();
-    notifyListeners();
   }
 
   void setTabIndex(int tabIndex) {
@@ -275,33 +228,19 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void _updateTeleopScore() {
-    int teleopCoralL1Points =
-        _countOccurrences(teleopActions, ActionType.coralL1) * 2;
-    int teleopCoralL2Points =
-        _countOccurrences(teleopActions, ActionType.coralL2) * 3;
-    int teleopCoralL3Points =
-        _countOccurrences(teleopActions, ActionType.coralL3) * 4;
-    int teleopCoralL4Points =
-        _countOccurrences(teleopActions, ActionType.coralL4) * 5;
-    int teleopNetAlgaePoints =
-        _countOccurrences(teleopActions, ActionType.netAlgae) * 4;
-    int teleopProcessorAlgaePoints =
-        _countOccurrences(teleopActions, ActionType.processorAlgae) * 6;
-
+    //------------------------------------Needs Work!!!---------------------------------
+    // Again is this different for time?
+    int teleopHubPoints = teleopHubDuration;// Need to multiply by robot scoring rate!!!
+    
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
-        : endStatus == EndStatus.park
-            ? 2
-            : endStatus == EndStatus.shallowCage
-                ? 6
-                : 12;
+        : endStatus == EndStatus.L1
+            ? 10
+            : endStatus == EndStatus.L2
+                ? 20
+                : 30;
 
-    teleopScore = teleopCoralL1Points +
-        teleopCoralL2Points +
-        teleopCoralL3Points +
-        teleopCoralL4Points +
-        teleopNetAlgaePoints +
-        teleopProcessorAlgaePoints +
+    teleopScore = teleopHubPoints +
         endStatusPoints;
   }
 
