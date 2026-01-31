@@ -14,23 +14,13 @@ class PitScoutingProvider extends ChangeNotifier {
   Drivetrain drivetrain = Drivetrain.swerve;
 
   // Abilities
-  int coralL1 = 0;
-  int coralL2 = 0;
-  int coralL3 = 0;
-  int coralL4 = 0;
-
-  int removeAlgae = 0;
-  int processorAlgae = 0;
-  int netAlgae = 0;
-
-  int park = 0;
-  int shallowClimb = 0;
-  int deepClimb = 0;
+  int L1 = 0;
+  int L2 = 0;
+  int L3 = 0;
+  int Hub = 0;
+  int Capacity = 0;
 
   // Preferred Playstyle
-  int prefersCoral = 0;
-  int preferredCoralLevel = 1;
-
   StartingZone preferredStartingZone = StartingZone.top;
   EndStatus preferredEndStatus = EndStatus.none;
 
@@ -42,18 +32,12 @@ class PitScoutingProvider extends ChangeNotifier {
     this.teamNumber = 0,
     required this.scouterName,
     this.drivetrain = Drivetrain.swerve,
-    this.coralL1 = 0,
-    this.coralL2 = 0,
-    this.coralL3 = 0,
-    this.coralL4 = 0,
-    this.removeAlgae = 0,
-    this.processorAlgae = 0,
-    this.netAlgae = 0,
-    this.prefersCoral = 0,
-    this.preferredCoralLevel = 1,
-    this.park = 0,
-    this.shallowClimb = 0,
-    this.deepClimb = 0,
+    this.L1 = 0,
+    this.L2 = 0,
+    this.L3 = 0,
+    this.Hub = 0,
+    this.Capacity = 0,
+    this.preferredEndStatus = EndStatus.none,
     this.notes = '',
   });
 
@@ -62,18 +46,11 @@ class PitScoutingProvider extends ChangeNotifier {
     tabIndex = 0;
     teamNumber = 0;
     drivetrain = Drivetrain.swerve;
-    coralL1 = 0;
-    coralL2 = 0;
-    coralL3 = 0;
-    coralL4 = 0;
-    removeAlgae = 0;
-    processorAlgae = 0;
-    netAlgae = 0;
-    park = 0;
-    shallowClimb = 0;
-    deepClimb = 0;
-    prefersCoral = 0;
-    preferredCoralLevel = 1;
+    L1 = 0;
+    L2 = 0;
+    L3 = 0;
+    Hub = 0;
+    Capacity = 0;
     preferredStartingZone = StartingZone.top;
     preferredEndStatus = EndStatus.none;
     notes = '';
@@ -85,18 +62,11 @@ class PitScoutingProvider extends ChangeNotifier {
       teamNumber: teamNumber,
       scouterName: scouterName,
       drivetrain: drivetrain,
-      coralL1: coralL1,
-      coralL2: coralL2,
-      coralL3: coralL3,
-      coralL4: coralL4,
-      removeAlgae: removeAlgae,
-      processorAlgae: processorAlgae,
-      netAlgae: netAlgae,
-      prefersCoral: prefersCoral,
-      preferredCoralLevel: preferredCoralLevel,
-      park: park,
-      shallowClimb: shallowClimb,
-      deepClimb: deepClimb,
+      L1: L1,
+      L2: L2,
+      L3: L3,
+      Hub: Hub,
+      Capacity: Capacity,
       preferredStartingZone: preferredStartingZone,
       preferredEndStatus: preferredEndStatus,
       notes: notes,
@@ -105,53 +75,28 @@ class PitScoutingProvider extends ChangeNotifier {
   }
 
   // Setters for various fields
-  void setPark(int value) {
-    park = value;
+  void setL1(int value) {
+    L1 = value;
     notifyListeners();
   }
 
-  void setShallowClimb(int value) {
-    shallowClimb = value;
+  void setL2(int value) {
+    L2 = value;
     notifyListeners();
   }
 
-  void setDeepClimb(int value) {
-    deepClimb = value;
+  void setL3(int value) {
+    L3 = value;
     notifyListeners();
   }
 
-  void setCoralL1(int value) {
-    coralL1 = value;
+  void setHub(int value) {
+    Hub = value;
     notifyListeners();
   }
 
-  void setCoralL2(int value) {
-    coralL2 = value;
-    notifyListeners();
-  }
-
-  void setCoralL3(int value) {
-    coralL3 = value;
-    notifyListeners();
-  }
-
-  void setCoralL4(int value) {
-    coralL4 = value;
-    notifyListeners();
-  }
-
-  void setRemoveAlgae(int value) {
-    removeAlgae = value;
-    notifyListeners();
-  }
-
-  void setProcessorAlgae(int value) {
-    processorAlgae = value;
-    notifyListeners();
-  }
-
-  void setNetAlgae(int value) {
-    netAlgae = value;
+  void Capacity(int value) {
+    Capacity = value;
     notifyListeners();
   }
 
@@ -167,16 +112,6 @@ class PitScoutingProvider extends ChangeNotifier {
 
   void setDriveTrain(Drivetrain value) {
     drivetrain = value;
-    notifyListeners();
-  }
-
-  void setPrefersCoral(int value) {
-    prefersCoral = value;
-    notifyListeners();
-  }
-
-  void setPreferredCoralLevel(int value) {
-    preferredCoralLevel = value;
     notifyListeners();
   }
 
