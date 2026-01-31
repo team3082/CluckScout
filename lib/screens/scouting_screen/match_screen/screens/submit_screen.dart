@@ -190,6 +190,40 @@ class SubmitScreen extends StatelessWidget {
           ),
         ),
         _buildDropdownRow(
+          "Robot Type",
+          Theme(
+            data: Theme.of(context).copyWith(
+              popupMenuTheme: PopupMenuThemeData(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+            child: DropdownButton<RobotType>(
+              value: context.select<MatchScoutingProvider, RobotType>((p) => p.RobotType),
+              items: RobotType.values.map((e) => DropdownMenuItem(
+                value: e,
+                child: Text(
+                  e.toString().split('.').last,
+                  style: dropdownTextStyle,
+                ),
+              )).toList(),
+              onChanged: (val) => provider.setRobotType(val ?? RobotType.Unknown),
+              underline: Container(),
+              icon: const Icon(
+                Icons.arrow_drop_down,
+                color: Color.fromRGBO(50, 50, 124, 1),
+                size: 24,
+              ),
+              isDense: true,
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+              dropdownColor: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              elevation: 4,
+            ),
+          ),
+        ),
+        _buildDropdownRow(
           "Driving",
           Theme(
             data: Theme.of(context).copyWith(
