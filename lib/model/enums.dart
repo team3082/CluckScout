@@ -3,7 +3,6 @@ enum ActionType {
   L2,
   L3,
   Hub,
-  dropped,
 }
 
 enum EndStatus {
