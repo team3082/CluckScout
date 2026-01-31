@@ -76,11 +76,13 @@ class MatchScoutingProvider extends ChangeNotifier {
       ),
       //----------------------------------Needs Work!!!---------------------------------
       // Does this work???
-      double AutoShootingTime = 0;
-      for (var i=0; i<HubDuration.length;i++){
-        autoShootingTime = autoShootingTime + HubDuration[i];
-      }
-      double autoHubDuration = autoShootingTime;
+      autoHubDuration: (
+        num autoShootingTime = 0.0;
+        for (num i=0; i<HubDuration.length;i++){
+          autoShootingTime = autoShootingTime + HubDuration[i];
+        }
+        return autoShootingTime;
+      ),
       /*
       autoHubTimeStamp: _countOccurrences(
         teleopActions,
@@ -88,11 +90,13 @@ class MatchScoutingProvider extends ChangeNotifier {
       ),
       */
       // Does this work???
-      double teleopShootingTime = 0;
-      for (var i=0; i<HubDuration.length;i++){
-        teleopShootingTime = teleopShootingTime + HubDuration[i];
-      }
-      double teleopHubDuration = teleopShootingTime;
+      teleopHubDuration: (
+        num teleopShootingTime = 0.0;
+        for (num i=0; i<HubDuration.length;i++){
+          teleopShootingTime = teleopShootingTime + HubDuration[i];
+        }
+        return teleopShootingTime;
+      ),
       /*
       teleopHubTimeStamp: _countOccurrences(
         teleopActions,
