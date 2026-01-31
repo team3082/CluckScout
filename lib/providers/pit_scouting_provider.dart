@@ -95,7 +95,7 @@ class PitScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void Capacity(int value) {
+  void setCapacity(int value) {
     Capacity = value;
     notifyListeners();
   }
