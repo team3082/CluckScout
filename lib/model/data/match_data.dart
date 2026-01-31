@@ -8,7 +8,7 @@ class MatchData {
   final String scouterName;
 
   // Auto Coral
-  final int autoCoralL1;
+  final int autoL1;
   final int autoCoralL2;
   final int autoCoralL3;
   final int autoCoralL4;
