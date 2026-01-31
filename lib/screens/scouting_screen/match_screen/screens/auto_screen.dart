@@ -89,7 +89,7 @@ class AutoPointsDisplay extends StatelessWidget {
     );
   }
 }
-
+/*
 class AutoLeaveButton extends StatelessWidget {
   const AutoLeaveButton({super.key});
 
@@ -134,3 +134,4 @@ class AutoLeaveButton extends StatelessWidget {
     );
   }
 }
+*/
