@@ -1,19 +1,16 @@
 enum ActionType {
-  coralL1,
-  coralL2,
-  coralL3,
-  coralL4,
-  netAlgae,
-  processorAlgae,
-  removeAlgae,
+  L1,
+  L2,
+  L3,
+  Hub,
   dropped,
 }
 
 enum EndStatus {
   none,
-  park,
-  shallowCage,
-  deepCage,
+  L1,
+  L2,
+  L3,
 }
 
 enum Position {
