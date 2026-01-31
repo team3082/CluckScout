@@ -8,17 +8,18 @@ class MatchData {
   final String scouterName;
 
   // Auto
+  // double = float?
   final int autoL1;
   final int autoL2;
   final int autoL3;
-  final int autoHub;
-  final int autoDropped;
-
+  final list<double> autoHubDuration;
+  final list<double> autoHubTimeStamp;
+  
   // Teleop
-  final int teleopHub;
-  final int teleopDropped;
-
-  // Teleop Booleans
+  final list<double> teleopHubDuration;
+  final list<double> teloepHubTimeStamp;
+  
+  // Endgame
   final EndStatus endStatus;
 
   // Final Round Fields
@@ -35,10 +36,10 @@ class MatchData {
     required this.autoL1,
     required this.autoL2,
     required this.autoL3,
-    required this.autoHub,
-    required this.autoDropped,
-    required this.teleopHub,
-    required this.teleopDropped,
+    required this.autoHubDuration,
+    required this.autoHubTimeStamp,
+    required this.teleopHubDuration,
+    required this.teleopHubTimeStamp,
     required this.endStatus,
     required this.disabled,
     required this.defenseRank,
@@ -57,11 +58,11 @@ class MatchData {
       'auto_L1': autoL1,
       'auto_L2': autoL2,
       'auto_L3': autoL3,
-      'auto_Hub': autoHub,
-      'auto_dropped': autoDropped,
+      'auto_Hub_Duration': autoHubDuration,
+      'auto_Hub_Time_Stamp': autoHubTimeStamp,
       // Teleop
-      'teleop_Hub': teleopHub,
-      'teleop_dropped': teleopDropped,
+      'teleop_Hub_Duration': teleopHubDuration,
+      'teleop_Hub_Time_Stamp': teleopHubTimeStamp,
       // Endgame Booleans
       'end_none': endStatus == EndStatus.none ? 1 : 0,
       'end_L1': endStatus == EndStatus.L1 ? 1 : 0,
@@ -87,12 +88,12 @@ class MatchData {
       autoL1: map['auto_L1'],
       autoL2: map['auto_L2'],
       autoL3: map['auto_L3'],
-      autoHub: map['auto_Hub'],
-      autoDropped: map['auto_dropped'],
+      autoHubDuration: map['auto_Hub_Duration'],
+      autoHubTimeStamp: map['auto_Hub_Time_Stamp'],
       // Teleop
-      teleopHub: map['teleop_Hub'],
-      teleopDropped: map['teleop_dropped'],
-      // Teleop Booleans
+      teleopHubDuration: map['teleop_Hub_Duration'],
+      teleopHubTimeStamp: map['teleop_Hub_Time_Stamp'],
+      // Endgame
       endStatus: map['end_L1'] == 1
           ? EndStatus.endL1
           : map['end_L2'] == 1
