@@ -9,23 +9,18 @@ class PitData {
   final Drivetrain drivetrain;
 
   // Abilities
-  final int coralL1;
-  final int coralL2;
-  final int coralL3;
-  final int coralL4;
+  final int L1;
+  final int L2;
+  final int L3;
+  final int Hub;
 
-  final int removeAlgae;
-  final int processorAlgae;
-  final int netAlgae;
-
-  // Preferred Coral
-  final int prefersCoral;
-  final int preferredCoralLevel;
+  // Preferred Climb
+  final int preferredClimbLevel;
 
   // End status
-  final int park;
-  final int shallowClimb;
-  final int deepClimb;
+  final int L1;
+  final int L2;
+  final int L3;
 
   // Preferred Starting Zone and End Status
   final StartingZone preferredStartingZone;
@@ -38,18 +33,14 @@ class PitData {
     required this.teamNumber,
     required this.scouterName,
     required this.drivetrain,
-    required this.coralL1,
-    required this.coralL2,
-    required this.coralL3,
-    required this.coralL4,
-    required this.removeAlgae,
-    required this.processorAlgae,
-    required this.netAlgae,
-    required this.prefersCoral,
-    required this.preferredCoralLevel,
-    required this.park,
-    required this.shallowClimb,
-    required this.deepClimb,
+    required this.L1,
+    required this.L2,
+    required this.L3,
+    required this.Hub,
+    required this.preferredClimbLevel,
+    required this.L1,
+    required this.L2,
+    required this.L3,
     required this.preferredStartingZone,
     required this.preferredEndStatus,
     required this.notes,
