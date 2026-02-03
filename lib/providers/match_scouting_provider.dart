@@ -22,6 +22,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   List<ActionType> teleopActions = List<ActionType>.empty(growable: true);
   int teleopScore;
   EndStatus endStatus;
+  bool autoLeave;
 
   // Final Fields
   Disabled disabled;
@@ -29,6 +30,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   int drivingRank;
   int defenseTeamNumber;
   String notes;
+  RobotType robotType;
 
   MatchScoutingProvider({
     this.tabIndex = 0,
@@ -44,6 +46,8 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.drivingRank = 0,
     this.notes = '',
     this.defenseTeamNumber = 0,
+    this.robotType = RobotType.Unknown,
+    this.autoLeave = false,
   });
 
   void submitMatchData() {
@@ -74,35 +78,11 @@ class MatchScoutingProvider extends ChangeNotifier {
         autoActions,
         ActionType.L3,
       ),
-      //----------------------------------Needs Work!!!---------------------------------
-      // Does this work???
-      autoHubDuration: (
-        num autoShootingTime = 0.0;
-        for (num i=0; i<HubDuration.length;i++){
-          autoShootingTime = autoShootingTime + HubDuration[i];
-        }
-        return autoShootingTime;
-      ),
-      /*
-      autoHubTimeStamp: _countOccurrences(
-        teleopActions,
-        ActionType.HubTimeStamp,
-      ),
-      */
-      // Does this work???
-      teleopHubDuration: (
-        num teleopShootingTime = 0.0;
-        for (num i=0; i<HubDuration.length;i++){
-          teleopShootingTime = teleopShootingTime + HubDuration[i];
-        }
-        return teleopShootingTime;
-      ),
-      /*
-      teleopHubTimeStamp: _countOccurrences(
-        teleopActions,
-        ActionType.HubTimeStamp,
-      ),
-      */
+      // Hub durations and timestamps not tracked yet; provide empty lists
+      autoHubDuration: <double>[],
+      autoHubTimeStamp: <double>[],
+      teleopHubDuration: <double>[],
+      teleopHubTimeStamp: <double>[],
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -124,14 +104,13 @@ class MatchScoutingProvider extends ChangeNotifier {
     int autoL3Points =
         _countOccurrences(autoActions, ActionType.L3) * 15;
 
-    //----------------------------------Needs Work!!!-----------------------------------
     // still need something instead of count occurrences
-    int autoHubPoints = AutoHubDuration; // Need to multiply by robot scoring rate!!!
-    
+    int autoHubPoints = 0; // Hub-based points not implemented yet
+
     autoScore = autoL1Points +
-        autoL2Points +
-        autoL3Points +
-        autoHubPoints
+      autoL2Points +
+      autoL3Points +
+      autoHubPoints;
   }
 
   void resetFields() {
@@ -181,12 +160,29 @@ class MatchScoutingProvider extends ChangeNotifier {
               return "L2";
             case ActionType.L3:
               return "L3";
-              //----------------------------------Needs Work!!!-------------------------
-              // Is this different for a list of times???
-            //case ActionType.HubDuration:
-              //return "Hub Duration";
+            case ActionType.coralL1:
+              return "L1 Coral";
+            case ActionType.coralL2:
+              return "L2 Coral";
+            case ActionType.coralL3:
+              return "L3 Coral";
+            case ActionType.coralL4:
+              return "L4 Coral";
+            case ActionType.dropped:
+              return "Dropped";
+            case ActionType.removeAlgae:
+              return "Removed Algae";
+            case ActionType.processorAlgae:
+              return "Processor Algae";
+            case ActionType.netAlgae:
+              return "Net Algae";
+            case ActionType.Hub:
+              return "Hub";
+            default:
+              return '';
           }
         })
+        .where((s) => s.isNotEmpty)
         .toList()
         .join(', ');
   }
@@ -232,9 +228,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void _updateTeleopScore() {
-    //------------------------------------Needs Work!!!---------------------------------
-    // Again is this different for time?
-    int teleopHubPoints = teleopHubDuration;// Need to multiply by robot scoring rate!!!
+    // Hub-based teleop points not implemented yet
+    int teleopHubPoints = 0; // placeholder
     
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
@@ -278,6 +273,16 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void setDrivingRank(int value) {
     drivingRank = value;
+    notifyListeners();
+  }
+
+  void setAutoLeave(bool value) {
+    autoLeave = value;
+    notifyListeners();
+  }
+
+  void setRobotType(RobotType value) {
+    robotType = value;
     notifyListeners();
   }
 }

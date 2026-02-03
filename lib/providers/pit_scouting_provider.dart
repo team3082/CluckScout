@@ -23,6 +23,8 @@ class PitScoutingProvider extends ChangeNotifier {
   // Preferred Playstyle
   StartingZone preferredStartingZone = StartingZone.top;
   EndStatus preferredEndStatus = EndStatus.none;
+  bool prefersCoral = false;
+  int preferredCoralLevel = 0;
 
   // Notes
   String notes = '';
@@ -53,6 +55,8 @@ class PitScoutingProvider extends ChangeNotifier {
     Capacity = 0;
     preferredStartingZone = StartingZone.top;
     preferredEndStatus = EndStatus.none;
+    prefersCoral = false;
+    preferredCoralLevel = 0;
     notes = '';
     notifyListeners();
   }
@@ -67,6 +71,7 @@ class PitScoutingProvider extends ChangeNotifier {
       L3: L3,
       Hub: Hub,
       Capacity: Capacity,
+      preferredClimbLevel: preferredCoralLevel,
       preferredStartingZone: preferredStartingZone,
       preferredEndStatus: preferredEndStatus,
       notes: notes,
@@ -122,6 +127,16 @@ class PitScoutingProvider extends ChangeNotifier {
 
   void setPreferredEndStatus(EndStatus value) {
     preferredEndStatus = value;
+    notifyListeners();
+  }
+
+  void setPrefersCoral(bool value) {
+    prefersCoral = value;
+    notifyListeners();
+  }
+
+  void setPreferredCoralLevel(int level) {
+    preferredCoralLevel = level;
     notifyListeners();
   }
 

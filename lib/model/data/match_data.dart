@@ -12,12 +12,12 @@ class MatchData {
   final int autoL1;
   final int autoL2;
   final int autoL3;
-  final list<double> autoHubDuration;
-  final list<double> autoHubTimeStamp;
+  final List<double> autoHubDuration;
+  final List<double> autoHubTimeStamp;
   
   // Teleop
-  final list<double> teleopHubDuration;
-  final list<double> teloepHubTimeStamp;
+  final List<double> teleopHubDuration;
+  final List<double> teleopHubTimeStamp;
   
   // Endgame
   final EndStatus endStatus;
@@ -94,13 +94,13 @@ class MatchData {
       teleopHubDuration: map['teleop_Hub_Duration'],
       teleopHubTimeStamp: map['teleop_Hub_Time_Stamp'],
       // Endgame
-      endStatus: map['end_L1'] == 1
-          ? EndStatus.endL1
+        endStatus: map['end_L1'] == 1
+          ? EndStatus.L1
           : map['end_L2'] == 1
-              ? EndStatus.L2
-              : map['end_L3'] == 1
-                  ? EndStatus.L3
-                  : EndStatus.none,
+            ? EndStatus.L2
+            : map['end_L3'] == 1
+              ? EndStatus.L3
+              : EndStatus.none,
       // Final Field
       disabled: Disabled.values
           .firstWhere((e) => e.toString().split('.').last == map['disabled']),

@@ -200,7 +200,7 @@ class SubmitScreen extends StatelessWidget {
               ),
             ),
             child: DropdownButton<RobotType>(
-              value: context.select<MatchScoutingProvider, RobotType>((p) => p.RobotType),
+              value: context.select<MatchScoutingProvider, RobotType>((p) => p.robotType),
               items: RobotType.values.map((e) => DropdownMenuItem(
                 value: e,
                 child: Text(

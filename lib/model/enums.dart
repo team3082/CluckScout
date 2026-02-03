@@ -3,6 +3,14 @@ enum ActionType {
   L2,
   L3,
   Hub,
+  coralL1,
+  coralL2,
+  coralL3,
+  coralL4,
+  dropped,
+  removeAlgae,
+  processorAlgae,
+  netAlgae,
 }
 
 enum EndStatus {
@@ -10,6 +18,9 @@ enum EndStatus {
   L1,
   L2,
   L3,
+  park,
+  shallowCage,
+  deepCage,
 }
 
 enum Position {
@@ -39,4 +50,11 @@ enum Disabled {
   None,
   off,
   on
+}
+
+enum RobotType {
+  Unknown,
+  Small,
+  Medium,
+  Large,
 }
