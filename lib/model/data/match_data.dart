@@ -17,7 +17,7 @@ class MatchData {
   
   // Teleop
   final List<double> teleopHubDuration;
-  final List<double> teloepHubTimeStamp;
+  final List<double> teleopHubTimeStamp;
   
   // Endgame
   final EndStatus endStatus;
