@@ -10,12 +10,12 @@ class MatchData {
   final int autoL1;
   final int autoL2;
   final int autoL3;
-  final List<double> autoHubDuration; // Capitalized List
+  final List<double> autoHubDuration;
   final List<double> autoHubTimeStamp; 
 
   // Teleop
   final List<double> teleopHubDuration;
-  final List<double> teleopHubTimeStamp; // Fixed typo
+  final List<double> teleopHubTimeStamp; 
   
   // Endgame
   final EndStatus endStatus;
@@ -49,7 +49,7 @@ class MatchData {
     return {
       'match_number': matchNumber,
       'team_number': teamNumber,
-      'position': position.name, // Cleaner way to get enum string in modern Dart
+      'position': position.name, 
       'scouter_name': scouterName,
       'auto_L1': autoL1,
       'auto_L2': autoL2,
@@ -84,7 +84,7 @@ class MatchData {
       teleopHubDuration: List<double>.from(map['teleop_Hub_Duration']),
       teleopHubTimeStamp: List<double>.from(map['teleop_Hub_Time_Stamp']),
       endStatus: map['end_L1'] == 1
-          ? EndStatus.L1 // Fixed typo (removed "end")
+          ? EndStatus.L1 
           : map['end_L2'] == 1
               ? EndStatus.L2
               : map['end_L3'] == 1
