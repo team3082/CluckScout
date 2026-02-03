@@ -5,7 +5,7 @@ import 'package:cluck_scout/model/data/match_data.dart';
 import 'package:cluck_scout/services/database_service.dart';
 
 class MatchScoutingProvider extends ChangeNotifier {
-  //Current Tab
+  // Current Tab
   int tabIndex;
 
   // Round Specifications
@@ -15,12 +15,16 @@ class MatchScoutingProvider extends ChangeNotifier {
   String scouterName;
 
   // Auto Actions
-  List<ActionType> autoActions = List<ActionType>.empty(growable: true);
+  List<ActionType> autoActions;
   int autoScore;
+  // store durations (seconds) for each hub visit during auto
+  List<double> autoHubDurations;
 
   // Teleop Actions
-  List<ActionType> teleopActions = List<ActionType>.empty(growable: true);
+  List<ActionType> teleopActions;
   int teleopScore;
+  // store durations (seconds) for each hub visit during teleop
+  List<double> teleopHubDurations;
   EndStatus endStatus;
 
   // Final Fields
@@ -44,65 +48,39 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.drivingRank = 0,
     this.notes = '',
     this.defenseTeamNumber = 0,
-  });
+    List<ActionType>? autoActions,
+    List<ActionType>? teleopActions,
+    List<double>? autoHubDurations,
+    List<double>? teleopHubDurations,
+  })  : autoActions = autoActions ?? <ActionType>[],
+        teleopActions = teleopActions ?? <ActionType>[],
+        autoHubDurations = autoHubDurations ?? <double>[],
+        teleopHubDurations = teleopHubDurations ?? <double>[];
 
   void submitMatchData() {
     scouterName = AppPreferences.scouterName;
     final matchData = _createMatchData();
     DatabaseService.instance.insertMatchData(matchData);
-    
+
     resetFields();
     notifyListeners();
   }
 
-  //------Start Edits-------------------------------------------------------------------
   MatchData _createMatchData() {
+    final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    final double teleopHubTotal = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
+
     return MatchData(
       matchNumber: matchNumber,
       teamNumber: teamNumber,
       position: position,
       scouterName: scouterName,
-      autoL1: _countOccurrences(
-        autoActions,
-        ActionType.L1,
-      ),
-      autoL2: _countOccurrences(
-        autoActions,
-        ActionType.L2,
-      ),
-      autoL3: _countOccurrences(
-        autoActions,
-        ActionType.L3,
-      ),
-      //----------------------------------Needs Work!!!---------------------------------
-      // Does this work???
-      autoHubDuration: (
-        num autoShootingTime = 0.0;
-        for (num i=0; i<HubDuration.length;i++){
-          autoShootingTime = autoShootingTime + HubDuration[i];
-        }
-        return autoShootingTime;
-      ),
-      /*
-      autoHubTimeStamp: _countOccurrences(
-        teleopActions,
-        ActionType.HubTimeStamp,
-      ),
-      */
-      // Does this work???
-      teleopHubDuration: (
-        num teleopShootingTime = 0.0;
-        for (num i=0; i<HubDuration.length;i++){
-          teleopShootingTime = teleopShootingTime + HubDuration[i];
-        }
-        return teleopShootingTime;
-      ),
-      /*
-      teleopHubTimeStamp: _countOccurrences(
-        teleopActions,
-        ActionType.HubTimeStamp,
-      ),
-      */
+      autoL1: _countOccurrences(autoActions, ActionType.L1),
+      autoL2: _countOccurrences(autoActions, ActionType.L2),
+      autoL3: _countOccurrences(autoActions, ActionType.L3),
+      // pass totals (or lists) depending on MatchData definition
+      autoHubDuration: autoHubTotal,
+      teleopHubDuration: teleopHubTotal,
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -115,23 +93,17 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actions.where((currentAction) => currentAction == action).length;
   }
 
-  // Calculates Auto Score... hopefully
+  // Calculates Auto Score
   void _updateAutoScore() {
-    int autoL1Points =
-        _countOccurrences(autoActions, ActionType.L1) * 15;
-    int autoL2Points =
-        _countOccurrences(autoActions, ActionType.L2) * 15;
-    int autoL3Points =
-        _countOccurrences(autoActions, ActionType.L3) * 15;
+    int autoL1Points = _countOccurrences(autoActions, ActionType.L1) * 15;
+    int autoL2Points = _countOccurrences(autoActions, ActionType.L2) * 15;
+    int autoL3Points = _countOccurrences(autoActions, ActionType.L3) * 15;
 
-    //----------------------------------Needs Work!!!-----------------------------------
-    // still need something instead of count occurrences
-    int autoHubPoints = AutoHubDuration; // Need to multiply by robot scoring rate!!!
-    
-    autoScore = autoL1Points +
-        autoL2Points +
-        autoL3Points +
-        autoHubPoints
+    // Sum durations and convert to points (example: 5 points per second)
+    double totalDuration = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    int autoHubPoints = (totalDuration * 5).toInt();
+
+    autoScore = autoL1Points + autoL2Points + autoL3Points + autoHubPoints;
   }
 
   void resetFields() {
@@ -139,9 +111,11 @@ class MatchScoutingProvider extends ChangeNotifier {
     teamNumber = 0;
 
     autoActions.clear();
+    autoHubDurations.clear();
     autoScore = 0;
 
     teleopActions.clear();
+    teleopHubDurations.clear();
     endStatus = EndStatus.none;
     teleopScore = 0;
 
@@ -157,8 +131,22 @@ class MatchScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Add a hub duration (in seconds) recorded during auto
+  void addAutoHubDuration(double seconds) {
+    autoHubDurations.add(seconds);
+    _updateAutoScore();
+    notifyListeners();
+  }
+
   void addTeleopAction(ActionType action) {
     teleopActions.add(action);
+    _updateTeleopScore();
+    notifyListeners();
+  }
+
+  /// Add a hub duration (in seconds) recorded during teleop
+  void addTeleopHubDuration(double seconds) {
+    teleopHubDurations.add(seconds);
     _updateTeleopScore();
     notifyListeners();
   }
@@ -172,23 +160,21 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   String _getActionString(List<ActionType> actionTypes) {
-    return actionTypes
-        .map((action) {
-          switch (action) {
-            case ActionType.L1:
-              return "L1";
-            case ActionType.L2:
-              return "L2";
-            case ActionType.L3:
-              return "L3";
-              //----------------------------------Needs Work!!!-------------------------
-              // Is this different for a list of times???
-            //case ActionType.HubDuration:
-              //return "Hub Duration";
-          }
-        })
-        .toList()
-        .join(', ');
+    return actionTypes.map((action) {
+      switch (action) {
+        case ActionType.L1:
+          return "L1";
+        case ActionType.L2:
+          return "L2";
+        case ActionType.L3:
+          return "L3";
+        case ActionType.HubTimeStamp:
+          return "HubTimeStamp";
+        // add other ActionType cases here as needed
+        default:
+          return action.toString();
+      }
+    }).toList().join(', ');
   }
 
   void setPosition(Position position) {
@@ -232,10 +218,9 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void _updateTeleopScore() {
-    //------------------------------------Needs Work!!!---------------------------------
-    // Again is this different for time?
-    int teleopHubPoints = teleopHubDuration;// Need to multiply by robot scoring rate!!!
-    
+    double totalDurationT = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
+    int teleopHubPoints = (totalDurationT * 5).toInt();
+
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
         : endStatus == EndStatus.L1
@@ -244,8 +229,7 @@ class MatchScoutingProvider extends ChangeNotifier {
                 ? 20
                 : 30;
 
-    teleopScore = teleopHubPoints +
-        endStatusPoints;
+    teleopScore = teleopHubPoints + endStatusPoints;
   }
 
   void removeTeleopAction() {
@@ -266,7 +250,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     disabled = value;
     notifyListeners();
   }
-
+  
   void setDefense(int value) {
     defenseRank = value;
     notifyListeners();
