@@ -12,12 +12,12 @@ class MatchData {
   final int autoL1;
   final int autoL2;
   final int autoL3;
-  final list<double> autoHubDuration;
-  final list<double> autoHubTimeStamp;
+  final List<double> autoHubDuration;
+  final List<double> autoHubTimeStamp;
   
   // Teleop
-  final list<double> teleopHubDuration;
-  final list<double> teloepHubTimeStamp;
+  final List<double> teleopHubDuration;
+  final List<double> teloepHubTimeStamp;
   
   // Endgame
   final EndStatus endStatus;
