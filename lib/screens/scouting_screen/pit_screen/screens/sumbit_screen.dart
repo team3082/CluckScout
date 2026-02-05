@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:cluck_scout/model/data/pit_data.dart';
+//import 'package:cluck_scout/model/data/pit_data.dart';
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 
