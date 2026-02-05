@@ -19,6 +19,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   int autoScore;
   // store durations (seconds) for each hub visit during auto
   List<double> autoHubDurations;
+  //List<double> autoHubTimeStamp;
 
   // Teleop Actions
   List<ActionType> teleopActions;
@@ -29,6 +30,7 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   // Final Fields
   Disabled disabled;
+  RobotGoal robotGoal;
   int defenseRank;
   int drivingRank;
   int defenseTeamNumber;
@@ -44,6 +46,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.teleopScore = 0,
     this.endStatus = EndStatus.none,
     this.disabled = Disabled.None,
+    this.robotGoal = RobotGoal.other,
     this.defenseRank = 0,
     this.drivingRank = 0,
     this.notes = '',
@@ -52,9 +55,12 @@ class MatchScoutingProvider extends ChangeNotifier {
     List<ActionType>? teleopActions,
     List<double>? autoHubDurations,
     List<double>? teleopHubDurations,
+    List<double>? autoHubTimeStamp,
+    List<double>? teleopHubTimeStamp,
   })  : autoActions = autoActions ?? <ActionType>[],
         teleopActions = teleopActions ?? <ActionType>[],
         autoHubDurations = autoHubDurations ?? <double>[],
+        //autoHubTimeStamp = autoHubTimeStamp ?? <double>[],
         teleopHubDurations = teleopHubDurations ?? <double>[];
 
   void submitMatchData() {
@@ -67,8 +73,6 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   MatchData _createMatchData() {
-    final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
-    final double teleopHubTotal = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
 
     return MatchData(
       matchNumber: matchNumber,
@@ -80,9 +84,9 @@ class MatchScoutingProvider extends ChangeNotifier {
       autoL3: _countOccurrences(autoActions, ActionType.L3),
       // pass totals (or lists) depending on MatchData definition
       autoHubDurations: autoHubDurations,
-      autoHubTimeStamp: autoHubTimeStamp,
+      //autoHubTimeStamp: autoHubTimeStamp,
       teleopHubDurations: teleopHubDurations,
-      teleopHubTimeStamp: teleopHubTimeStamp,
+      //teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -102,8 +106,8 @@ class MatchScoutingProvider extends ChangeNotifier {
     int autoL3Points = _countOccurrences(autoActions, ActionType.L3) * 15;
 
     // Sum durations and convert to points (example: 5 points per second)
-    double totalDuration = autoHubDurations.fold(0.0, (sum, item) => sum + item);
-    int autoHubPoints = (totalDuration * 5).toInt();
+    final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    int autoHubPoints = (autoHubTotal* 5).toInt();
 
     autoScore = autoL1Points + autoL2Points + autoL3Points + autoHubPoints;
   }
@@ -134,7 +138,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   /// Add a hub duration (in seconds) recorded during auto
-  void addAutoHubDuration(double seconds) {
+  void addAutoHubDurations(double seconds) {
     autoHubDurations.add(seconds);
     _updateAutoScore();
     notifyListeners();
@@ -147,7 +151,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   /// Add a hub duration (in seconds) recorded during teleop
-  void addTeleopHubDuration(double seconds) {
+  void addTeleopHubDurations(double seconds) {
     teleopHubDurations.add(seconds);
     _updateTeleopScore();
     notifyListeners();
@@ -215,13 +219,13 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void setMatchNotes(String value) {
-    this.notes = value;
+    notes = value;
     notifyListeners();
   }
 
   void _updateTeleopScore() {
-    double totalDurationT = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
-    int teleopHubPoints = (totalDurationT * 5).toInt();
+    final double teleopHubTotal = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
+    int teleopHubPoints = (teleopHubTotal * 5).toInt();
 
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
@@ -250,6 +254,11 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void setDisabled(Disabled value) {
     disabled = value;
+    notifyListeners();
+  }
+
+  void setRobotGoal(RobotGoal value) {
+    robotGoal = value;
     notifyListeners();
   }
   

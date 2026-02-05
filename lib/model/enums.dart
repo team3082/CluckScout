@@ -11,6 +11,11 @@ enum EndStatus {
   L2,
   L3,
 }
+enum ClimbLevel {
+  L1,
+  L2,
+  L3,
+}
 
 enum Position {
   redTop,
@@ -40,3 +45,9 @@ enum Disabled {
   off,
   on
 }
+enum RobotGoal {
+  shooter,
+  passing,
+  other
+}
+

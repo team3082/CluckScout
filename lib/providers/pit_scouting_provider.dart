@@ -21,6 +21,7 @@ class PitScoutingProvider extends ChangeNotifier {
   int Capacity = 0;
 
   // Preferred Playstyle
+  ClimbLevel preferredClimbLevel = ClimbLevel.L1;
   StartingZone preferredStartingZone = StartingZone.top;
   EndStatus preferredEndStatus = EndStatus.none;
 
@@ -37,7 +38,7 @@ class PitScoutingProvider extends ChangeNotifier {
     this.L3 = 0,
     this.Hub = 0,
     this.Capacity = 0,
-    this.preferredClimbLevel.L1,
+    preferredClimbLevel= ClimbLevel.L1,
     preferredStartingZone = StartingZone.top,
     this.preferredEndStatus = EndStatus.none,
     this.notes = '',
@@ -53,7 +54,7 @@ class PitScoutingProvider extends ChangeNotifier {
     L3 = 0;
     Hub = 0;
     Capacity = 0;
-    preferredClimbLevel.L1;
+    preferredClimbLevel = ClimbLevel.L1;
     preferredStartingZone = StartingZone.top;
     preferredEndStatus = EndStatus.none;
     notes = '';
@@ -118,7 +119,10 @@ class PitScoutingProvider extends ChangeNotifier {
     drivetrain = value;
     notifyListeners();
   }
-
+  void setPreferredClimbLevel(ClimbLevel value) {
+    preferredClimbLevel = value;
+    notifyListeners();
+  }
   void setPreferredStartingZone(StartingZone zone) {
     preferredStartingZone = zone;
     notifyListeners();

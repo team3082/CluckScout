@@ -200,7 +200,7 @@ class SubmitScreen extends StatelessWidget {
               ),
             ),
             child: DropdownButton<RobotGoal>(
-              value: context.select<MatchScoutingProvider, RobotGoal>((p) => p.RobotGoal),
+              value: context.select<MatchScoutingProvider, RobotGoal>((p) => p.robotGoal),
               items: RobotGoal.values.map((e) => DropdownMenuItem(
                 value: e,
                 child: Text(
@@ -208,7 +208,7 @@ class SubmitScreen extends StatelessWidget {
                   style: dropdownTextStyle,
                 ),
               )).toList(),
-              onChanged: (val) => provider.setRobotGoal(val ?? RobotGoal.Unknown),
+              onChanged: (val) => provider.setRobotGoal(val ?? RobotGoal.other),
               underline: Container(),
               icon: const Icon(
                 Icons.arrow_drop_down,

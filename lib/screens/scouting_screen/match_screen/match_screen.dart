@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-//import 'package:cluck_scout/providers/match_scouting_provider.dart';
+import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/screens/auto_screen.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/screens/round_screen.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/screens/submit_screen.dart';

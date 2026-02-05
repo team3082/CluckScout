@@ -10,11 +10,11 @@ class MatchData {
   final int autoL1;
   final int autoL2;
   final int autoL3;
-  final List<double> autoHubDuration;
+  final List<double> autoHubDurations;
   final List<double> autoHubTimeStamp; 
 
   // Teleop
-  final List<double> teleopHubDuration;
+  final List<double> teleopHubDurations;
   final List<double> teleopHubTimeStamp; 
   
   // Endgame
@@ -34,9 +34,9 @@ class MatchData {
     required this.autoL1,
     required this.autoL2,
     required this.autoL3,
-    required this.autoHubDuration,
+    required this.autoHubDurations,
     required this.autoHubTimeStamp,
-    required this.teleopHubDuration,
+    required this.teleopHubDurations,
     required this.teleopHubTimeStamp,
     required this.endStatus,
     required this.disabled,
@@ -54,9 +54,9 @@ class MatchData {
       'auto_L1': autoL1,
       'auto_L2': autoL2,
       'auto_L3': autoL3,
-      'auto_Hub_Duration': autoHubDuration,
+      'auto_Hub_Duration': autoHubDurations,
       'auto_Hub_Time_Stamp': autoHubTimeStamp,
-      'teleop_Hub_Duration': teleopHubDuration,
+      'teleop_Hub_Duration': teleopHubDurations,
       'teleop_Hub_Time_Stamp': teleopHubTimeStamp,
       'end_none': endStatus == EndStatus.none ? 1 : 0,
       'end_L1': endStatus == EndStatus.L1 ? 1 : 0,
@@ -79,9 +79,9 @@ class MatchData {
       autoL2: map['auto_L2'],
       autoL3: map['auto_L3'],
       // Added List.from to ensure type safety
-      autoHubDuration: List<double>.from(map['auto_Hub_Duration']),
+      autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
       autoHubTimeStamp: List<double>.from(map['auto_Hub_Time_Stamp']),
-      teleopHubDuration: List<double>.from(map['teleop_Hub_Duration']),
+      teleopHubDurations: List<double>.from(map['teleop_Hub_Duration']),
       teleopHubTimeStamp: List<double>.from(map['teleop_Hub_Time_Stamp']),
       endStatus: map['end_L1'] == 1
           ? EndStatus.L1 
