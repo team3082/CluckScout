@@ -25,40 +25,26 @@ class PlaystyleScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Coral Preference",
+              title: "Scoring Preference",
               switches: [
                 SwitchField(
-                  text: "Prefers Coral",
-                  getValue: () => provider.prefersCoral,
-                  setValue: (value) => provider.setPrefersCoral(value),
+                  text: "L1",
+                  getValue: () => provider.preferredClimbLevel == 1 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(1),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Coral L1",
-                  getValue: () => provider.preferredCoralLevel == 1 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(1),
+                  text: "L2",
+                  getValue: () => provider.preferredClimbLevel == 2 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(2),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Coral L2",
-                  getValue: () => provider.preferredCoralLevel == 2 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(2),
-                  height: height,
-                  bottomMargin: bottomMargin,
-                ),
-                SwitchField(
-                  text: "Coral L3",
-                  getValue: () => provider.preferredCoralLevel == 3 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(3),
-                  height: height,
-                  bottomMargin: bottomMargin,
-                ),
-                SwitchField(
-                  text: "Coral L4",
-                  getValue: () => provider.preferredCoralLevel == 4 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(4),
+                  text: "L3",
+                  getValue: () => provider.preferredClimbLevel == 3 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(3),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
@@ -69,33 +55,33 @@ class PlaystyleScreen extends StatelessWidget {
               title: "End Preference",
               switches: [
                 SwitchField(
-                  text: "Park",
+                  text: "L1",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.park ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.L1 ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.park)
+                      ? provider.setPreferredEndStatus(EndStatus.L1)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Shallow Climb",
+                  text: "L2",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.shallowCage
+                      provider.preferredEndStatus == EndStatus.L2
                           ? 1
                           : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.shallowCage)
+                      ? provider.setPreferredEndStatus(EndStatus.L2)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Deep Climb",
+                  text: "L3",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.deepCage ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.L3 ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.deepCage)
+                      ? provider.setPreferredEndStatus(EndStatus.L3)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
