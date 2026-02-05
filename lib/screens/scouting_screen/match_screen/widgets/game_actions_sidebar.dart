@@ -15,55 +15,32 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
-          actionText: "L1 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL1),
+          actionText: "L1",
+          addGameAction: () => addGameAction(ActionType.L1),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L2 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL2),
+          actionText: "L2",
+          addGameAction: () => addGameAction(ActionType.L2),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L3 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL3),
+          actionText: "L3",
+          addGameAction: () => addGameAction(ActionType.L3),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L4 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL4),
+          actionText: "Hub",
+          addGameAction: () => addGameAction(ActionType.Hub),
         ),
         const SizedBox(
           height: 15,
-        ),
-        GameActionButton(
-          actionText: "Dropped",
-          addGameAction: () => addGameAction(ActionType.dropped),
-        ),
-        const SizedBox(height: 15),
-        GameActionButton(
-          actionText: "Removed Algae",
-          addGameAction: () => addGameAction(ActionType.removeAlgae),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        GameActionButton(
-          actionText: "Processor Algae",
-          addGameAction: () => addGameAction(ActionType.processorAlgae),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        GameActionButton(
-          actionText: "Net Algae",
-          addGameAction: () => addGameAction(ActionType.netAlgae),
         ),
       ],
     );
