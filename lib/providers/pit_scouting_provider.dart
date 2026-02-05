@@ -37,6 +37,8 @@ class PitScoutingProvider extends ChangeNotifier {
     this.L3 = 0,
     this.Hub = 0,
     this.Capacity = 0,
+    this.preferredClimbLevel.L1,
+    preferredStartingZone = StartingZone.top,
     this.preferredEndStatus = EndStatus.none,
     this.notes = '',
   });
@@ -51,6 +53,7 @@ class PitScoutingProvider extends ChangeNotifier {
     L3 = 0;
     Hub = 0;
     Capacity = 0;
+    preferredClimbLevel.L1;
     preferredStartingZone = StartingZone.top;
     preferredEndStatus = EndStatus.none;
     notes = '';
