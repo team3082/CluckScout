@@ -70,6 +70,7 @@ class PitScoutingProvider extends ChangeNotifier {
       L3: L3,
       Hub: Hub,
       Capacity: Capacity,
+      preferredClimbLevel: preferredClimbLevel,
       preferredStartingZone: preferredStartingZone,
       preferredEndStatus: preferredEndStatus,
       notes: notes,
