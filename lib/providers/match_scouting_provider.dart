@@ -19,13 +19,14 @@ class MatchScoutingProvider extends ChangeNotifier {
   int autoScore;
   // store durations (seconds) for each hub visit during auto
   List<double> autoHubDurations;
-  //List<double> autoHubTimeStamp;
+  List<double> autoHubTimeStamp;
 
   // Teleop Actions
   List<ActionType> teleopActions;
   int teleopScore;
   // store durations (seconds) for each hub visit during teleop
   List<double> teleopHubDurations;
+  List<double> teleopHubTimeStamp;
   EndStatus endStatus;
 
   // Final Fields
@@ -60,7 +61,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   })  : autoActions = autoActions ?? <ActionType>[],
         teleopActions = teleopActions ?? <ActionType>[],
         autoHubDurations = autoHubDurations ?? <double>[],
-        //autoHubTimeStamp = autoHubTimeStamp ?? <double>[],
+        autoHubTimeStamp = autoHubTimeStamp ?? <double>[],
+        teleopHubTimeStamp = teleopHubTimeStamp ?? <double>[],
         teleopHubDurations = teleopHubDurations ?? <double>[];
 
   void submitMatchData() {
@@ -84,9 +86,9 @@ class MatchScoutingProvider extends ChangeNotifier {
       autoL3: _countOccurrences(autoActions, ActionType.L3),
       // pass totals (or lists) depending on MatchData definition
       autoHubDurations: autoHubDurations,
-      //autoHubTimeStamp: autoHubTimeStamp,
+      autoHubTimeStamp: autoHubTimeStamp,
       teleopHubDurations: teleopHubDurations,
-      //teleopHubTimeStamp: teleopHubTimeStamp,
+      teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,

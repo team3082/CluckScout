@@ -13,7 +13,7 @@ class PitData {
   final int Capacity;
 
   // Preferred Climb
-  final int preferredClimbLevel;
+  final ClimbLevel preferredClimbLevel;
 
   // End status
   final int L1;
