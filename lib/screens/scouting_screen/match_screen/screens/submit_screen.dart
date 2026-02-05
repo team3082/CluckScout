@@ -190,7 +190,7 @@ class SubmitScreen extends StatelessWidget {
           ),
         ),
         _buildDropdownRow(
-          "Robot Type",
+          "Robot Goal",
           Theme(
             data: Theme.of(context).copyWith(
               popupMenuTheme: PopupMenuThemeData(
@@ -199,16 +199,16 @@ class SubmitScreen extends StatelessWidget {
                 ),
               ),
             ),
-            child: DropdownButton<RobotType>(
-              value: context.select<MatchScoutingProvider, RobotType>((p) => p.RobotType),
-              items: RobotType.values.map((e) => DropdownMenuItem(
+            child: DropdownButton<RobotGoal>(
+              value: context.select<MatchScoutingProvider, RobotGoal>((p) => p.RobotGoal),
+              items: RobotGoal.values.map((e) => DropdownMenuItem(
                 value: e,
                 child: Text(
                   e.toString().split('.').last,
                   style: dropdownTextStyle,
                 ),
               )).toList(),
-              onChanged: (val) => provider.setRobotType(val ?? RobotType.Unknown),
+              onChanged: (val) => provider.setRobotGoal(val ?? RobotGoal.Unknown),
               underline: Container(),
               icon: const Icon(
                 Icons.arrow_drop_down,
