@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:cluck_scout/model/enums.dart';
+//import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/model/team_reader.dart';
-import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 import 'package:cluck_scout/screens/scouting_screen/widgets/team_serach_dialog.dart';
 
