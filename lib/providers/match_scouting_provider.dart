@@ -79,9 +79,9 @@ class MatchScoutingProvider extends ChangeNotifier {
       autoL2: _countOccurrences(autoActions, ActionType.L2),
       autoL3: _countOccurrences(autoActions, ActionType.L3),
       // pass totals (or lists) depending on MatchData definition
-      autoHubDuration: autoHubDuration,
+      autoHubDurations: autoHubDurations,
       autoHubTimeStamp: autoHubTimeStamp,
-      teleopHubDuration: teleopHubDuration,
+      teleopHubDurations: teleopHubDurations,
       teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
