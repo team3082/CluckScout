@@ -79,8 +79,10 @@ class MatchScoutingProvider extends ChangeNotifier {
       autoL2: _countOccurrences(autoActions, ActionType.L2),
       autoL3: _countOccurrences(autoActions, ActionType.L3),
       // pass totals (or lists) depending on MatchData definition
-      autoHubDuration: autoHubTotal,
-      teleopHubDuration: teleopHubTotal,
+      autoHubDuration: autoHubDuration,
+      autoHubTimeStamp: autoHubTimeStamp,
+      teleopHubDuration: teleopHubDuration,
+      teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -168,11 +170,11 @@ class MatchScoutingProvider extends ChangeNotifier {
           return "L2";
         case ActionType.L3:
           return "L3";
-        case ActionType.HubTimeStamp:
+        case ActionType.Hub:
           return "HubTimeStamp";
         // add other ActionType cases here as needed
-        default:
-          return action.toString();
+        //default:
+          //return action.toString();
       }
     }).toList().join(', ');
   }
