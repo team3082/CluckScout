@@ -24,7 +24,7 @@ class PlaystyleScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SwitchColumn(
+            /*SwitchColumn(
               title: "Scoring Preference",
               switches: [
                 SwitchField(
@@ -50,7 +50,7 @@ class PlaystyleScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(width: 15),
+            const SizedBox(width: 15),*/
             SwitchColumn(
               title: "End Preference",
               switches: [

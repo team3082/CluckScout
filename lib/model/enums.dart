@@ -13,6 +13,12 @@ enum EndStatus {
   L2,
   L3,
 }
+enum AutoStatus {
+  none,
+  L1,
+  L2,
+  L3,
+}
 enum ClimbLevel {
   L1,
   L2,

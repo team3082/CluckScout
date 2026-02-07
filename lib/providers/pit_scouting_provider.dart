@@ -17,6 +17,8 @@ class PitScoutingProvider extends ChangeNotifier {
   int L1 = 0;
   int L2 = 0;
   int L3 = 0;
+  int Bump = 0;
+  int Trench = 0;
   int Hub = 0;
   int Capacity = 0;
 
@@ -36,6 +38,8 @@ class PitScoutingProvider extends ChangeNotifier {
     this.L1 = 0,
     this.L2 = 0,
     this.L3 = 0,
+    this.Bump = 0,
+    this.Trench = 0,
     this.Hub = 0,
     this.Capacity = 0,
     preferredClimbLevel= ClimbLevel.L1,
@@ -52,6 +56,8 @@ class PitScoutingProvider extends ChangeNotifier {
     L1 = 0;
     L2 = 0;
     L3 = 0;
+    Bump= 0;
+    Trench = 0;
     Hub = 0;
     Capacity = 0;
     preferredClimbLevel = ClimbLevel.L1;
@@ -69,6 +75,8 @@ class PitScoutingProvider extends ChangeNotifier {
       L1: L1,
       L2: L2,
       L3: L3,
+      Bump: Bump,
+      Trench: Trench,
       Hub: Hub,
       Capacity: Capacity,
       preferredClimbLevel: preferredClimbLevel,
@@ -92,6 +100,16 @@ class PitScoutingProvider extends ChangeNotifier {
 
   void setL3(int value) {
     L3 = value;
+    notifyListeners();
+  }
+
+  void setBump(int value) {
+    Bump = value;
+    notifyListeners();
+  }
+
+  void setTrench(int value) {
+    Trench = value;
     notifyListeners();
   }
 

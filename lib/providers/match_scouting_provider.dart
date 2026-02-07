@@ -17,6 +17,7 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   // Auto Actions
   List<ActionType> autoActions;
+  AutoStatus autoStatus;
   int autoScore;
   // store durations (seconds) for each hub visit during auto
   List<double> autoHubDurations;
@@ -46,6 +47,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     required this.scouterName,
     this.autoScore = 0,
     this.teleopScore = 0,
+    this.autoStatus = AutoStatus.none,
     this.endStatus = EndStatus.none,
     this.disabled = Disabled.None,
     this.robotGoal = RobotGoal.other,
@@ -82,9 +84,7 @@ class MatchScoutingProvider extends ChangeNotifier {
       teamNumber: teamNumber,
       position: position,
       scouterName: scouterName,
-      autoL1: _countOccurrences(autoActions, ActionType.L1),
-      autoL2: _countOccurrences(autoActions, ActionType.L2),
-      autoL3: _countOccurrences(autoActions, ActionType.L3),
+      autoStatus: autoStatus,
       // pass totals (or lists) depending on MatchData definition
       autoHubDurations: autoHubDurations,
       autoHubTimeStamp: autoHubTimeStamp,

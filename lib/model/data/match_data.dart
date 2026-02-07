@@ -7,9 +7,7 @@ class MatchData {
   final String scouterName;
 
   // Auto
-  final int autoL1;
-  final int autoL2;
-  final int autoL3;
+  final AutoStatus autoStatus;
   final List<double> autoHubDurations;
   final List<double> autoHubTimeStamp; 
 
@@ -31,9 +29,7 @@ class MatchData {
     required this.teamNumber,
     required this.position,
     required this.scouterName,
-    required this.autoL1,
-    required this.autoL2,
-    required this.autoL3,
+    required this.autoStatus,
     required this.autoHubDurations,
     required this.autoHubTimeStamp,
     required this.teleopHubDurations,
@@ -51,9 +47,9 @@ class MatchData {
       'team_number': teamNumber,
       'position': position.name, 
       'scouter_name': scouterName,
-      'auto_L1': autoL1,
-      'auto_L2': autoL2,
-      'auto_L3': autoL3,
+      'auto_L1': autoStatus == AutoStatus.L1 ? 1 : 0,
+      'auto_L2': autoStatus == AutoStatus.L2 ? 1 : 0,
+      'auto_L3': autoStatus == AutoStatus.L3 ? 1 : 0,
       'auto_Hub_Duration': autoHubDurations,
       'auto_Hub_Time_Stamp': autoHubTimeStamp,
       'teleop_Hub_Duration': teleopHubDurations,
@@ -75,9 +71,13 @@ class MatchData {
       teamNumber: map['team_number'],
       position: Position.values.firstWhere((e) => e.name == map['position']),
       scouterName: map['scouter_name'],
-      autoL1: map['auto_L1'],
-      autoL2: map['auto_L2'],
-      autoL3: map['auto_L3'],
+      autoStatus: map['auto_L1'] == 1
+          ? AutoStatus.L1 
+          : map['auto_L2'] == 1
+              ? AutoStatus.L2
+              : map['auto_L3'] == 1
+                  ? AutoStatus.L3
+                  : AutoStatus.none,
       // Added List.from to ensure type safety
       autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
       autoHubTimeStamp: List<double>.from(map['auto_Hub_Time_Stamp']),

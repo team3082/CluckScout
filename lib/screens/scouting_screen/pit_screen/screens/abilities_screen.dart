@@ -23,7 +23,7 @@ class AbilitiesScreen extends StatelessWidget {
             SwitchColumn(
               title: "Abilities",
               switches: [
-                SwitchField(
+                /*SwitchField(
                   text: "Capacity",
                   getValue: () => provider.Capacity,
                   setValue: (value) => provider.setCapacity(value),
@@ -32,6 +32,16 @@ class AbilitiesScreen extends StatelessWidget {
                   text: "Hub",
                   getValue: () => provider.Hub,
                   setValue: (value) => provider.setHub(value),
+                ),*/
+                SwitchField(
+                  text: "Bump",
+                  getValue: () => provider.Bump,
+                  setValue: (value) => provider.setBump(value),
+                ),
+                SwitchField(
+                  text: "Trench",
+                  getValue: () => provider.Trench,
+                  setValue: (value) => provider.setTrench(value),
                 ),
               ],
             ),
