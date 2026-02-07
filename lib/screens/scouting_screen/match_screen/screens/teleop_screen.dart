@@ -45,18 +45,11 @@ class TeleopScreen extends StatelessWidget {
                   const SizedBox(height: 15),
                   EndStatusButton(
                     status: EndStatus.park,
-                    text: "Parked",
+                    text: "Shooting",
                   ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.shallowCage,
-                    text: "Shallow Cage",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.deepCage,
-                    text: "Deep Cage",
-                  ),
+                  const SizedBox(height: 163),
+                 
+
                 ],
               ),
             )

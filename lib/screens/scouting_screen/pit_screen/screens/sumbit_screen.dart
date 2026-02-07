@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:cluck_scout/model/data/pit_data.dart';
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 
@@ -33,7 +32,7 @@ class SubmitScreen extends StatelessWidget {
         const SizedBox(height: 10),
         SizedBox(
           child: Text(
-            "Make sure to mention SWIFT bracelets when talking to people from other teams, and trade them if you like the ones they’ve got. This helps people associate kindness and fun with our team, and may also get you some new friends in the process. Help spread the SWIFT message of inclusivity and fun! Also, Evan will be very happy with you if you trade SWIFT bracelets. Make Evan happy! - Elliot",
+            "Make sure to mention SWIFT bracelets when talking to people from other teams, and trade them if you like the ones they’ve got. This helps people associate kindness and fun with our team, and may also get you some new friends in the process. Help spread the SWIFT message of inclusivity and fun! Also, Evan will be very happy with you if you trade SWIFT bracelets. Make Evan happy! - Rohan ",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
         ),

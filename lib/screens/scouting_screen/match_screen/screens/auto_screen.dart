@@ -117,7 +117,7 @@ class AutoLeaveButton extends StatelessWidget {
               width: double.infinity,
               child: Center(
                 child: Text(
-                  "Left Starting Zone",
+                  "Shooting",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

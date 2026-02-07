@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:cluck_scout/model/enums.dart';
 
 class GameActionsSidebar extends StatelessWidget {
@@ -15,54 +14,54 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
-          actionText: "L1 Coral",
+          actionText: "L1 Climb",
           addGameAction: () => addGameAction(ActionType.coralL1),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L2 Coral",
+          actionText: "L2 Climb",
           addGameAction: () => addGameAction(ActionType.coralL2),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L3 Coral",
+          actionText: "L3 Climb",
           addGameAction: () => addGameAction(ActionType.coralL3),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L4 Coral",
+          actionText: "Attempted Climb",
           addGameAction: () => addGameAction(ActionType.coralL4),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Dropped",
+          actionText: "Used Outpost",
           addGameAction: () => addGameAction(ActionType.dropped),
         ),
         const SizedBox(height: 15),
         GameActionButton(
-          actionText: "Removed Algae",
+          actionText: "Used Depot",
           addGameAction: () => addGameAction(ActionType.removeAlgae),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Processor Algae",
+          actionText: "Bump",
           addGameAction: () => addGameAction(ActionType.processorAlgae),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Net Algae",
+          actionText: "Trench",
           addGameAction: () => addGameAction(ActionType.netAlgae),
         ),
       ],

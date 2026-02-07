@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                         children: const [
                           Icon(Icons.home, size: 30),
                           Text(
-                            " CluckScout 2025",
+                            " CluckScout 2026",
                             style: TextStyle(
                                 fontSize: 30, fontWeight: FontWeight.bold),
                           )

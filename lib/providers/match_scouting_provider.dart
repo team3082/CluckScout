@@ -207,21 +207,21 @@ class MatchScoutingProvider extends ChangeNotifier {
         .map((action) {
           switch (action) {
             case ActionType.coralL1:
-              return "Coral L1";
+              return "L1 Climb";
             case ActionType.coralL2:
-              return "Coral L2";
+              return "L2 Climb";
             case ActionType.coralL3:
-              return "Coral L3";
+              return "L3 Climb";
             case ActionType.coralL4:
-              return "Coral L4";
+              return "Attempted Climb";
             case ActionType.dropped:
-              return "Dropped";
+              return "Used Outpost";
             case ActionType.netAlgae:
-              return "Net Algae";
+              return "Used Depot";
             case ActionType.processorAlgae:
-              return "Processor Algae";
+              return "Bump";
             case ActionType.removeAlgae:
-              return "Removed Algae";
+              return "Trench";
           }
         })
         .toList()
@@ -270,7 +270,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void setMatchNotes(String value) {
-    this.notes = value;
+    notes = value;
     notifyListeners();
   }
 

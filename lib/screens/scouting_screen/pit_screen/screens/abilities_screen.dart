@@ -21,51 +21,47 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Coral Abilities",
+              title: "Climb Abilities",
               switches: [
                 SwitchField(
-                  text: "Coral L1",
+                  text: "Cannot Climb",
                   getValue: () => provider.coralL1,
                   setValue: (value) => provider.setCoralL1(value),
                 ),
                 SwitchField(
-                  text: "Coral L2",
+                  text: "L1 Climb",
                   getValue: () => provider.coralL2,
                   setValue: (value) => provider.setCoralL2(value),
                 ),
                 SwitchField(
-                  text: "Coral L3",
+                  text: "L2 Climb",
                   getValue: () => provider.coralL3,
                   setValue: (value) => provider.setCoralL3(value),
                 ),
                 SwitchField(
-                  text: "Coral L4",
+                  text: "L3 Climb",
                   getValue: () => provider.coralL4,
                   setValue: (value) => provider.setCoralL4(value),
                 ),
               ],
-              secondTitle: "Algae Abilities",
+              secondTitle: "Can Use",
               secondSwitches: [
                 SwitchField(
-                  text: "Net Algae",
+                  text: "Bump",
                   getValue: () => provider.netAlgae,
                   setValue: (value) => provider.setNetAlgae(value),
                 ),
                 SwitchField(
-                  text: "Processor Algae",
+                  text: "Trench",
                   getValue: () => provider.processorAlgae,
                   setValue: (value) => provider.setProcessorAlgae(value),
                 ),
-                SwitchField(
-                  text: "Remove Algae",
-                  getValue: () => provider.removeAlgae,
-                  setValue: (value) => provider.setRemoveAlgae(value),
-                ),
+             
               ],
             ),
             const SizedBox(width: 15),
             SwitchColumn(
-              title: "End Abilities",
+              title: "Can Use",
               switches: [
                 SwitchField(
                   text: "Park",

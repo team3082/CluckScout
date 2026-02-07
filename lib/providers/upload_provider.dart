@@ -4,9 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:provider/provider.dart';
 import '../services/database_service.dart';
-import 'app_provider.dart';
 
 class UploadProvider with ChangeNotifier {
   bool _canUpload = false;

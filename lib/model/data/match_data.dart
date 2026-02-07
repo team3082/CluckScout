@@ -13,6 +13,8 @@ class MatchData {
   final int autoCoralL3;
   final int autoCoralL4;
   final int autoDropped;
+  final int intialTime;
+  final int finalTime;
 
   // Auto Algae
   final int autoNetAlgae;
@@ -53,6 +55,8 @@ class MatchData {
     required this.autoCoralL3,
     required this.autoCoralL4,
     required this.autoDropped,
+    required this.intialTime,
+    required this.finalTime,
     required this.autoNetAlgae,
     required this.autoProcessorAlgae,
     required this.autoAlgaeRemoved,
