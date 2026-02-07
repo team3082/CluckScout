@@ -17,10 +17,18 @@ class MatchScoutingProvider extends ChangeNotifier {
   // Auto Actions
   List<ActionType> autoActions = List<ActionType>.empty(growable: true);
   int autoScore;
+  List<double> autoHubDuration = List<double>.empty(growable: true);
+  List<double> autoHubTimeStamp = List<double>.empty(growable: true);
+  bool isShooting = false;
+  DateTime? _autoHubStartTime;
 
   // Teleop Actions
   List<ActionType> teleopActions = List<ActionType>.empty(growable: true);
   int teleopScore;
+  List<double> teleopHubDuration = List<double>.empty(growable: true);
+  List<double> teleopHubTimeStamp = List<double>.empty(growable: true);
+  bool isTeleopShooting = false;
+  DateTime? _teleopHubStartTime;
   EndStatus endStatus;
   bool autoLeave;
 
@@ -78,11 +86,10 @@ class MatchScoutingProvider extends ChangeNotifier {
         autoActions,
         ActionType.L3,
       ),
-      // Hub durations and timestamps not tracked yet; provide empty lists
-      autoHubDuration: <double>[],
-      autoHubTimeStamp: <double>[],
-      teleopHubDuration: <double>[],
-      teleopHubTimeStamp: <double>[],
+      autoHubDuration: autoHubDuration,
+      autoHubTimeStamp: autoHubTimeStamp,
+      teleopHubDuration: teleopHubDuration,
+      teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -119,6 +126,15 @@ class MatchScoutingProvider extends ChangeNotifier {
 
     autoActions.clear();
     autoScore = 0;
+    autoHubDuration.clear();
+    autoHubTimeStamp.clear();
+    isShooting = false;
+    _autoHubStartTime = null;
+
+    teleopHubDuration.clear();
+    teleopHubTimeStamp.clear();
+    isTeleopShooting = false;
+    _teleopHubStartTime = null;
 
     teleopActions.clear();
     endStatus = EndStatus.none;
@@ -136,10 +152,64 @@ class MatchScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void removeAutoActionOfType(ActionType action) {
+    final idx = autoActions.lastIndexOf(action);
+    if (idx != -1) {
+      autoActions.removeAt(idx);
+      _updateAutoScore();
+      notifyListeners();
+    }
+  }
+
+  void startAutoHub() {
+    if (isShooting) return;
+    isShooting = true;
+    _autoHubStartTime = DateTime.now();
+    notifyListeners();
+  }
+
+  void stopAutoHub() {
+    if (!isShooting || _autoHubStartTime == null) return;
+    final end = DateTime.now();
+    final duration = end.difference(_autoHubStartTime!).inMilliseconds / 1000.0;
+    autoHubDuration.add(duration);
+    autoHubTimeStamp.add(_autoHubStartTime!.millisecondsSinceEpoch / 1000.0);
+    isShooting = false;
+    _autoHubStartTime = null;
+    notifyListeners();
+  }
+
+  void startTeleopHub() {
+    if (isTeleopShooting) return;
+    isTeleopShooting = true;
+    _teleopHubStartTime = DateTime.now();
+    notifyListeners();
+  }
+
+  void stopTeleopHub() {
+    if (!isTeleopShooting || _teleopHubStartTime == null) return;
+    final end = DateTime.now();
+    final duration = end.difference(_teleopHubStartTime!).inMilliseconds / 1000.0;
+    teleopHubDuration.add(duration);
+    teleopHubTimeStamp.add(_teleopHubStartTime!.millisecondsSinceEpoch / 1000.0);
+    isTeleopShooting = false;
+    _teleopHubStartTime = null;
+    notifyListeners();
+  }
+
   void addTeleopAction(ActionType action) {
     teleopActions.add(action);
     _updateTeleopScore();
     notifyListeners();
+  }
+
+  void removeTeleopActionOfType(ActionType action) {
+    final idx = teleopActions.lastIndexOf(action);
+    if (idx != -1) {
+      teleopActions.removeAt(idx);
+      _updateTeleopScore();
+      notifyListeners();
+    }
   }
 
   String getAutoActionString() {
@@ -161,17 +231,25 @@ class MatchScoutingProvider extends ChangeNotifier {
             case ActionType.L3:
               return "L3";
             case ActionType.coralL1:
-              return "L1 Coral";
+              return "L1";
             case ActionType.coralL2:
-              return "L2 Coral";
+              return "L2";
             case ActionType.coralL3:
-              return "L3 Coral";
+              return "L3";
             case ActionType.coralL4:
-              return "L4 Coral";
+              return "L4";
             case ActionType.dropped:
-              return "Dropped";
+              return "Attempted Climb";
+            case ActionType.usedOutpost:
+              return "Used Outpost";
+            case ActionType.usedBump:
+              return "Used Bump";
+            case ActionType.usedTrench:
+              return "Used Trench";
             case ActionType.removeAlgae:
               return "Removed Algae";
+            case ActionType.processorAlgae:
+              return "Used Depot";
             case ActionType.processorAlgae:
               return "Processor Algae";
             case ActionType.netAlgae:

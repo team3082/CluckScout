@@ -39,10 +39,11 @@ class DataScreen extends StatelessWidget {
       ),
     );
   }
-}
+} 
 
 class ContentContainer extends StatelessWidget {
   const ContentContainer({super.key});
+
 
   @override
   Widget build(BuildContext context) {

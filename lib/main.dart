@@ -14,7 +14,7 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
-  
+                                        
   // Run initialization tasks in parallel
   await Future.wait([
     TeamReader.readTeamsFromFiles(),

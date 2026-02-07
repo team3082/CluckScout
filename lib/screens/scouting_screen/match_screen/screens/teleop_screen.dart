@@ -18,7 +18,7 @@ class TeleopScreen extends StatelessWidget {
           thickness: 2,
         ),
         const SizedBox(height: 5),
-        Row(
+        Row(        
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -27,6 +27,7 @@ class TeleopScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 GameActionsSidebar(
                   addGameAction: provider.addTeleopAction,
+                  removeGameAction: provider.removeTeleopActionOfType,
                 ),
               ],
             ),
@@ -40,23 +41,10 @@ class TeleopScreen extends StatelessWidget {
                         provider.getTeleopActionString(),
                     deleteFunction: (provider) => provider.removeTeleopAction(),
                     actionWindowWidth: double.infinity,
-                    actionWindowHeight: 215,
+                    actionWindowHeight: 161,
                   ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L1,
-                    text: "Lvl.1 climb",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L2,
-                    text: "Lvl.2 climb",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L3,
-                    text: "Lvl.3 climb",
-                  ),
+                  const SizedBox(height: 8),
+                  const TeleopShootButton(),
                 ],
               ),
             )
@@ -105,6 +93,47 @@ class EndStatusButton extends StatelessWidget {
             ),
           ),
         );
+      },
+    );
+  }
+}
+
+class TeleopShootButton extends StatelessWidget {
+  const TeleopShootButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final provider = context.read<MatchScoutingProvider>();
+    return Selector<MatchScoutingProvider, bool>(
+      selector: (_, p) => p.isTeleopShooting,
+      builder: (_, isShooting, __) {
+        return GestureDetector(
+          onTapDown: (_) => provider.startTeleopHub(),
+          onTapUp: (_) => provider.stopTeleopHub(),
+          onTapCancel: () => provider.stopTeleopHub(),
+          child: Container(
+            height: 56,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: isShooting
+                  ? const Color.fromRGBO(50, 50, 124, 1)
+                  : const Color.fromRGBO(233, 233, 233, 1),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Center(
+              child: Text(
+                'Shoot',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: isShooting
+                      ? const Color.fromRGBO(233, 233, 233, 1)
+                      : const Color.fromRGBO(28, 27, 31, 1),
+                ),
+              ),
+            ),
+          ),
+        );    
       },
     );
   }
