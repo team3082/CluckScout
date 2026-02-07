@@ -3,6 +3,7 @@ import 'package:cluck_scout/model/app_preferences.dart';
 import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/model/data/match_data.dart';
 import 'package:cluck_scout/services/database_service.dart';
+List<int> date = [];
 
 class MatchScoutingProvider extends ChangeNotifier {
   // Current Tab
@@ -166,18 +167,28 @@ class MatchScoutingProvider extends ChangeNotifier {
   String getTeleopActionString() {
     return _getActionString(teleopActions);
   }
-
+  
   String _getActionString(List<ActionType> actionTypes) {
     return actionTypes.map((action) {
       switch (action) {
-        case ActionType.L1:
-          return "L1";
-        case ActionType.L2:
-          return "L2";
-        case ActionType.L3:
-          return "L3";
         case ActionType.Hub:
-          return DateTime.now();
+          date.add(DateTime.now().millisecondsSinceEpoch);
+          return  date;
+        case ActionType.L1:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          //return "L1";
+        case ActionType.L2:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          //return "L2";
+        case ActionType.L3:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          //return "L3";
+        case ActionType.Bump:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          return "Bump";
+        case ActionType.Trench:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          return "Trench";
         // add other ActionType cases here as needed
         //default:
           //return action.toString();
@@ -194,6 +205,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   void removeAutoAction() {
     if (autoActions.isNotEmpty) {
       autoActions.removeLast();
+      date.remove(DateTime.now().millisecondsSinceEpoch);
       _updateAutoScore();
       notifyListeners();
     }
@@ -243,6 +255,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   void removeTeleopAction() {
     if (teleopActions.isNotEmpty) {
       teleopActions.removeLast();
+      date.remove(DateTime.now().millisecondsSinceEpoch);
       _updateTeleopScore();
       notifyListeners();
     }

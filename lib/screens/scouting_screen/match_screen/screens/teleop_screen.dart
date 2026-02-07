@@ -57,6 +57,11 @@ class TeleopScreen extends StatelessWidget {
                     status: EndStatus.L3,
                     text: "Lvl. 3 Climb",
                   ),
+                  /*const SizedBox(height: 15),
+                  EndStatusButton(
+                    status: EndStatus.L3,
+                    text: "Used Depot",
+                  ),*/
                 ],
               ),
             )

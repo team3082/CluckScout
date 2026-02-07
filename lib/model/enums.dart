@@ -3,6 +3,8 @@ enum ActionType {
   L2,
   L3,
   Hub,
+  Bump,
+  Trench,
 }
 
 enum EndStatus {

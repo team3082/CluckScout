@@ -14,23 +14,23 @@ class GameActionsSidebar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        GameActionButton(
+        /*GameActionButton(
           actionText: "Lvl. 1 Climb",
           addGameAction: () => addGameAction(ActionType.L1),
         ),
         const SizedBox(
           height: 15,
-        ),
+        ),*/
         GameActionButton(
-          actionText: "Lvl. 2 Climb",
-          addGameAction: () => addGameAction(ActionType.L2),
+          actionText: "Trench",
+          addGameAction: () => addGameAction(ActionType.Trench),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Lvl. 3 Climb",
-          addGameAction: () => addGameAction(ActionType.L3),
+          actionText: "Bump",
+          addGameAction: () => addGameAction(ActionType.Bump),
         ),
         const SizedBox(
           height: 15,
@@ -40,7 +40,7 @@ class GameActionsSidebar extends StatelessWidget {
           addGameAction: () => addGameAction(ActionType.Hub),
         ),
         const SizedBox(
-          height: 45,
+          height: 15,
         ),
       ],
     );
@@ -70,7 +70,8 @@ class GameActionButton extends StatelessWidget {
       },
       style: _buttonStyle,
       child: SizedBox(
-        height: 51.6,
+        //height: 51.6,
+        height: 80,
         width: 160,
         child: Center(
           child: Text(
@@ -86,3 +87,4 @@ class GameActionButton extends StatelessWidget {
     );
   }
 }
+
