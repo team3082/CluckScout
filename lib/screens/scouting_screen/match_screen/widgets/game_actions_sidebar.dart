@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+//import 'package:flutter/services.dart';
 import 'package:cluck_scout/model/enums.dart';
 
 class GameActionsSidebar extends StatelessWidget {
@@ -15,32 +15,32 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
-          actionText: "L1",
+          actionText: "Lvl. 1 Climb",
           addGameAction: () => addGameAction(ActionType.L1),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L2",
+          actionText: "Lvl. 2 Climb",
           addGameAction: () => addGameAction(ActionType.L2),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L3",
+          actionText: "Lvl. 3 Climb",
           addGameAction: () => addGameAction(ActionType.L3),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Hub",
+          actionText: "Hub Shooting",
           addGameAction: () => addGameAction(ActionType.Hub),
         ),
         const SizedBox(
-          height: 15,
+          height: 45,
         ),
       ],
     );

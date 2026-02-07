@@ -177,7 +177,7 @@ class MatchScoutingProvider extends ChangeNotifier {
         case ActionType.L3:
           return "L3";
         case ActionType.Hub:
-          return "HubTimeStamp";
+          return DateTime.now();
         // add other ActionType cases here as needed
         //default:
           //return action.toString();
