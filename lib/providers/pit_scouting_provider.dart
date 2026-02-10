@@ -21,9 +21,8 @@ class PitScoutingProvider extends ChangeNotifier {
   int Trench = 0;
   int Hub = 0;
   int Capacity = 0;
-
   // Preferred Playstyle
-  ClimbLevel preferredClimbLevel = ClimbLevel.L1;
+  ClimbLevel preferredClimbLevel = ClimbLevel.none;
   StartingZone preferredStartingZone = StartingZone.top;
   EndStatus preferredEndStatus = EndStatus.none;
 

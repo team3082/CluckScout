@@ -28,8 +28,8 @@ class AutoScreen extends StatelessWidget {
                 GameActionsSidebar(
                   addGameAction: provider.addAutoAction,
                 ),
-                // const SizedBox(height: 55),
-                // const AutoPointsDisplay(),
+                const SizedBox(height: 55),
+                const AutoPointsDisplay(),
               ],
             ),
             const SizedBox(width: 15),

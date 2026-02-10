@@ -20,6 +20,7 @@ enum AutoStatus {
   L3,
 }
 enum ClimbLevel {
+  none,
   L1,
   L2,
   L3,

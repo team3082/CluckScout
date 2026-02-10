@@ -66,6 +66,7 @@ class DatabaseService {
             L3 INTEGER NOT NULL,
             Hub INTEGER NOT NULL,
             Capacity INTEGER NOT NULL,
+            preferred_climb_level TEXT NOT NULL,  
             preferred_starting_zone TEXT NOT NULL,
             preferred_end_status TEXT NOT NULL,
             notes TEXT

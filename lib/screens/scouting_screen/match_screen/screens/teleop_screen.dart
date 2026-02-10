@@ -28,6 +28,8 @@ class TeleopScreen extends StatelessWidget {
                 GameActionsSidebar(
                   addGameAction: provider.addTeleopAction,
                 ),
+                const SizedBox(height: 55),
+                const TeleopPointsDisplay(),
               ],
             ),
             const SizedBox(width: 15),
@@ -109,6 +111,39 @@ class EndStatusButton extends StatelessWidget {
               ),
             ),
           ),
+        );
+      },
+    );
+  }
+}
+
+class TeleopPointsDisplay extends StatelessWidget {
+  const TeleopPointsDisplay({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Selector<MatchScoutingProvider, int>(
+      selector: (_, provider) => provider.teleopScore,
+      builder: (_, points, __) {
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              "Teleop: ",
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(28, 27, 31, 1)),
+            ),
+            Text(
+              "$points pts",
+              style: const TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(104, 140, 219, 1)),
+            ),
+          ],
         );
       },
     );

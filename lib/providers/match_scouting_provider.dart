@@ -98,21 +98,25 @@ class MatchScoutingProvider extends ChangeNotifier {
     );
   }
 
-  int _countOccurrences(List<ActionType> actions, ActionType action) {
+  /*int _countOccurrences(List<ActionType> actions, ActionType action) {
     return actions.where((currentAction) => currentAction == action).length;
-  }
+  }*/
 
   // Calculates Auto Score
   void _updateAutoScore() {
-    int autoL1Points = _countOccurrences(autoActions, ActionType.L1) * 15;
-    int autoL2Points = _countOccurrences(autoActions, ActionType.L2) * 15;
-    int autoL3Points = _countOccurrences(autoActions, ActionType.L3) * 15;
-
+    
+    int autoStatusPoints = autoStatus == AutoStatus.none
+        ? 0
+        : endStatus == AutoStatus.L1
+            ? 15
+            : endStatus == AutoStatus.L2
+                ? 15
+                : 15;
     // Sum durations and convert to points (example: 5 points per second)
     final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
     int autoHubPoints = (autoHubTotal* 5).toInt();
 
-    autoScore = autoL1Points + autoL2Points + autoL3Points + autoHubPoints;
+    autoScore = autoStatusPoints + autoHubPoints;
   }
 
   void resetFields() {
@@ -121,6 +125,7 @@ class MatchScoutingProvider extends ChangeNotifier {
 
     autoActions.clear();
     autoHubDurations.clear();
+    autoStatus = AutoStatus.none;
     autoScore = 0;
 
     teleopActions.clear();
@@ -157,6 +162,12 @@ class MatchScoutingProvider extends ChangeNotifier {
   void addTeleopHubDurations(double seconds) {
     teleopHubDurations.add(seconds);
     _updateTeleopScore();
+    notifyListeners();
+  }
+
+  void setAutoStatus(AutoStatus autoStatus) {
+    this.autoStatus = autoStatus;
+    _updateAutoScore();
     notifyListeners();
   }
 
