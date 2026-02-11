@@ -47,7 +47,8 @@ class DatabaseService {
               end_L1 INTEGER,      
               end_L2 INTEGER,    
               end_L3 INTEGER,       
-              disabled TEXT,
+              disabled TEXT,      
+              robotGoal TEXT,
               defense_rank INTEGER,
               driving_rank INTEGER,
               notes TEXT
@@ -61,6 +62,8 @@ class DatabaseService {
             team_number INTEGER NOT NULL,
             scouter_name TEXT NOT NULL,
             drivetrain TEXT NOT NULL,
+            Bump INTEGER NOT NULL,
+            Trench INTEGER NOT NULL,
             L1 INTEGER NOT NULL,
             L2 INTEGER NOT NULL,
             L3 INTEGER NOT NULL,
