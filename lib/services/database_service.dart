@@ -19,6 +19,12 @@ class DatabaseService {
     return _database!;
   }
 
+/* Need to update return with hub eventually...
+              auto_Hub_Duration LIST<DOUBLE>,
+              auto_Hub_Time_Stamp LIST<DOUBLE>,
+              teleop_Hub_Duration LIST<DOUBLE>,
+              teleop_Hub_Time_Stamp LIST<DOUBLE>,*/
+
   Future<Database> _initDatabase() async {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, 'scouting_app.db');
@@ -36,28 +42,15 @@ class DatabaseService {
               team_number INTEGER,
               position TEXT,         
               scouter_name TEXT,
-              auto_coral_L1 INTEGER,
-              auto_coral_L2 INTEGER,
-              auto_coral_L3 INTEGER,
-              auto_coral_L4 INTEGER,
-              auto_dropped INTEGER,
-              auto_net_algae INTEGER,
-              auto_processor_algae INTEGER,
-              auto_algae_removed INTEGER,
-              auto_leave INTEGER,
-              teleop_coral_L1 INTEGER,
-              teleop_coral_L2 INTEGER,
-              teleop_coral_L3 INTEGER,
-              teleop_coral_L4 INTEGER,
-              teleop_dropped INTEGER,
-              teleop_processor_algae INTEGER,
-              teleop_net_algae INTEGER,
-              teleop_algae_removed INTEGER,
+              auto_L1 INTEGER,
+              auto_L2 INTEGER,
+              auto_L3 INTEGER,
               end_none INTEGER,       
-              end_park INTEGER,      
-              end_shallow INTEGER,    
-              end_deep INTEGER,       
-              disabled TEXT,
+              end_L1 INTEGER,      
+              end_L2 INTEGER,    
+              end_L3 INTEGER,       
+              disabled TEXT,      
+              robotGoal TEXT,
               defense_rank INTEGER,
               driving_rank INTEGER,
               notes TEXT
@@ -71,18 +64,14 @@ class DatabaseService {
             team_number INTEGER NOT NULL,
             scouter_name TEXT NOT NULL,
             drivetrain TEXT NOT NULL,
-            coral_L1 INTEGER NOT NULL,
-            coral_L2 INTEGER NOT NULL,
-            coral_L3 INTEGER NOT NULL,
-            coral_L4 INTEGER NOT NULL,
-            remove_algae INTEGER NOT NULL,
-            processor_algae INTEGER NOT NULL,
-            net_algae INTEGER NOT NULL,
-            prefers_coral INTEGER NOT NULL,
-            preferred_coral_level INTEGER NOT NULL,
-            park INTEGER NOT NULL,
-            shallow_climb INTEGER NOT NULL,
-            deep_climb INTEGER NOT NULL,
+            Bump INTEGER NOT NULL,
+            Trench INTEGER NOT NULL,
+            L1 INTEGER NOT NULL,
+            L2 INTEGER NOT NULL,
+            L3 INTEGER NOT NULL,
+            Hub INTEGER NOT NULL,
+            Capacity INTEGER NOT NULL,
+            preferred_climb_level TEXT NOT NULL,  
             preferred_starting_zone TEXT NOT NULL,
             preferred_end_status TEXT NOT NULL,
             notes TEXT
@@ -184,10 +173,8 @@ class DatabaseService {
       if (a['is_uploaded'] != b['is_uploaded']) {
         return a['is_uploaded'] - b['is_uploaded'];
       }
-
       return b['match_number'].compareTo(a['match_number']);
     });
-
     return mutable;
   }
 
@@ -215,10 +202,8 @@ class DatabaseService {
       if (a['is_uploaded'] != b['is_uploaded']) {
         return a['is_uploaded'] - b['is_uploaded'];
       }
-
       return b['team_number'].compareTo(a['team_number']);
     });
-
     return mutable;
   }
 
@@ -239,5 +224,4 @@ class DatabaseService {
       whereArgs: [docId],
     );
   }
-
 }
