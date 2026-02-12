@@ -3,9 +3,10 @@ import 'package:cluck_scout/model/app_preferences.dart';
 import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/model/data/match_data.dart';
 import 'package:cluck_scout/services/database_service.dart';
+List<int> date = [];
 
 class MatchScoutingProvider extends ChangeNotifier {
-  //Current Tab
+  // Current Tab
   int tabIndex;
 
   // Round Specifications
@@ -15,17 +16,24 @@ class MatchScoutingProvider extends ChangeNotifier {
   String scouterName;
 
   // Auto Actions
-  List<ActionType> autoActions = List<ActionType>.empty(growable: true);
-  bool autoLeave;
+  List<ActionType> autoActions;
+  AutoStatus autoStatus;
   int autoScore;
+  // store durations (seconds) for each hub visit during auto
+  List<double> autoHubDurations;
+  List<double> autoHubTimeStamp;
 
   // Teleop Actions
-  List<ActionType> teleopActions = List<ActionType>.empty(growable: true);
+  List<ActionType> teleopActions;
   int teleopScore;
+  // store durations (seconds) for each hub visit during teleop
+  List<double> teleopHubDurations;
+  List<double> teleopHubTimeStamp;
   EndStatus endStatus;
 
   // Final Fields
   Disabled disabled;
+  RobotGoal robotGoal;
   int defenseRank;
   int drivingRank;
   int defenseTeamNumber;
@@ -37,97 +45,51 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.teamNumber = 0,
     required this.position,
     required this.scouterName,
-    this.autoLeave = false,
     this.autoScore = 0,
     this.teleopScore = 0,
+    this.autoStatus = AutoStatus.none,
     this.endStatus = EndStatus.none,
     this.disabled = Disabled.None,
+    this.robotGoal = RobotGoal.other,
     this.defenseRank = 0,
     this.drivingRank = 0,
     this.notes = '',
     this.defenseTeamNumber = 0,
-  });
+    List<ActionType>? autoActions,
+    List<ActionType>? teleopActions,
+    List<double>? autoHubDurations,
+    List<double>? teleopHubDurations,
+    List<double>? autoHubTimeStamp,
+    List<double>? teleopHubTimeStamp,
+  })  : autoActions = autoActions ?? <ActionType>[],
+        teleopActions = teleopActions ?? <ActionType>[],
+        autoHubDurations = autoHubDurations ?? <double>[],
+        autoHubTimeStamp = autoHubTimeStamp ?? <double>[],
+        teleopHubTimeStamp = teleopHubTimeStamp ?? <double>[],
+        teleopHubDurations = teleopHubDurations ?? <double>[];
 
   void submitMatchData() {
     scouterName = AppPreferences.scouterName;
     final matchData = _createMatchData();
     DatabaseService.instance.insertMatchData(matchData);
-    
+
     resetFields();
     notifyListeners();
   }
 
   MatchData _createMatchData() {
+
     return MatchData(
       matchNumber: matchNumber,
       teamNumber: teamNumber,
       position: position,
       scouterName: scouterName,
-      autoCoralL1: _countOccurrences(
-        autoActions,
-        ActionType.coralL1,
-      ),
-      autoCoralL2: _countOccurrences(
-        autoActions,
-        ActionType.coralL2,
-      ),
-      autoCoralL3: _countOccurrences(
-        autoActions,
-        ActionType.coralL3,
-      ),
-      autoCoralL4: _countOccurrences(
-        autoActions,
-        ActionType.coralL4,
-      ),
-      autoDropped: _countOccurrences(
-        autoActions,
-        ActionType.dropped,
-      ),
-      autoNetAlgae: _countOccurrences(
-        autoActions,
-        ActionType.netAlgae,
-      ),
-      autoAlgaeRemoved: _countOccurrences(
-        autoActions,
-        ActionType.removeAlgae,
-      ),
-      autoProcessorAlgae: _countOccurrences(
-        autoActions,
-        ActionType.processorAlgae,
-      ),
-      autoLeave: autoLeave,
-      teleopCoralL1: _countOccurrences(
-        teleopActions,
-        ActionType.coralL1,
-      ),
-      teleopCoralL2: _countOccurrences(
-        teleopActions,
-        ActionType.coralL2,
-      ),
-      teleopCoralL3: _countOccurrences(
-        teleopActions,
-        ActionType.coralL3,
-      ),
-      teleopCoralL4: _countOccurrences(
-        teleopActions,
-        ActionType.coralL4,
-      ),
-      teleopDropped: _countOccurrences(
-        teleopActions,
-        ActionType.dropped,
-      ),
-      teleopNetAlgae: _countOccurrences(
-        teleopActions,
-        ActionType.netAlgae,
-      ),
-      teleopProcessorAlgae: _countOccurrences(
-        teleopActions,
-        ActionType.processorAlgae,
-      ),
-      teleopAlgaeRemoved: _countOccurrences(
-        teleopActions,
-        ActionType.removeAlgae,
-      ),
+      autoStatus: autoStatus,
+      // pass totals (or lists) depending on MatchData definition
+      autoHubDurations: autoHubDurations,
+      autoHubTimeStamp: autoHubTimeStamp,
+      teleopHubDurations: teleopHubDurations,
+      teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -136,32 +98,25 @@ class MatchScoutingProvider extends ChangeNotifier {
     );
   }
 
-  int _countOccurrences(List<ActionType> actions, ActionType action) {
+  /*int _countOccurrences(List<ActionType> actions, ActionType action) {
     return actions.where((currentAction) => currentAction == action).length;
-  }
+  }*/
 
+  // Calculates Auto Score
   void _updateAutoScore() {
-    int autoCoralL1Points =
-        _countOccurrences(autoActions, ActionType.coralL1) * 3;
-    int autoCoralL2Points =
-        _countOccurrences(autoActions, ActionType.coralL2) * 4;
-    int autoCoralL3Points =
-        _countOccurrences(autoActions, ActionType.coralL3) * 6;
-    int autoCoralL4Points =
-        _countOccurrences(autoActions, ActionType.coralL4) * 7;
-    int autoNetAlgaePoints =
-        _countOccurrences(autoActions, ActionType.netAlgae) * 4;
-    int autoProcessorAlgaePoints =
-        _countOccurrences(autoActions, ActionType.processorAlgae) * 6;
-    int autoLeavePoints = autoLeave ? 3 : 0;
+    
+    int autoStatusPoints = autoStatus == AutoStatus.none
+        ? 0
+        : endStatus == AutoStatus.L1
+            ? 15
+            : endStatus == AutoStatus.L2
+                ? 15
+                : 15;
+    // Sum durations and convert to points (example: 5 points per second)
+    final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    int autoHubPoints = (autoHubTotal* 5).toInt();
 
-    autoScore = autoCoralL1Points +
-        autoCoralL2Points +
-        autoCoralL3Points +
-        autoCoralL4Points +
-        autoNetAlgaePoints +
-        autoProcessorAlgaePoints +
-        autoLeavePoints;
+    autoScore = autoStatusPoints + autoHubPoints;
   }
 
   void resetFields() {
@@ -169,10 +124,12 @@ class MatchScoutingProvider extends ChangeNotifier {
     teamNumber = 0;
 
     autoActions.clear();
-    autoLeave = false;
+    autoHubDurations.clear();
+    autoStatus = AutoStatus.none;
     autoScore = 0;
 
     teleopActions.clear();
+    teleopHubDurations.clear();
     endStatus = EndStatus.none;
     teleopScore = 0;
 
@@ -188,9 +145,29 @@ class MatchScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Add a hub duration (in seconds) recorded during auto
+  void addAutoHubDurations(double seconds) {
+    autoHubDurations.add(seconds);
+    _updateAutoScore();
+    notifyListeners();
+  }
+
   void addTeleopAction(ActionType action) {
     teleopActions.add(action);
     _updateTeleopScore();
+    notifyListeners();
+  }
+
+  /// Add a hub duration (in seconds) recorded during teleop
+  void addTeleopHubDurations(double seconds) {
+    teleopHubDurations.add(seconds);
+    _updateTeleopScore();
+    notifyListeners();
+  }
+
+  void setAutoStatus(AutoStatus autoStatus) {
+    this.autoStatus = autoStatus;
+    _updateAutoScore();
     notifyListeners();
   }
 
@@ -201,31 +178,33 @@ class MatchScoutingProvider extends ChangeNotifier {
   String getTeleopActionString() {
     return _getActionString(teleopActions);
   }
-
+  
   String _getActionString(List<ActionType> actionTypes) {
-    return actionTypes
-        .map((action) {
-          switch (action) {
-            case ActionType.coralL1:
-              return "Coral L1";
-            case ActionType.coralL2:
-              return "Coral L2";
-            case ActionType.coralL3:
-              return "Coral L3";
-            case ActionType.coralL4:
-              return "Coral L4";
-            case ActionType.dropped:
-              return "Dropped";
-            case ActionType.netAlgae:
-              return "Net Algae";
-            case ActionType.processorAlgae:
-              return "Processor Algae";
-            case ActionType.removeAlgae:
-              return "Removed Algae";
-          }
-        })
-        .toList()
-        .join(', ');
+    return actionTypes.map((action) {
+      switch (action) {
+        case ActionType.Hub:
+          date.add(DateTime.now().millisecondsSinceEpoch);
+          return  date;
+        case ActionType.L1:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          //return "L1";
+        case ActionType.L2:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          //return "L2";
+        case ActionType.L3:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          //return "L3";
+        case ActionType.Bump:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          return "Bump";
+        case ActionType.Trench:
+          date.remove(DateTime.now().millisecondsSinceEpoch);
+          return "Trench";
+        // add other ActionType cases here as needed
+        //default:
+          //return action.toString();
+      }
+    }).toList().join(', ');
   }
 
   void setPosition(Position position) {
@@ -237,15 +216,10 @@ class MatchScoutingProvider extends ChangeNotifier {
   void removeAutoAction() {
     if (autoActions.isNotEmpty) {
       autoActions.removeLast();
+      date.remove(DateTime.now().millisecondsSinceEpoch);
       _updateAutoScore();
       notifyListeners();
     }
-  }
-
-  void setAutoLeave(bool bool) {
-    autoLeave = bool;
-    _updateAutoScore();
-    notifyListeners();
   }
 
   void setTabIndex(int tabIndex) {
@@ -270,44 +244,29 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void setMatchNotes(String value) {
-    this.notes = value;
+    notes = value;
     notifyListeners();
   }
 
   void _updateTeleopScore() {
-    int teleopCoralL1Points =
-        _countOccurrences(teleopActions, ActionType.coralL1) * 2;
-    int teleopCoralL2Points =
-        _countOccurrences(teleopActions, ActionType.coralL2) * 3;
-    int teleopCoralL3Points =
-        _countOccurrences(teleopActions, ActionType.coralL3) * 4;
-    int teleopCoralL4Points =
-        _countOccurrences(teleopActions, ActionType.coralL4) * 5;
-    int teleopNetAlgaePoints =
-        _countOccurrences(teleopActions, ActionType.netAlgae) * 4;
-    int teleopProcessorAlgaePoints =
-        _countOccurrences(teleopActions, ActionType.processorAlgae) * 6;
+    final double teleopHubTotal = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
+    int teleopHubPoints = (teleopHubTotal * 5).toInt();
 
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
-        : endStatus == EndStatus.park
-            ? 2
-            : endStatus == EndStatus.shallowCage
-                ? 6
-                : 12;
+        : endStatus == EndStatus.L1
+            ? 10
+            : endStatus == EndStatus.L2
+                ? 20
+                : 30;
 
-    teleopScore = teleopCoralL1Points +
-        teleopCoralL2Points +
-        teleopCoralL3Points +
-        teleopCoralL4Points +
-        teleopNetAlgaePoints +
-        teleopProcessorAlgaePoints +
-        endStatusPoints;
+    teleopScore = teleopHubPoints + endStatusPoints;
   }
 
   void removeTeleopAction() {
     if (teleopActions.isNotEmpty) {
       teleopActions.removeLast();
+      date.remove(DateTime.now().millisecondsSinceEpoch);
       _updateTeleopScore();
       notifyListeners();
     }
@@ -324,6 +283,11 @@ class MatchScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void setRobotGoal(RobotGoal value) {
+    robotGoal = value;
+    notifyListeners();
+  }
+  
   void setDefense(int value) {
     defenseRank = value;
     notifyListeners();
