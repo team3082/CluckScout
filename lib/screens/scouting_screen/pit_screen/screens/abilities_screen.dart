@@ -21,45 +21,27 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Coral Abilities",
+              title: "Abilities",
               switches: [
-                SwitchField(
-                  text: "Coral L1",
-                  getValue: () => provider.coralL1,
-                  setValue: (value) => provider.setCoralL1(value),
+                /*SwitchField(
+                  text: "Capacity",
+                  getValue: () => provider.Capacity,
+                  setValue: (value) => provider.setCapacity(value),
                 ),
                 SwitchField(
-                  text: "Coral L2",
-                  getValue: () => provider.coralL2,
-                  setValue: (value) => provider.setCoralL2(value),
+                  text: "Hub",
+                  getValue: () => provider.Hub,
+                  setValue: (value) => provider.setHub(value),
+                ),*/
+                SwitchField(
+                  text: "Bump",
+                  getValue: () => provider.Bump,
+                  setValue: (value) => provider.setBump(value),
                 ),
                 SwitchField(
-                  text: "Coral L3",
-                  getValue: () => provider.coralL3,
-                  setValue: (value) => provider.setCoralL3(value),
-                ),
-                SwitchField(
-                  text: "Coral L4",
-                  getValue: () => provider.coralL4,
-                  setValue: (value) => provider.setCoralL4(value),
-                ),
-              ],
-              secondTitle: "Algae Abilities",
-              secondSwitches: [
-                SwitchField(
-                  text: "Net Algae",
-                  getValue: () => provider.netAlgae,
-                  setValue: (value) => provider.setNetAlgae(value),
-                ),
-                SwitchField(
-                  text: "Processor Algae",
-                  getValue: () => provider.processorAlgae,
-                  setValue: (value) => provider.setProcessorAlgae(value),
-                ),
-                SwitchField(
-                  text: "Remove Algae",
-                  getValue: () => provider.removeAlgae,
-                  setValue: (value) => provider.setRemoveAlgae(value),
+                  text: "Trench",
+                  getValue: () => provider.Trench,
+                  setValue: (value) => provider.setTrench(value),
                 ),
               ],
             ),
@@ -68,19 +50,19 @@ class AbilitiesScreen extends StatelessWidget {
               title: "End Abilities",
               switches: [
                 SwitchField(
-                  text: "Park",
-                  getValue: () => provider.park,
-                  setValue: (value) => provider.setPark(value),
+                  text: "L1",
+                  getValue: () => provider.L1,
+                  setValue: (value) => provider.setL1(value),
                 ),
                 SwitchField(
-                  text: "Shallow Climb",
-                  getValue: () => provider.shallowClimb,
-                  setValue: (value) => provider.setShallowClimb(value),
+                  text: "L2",
+                  getValue: () => provider.L2,
+                  setValue: (value) => provider.setL2(value),
                 ),
                 SwitchField(
-                  text: "Deep Climb",
-                  getValue: () => provider.deepClimb,
-                  setValue: (value) => provider.setDeepClimb(value),
+                  text: "L3",
+                  getValue: () => provider.L3,
+                  setValue: (value) => provider.setL3(value),
                 ),
               ],
               secondTitle: "Drivetrain",
