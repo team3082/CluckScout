@@ -1,19 +1,29 @@
 enum ActionType {
-  coralL1,
-  coralL2,
-  coralL3,
-  coralL4,
-  netAlgae,
-  processorAlgae,
-  removeAlgae,
-  dropped,
+  L1,
+  L2,
+  L3,
+  Hub,
+  Bump,
+  Trench,
 }
 
 enum EndStatus {
   none,
-  park,
-  shallowCage,
-  deepCage,
+  L1,
+  L2,
+  L3,
+}
+enum AutoStatus {
+  none,
+  L1,
+  L2,
+  L3,
+}
+enum ClimbLevel {
+  none,
+  L1,
+  L2,
+  L3,
 }
 
 enum Position {
@@ -44,3 +54,9 @@ enum Disabled {
   off,
   on
 }
+enum RobotGoal {
+  shooter,
+  passing,
+  other
+}
+
