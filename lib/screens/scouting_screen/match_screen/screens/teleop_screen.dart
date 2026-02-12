@@ -28,6 +28,8 @@ class TeleopScreen extends StatelessWidget {
                 GameActionsSidebar(
                   addGameAction: provider.addTeleopAction,
                 ),
+                const SizedBox(height: 55),
+                const TeleopPointsDisplay(),
               ],
             ),
             const SizedBox(width: 15),
@@ -44,19 +46,24 @@ class TeleopScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 15),
                   EndStatusButton(
-                    status: EndStatus.park,
-                    text: "Parked",
+                    status: EndStatus.L1,
+                    text: "Lvl. 1 Climb",
                   ),
                   const SizedBox(height: 15),
                   EndStatusButton(
-                    status: EndStatus.shallowCage,
-                    text: "Shallow Cage",
+                    status: EndStatus.L2,
+                    text: "Lvl. 2 Climb",
                   ),
                   const SizedBox(height: 15),
                   EndStatusButton(
-                    status: EndStatus.deepCage,
-                    text: "Deep Cage",
+                    status: EndStatus.L3,
+                    text: "Lvl. 3 Climb",
                   ),
+                  /*const SizedBox(height: 15),
+                  EndStatusButton(
+                    status: EndStatus.L3,
+                    text: "Used Depot",
+                  ),*/
                 ],
               ),
             )
@@ -104,6 +111,39 @@ class EndStatusButton extends StatelessWidget {
               ),
             ),
           ),
+        );
+      },
+    );
+  }
+}
+
+class TeleopPointsDisplay extends StatelessWidget {
+  const TeleopPointsDisplay({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Selector<MatchScoutingProvider, int>(
+      selector: (_, provider) => provider.teleopScore,
+      builder: (_, points, __) {
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              "Teleop: ",
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(28, 27, 31, 1)),
+            ),
+            Text(
+              "$points pts",
+              style: const TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(104, 140, 219, 1)),
+            ),
+          ],
         );
       },
     );
