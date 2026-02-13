@@ -1,7 +1,12 @@
+//
+
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
 
 class PitData {
-  // Scout Specifications
+// Declares the type of each variable (Ex. int)
+
+// Scout Specifications
   final int teamNumber;
   final String scouterName;
 
@@ -28,7 +33,8 @@ class PitData {
 
   final String notes;
 
-  // Constructor
+  // Constructor ?
+  // Requires that some value is passed along for each of the variables
   PitData({
     required this.teamNumber,
     required this.scouterName,
@@ -46,7 +52,7 @@ class PitData {
     required this.notes,
   });
 
-  // Convert PitData to Map
+  // Convert PitData to Map ?
   Map<String, dynamic> toMap() {
     return {
       'team_number': teamNumber,
@@ -55,7 +61,6 @@ class PitData {
       'drivetrain': drivetrain.toString().split('.').last,
       'Hub': Hub,
       'Capacity': Capacity,
-      //'preferred_climb_level': preferredClimbLevel,
       'L1': L1,
       'L2': L2,
       'L3': L3,
@@ -68,7 +73,7 @@ class PitData {
     };
   }
 
-  // Convert Map to PitData
+  // Convert Map to PitData ?
   static PitData fromMap(Map<String, dynamic> map) {
     return PitData(
       teamNumber: map['team_number'] ?? 0,

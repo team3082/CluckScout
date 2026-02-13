@@ -1,6 +1,11 @@
+// 
+
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
 
 class MatchData {
+  // Declares the type of each variable (Ex. int)
+
   final int matchNumber;
   final int teamNumber;
   final Position position;
@@ -24,6 +29,7 @@ class MatchData {
   final int drivingRank;
   final String notes;
 
+  // Requires that some value is passed along for each of the variables
   MatchData({
     required this.matchNumber,
     required this.teamNumber,
@@ -43,6 +49,7 @@ class MatchData {
 
   Map<String, dynamic> toMap() {
     return {
+      // Sets the values on the left (Ex. 'match_number') to the values on the right (Ex. matchNumber)
       'match_number': matchNumber,
       'team_number': teamNumber,
       'position': position.name, 
@@ -78,7 +85,6 @@ class MatchData {
               : map['auto_L3'] == 1
                   ? AutoStatus.L3
                   : AutoStatus.none,
-      // Added List.from to ensure type safety
       autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
       autoHubTimeStamp: List<double>.from(map['auto_Hub_Time_Stamp']),
       teleopHubDurations: List<double>.from(map['teleop_Hub_Duration']),

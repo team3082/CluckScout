@@ -1,8 +1,16 @@
+// Sets up the Submit page of Match Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/model/team_reader.dart';
+//
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/widgets/team_serach_dialog.dart';
 
 class RoundScreen extends StatefulWidget {
@@ -70,6 +78,7 @@ class RoundScreenState extends State<RoundScreen> {
           thickness: 2,
         ),
         const SizedBox(height: 20),
+        // Displays Match Number
         TextField(
           controller: matchNumberController,
           keyboardType: TextInputType.number,
@@ -91,6 +100,7 @@ class RoundScreenState extends State<RoundScreen> {
           ),
         ),
         const SizedBox(height: 15),
+        // Displays Team number
         Row(
           children: [
             Expanded(
@@ -121,6 +131,7 @@ class RoundScreenState extends State<RoundScreen> {
           ],
         ),
         const SizedBox(height: 20),
+        // Displays the name of who is Scouting
         Center(
           child: Column(
             children: [
@@ -137,6 +148,7 @@ class RoundScreenState extends State<RoundScreen> {
                   );
                 },
               ),
+              // Displays the position the person is scouting
               Selector<MatchScoutingProvider, Position>(
                 selector: (context, model) => model.position,
                 builder: (context, position, child) {
@@ -179,6 +191,7 @@ class RoundScreenState extends State<RoundScreen> {
         SizedBox(
           height: 20,
         ),
+        // Displays team logo
         Center(
           child: Container(
             margin: const EdgeInsets.only(right: 20),

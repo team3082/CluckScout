@@ -1,12 +1,19 @@
+// Sets up the Submit page of Match Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
 
 class SubmitScreen extends StatelessWidget {
   const SubmitScreen({super.key});
 
   @override
+  // Match Notes label
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
@@ -58,6 +65,7 @@ class SubmitScreen extends StatelessWidget {
     );
   }
 
+  // Displays Auto and Teleop scores
   Widget _buildScoreSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,6 +116,7 @@ class SubmitScreen extends StatelessWidget {
     );
   }
 
+  // Creates drop downs for rating teams/providing info
   Widget _buildRankings(BuildContext context) {
     final provider = context.read<MatchScoutingProvider>();
     const TextStyle dropdownTextStyle = TextStyle(
@@ -119,6 +128,7 @@ class SubmitScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // Disabled drop down
         _buildDropdownRow(
           "Disabled",
           Theme(
@@ -153,6 +163,7 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
+        // Defense drop down
         _buildDropdownRow(
           "Defense",
           Theme(
@@ -189,6 +200,7 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
+        // Robot Goal drop down
         _buildDropdownRow(
           "Robot Goal",
           Theme(
@@ -223,6 +235,7 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
+        // Driving drop down
         _buildDropdownRow(
           "Driving",
           Theme(
@@ -263,6 +276,7 @@ class SubmitScreen extends StatelessWidget {
     );
   }
 
+  // Instructions for template drop down
   Widget _buildDropdownRow(String label, Widget dropdown) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 4),
@@ -286,7 +300,6 @@ class SubmitScreen extends StatelessWidget {
                 color: Color.fromRGBO(50, 50, 124, 1),
                 width: 1.5,
               ),
-             
             ),
             child: Column(
               children: [
@@ -301,13 +314,13 @@ class SubmitScreen extends StatelessWidget {
   }
 }
 
+// Creates notes area
 class NotesTextField extends StatefulWidget {
   const NotesTextField({super.key});
 
   @override
   _NotesTextFieldState createState() => _NotesTextFieldState();
 }
-
 class _NotesTextFieldState extends State<NotesTextField> {
   late TextEditingController _notesController;
 
@@ -352,10 +365,12 @@ class _NotesTextFieldState extends State<NotesTextField> {
   }
 }
 
+// Creates submit button and checks error messages
 class SubmitButton extends StatelessWidget {
   const SubmitButton({super.key});
 
   @override
+  // Creates submit button
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
@@ -382,6 +397,7 @@ class SubmitButton extends StatelessWidget {
     );
   }
 
+  // Confirms that user actually inputed needed values (Ex. team #) and returns error message
   void _handleSubmitRequest(BuildContext context) {
     final provider = context.read<MatchScoutingProvider>();
     FocusScope.of(context).unfocus();
@@ -399,7 +415,6 @@ class SubmitButton extends StatelessWidget {
       provider.submitMatchData();
     }
   }
-
   void _showError(BuildContext context, String error) {
     showDialog(
       context: context,

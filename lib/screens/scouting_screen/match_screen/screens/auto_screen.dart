@@ -1,13 +1,22 @@
+// Sets up the Auto page of Match Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_action_window.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
 class AutoScreen extends StatelessWidget {
   const AutoScreen({super.key});
 
+  // Adds buttons to bottom right of auto screen in scouting app
   @override
   Widget build(BuildContext context) {
     final provider = context.read<MatchScoutingProvider>();
@@ -76,6 +85,7 @@ class AutoScreen extends StatelessWidget {
   }
 }
 
+// Gives dimentions and info to make the buttons specified above
 class AutoStatusButton extends StatelessWidget {
   final AutoStatus status;
   final String text;
@@ -118,6 +128,7 @@ class AutoStatusButton extends StatelessWidget {
   }
 }
 
+// Creates a button on the left that gives the Auto Score
 class AutoPointsDisplay extends StatelessWidget {
   const AutoPointsDisplay({super.key});
 
@@ -150,49 +161,3 @@ class AutoPointsDisplay extends StatelessWidget {
     );
   }
 }
-/*
-class AutoLeaveButton extends StatelessWidget {
-  const AutoLeaveButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final provider = context.read<MatchScoutingProvider>();
-    return Selector<MatchScoutingProvider, bool>(
-      selector: (_, provider) => provider.autoLeave,
-      builder: (_, autoLeave, __) {
-        return Align(
-          alignment: Alignment.center,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: autoLeave
-                  ? const Color.fromRGBO(50, 50, 124, 1)
-                  : const Color.fromARGB(255, 220, 220, 223),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
-            ),
-            onPressed: () {
-              provider.setAutoLeave(!autoLeave);
-            },
-            child: SizedBox(
-              height: 60,
-              width: double.infinity,
-              child: Center(
-                child: Text(
-                  "Left Starting Zone",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: autoLeave
-                        ? Color.fromRGBO(233, 233, 233, 1)
-                        : Color.fromRGBO(28, 27, 31, 1),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
-}
-*/

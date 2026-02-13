@@ -1,9 +1,16 @@
+// Sets up the Team Screen of Pit Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
 //import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/model/team_reader.dart';
 //import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/widgets/team_serach_dialog.dart';
 
 class TeamScreen extends StatefulWidget {
@@ -81,6 +88,7 @@ class TeamScreenState extends State<TeamScreen> {
                 ),
               ),
         const SizedBox(height: 20),
+        // Displays name of who is scouting
         Center(
           child: Selector<PitScoutingProvider, String>(
             selector: (context, model) => model.scouterName,
@@ -96,6 +104,7 @@ class TeamScreenState extends State<TeamScreen> {
             },
           ),
         ),
+        // Displays team logo
         Center(
           child: Container(
             margin: const EdgeInsets.only(right: 20),

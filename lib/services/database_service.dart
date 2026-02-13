@@ -19,6 +19,12 @@ class DatabaseService {
     return _database!;
   }
 
+/* Need to update return with hub eventually...
+              auto_Hub_Duration LIST<DOUBLE>,
+              auto_Hub_Time_Stamp LIST<DOUBLE>,
+              teleop_Hub_Duration LIST<DOUBLE>,
+              teleop_Hub_Time_Stamp LIST<DOUBLE>,*/
+
   Future<Database> _initDatabase() async {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, 'scouting_app.db');
@@ -39,10 +45,6 @@ class DatabaseService {
               auto_L1 INTEGER,
               auto_L2 INTEGER,
               auto_L3 INTEGER,
-              auto_Hub_Duration LIST<DOUBLE>,
-              auto_Hub_Time_Stamp LIST<DOUBLE>,
-              teleop_Hub_Duration LIST<DOUBLE>,
-              teleop_Hub_Time_Stamp LIST<DOUBLE>,
               end_none INTEGER,       
               end_L1 INTEGER,      
               end_L2 INTEGER,    

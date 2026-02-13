@@ -1,8 +1,15 @@
+// Sets up the Playstyle Screen of Pit Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
 //import 'package:flutter/widgets.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
+// Sets up the Abilities Screen of Pit Scouting for the scouting app
 import 'package:cluck_scout/screens/scouting_screen/pit_screen/screens/abilities_screen.dart';
 
 class PlaystyleScreen extends StatelessWidget {
@@ -24,34 +31,8 @@ class PlaystyleScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            /*SwitchColumn(
-              title: "Scoring Preference",
-              switches: [
-                SwitchField(
-                  text: "L1",
-                  getValue: () => provider.preferredClimbLevel == 1 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredClimbLevel(ClimbLevel.L1),
-                  height: height,
-                  bottomMargin: bottomMargin,
-                ),
-                SwitchField(
-                  text: "L2",
-                  getValue: () => provider.preferredClimbLevel == 2 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredClimbLevel(ClimbLevel.L2),
-                  height: height,
-                  bottomMargin: bottomMargin,
-                ),
-                SwitchField(
-                  text: "L3",
-                  getValue: () => provider.preferredClimbLevel == 3 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredClimbLevel(ClimbLevel.L3),
-                  height: height,
-                  bottomMargin: bottomMargin,
-                ),
-              ],
-            ),
-            const SizedBox(width: 15),*/
             SwitchColumn(
+              // Creates End Preference sub title and options (an only select one)
               title: "End Preference",
               switches: [
                 SwitchField(
@@ -87,6 +68,7 @@ class PlaystyleScreen extends StatelessWidget {
                   bottomMargin: bottomMargin,
                 ),
               ],
+              // Creates Preferred sub title and options (Can only select one)
               secondTitle: "Preferred Starting",
               secondSwitches: [
                 SwitchField(

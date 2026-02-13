@@ -1,8 +1,16 @@
+// Sets up the Teleop page of Match Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_action_window.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
 class TeleopScreen extends StatelessWidget {
