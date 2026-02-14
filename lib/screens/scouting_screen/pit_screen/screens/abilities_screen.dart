@@ -61,26 +61,8 @@ class AbilitiesScreen extends StatelessWidget {
             ),
             const SizedBox(width: 15),
             SwitchColumn(
-              title: "Can Use",
+              title: "Drivetrain",
               switches: [
-                SwitchField(
-                  text: "Park",
-                  getValue: () => provider.park,
-                  setValue: (value) => provider.setPark(value),
-                ),
-                SwitchField(
-                  text: "Shallow Climb",
-                  getValue: () => provider.shallowClimb,
-                  setValue: (value) => provider.setShallowClimb(value),
-                ),
-                SwitchField(
-                  text: "Deep Climb",
-                  getValue: () => provider.deepClimb,
-                  setValue: (value) => provider.setDeepClimb(value),
-                ),
-              ],
-              secondTitle: "Drivetrain",
-              secondSwitches: [
                 SwitchField(
                   text: "Swerve",
                   getValue: () =>

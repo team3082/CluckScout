@@ -1,12 +1,14 @@
 enum ActionType {
-  coralL1,
-  coralL2,
-  coralL3,
-  coralL4,
-  netAlgae,
-  processorAlgae,
-  removeAlgae,
-  dropped,
+  climbL1,
+  climbL2,
+  climbL3,
+  attemptedClimb,
+  bump,
+  trench,
+  usedDepot,
+  usedOutpost,
+  timeIntial,
+  timeFinal,
 }
 
 enum EndStatus {

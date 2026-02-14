@@ -5,6 +5,8 @@ import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_action_window.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
+int teleopCounter = 0;
+
 class TeleopScreen extends StatelessWidget {
   const TeleopScreen({super.key});
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
 
+int autoCounter=0;
+
 class GameActionWindow extends StatelessWidget {
   final String Function(MatchScoutingProvider) getScoreString;
   final void Function(MatchScoutingProvider) deleteFunction;
@@ -61,18 +63,24 @@ class GameActionWindow extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
+            //incomplete need to come back and fix
             onPressed: () =>
                 deleteFunction(context.read<MatchScoutingProvider>()),
-            child: const SizedBox(
-              height: 50,
+            child: Container(
               width: double.infinity,
+              height: 50,
+              padding: const EdgeInsets.all(200),
+              decoration: BoxDecoration(
+               color: const Color.fromRGBO(255, 0, 0, 1),
+               borderRadius: BorderRadius.circular(10), 
+              ),
               child: Center(
                 child: Text(
                   "Delete",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(28, 27, 31, 1),
+                    color: Color.fromRGBO(0, 0, 0, 1),
                   ),
                 ),
               ),

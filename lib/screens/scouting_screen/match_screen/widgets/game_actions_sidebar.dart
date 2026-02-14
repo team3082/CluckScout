@@ -15,54 +15,54 @@ class GameActionsSidebar extends StatelessWidget {
       children: [
         GameActionButton(
           actionText: "L1 Climb",
-          addGameAction: () => addGameAction(ActionType.coralL1),
+          addGameAction: () => addGameAction(ActionType.climbL1),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "L2 Climb",
-          addGameAction: () => addGameAction(ActionType.coralL2),
+          addGameAction: () => addGameAction(ActionType.climbL2),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "L3 Climb",
-          addGameAction: () => addGameAction(ActionType.coralL3),
+          addGameAction: () => addGameAction(ActionType.climbL3),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "Attempted Climb",
-          addGameAction: () => addGameAction(ActionType.coralL4),
+          addGameAction: () => addGameAction(ActionType.attemptedClimb),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "Used Outpost",
-          addGameAction: () => addGameAction(ActionType.dropped),
+          addGameAction: () => addGameAction(ActionType.usedOutpost),
         ),
         const SizedBox(height: 15),
         GameActionButton(
           actionText: "Used Depot",
-          addGameAction: () => addGameAction(ActionType.removeAlgae),
+          addGameAction: () => addGameAction(ActionType.usedDepot),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "Bump",
-          addGameAction: () => addGameAction(ActionType.processorAlgae),
+          addGameAction: () => addGameAction(ActionType.bump),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "Trench",
-          addGameAction: () => addGameAction(ActionType.netAlgae),
+          addGameAction: () => addGameAction(ActionType.trench),
         ),
       ],
     );
