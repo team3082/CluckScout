@@ -14,11 +14,11 @@ class MatchData {
   // Auto
   final AutoStatus autoStatus;
   final List<double> autoHubDurations;
-  final List<double> autoHubTimeStamp; 
+  final List<int> autoHubTimeStamp; 
 
   // Teleop
   final List<double> teleopHubDurations;
-  final List<double> teleopHubTimeStamp; 
+  final List<int> teleopHubTimeStamp; 
   
   // Endgame
   final EndStatus endStatus;
@@ -87,9 +87,9 @@ class MatchData {
                   ? AutoStatus.L3
                   : AutoStatus.none,*/
       autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
-      autoHubTimeStamp: List<double>.from(map['auto_Hub_Time_Stamp']),
+      autoHubTimeStamp: List<int>.from(map['auto_Hub_Time_Stamp']),
       teleopHubDurations: List<double>.from(map['teleop_Hub_Duration']),
-      teleopHubTimeStamp: List<double>.from(map['teleop_Hub_Time_Stamp']),
+      teleopHubTimeStamp: List<int>.from(map['teleop_Hub_Time_Stamp']),
       endStatus: map['end_L1'] == 1
           ? EndStatus.L1 
           : map['end_L2'] == 1

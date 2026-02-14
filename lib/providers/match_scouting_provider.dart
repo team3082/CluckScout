@@ -1,5 +1,6 @@
 // 
 
+//import 'package:cluck_scout/screens/scouting_screen/match_screen/screens/auto_screen.dart';
 // Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
 // For sharing data between files and other basics (Not specific to 3082)
@@ -10,7 +11,9 @@ import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/model/data/match_data.dart';
 // Stores data as a CSV to later be analized
 import 'package:cluck_scout/services/database_service.dart';
-List<int> date = [];
+int counter =0;
+double duration = 0;
+int page = 0; // 0 will be auto and 1 teleop
 
 class MatchScoutingProvider extends ChangeNotifier {
   // Declares the type of each variable (Ex. int)
@@ -30,14 +33,14 @@ class MatchScoutingProvider extends ChangeNotifier {
   int autoScore;
   // store durations (seconds) for each hub visit during auto
   List<double> autoHubDurations;
-  List<double> autoHubTimeStamp;
+  List<int> autoHubTimeStamp;
 
   // Teleop Actions
   List<ActionType> teleopActions;
   int teleopScore;
   // store durations (seconds) for each hub visit during teleop
   List<double> teleopHubDurations;
-  List<double> teleopHubTimeStamp;
+  List<int> teleopHubTimeStamp;
   EndStatus endStatus;
 
   // Final Fields
@@ -69,13 +72,13 @@ class MatchScoutingProvider extends ChangeNotifier {
     List<ActionType>? teleopActions,
     List<double>? autoHubDurations,
     List<double>? teleopHubDurations,
-    List<double>? autoHubTimeStamp,
-    List<double>? teleopHubTimeStamp,
+    List<int>? autoHubTimeStamp,
+    List<int>? teleopHubTimeStamp,
   })  : autoActions = autoActions ?? <ActionType>[],
         teleopActions = teleopActions ?? <ActionType>[],
         autoHubDurations = autoHubDurations ?? <double>[],
-        autoHubTimeStamp = autoHubTimeStamp ?? <double>[],
-        teleopHubTimeStamp = teleopHubTimeStamp ?? <double>[],
+        autoHubTimeStamp = autoHubTimeStamp ?? <int>[],
+        teleopHubTimeStamp = teleopHubTimeStamp ?? <int>[],
         teleopHubDurations = teleopHubDurations ?? <double>[];
 
   void submitMatchData() {
@@ -150,30 +153,44 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void addAutoAction(ActionType action) {
+    
+    // Check if the action is a Hub action, then add the timestamp here
+    if (action == ActionType.Hub) {
+      autoHubTimeStamp.add(DateTime.now().millisecondsSinceEpoch);
+      page = 0;
+      counter ++;
+      if (autoHubTimeStamp.length >= 2){
+        if (counter %2 ==0){
+          removeAutoAction();
+          notifyListeners();
+          duration = (autoHubTimeStamp[autoHubTimeStamp.length-1]-autoHubTimeStamp[autoHubTimeStamp.length-2])/1000;
+          autoHubDurations.add(duration);
+        }  
+      }
+    }
     autoActions.add(action);
-    _updateAutoScore();
     notifyListeners();
   }
-/*
-  /// Add a hub duration (in seconds) recorded during auto
-  void addAutoHubDurations(double seconds) {
-    autoHubDurations.add(seconds);
-    _updateAutoScore();
-    notifyListeners();
-  }*/
 
   void addTeleopAction(ActionType action) {
+    
+    // Check if the action is a Hub action, then add the timestamp here
+    if (action == ActionType.Hub) {
+      teleopHubTimeStamp.add(DateTime.now().millisecondsSinceEpoch);
+      page = 1;
+      counter ++;
+      if (teleopHubTimeStamp.length >= 2){
+        if (counter %2 ==0){
+          removeTeleopAction();
+          notifyListeners();
+          duration = (teleopHubTimeStamp[teleopHubTimeStamp.length-1]-teleopHubTimeStamp[teleopHubTimeStamp.length-2])/1000;
+          teleopHubDurations.add(duration);
+        } 
+      }
+    }
     teleopActions.add(action);
-    _updateTeleopScore();
     notifyListeners();
   }
-/*
-  /// Add a hub duration (in seconds) recorded during teleop
-  void addTeleopHubDurations(double seconds) {
-    teleopHubDurations.add(seconds);
-    _updateTeleopScore();
-    notifyListeners();
-  }*/
 
   void setAutoStatus(AutoStatus autoStatus) {
     this.autoStatus = autoStatus;
@@ -194,26 +211,22 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actionTypes.map((action) {
       switch (action) {
         case ActionType.Hub:
-          date.add(DateTime.now().millisecondsSinceEpoch);
-          return  date;
+          if (counter % 2 == 0){
+            if (page == 0){
+              return autoHubDurations;
+            } else {
+              return teleopHubDurations;
+            }
+          } else {
+            return "Start Shooting";
+          }
         case ActionType.L1:
-          //date.remove(DateTime.now().millisecondsSinceEpoch);
-          //return "L1";
         case ActionType.L2:
-          //date.remove(DateTime.now().millisecondsSinceEpoch);
-          //return "L2";
         case ActionType.L3:
-          //date.remove(DateTime.now().millisecondsSinceEpoch);
-          //return "L3";
         case ActionType.Bump:
-          //date.remove(DateTime.now().millisecondsSinceEpoch);
           return "Bump";
         case ActionType.Trench:
-          //date.remove(DateTime.now().millisecondsSinceEpoch);
           return "Trench";
-        // add other ActionType cases here as needed
-        //default:
-          //return action.toString();
       }
     }).toList().join(', ');
   }
@@ -225,9 +238,12 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void removeAutoAction() {
+    page = 0;
     if (autoActions.isNotEmpty) {
+      if (autoActions[autoActions.length-1] == ActionType.Hub){
+        //autoHubDurations.removeLast();
+      }
       autoActions.removeLast();
-      date.remove(DateTime.now().millisecondsSinceEpoch);
       _updateAutoScore();
       notifyListeners();
     }
@@ -277,9 +293,12 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void removeTeleopAction() {
+    page = 1;
     if (teleopActions.isNotEmpty) {
+      //if (_getActionString(autoActions)[_getActionString(autoActions).length-1] == ActionType.Hub){
+        //teleopHubDurations.removeLast();
+      //}
       teleopActions.removeLast();
-      //date.remove(DateTime.now().millisecondsSinceEpoch);
       _updateTeleopScore();
       notifyListeners();
     }
