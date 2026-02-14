@@ -43,8 +43,6 @@ class DatabaseService {
               position TEXT,         
               scouter_name TEXT,
               auto_L1 INTEGER,
-              auto_L2 INTEGER,
-              auto_L3 INTEGER,
               end_none INTEGER,       
               end_L1 INTEGER,      
               end_L2 INTEGER,    

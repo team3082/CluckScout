@@ -113,11 +113,12 @@ class MatchScoutingProvider extends ChangeNotifier {
     // Gets points from auto climb (using: if, else if, else)
     int autoStatusPoints = autoStatus == AutoStatus.none
         ? 0
-        : endStatus == AutoStatus.L1
+        : 15;
+        /*: autoStatus == AutoStatus.L1
             ? 15
-            : endStatus == AutoStatus.L2
+            : autoStatus == AutoStatus.L2
                 ? 15
-                : 15;
+                : 15;*/
 
     // Adds up the time scoring and converts to points (example: 5 points per second)
     final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);

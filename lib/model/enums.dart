@@ -42,8 +42,8 @@ enum EndStatus {
 enum AutoStatus {
   none,
   L1,
-  L2,
-  L3,
+  //L2,
+  //L3,
 }
 
 // Pit Scouting...
