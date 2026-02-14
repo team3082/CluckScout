@@ -55,8 +55,8 @@ class MatchData {
       'position': position.name, 
       'scouter_name': scouterName,
       'auto_L1': autoStatus == AutoStatus.L1 ? 1 : 0,
-      'auto_L2': autoStatus == AutoStatus.L2 ? 1 : 0,
-      'auto_L3': autoStatus == AutoStatus.L3 ? 1 : 0,
+      //'auto_L2': autoStatus == AutoStatus.L2 ? 1 : 0,
+      //'auto_L3': autoStatus == AutoStatus.L3 ? 1 : 0,
       'auto_Hub_Duration': autoHubDurations,
       'auto_Hub_Time_Stamp': autoHubTimeStamp,
       'teleop_Hub_Duration': teleopHubDurations,
@@ -80,11 +80,12 @@ class MatchData {
       scouterName: map['scouter_name'],
       autoStatus: map['auto_L1'] == 1
           ? AutoStatus.L1 
-          : map['auto_L2'] == 1
+          : AutoStatus.none,
+          /*: map['auto_L2'] == 1
               ? AutoStatus.L2
               : map['auto_L3'] == 1
                   ? AutoStatus.L3
-                  : AutoStatus.none,
+                  : AutoStatus.none,*/
       autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
       autoHubTimeStamp: List<double>.from(map['auto_Hub_Time_Stamp']),
       teleopHubDurations: List<double>.from(map['teleop_Hub_Duration']),

@@ -61,7 +61,7 @@ class AutoScreen extends StatelessWidget {
                     text: "Lvl. 1 Climb",
                   ),
                   const SizedBox(height: 15),
-                  AutoStatusButton(
+                  /*AutoStatusButton(
                     status: AutoStatus.L2,
                     text: "Lvl. 2 Climb",
                   ),
@@ -69,7 +69,7 @@ class AutoScreen extends StatelessWidget {
                   AutoStatusButton(
                     status: AutoStatus.L3,
                     text: "Lvl. 3 Climb",
-                  ),
+                  ),*/
                   /*const SizedBox(height: 15),
                   EndStatusButton(
                     status: EndStatus.L3,
