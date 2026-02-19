@@ -67,7 +67,7 @@ class MatchScoutingProvider extends ChangeNotifier {
       //count occurances of auto buttons
       autoL1climb: _countOccurrences(
         autoActions,
-        ActionType.climbL1,
+        ActionType.climbAutoL1,
       ),
       autoAttemptedClimb: _countOccurrences(
         teleopActions,
@@ -141,20 +141,16 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   int _countOccurrences(List<ActionType> actions, ActionType action) {
     return actions.where((currentAction) => currentAction == action).length;
+    
   }
 
   void _updateAutoScore() {
     int autoL1climb =
-        _countOccurrences(autoActions, ActionType.climbL1) * 3;
-    int autoL2climb =
-        _countOccurrences(autoActions, ActionType.climbL2) * 4;
-    int autoL3climb =
-        _countOccurrences(autoActions, ActionType.climbL3) * 6;
+        _countOccurrences(autoActions, ActionType.climbAutoL1) * 3;
     int autoLeavePoints = autoLeave ? 3 : 0;
 
     autoScore = autoL1climb +
-        autoL2climb+
-        autoL3climb +
+//shooting count 
         autoLeavePoints;
           }
 
@@ -200,6 +196,8 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actionTypes
         .map((action) {
           switch ( action) {
+           case ActionType.climbAutoL1:
+              return "Auto L1 Climb";
             case ActionType.climbL1:
               return "L1 Climb";
             case ActionType.climbL2:
@@ -228,7 +226,7 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void setPosition(Position position) {
     this.position = position;
-    AppPreferences.saveScoutingPosition(position);
+    AppPreferences.saveScoutingPosition(position);;
     notifyListeners();
   }
 
@@ -296,6 +294,7 @@ class MatchScoutingProvider extends ChangeNotifier {
         teleopL2climb +
         teleopL3climb +
         teleopAttemptedClimb +
+        //shooting points
         teleopUsedDepot +
         endStatusPoints;
   }

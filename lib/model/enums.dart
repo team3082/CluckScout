@@ -1,7 +1,10 @@
 enum ActionType {
+  climbAutoL1,
   climbL1,
   climbL2,
   climbL3,
+ 
+ 
   attemptedClimb,
   bump,
   trench,

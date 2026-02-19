@@ -21,48 +21,61 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Climb Abilities",
+              title: "Auto Climb Abilities",
               switches: [
                 SwitchField(
                   text: "Cannot Climb",
-                  getValue: () => provider.coralL1,
-                  setValue: (value) => provider.setCoralL1(value),
+                  getValue: () => provider.cannotClimbAuto,
+                  setValue: (value) => provider.setCannotClimbAuto(value),
                 ),
                 SwitchField(
                   text: "L1 Climb",
-                  getValue: () => provider.coralL2,
-                  setValue: (value) => provider.setCoralL2(value),
-                ),
-                SwitchField(
-                  text: "L2 Climb",
-                  getValue: () => provider.coralL3,
-                  setValue: (value) => provider.setCoralL3(value),
-                ),
-                SwitchField(
-                  text: "L3 Climb",
-                  getValue: () => provider.coralL4,
-                  setValue: (value) => provider.setCoralL4(value),
+                  getValue: () => provider.climbAutoL1,
+                  setValue: (value) => provider.setAutoClimbL1(value),
                 ),
               ],
               secondTitle: "Can Use",
               secondSwitches: [
                 SwitchField(
                   text: "Bump",
-                  getValue: () => provider.netAlgae,
-                  setValue: (value) => provider.setNetAlgae(value),
+                  getValue: () => provider.bump,
+                  setValue: (value) => provider.setBump(value),
                 ),
                 SwitchField(
                   text: "Trench",
-                  getValue: () => provider.processorAlgae,
-                  setValue: (value) => provider.setProcessorAlgae(value),
+                  getValue: () => provider.trench,
+                  setValue: (value) => provider.setTrench(value),
                 ),
-             
               ],
             ),
             const SizedBox(width: 15),
             SwitchColumn(
-              title: "Drivetrain",
+              title: "End Climb Abilities",
               switches: [
+                SwitchField(
+                  text: "Cannot Climb",
+                  getValue: () => provider.cannotClimbL1,
+                  setValue: (value) => provider.setCannotClimbL1(value),
+                ),
+                SwitchField(
+                  text: "L1 Climb",
+                  getValue: () => provider.climbL1,
+                  setValue: (value) => provider.setClimbL1(value),
+                ),
+                SwitchField(
+                  text: "L2 Climb",
+                  getValue: () => provider.climbL2,
+                  setValue: (value) => provider.setClimbL2(value),
+                ),
+                SwitchField(
+                  text: "L3 Climb",
+                  getValue: () => provider.climbL3,
+                  setValue: (value) => provider.setClimbL3(value),
+                ),
+
+              ],
+              secondTitle: "Drivetrain",
+              secondSwitches: [
                 SwitchField(
                   text: "Swerve",
                   getValue: () =>
@@ -135,7 +148,7 @@ class SwitchColumn extends StatelessWidget {
             secondTitle!,
             style: const TextStyle(
               fontSize: 25,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.bold,                       
             ),
           ),
           const SizedBox(height: 5),
@@ -158,7 +171,7 @@ class SwitchField extends StatelessWidget {
     required this.text,
     required this.getValue,
     required this.setValue,
-    this.height = 54.3,
+    this.height = 50,
     this.bottomMargin = 10,
   });
 
@@ -205,3 +218,5 @@ class SwitchField extends StatelessWidget {
     );
   }
 }
+
+                

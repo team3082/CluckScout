@@ -11,6 +11,7 @@ import 'package:cluck_scout/screens/data_screen/data_page.dart';
 import 'package:cluck_scout/screens/home_screen/home_page.dart';
 import 'package:provider/provider.dart'; 
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);

@@ -14,6 +14,13 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
+          actionText: "Attempted Climb",
+          addGameAction: () => addGameAction(ActionType.attemptedClimb),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        GameActionButton(
           actionText: "L1 Climb",
           addGameAction: () => addGameAction(ActionType.climbL1),
         ),
@@ -30,13 +37,6 @@ class GameActionsSidebar extends StatelessWidget {
         GameActionButton(
           actionText: "L3 Climb",
           addGameAction: () => addGameAction(ActionType.climbL3),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        GameActionButton(
-          actionText: "Attempted Climb",
-          addGameAction: () => addGameAction(ActionType.attemptedClimb),
         ),
         const SizedBox(
           height: 15,

@@ -17,14 +17,17 @@ class PitScreen extends StatelessWidget {
       children: [
         Row(
           children: const [
-            Icon(Icons.build, size: 30),
+            Icon(Icons.build, size: 15),          
             Text(
               " Pit Scouting",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
           ],
         ),
-        const SizedBox(height: 5),
+        const SizedBox(
+          height: 5,
+          width: 5,
+          ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -40,8 +43,12 @@ class PitScreen extends StatelessWidget {
               buttonIndex: 2,
               label: "Playstyle",
             ),
-            TabSelectorButton<PitScoutingProvider>(
+               TabSelectorButton<PitScoutingProvider>(
               buttonIndex: 3,
+              label: "Preferred Location",
+            ),
+            TabSelectorButton<PitScoutingProvider>(
+              buttonIndex: 4,
               label: "Submit",
             ),
           ],
