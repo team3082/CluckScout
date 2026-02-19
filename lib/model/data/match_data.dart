@@ -13,15 +13,15 @@ class MatchData {
 
   // Auto
   final AutoStatus autoStatus;
-  final List<double> autoHubDurations;
-  final List<int> autoHubTimeStamp; 
+  //final List<double> autoHubDurations;
+  //final List<int> autoHubTimeStamp; 
   final double autoHub;
   final int autoBump;
   final int autoTrench;
 
   // Teleop
-  final List<double> teleopHubDurations;
-  final List<int> teleopHubTimeStamp; 
+  //final List<double> teleopHubDurations;
+  //final List<int> teleopHubTimeStamp; 
   final double teleopHub;
   final int teleopBump;
   final int teleopTrench;
@@ -43,13 +43,13 @@ class MatchData {
     required this.position,
     required this.scouterName,
     required this.autoStatus,
-    required this.autoHubDurations,
-    required this.autoHubTimeStamp,
+    //required this.autoHubDurations,
+    //required this.autoHubTimeStamp,
     required this.autoBump,
     required this.autoTrench,
     required this.autoHub,
-    required this.teleopHubDurations,
-    required this.teleopHubTimeStamp,
+    //required this.teleopHubDurations,
+    //required this.teleopHubTimeStamp,
     required this.teleopBump,
     required this.teleopTrench,
     required this.teleopHub,
@@ -71,13 +71,13 @@ class MatchData {
       'auto_L1': autoStatus == AutoStatus.L1 ? 1 : 0,
       //'auto_L2': autoStatus == AutoStatus.L2 ? 1 : 0,
       //'auto_L3': autoStatus == AutoStatus.L3 ? 1 : 0,
-      'auto_Hub_Duration': autoHubDurations,
-      'auto_Hub_Time_Stamp': autoHubTimeStamp,
+      //'auto_Hub_Duration': autoHubDurations,
+      //'auto_Hub_Time_Stamp': autoHubTimeStamp,
       'auto_Bump': autoBump,
       'auto_Trench': autoTrench,
       'auto_Hub': autoHub,
-      'teleop_Hub_Duration': teleopHubDurations,
-      'teleop_Hub_Time_Stamp': teleopHubTimeStamp,
+      //'teleop_Hub_Duration': teleopHubDurations,
+      //'teleop_Hub_Time_Stamp': teleopHubTimeStamp,
       'teleop_Bump': autoBump,
       'teleop_Trench': autoTrench,
       'teleop_Hub': teleopHub,
@@ -107,13 +107,13 @@ class MatchData {
               : map['auto_L3'] == 1
                   ? AutoStatus.L3
                   : AutoStatus.none,*/
-      autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
-      autoHubTimeStamp: List<int>.from(map['auto_Hub_Time_Stamp']),
+      //autoHubDurations: List<double>.from(map['auto_Hub_Duration']),
+      //autoHubTimeStamp: List<int>.from(map['auto_Hub_Time_Stamp']),
       autoHub: map['auto_Hub'],
       autoBump: map['auto_Bump'],
       autoTrench: map['auto_Trench'],
-      teleopHubDurations: List<double>.from(map['teleop_Hub_Duration']),
-      teleopHubTimeStamp: List<int>.from(map['teleop_Hub_Time_Stamp']),
+      //teleopHubDurations: List<double>.from(map['teleop_Hub_Duration']),
+      //teleopHubTimeStamp: List<int>.from(map['teleop_Hub_Time_Stamp']),
       teleopBump: map['teleop_Bump'],
       teleopTrench: map['teleop_Trench'],
       teleopHub: map['teleop_Hub'],

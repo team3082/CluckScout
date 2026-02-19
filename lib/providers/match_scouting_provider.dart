@@ -14,6 +14,10 @@ import 'package:cluck_scout/services/database_service.dart';
 int counter =0;
 double duration = 0;
 int page = 0; // 0 will be auto and 1 teleop
+List<double> autoHubDurations = [];
+List<int> autoHubTimeStamp = [];
+List<double> teleopHubDurations = [];
+List<int> teleopHubTimeStamp = [];
 
 class MatchScoutingProvider extends ChangeNotifier {
   // Declares the type of each variable (Ex. int)
@@ -32,8 +36,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   AutoStatus autoStatus;
   int autoScore;
   // store durations (seconds) for each hub visit during auto
-  List<double> autoHubDurations;
-  List<int> autoHubTimeStamp;
+  //List<double> autoHubDurations;
+  //List<int> autoHubTimeStamp;
   double autoHub;
   int autoBump;
   int autoTrench;
@@ -42,8 +46,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   List<ActionType> teleopActions;
   int teleopScore;
   // store durations (seconds) for each hub visit during teleop
-  List<double> teleopHubDurations;
-  List<int> teleopHubTimeStamp;
+  //List<double> teleopHubDurations;
+  //List<int> teleopHubTimeStamp;
   EndStatus endStatus;
   double teleopHub;
   int teleopBump;
@@ -82,16 +86,16 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.teleopTrench = 0,
     this.autoHub = 0.0,
     this.teleopHub = 0.0,
-    List<double>? autoHubDurations,
-    List<double>? teleopHubDurations,
-    List<int>? autoHubTimeStamp,
-    List<int>? teleopHubTimeStamp,
+    //List<double>? autoHubDurations,
+    //List<double>? teleopHubDurations,
+    //List<int>? autoHubTimeStamp,
+    //List<int>? teleopHubTimeStamp,
   })  : autoActions = autoActions ?? <ActionType>[],
-        teleopActions = teleopActions ?? <ActionType>[],
-        autoHubDurations = autoHubDurations ?? <double>[],
-        autoHubTimeStamp = autoHubTimeStamp ?? <int>[],
-        teleopHubTimeStamp = teleopHubTimeStamp ?? <int>[],
-        teleopHubDurations = teleopHubDurations ?? <double>[];
+        teleopActions = teleopActions ?? <ActionType>[];
+        //autoHubDurations = autoHubDurations ?? <double>[],
+        //autoHubTimeStamp = autoHubTimeStamp ?? <int>[],
+        //teleopHubTimeStamp = teleopHubTimeStamp ?? <int>[],
+        //teleopHubDurations = teleopHubDurations ?? <double>[];
 
   void submitMatchData() {
     scouterName = AppPreferences.scouterName;
@@ -116,10 +120,10 @@ class MatchScoutingProvider extends ChangeNotifier {
       autoTrench: autoTrench,
       teleopBump: teleopBump,
       teleopTrench: teleopTrench,
-      autoHubDurations: autoHubDurations,
-      autoHubTimeStamp: autoHubTimeStamp,
-      teleopHubDurations: teleopHubDurations,
-      teleopHubTimeStamp: teleopHubTimeStamp,
+      //autoHubDurations: autoHubDurations,
+      //autoHubTimeStamp: autoHubTimeStamp,
+      //teleopHubDurations: teleopHubDurations,
+      //teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
       robotGoal: robotGoal,
@@ -162,7 +166,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     autoScore = 0;
 
     teleopActions.clear();
-    teleopHubDurations.clear();
+    //teleopHubDurations.clear();
     endStatus = EndStatus.none;
     teleopScore = 0;
 
