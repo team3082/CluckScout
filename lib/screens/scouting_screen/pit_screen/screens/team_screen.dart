@@ -4,13 +4,11 @@
 import 'package:flutter/material.dart';
 // For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
-//import 'package:cluck_scout/model/enums.dart';
-//
+// Import the Team class for holding basic team info
 import 'package:cluck_scout/model/team_reader.dart';
-//import 'package:cluck_scout/providers/match_scouting_provider.dart';
-//
+// Handles callbacks for pit scouting data
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
-//
+// Dropdown component for selecting team numbers
 import 'package:cluck_scout/screens/scouting_screen/widgets/team_serach_dialog.dart';
 
 class TeamScreen extends StatefulWidget {

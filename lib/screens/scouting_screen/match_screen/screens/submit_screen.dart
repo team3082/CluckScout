@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 // References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
-//
+// Provider to hold match data and handle callbacks
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
 
 class SubmitScreen extends StatelessWidget {

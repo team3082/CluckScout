@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 // References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
-//
+// Import the Team class for holding basic team info
 import 'package:cluck_scout/model/team_reader.dart';
-//
+// Provider to hold match data and handle callbacks
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
-//
+// Widget for team selection dropdown
 import 'package:cluck_scout/screens/scouting_screen/widgets/team_serach_dialog.dart';
 
 class RoundScreen extends StatefulWidget {
