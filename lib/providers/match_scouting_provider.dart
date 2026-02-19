@@ -34,6 +34,9 @@ class MatchScoutingProvider extends ChangeNotifier {
   // store durations (seconds) for each hub visit during auto
   List<double> autoHubDurations;
   List<int> autoHubTimeStamp;
+  double autoHub;
+  int autoBump;
+  int autoTrench;
 
   // Teleop Actions
   List<ActionType> teleopActions;
@@ -42,6 +45,9 @@ class MatchScoutingProvider extends ChangeNotifier {
   List<double> teleopHubDurations;
   List<int> teleopHubTimeStamp;
   EndStatus endStatus;
+  double teleopHub;
+  int teleopBump;
+  int teleopTrench;
 
   // Final Fields
   Disabled disabled;
@@ -70,6 +76,12 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.defenseTeamNumber = 0,
     List<ActionType>? autoActions,
     List<ActionType>? teleopActions,
+    this.autoBump = 0,
+    this.autoTrench = 0,
+    this.teleopBump = 0,
+    this.teleopTrench = 0,
+    this.autoHub = 0.0,
+    this.teleopHub = 0.0,
     List<double>? autoHubDurations,
     List<double>? teleopHubDurations,
     List<int>? autoHubTimeStamp,
@@ -98,12 +110,19 @@ class MatchScoutingProvider extends ChangeNotifier {
       position: position,
       scouterName: scouterName,
       autoStatus: autoStatus,
+      autoHub: autoHub,
+      teleopHub: teleopHub,
+      autoBump: autoBump,
+      autoTrench: autoTrench,
+      teleopBump: teleopBump,
+      teleopTrench: teleopTrench,
       autoHubDurations: autoHubDurations,
       autoHubTimeStamp: autoHubTimeStamp,
       teleopHubDurations: teleopHubDurations,
       teleopHubTimeStamp: teleopHubTimeStamp,
       endStatus: endStatus,
       disabled: disabled,
+      robotGoal: robotGoal,
       defenseRank: defenseRank,
       drivingRank: drivingRank,
       notes: notes,
@@ -124,8 +143,9 @@ class MatchScoutingProvider extends ChangeNotifier {
                 : 15;*/
 
     // Adds up the time scoring and converts to points (example: 5 points per second)
-    final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
-    int autoHubPoints = (autoHubTotal* 5).toInt();
+    //final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    autoHub = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    int autoHubPoints = (autoHub* 5).toInt();
 
     // Auto score is points from climbing + points from hub
     autoScore = autoStatusPoints + autoHubPoints;
@@ -147,6 +167,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     teleopScore = 0;
 
     disabled = Disabled.None;
+    robotGoal = RobotGoal.other;
     defenseRank = 0;
     drivingRank = 5;
     notes = '';
@@ -157,6 +178,9 @@ class MatchScoutingProvider extends ChangeNotifier {
     // Check if the action is a Hub action, then add the timestamp here
     if (action == ActionType.Hub) {
       autoHubTimeStamp.add(DateTime.now().millisecondsSinceEpoch);
+      if (page != 0){
+        counter = 2;
+      }
       page = 0;
       counter ++;
       if (autoHubTimeStamp.length >= 2){
@@ -177,6 +201,9 @@ class MatchScoutingProvider extends ChangeNotifier {
     // Check if the action is a Hub action, then add the timestamp here
     if (action == ActionType.Hub) {
       teleopHubTimeStamp.add(DateTime.now().millisecondsSinceEpoch);
+      if (page != 1){
+        counter = 2;
+      }
       page = 1;
       counter ++;
       if (teleopHubTimeStamp.length >= 2){
