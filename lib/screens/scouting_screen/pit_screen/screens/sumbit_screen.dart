@@ -1,14 +1,18 @@
+// Sets up the Submit Screen of Pit Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
-import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 
+// Creates Comment sub title as well as questions to answer and info about SWIFT
 class SubmitScreen extends StatelessWidget {
   const SubmitScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final provider = context.read<MatchScoutingProvider>();
+    //final provider = context.read<MatchScoutingProvider>();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,13 +47,13 @@ class SubmitScreen extends StatelessWidget {
   }
 }
 
+// Creates notes area
 class NotesTextField extends StatefulWidget {
   const NotesTextField({super.key});
 
   @override
   _NotesTextFieldState createState() => _NotesTextFieldState();
 }
-
 class _NotesTextFieldState extends State<NotesTextField> {
   late TextEditingController _notesController;
 
@@ -94,6 +98,7 @@ class _NotesTextFieldState extends State<NotesTextField> {
   }
 }
 
+// Creates submit button and returns any error messages
 class SubmitButton extends StatelessWidget {
   const SubmitButton({super.key});
 
@@ -123,7 +128,7 @@ class SubmitButton extends StatelessWidget {
       ),
     );
   }
-
+  // Checks to confirm user inputed a team # etc.
   void _handleSubmitRequest(BuildContext context) {
     final provider = context.read<PitScoutingProvider>();
     FocusScope.of(context).unfocus();
@@ -136,7 +141,6 @@ class SubmitButton extends StatelessWidget {
       provider.submit();
     }
   }
-
   void _showError(BuildContext context, String error) {
     showDialog(
       context: context,

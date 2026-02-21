@@ -1,3 +1,5 @@
+import 'package:cluck_scout/model/enums.dart';
+import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
@@ -81,6 +83,10 @@ class GameActionWindow extends StatelessWidget {
               ),
             ),
           ),
+        ),
+        const SizedBox(height: 10),
+        Center(
+          child: GameActionButton(actionText: "Hub Shooting", addGameAction: () => (ActionType.Hub)),
         ),
       ],
     );

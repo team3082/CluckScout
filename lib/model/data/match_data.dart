@@ -1,7 +1,11 @@
+// 
+
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
 
 class MatchData {
-  // Round Specifications
+  // Declares the type of each variable (Ex. int)
+
   final int matchNumber;
   final int teamNumber;
   final Position position;
@@ -40,6 +44,7 @@ class MatchData {
   final int drivingRank;
   final String notes;
 
+  // Requires that some value is passed along for each of the variables
   MatchData({
     required this.matchNumber,
     required this.teamNumber,
@@ -69,10 +74,10 @@ class MatchData {
 
   Map<String, dynamic> toMap() {
     return {
-      // Round Specifications
+      // Sets the values on the left (Ex. 'match_number') to the values on the right (Ex. matchNumber)
       'match_number': matchNumber,
       'team_number': teamNumber,
-      'position': position.toString().split('.').last,
+      'position': position.name, 
       'scouter_name': scouterName,
       // Auto Climb
       'auto_climb_L1': autoL1climb,
@@ -108,11 +113,9 @@ class MatchData {
 
   factory MatchData.fromMap(Map<String, dynamic> map) {
     return MatchData(
-      // Round Specifications
       matchNumber: map['match_number'],
       teamNumber: map['team_number'],
-      position: Position.values
-          .firstWhere((e) => e.toString().split('.').last == map['position']),
+      position: Position.values.firstWhere((e) => e.name == map['position']),
       scouterName: map['scouter_name'],
       // Auto Climb
       autoL1climb: map['auto_climb_L1'],

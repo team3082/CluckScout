@@ -92,7 +92,8 @@ class GameActionButton extends StatelessWidget {
       },
       style: _buttonStyle,
       child: SizedBox(
-        height: 51.6,
+        //height: 51.6,
+        height: 80,
         width: 160,
         child: Center(
           child: Text(
@@ -108,3 +109,4 @@ class GameActionButton extends StatelessWidget {
     );
   }
 }
+

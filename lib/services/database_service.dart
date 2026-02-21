@@ -36,6 +36,7 @@ class DatabaseService {
               team_number INTEGER,
               position TEXT,         
               scouter_name TEXT,
+              // TODO: Store timestamps in DB
               auto_climb_L1 INTEGER,
               auto_attempted_climb INTEGER,
               auto_used_outpost INTEGER,
@@ -175,10 +176,8 @@ class DatabaseService {
       if (a['is_uploaded'] != b['is_uploaded']) {
         return a['is_uploaded'] - b['is_uploaded'];
       }
-
       return b['match_number'].compareTo(a['match_number']);
     });
-
     return mutable;
   }
 
@@ -206,10 +205,8 @@ class DatabaseService {
       if (a['is_uploaded'] != b['is_uploaded']) {
         return a['is_uploaded'] - b['is_uploaded'];
       }
-
       return b['team_number'].compareTo(a['team_number']);
     });
-
     return mutable;
   }
 
@@ -230,5 +227,4 @@ class DatabaseService {
       whereArgs: [docId],
     );
   }
-
 }

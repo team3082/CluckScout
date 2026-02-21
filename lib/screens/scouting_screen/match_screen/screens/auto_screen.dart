@@ -1,12 +1,22 @@
+// Sets up the Auto page of Match Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
+import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_action_window.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
 class AutoScreen extends StatelessWidget {
   const AutoScreen({super.key});
 
+  // Adds buttons to bottom right of auto screen in scouting app
   @override
   Widget build(BuildContext context) {
     final provider = context.read<MatchScoutingProvider>();
@@ -27,8 +37,8 @@ class AutoScreen extends StatelessWidget {
                 GameActionsSidebar(
                   addGameAction: provider.addAutoAction,
                 ),
-                // const SizedBox(height: 55),
-                // const AutoPointsDisplay(),
+                const SizedBox(height: 55),
+                const AutoPointsDisplay(),
               ],
             ),
             const SizedBox(width: 15),
@@ -43,10 +53,27 @@ class AutoScreen extends StatelessWidget {
                     actionWindowWidth: double.infinity,
                     actionWindowHeight: 224,
                   ),
-                  const SizedBox(height: 16),
-                  const AutoLeaveButton(),
-                  const SizedBox(height: 40),
-                  const AutoPointsDisplay(),
+                  //const SizedBox(height: 16),
+                  const SizedBox(height: 15),
+                  AutoStatusButton(
+                    status: AutoStatus.L1,
+                    text: "Lvl. 1 Climb",
+                  ),
+                  const SizedBox(height: 15),
+                  /*AutoStatusButton(
+                    status: AutoStatus.L2,
+                    text: "Lvl. 2 Climb",
+                  ),
+                  const SizedBox(height: 15),
+                  AutoStatusButton(
+                    status: AutoStatus.L3,
+                    text: "Lvl. 3 Climb",
+                  ),*/
+                  /*const SizedBox(height: 15),
+                  EndStatusButton(
+                    status: EndStatus.L3,
+                    text: "Used Depot",
+                  ),*/
                 ],
               ),
             )
@@ -57,6 +84,50 @@ class AutoScreen extends StatelessWidget {
   }
 }
 
+// Gives dimentions and info to make the buttons specified above
+class AutoStatusButton extends StatelessWidget {
+  final AutoStatus status;
+  final String text;
+  const AutoStatusButton({super.key, required this.status, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    final provider = context.read<MatchScoutingProvider>();
+    return Selector<MatchScoutingProvider, AutoStatus>(
+      selector: (_, provider) => provider.autoStatus,
+      builder: (_, autoStatus, __) {
+        return ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: autoStatus == status
+                ? const Color.fromRGBO(50, 50, 124, 1)
+                : const Color.fromARGB(255, 220, 220, 223),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          ),
+          onPressed: () => provider.setAutoStatus(autoStatus == status ? AutoStatus.none : status),
+          child: SizedBox(
+            height: 55,
+            width: double.infinity,
+            child: Center(
+              child: Text(
+                text,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: autoStatus == status
+                      ? const Color.fromRGBO(247, 247, 247, 1)
+                      : const Color.fromRGBO(28, 27, 31, 1),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+// Creates a button on the left that gives the Auto Score
 class AutoPointsDisplay extends StatelessWidget {
   const AutoPointsDisplay({super.key});
 
@@ -84,51 +155,6 @@ class AutoPointsDisplay extends StatelessWidget {
                   color: Color.fromRGBO(104, 140, 219, 1)),
             ),
           ],
-        );
-      },
-    );
-  }
-}
-
-class AutoLeaveButton extends StatelessWidget {
-  const AutoLeaveButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final provider = context.read<MatchScoutingProvider>();
-    return Selector<MatchScoutingProvider, bool>(
-      selector: (_, provider) => provider.autoLeave,
-      builder: (_, autoLeave, __) {
-        return Align(
-          alignment: Alignment.center,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: autoLeave
-                  ? const Color.fromRGBO(50, 50, 124, 1)
-                  : const Color.fromARGB(255, 220, 220, 223),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
-            ),
-            onPressed: () {
-              provider.setAutoLeave(!autoLeave);
-            },
-            child: SizedBox(
-              height: 60,
-              width: double.infinity,
-              child: Center(
-                child: Text(
-                  "Shooting",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: autoLeave
-                        ? Color.fromRGBO(233, 233, 233, 1)
-                        : Color.fromRGBO(28, 27, 31, 1),
-                  ),
-                ),
-              ),
-            ),
-          ),
         );
       },
     );

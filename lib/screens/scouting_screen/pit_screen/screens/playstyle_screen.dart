@@ -1,7 +1,13 @@
+// Sets up the Playstyle Screen of Pit Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+// Handles callbacks for pit scouting data
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
+// Sets up the Abilities Screen of Pit Scouting for the scouting app
 import 'package:cluck_scout/screens/scouting_screen/pit_screen/screens/abilities_screen.dart';
 
 class PlaystyleScreen extends StatelessWidget {
@@ -111,6 +117,7 @@ class PlaystyleScreen extends StatelessWidget {
                   bottomMargin: bottomMargin,
                 ),
               ],
+              // Creates Preferred sub title and options (Can only select one)
               secondTitle: "Preferred Starting",
               secondSwitches: [
                 SwitchField(

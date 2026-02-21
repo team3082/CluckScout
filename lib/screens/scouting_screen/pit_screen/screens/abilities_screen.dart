@@ -1,6 +1,12 @@
+// Sets up the Abilities Screen of Pit Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+// Handles callbacks for pit scouting data
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 
 class AbilitiesScreen extends StatelessWidget {
@@ -21,7 +27,8 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Auto Climb Abilities",
+              // Creates Abilities sub title and options (Select all)
+              title: "Abilities",
               switches: [
                 SwitchField(
                   text: "Cannot Climb",
@@ -74,6 +81,7 @@ class AbilitiesScreen extends StatelessWidget {
                 ),
 
               ],
+              // Creates Drivetrain sub title and options (Can only select one)
               secondTitle: "Drivetrain",
               secondSwitches: [
                 SwitchField(
@@ -109,6 +117,7 @@ class AbilitiesScreen extends StatelessWidget {
   }
 }
 
+// Template sub title instructions
 class SwitchColumn extends StatelessWidget {
   final String title;
   final List<SwitchField> switches;
@@ -159,6 +168,7 @@ class SwitchColumn extends StatelessWidget {
   }
 }
 
+// Template button instructions
 class SwitchField extends StatelessWidget {
   final String text;
   final int Function() getValue;

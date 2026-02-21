@@ -1,8 +1,16 @@
+// Sets up the Teleop page of Match Scouting for the scouting app
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
+// References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
+//
 import 'package:cluck_scout/providers/match_scouting_provider.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_action_window.dart';
+//
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
 int teleopCounter = 0;
@@ -30,6 +38,8 @@ class TeleopScreen extends StatelessWidget {
                 GameActionsSidebar(
                   addGameAction: provider.addTeleopAction,
                 ),
+                const SizedBox(height: 55),
+                const TeleopPointsDisplay(),
               ],
             ),
             const SizedBox(width: 15),
@@ -100,6 +110,39 @@ class EndStatusButton extends StatelessWidget {
               ),
             ),
           ),
+        );
+      },
+    );
+  }
+}
+
+class TeleopPointsDisplay extends StatelessWidget {
+  const TeleopPointsDisplay({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Selector<MatchScoutingProvider, int>(
+      selector: (_, provider) => provider.teleopScore,
+      builder: (_, points, __) {
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              "Teleop: ",
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(28, 27, 31, 1)),
+            ),
+            Text(
+              "$points pts",
+              style: const TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(104, 140, 219, 1)),
+            ),
+          ],
         );
       },
     );

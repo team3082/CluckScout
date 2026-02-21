@@ -1,9 +1,17 @@
+//
+
+// Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
+// For sharing data between files and other basics (Not specific to 3082)
 import 'package:cluck_scout/model/data/pit_data.dart';
+// References enums.dart where subcatagories of things like actionType are defined
 import 'package:cluck_scout/model/enums.dart';
+// Stores data as a CSV to later be analized
 import 'package:cluck_scout/services/database_service.dart';
 
 class PitScoutingProvider extends ChangeNotifier {
+  // Declares the type of each variable (Ex. int)
+
   int tabIndex = 0;
 
   // Scout Specifications
@@ -42,6 +50,7 @@ class PitScoutingProvider extends ChangeNotifier {
   // Notes
   String notes = '';
 
+  // Requires that some value is passed along for each of the variables or sets it to a starting value
   PitScoutingProvider({
     this.tabIndex = 0,
     this.teamNumber = 0,
@@ -192,7 +201,6 @@ class PitScoutingProvider extends ChangeNotifier {
     preferredClimbLevel = value;
     notifyListeners();
   }
-
   void setPreferredStartingZone(StartingZone zone) {
     preferredStartingZone = zone;
     notifyListeners();
