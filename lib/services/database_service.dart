@@ -75,7 +75,7 @@ class DatabaseService {
             prefers_auto_climb_level INTEGER NOT NULL,
             prefers_climb_level INTEGER NOT NULL,
             preferred_starting_zone TEXT NOT NULL,
-            preferred_end_status INTEGER NOT NULL,
+            preferred_end_status TEXT NOT NULL,
             notes TEXT
           );
         ''');
