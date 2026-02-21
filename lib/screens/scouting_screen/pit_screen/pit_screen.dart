@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/tab_selector_button.dart';
 import 'package:cluck_scout/screens/scouting_screen/pit_screen/screens/abilities_screen.dart';
@@ -18,14 +17,18 @@ class PitScreen extends StatelessWidget {
       children: [
         Row(
           children: const [
-            Icon(Icons.build, size: 30),
+            Icon(Icons.build, size: 20, color: Color.fromRGBO(28, 27, 31, 1)),
+             SizedBox(width: 5),
             Text(
               " Pit Scouting",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ],
         ),
-        const SizedBox(height: 5),
+        const SizedBox(
+          height: 5,
+          width: 5,
+          ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -41,7 +44,7 @@ class PitScreen extends StatelessWidget {
               buttonIndex: 2,
               label: "Playstyle",
             ),
-            TabSelectorButton<PitScoutingProvider>(
+               TabSelectorButton<PitScoutingProvider>(
               buttonIndex: 3,
               label: "Submit",
             ),

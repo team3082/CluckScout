@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:cluck_scout/model/enums.dart';
 
 class GameActionsSidebar extends StatelessWidget {
@@ -15,55 +14,55 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
-          actionText: "L1 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL1),
+          actionText: "Attempted Climb",
+          addGameAction: () => addGameAction(ActionType.attemptedClimb),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L2 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL2),
+          actionText: "L1 Climb",
+          addGameAction: () => addGameAction(ActionType.climbL1),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L3 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL3),
+          actionText: "L2 Climb",
+          addGameAction: () => addGameAction(ActionType.climbL2),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L4 Coral",
-          addGameAction: () => addGameAction(ActionType.coralL4),
+          actionText: "L3 Climb",
+          addGameAction: () => addGameAction(ActionType.climbL3),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Dropped",
-          addGameAction: () => addGameAction(ActionType.dropped),
+          actionText: "Used Outpost",
+          addGameAction: () => addGameAction(ActionType.usedOutpost),
         ),
         const SizedBox(height: 15),
         GameActionButton(
-          actionText: "Removed Algae",
-          addGameAction: () => addGameAction(ActionType.removeAlgae),
+          actionText: "Used Depot",
+          addGameAction: () => addGameAction(ActionType.usedDepot),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Processor Algae",
-          addGameAction: () => addGameAction(ActionType.processorAlgae),
+          actionText: "Bump",
+          addGameAction: () => addGameAction(ActionType.bump),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Net Algae",
-          addGameAction: () => addGameAction(ActionType.netAlgae),
+          actionText: "Trench",
+          addGameAction: () => addGameAction(ActionType.trench),
         ),
       ],
     );

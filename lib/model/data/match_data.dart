@@ -8,34 +8,31 @@ class MatchData {
   final String scouterName;
 
   // Auto Coral
-  final int autoCoralL1;
-  final int autoCoralL2;
-  final int autoCoralL3;
-  final int autoCoralL4;
-  final int autoDropped;
+  final int autoL1climb;
+  final int autoAttemptedClimb;
+  final int intialTime;
+  final int finalTime;
 
   // Auto Algae
-  final int autoNetAlgae;
-  final int autoProcessorAlgae;
-  final int autoAlgaeRemoved;
-
-  // Auto Booleans
-  final bool autoLeave;
+  final int autoUsedDepot;
+  final int autoUsedOutpost;
+  final int autoBump;
+  final int autoTrench;
 
   // Teleop Coral
-  final int teleopCoralL1;
-  final int teleopCoralL2;
-  final int teleopCoralL3;
-  final int teleopCoralL4;
-  final int teleopDropped;
+  final int teleopL1climb;
+  final int teleopL2climb;
+  final int teleopL3climb;
+  final int teleopAttemptedClimb;
 
   // Teleop Algae
-  final int teleopProcessorAlgae;
-  final int teleopNetAlgae;
-  final int teleopAlgaeRemoved;
+  final int teleopUsedDepot;
+  final int teleopUsedOutpost;
+  final int teleopBump;
+  final int teleopTrench;
 
   // Teleop Booleans
-  final EndStatus endStatus;
+  // final EndStatus endStatus;
 
   // Final Round Fields
   final Disabled disabled;
@@ -48,28 +45,26 @@ class MatchData {
     required this.teamNumber,
     required this.position,
     required this.scouterName,
-    required this.autoCoralL1,
-    required this.autoCoralL2,
-    required this.autoCoralL3,
-    required this.autoCoralL4,
-    required this.autoDropped,
-    required this.autoNetAlgae,
-    required this.autoProcessorAlgae,
-    required this.autoAlgaeRemoved,
-    required this.autoLeave,
-    required this.teleopCoralL1,
-    required this.teleopCoralL2,
-    required this.teleopCoralL3,
-    required this.teleopCoralL4,
-    required this.teleopDropped,
-    required this.teleopNetAlgae,
-    required this.teleopProcessorAlgae,
-    required this.teleopAlgaeRemoved,
-    required this.endStatus,
+    required this.autoL1climb,
+    required this.autoAttemptedClimb,
+    required this.autoUsedOutpost,
+    required this.autoUsedDepot, 
+    required this.autoBump,
+    required this.autoTrench, 
+    required this.intialTime,
+    required this.finalTime,
+    required this.teleopL1climb,
+    required this.teleopL2climb,
+    required this.teleopL3climb,
+    required this.teleopAttemptedClimb,
+    required this.teleopUsedDepot,
+    required this.teleopUsedOutpost,
+    required this.teleopBump,
+    required this.teleopTrench,
     required this.disabled,
     required this.defenseRank,
     required this.drivingRank,
-    required this.notes,
+    required this.notes, 
   });
 
   Map<String, dynamic> toMap() {
@@ -79,33 +74,30 @@ class MatchData {
       'team_number': teamNumber,
       'position': position.toString().split('.').last,
       'scouter_name': scouterName,
-      // Auto Coral
-      'auto_coral_L1': autoCoralL1,
-      'auto_coral_L2': autoCoralL2,
-      'auto_coral_L3': autoCoralL3,
-      'auto_coral_L4': autoCoralL4,
-      'auto_dropped': autoDropped,
-      // Auto Algae
-      'auto_net_algae': autoNetAlgae,
-      'auto_processor_algae': autoProcessorAlgae,
-      'auto_algae_removed': autoAlgaeRemoved,
-      // Auto Booleans
-      'auto_leave': autoLeave ? 1 : 0,
-      // Teleop Coral
-      'teleop_coral_L1': teleopCoralL1,
-      'teleop_coral_L2': teleopCoralL2,
-      'teleop_coral_L3': teleopCoralL3,
-      'teleop_coral_L4': teleopCoralL4,
-      'teleop_dropped': teleopDropped,
-      // Teleop Algae
-      'teleop_processor_algae': teleopProcessorAlgae,
-      'teleop_net_algae': teleopNetAlgae,
-      'teleop_algae_removed': teleopAlgaeRemoved,
+      // Auto Climb
+      'auto_climb_L1': autoL1climb,
+      'auto_attempted_climb': autoAttemptedClimb,
+      // Auto Actions
+      'auto_used_outpost': autoUsedOutpost,
+      'auto_used_depot': autoUsedDepot,
+      'auto_bump': autoBump,
+      'auto_trench': autoTrench,
+      // Teleop Climb
+      'teleop_climb_L1': teleopL1climb,
+      'teleop_climb_L2': teleopL2climb,
+      'teleop_climb_L3': teleopL3climb,
+      'teleop_attempted_climb': teleopAttemptedClimb,
+      // Teleop Actions
+      'teleop_Used_Depot': teleopUsedDepot,
+      'teleop_Used_Outpost': teleopUsedOutpost,
+      'teleop_bump': teleopBump,
+      'teleop_trench': teleopTrench,
       // Teleop Booleans
-      'end_none': endStatus == EndStatus.none ? 1 : 0,
-      'end_park': endStatus == EndStatus.park ? 1 : 0,
-      'end_shallow': endStatus == EndStatus.shallowCage ? 1 : 0,
-      'end_deep': endStatus == EndStatus.deepCage ? 1 : 0,
+      // Examples below
+      // 'end_none': endStatus == EndStatus.none ? 1 : 0,
+      // 'end_park': endStatus == EndStatus.park ? 1 : 0,
+      // 'end_shallow': endStatus == EndStatus.shallowCage ? 1 : 0,
+      // 'end_deep': endStatus == EndStatus.deepCage ? 1 : 0,
       // Final Fields
       'disabled': disabled.toString().split(".").last,
       'defense_rank': defenseRank,
@@ -122,36 +114,35 @@ class MatchData {
       position: Position.values
           .firstWhere((e) => e.toString().split('.').last == map['position']),
       scouterName: map['scouter_name'],
-      // Auto Coral
-      autoCoralL1: map['auto_coral_L1'],
-      autoCoralL2: map['auto_coral_L2'],
-      autoCoralL3: map['auto_coral_L3'],
-      autoCoralL4: map['auto_coral_L4'],
-      autoDropped: map['auto_dropped'],
-      // Auto Algae
-      autoNetAlgae: map['auto_net_algae'],
-      autoProcessorAlgae: map['auto_processor_algae'],
-      autoAlgaeRemoved: map['auto_algae_removed'],
-      // Auto Booleans
-      autoLeave: map['auto_leave'] == 1,
-      // Teleop Coral
-      teleopCoralL1: map['teleop_coral_L1'],
-      teleopCoralL2: map['teleop_coral_L2'],
-      teleopCoralL3: map['teleop_coral_L3'],
-      teleopCoralL4: map['teleop_coral_L4'],
-      teleopDropped: map['teleop_dropped'],
-      // Teleop Algae
-      teleopNetAlgae: map['teleop_net_algae'],
-      teleopProcessorAlgae: map['teleop_processor_algae'],
-      teleopAlgaeRemoved: map['teleop_algae_removed'],
+      // Auto Climb
+      autoL1climb: map['auto_climb_L1'],
+      autoAttemptedClimb: map['auto_attempted_climbAttempted_Climb'],
+      intialTime: map['intial_time'],
+      finalTime: map['final_time'],
+      // Auto Actions
+      autoUsedOutpost: map['auto_Used_Outpost'],
+      autoUsedDepot: map['auto_Used_Depot'],
+      autoBump: map['auto_Bump'],
+      autoTrench: map['auto_Trench'],
+      // Teleop Climb
+      teleopL1climb: map['teleop_L1_climb'],
+      teleopL2climb: map['teleop_L2_climb'],
+      teleopL3climb: map['teleop_L3_climb'],
+      teleopAttemptedClimb: map['teleop_Attempted_Climb'],
+      // Teleop Actions
+      teleopUsedOutpost: map['teleop_Used_Outpost'],
+      teleopUsedDepot: map['teleop_Used_Depot'],
+      teleopBump: map['teleop_Bump'],
+      teleopTrench: map['teleop_Trench'],
       // Teleop Booleans
-      endStatus: map['end_deep'] == 1
-          ? EndStatus.deepCage
-          : map['end_shallow'] == 1
-              ? EndStatus.shallowCage
-              : map['end_park'] == 1
-                  ? EndStatus.park
-                  : EndStatus.none,
+      // Example of boolean code
+      // endStatus: map['end_deep'] == 1
+      //     ? EndStatus.deepCage
+      //     : map['end_shallow'] == 1
+      //         ? EndStatus.shallowCage
+      //         : map['end_park'] == 1
+      //             ? EndStatus.park
+      //             : EndStatus.none,
       // Final Fields
       disabled: Disabled.values
           .firstWhere((e) => e.toString().split('.').last == map['disabled']),

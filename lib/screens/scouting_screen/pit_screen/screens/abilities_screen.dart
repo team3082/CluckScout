@@ -21,67 +21,58 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Coral Abilities",
+              title: "Auto Climb Abilities",
               switches: [
                 SwitchField(
-                  text: "Coral L1",
-                  getValue: () => provider.coralL1,
-                  setValue: (value) => provider.setCoralL1(value),
+                  text: "Cannot Climb",
+                  getValue: () => provider.cannotClimbAuto,
+                  setValue: (value) => provider.setCannotClimbAuto(value),
                 ),
                 SwitchField(
-                  text: "Coral L2",
-                  getValue: () => provider.coralL2,
-                  setValue: (value) => provider.setCoralL2(value),
-                ),
-                SwitchField(
-                  text: "Coral L3",
-                  getValue: () => provider.coralL3,
-                  setValue: (value) => provider.setCoralL3(value),
-                ),
-                SwitchField(
-                  text: "Coral L4",
-                  getValue: () => provider.coralL4,
-                  setValue: (value) => provider.setCoralL4(value),
+                  text: "L1 Climb",
+                  getValue: () => provider.climbAutoL1,
+                  setValue: (value) => provider.setAutoClimbL1(value),
                 ),
               ],
-              secondTitle: "Algae Abilities",
+              secondTitle: "Can Use",
               secondSwitches: [
                 SwitchField(
-                  text: "Net Algae",
-                  getValue: () => provider.netAlgae,
-                  setValue: (value) => provider.setNetAlgae(value),
+                  text: "Bump",
+                  getValue: () => provider.bump,
+                  setValue: (value) => provider.setBump(value),
                 ),
                 SwitchField(
-                  text: "Processor Algae",
-                  getValue: () => provider.processorAlgae,
-                  setValue: (value) => provider.setProcessorAlgae(value),
-                ),
-                SwitchField(
-                  text: "Remove Algae",
-                  getValue: () => provider.removeAlgae,
-                  setValue: (value) => provider.setRemoveAlgae(value),
+                  text: "Trench",
+                  getValue: () => provider.trench,
+                  setValue: (value) => provider.setTrench(value),
                 ),
               ],
             ),
             const SizedBox(width: 15),
             SwitchColumn(
-              title: "End Abilities",
+              title: "End Climb Abilities",
               switches: [
                 SwitchField(
-                  text: "Park",
-                  getValue: () => provider.park,
-                  setValue: (value) => provider.setPark(value),
+                  text: "Cannot Climb",
+                  getValue: () => provider.cannotClimbL1,
+                  setValue: (value) => provider.setCannotClimbL1(value),
                 ),
                 SwitchField(
-                  text: "Shallow Climb",
-                  getValue: () => provider.shallowClimb,
-                  setValue: (value) => provider.setShallowClimb(value),
+                  text: "L1 Climb",
+                  getValue: () => provider.climbL1,
+                  setValue: (value) => provider.setClimbL1(value),
                 ),
                 SwitchField(
-                  text: "Deep Climb",
-                  getValue: () => provider.deepClimb,
-                  setValue: (value) => provider.setDeepClimb(value),
+                  text: "L2 Climb",
+                  getValue: () => provider.climbL2,
+                  setValue: (value) => provider.setClimbL2(value),
                 ),
+                SwitchField(
+                  text: "L3 Climb",
+                  getValue: () => provider.climbL3,
+                  setValue: (value) => provider.setClimbL3(value),
+                ),
+
               ],
               secondTitle: "Drivetrain",
               secondSwitches: [
@@ -157,7 +148,7 @@ class SwitchColumn extends StatelessWidget {
             secondTitle!,
             style: const TextStyle(
               fontSize: 25,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.bold,                       
             ),
           ),
           const SizedBox(height: 5),
@@ -180,7 +171,7 @@ class SwitchField extends StatelessWidget {
     required this.text,
     required this.getValue,
     required this.setValue,
-    this.height = 54.3,
+    this.height = 50,
     this.bottomMargin = 10,
   });
 
@@ -227,3 +218,5 @@ class SwitchField extends StatelessWidget {
     );
   }
 }
+
+                

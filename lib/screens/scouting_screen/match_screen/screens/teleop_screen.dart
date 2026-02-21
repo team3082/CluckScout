@@ -5,6 +5,8 @@ import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_action_window.dart';
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
+int teleopCounter = 0;
+
 class TeleopScreen extends StatelessWidget {
   const TeleopScreen({super.key});
 
@@ -43,20 +45,14 @@ class TeleopScreen extends StatelessWidget {
                     actionWindowHeight: 215,
                   ),
                   const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.park,
-                    text: "Parked",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.shallowCage,
-                    text: "Shallow Cage",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.deepCage,
-                    text: "Deep Cage",
-                  ),
+                  // TODO: Fix in second MR
+                  // EndStatusButton(
+                  //   status: EndStatus.park,
+                  //   text: "Shooting",
+                  // ),
+                  const SizedBox(height: 163),
+                 
+
                 ],
               ),
             )

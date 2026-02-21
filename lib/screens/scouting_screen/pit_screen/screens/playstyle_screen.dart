@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
@@ -25,40 +24,50 @@ class PlaystyleScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Coral Preference",
+              title: "Auto Climb Pref.",
               switches: [
                 SwitchField(
-                  text: "Prefers Coral",
-                  getValue: () => provider.prefersCoral,
-                  setValue: (value) => provider.setPrefersCoral(value),
+                  text: "Cannot Climb",
+                  getValue: () => provider.preferredAutoClimbLevel == 1 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredAutoClimbLevel(1),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Coral L1",
-                  getValue: () => provider.preferredCoralLevel == 1 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(1),
+                  text: "L1 Climb",
+                  getValue: () => provider.preferredAutoClimbLevel == 3 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredAutoClimbLevel(3),
+                  height: height,
+                  bottomMargin: bottomMargin,
+                ),
+              ],
+              secondTitle: "End Climb Pref.",
+              secondSwitches: [
+                SwitchField(
+                  text: "Cannot Climb",
+                  getValue: () => provider.preferredClimbLevel == 1 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(1),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Coral L2",
-                  getValue: () => provider.preferredCoralLevel == 2 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(2),
+                  text: "L1 Climb",
+                  getValue: () => provider.preferredClimbLevel == 3 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(3),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Coral L3",
-                  getValue: () => provider.preferredCoralLevel == 3 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(3),
+                  text: "L2 Climb",
+                  getValue: () => provider.preferredClimbLevel == 4 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(4),
                   height: height,
-                  bottomMargin: bottomMargin,
+                  bottomMargin: bottomMargin, 
                 ),
                 SwitchField(
-                  text: "Coral L4",
-                  getValue: () => provider.preferredCoralLevel == 4 ? 1 : 0,
-                  setValue: (value) => provider.setPreferredCoralLevel(4),
+                  text: "L3 Climb",
+                  getValue: () => provider.preferredClimbLevel == 5 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(5),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
@@ -69,33 +78,34 @@ class PlaystyleScreen extends StatelessWidget {
               title: "End Preference",
               switches: [
                 SwitchField(
-                  text: "Park",
+                  text: "Climbing @ End",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.park ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.climb ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.park)
+                      ? provider.setPreferredEndStatus(EndStatus.climb)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Shallow Climb",
+                  text: "Shooting @ End",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.shallowCage
+                      provider.preferredEndStatus == EndStatus.shooting
                           ? 1
                           : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.shallowCage)
+                      ? provider.setPreferredEndStatus(EndStatus.shooting)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "Deep Climb",
+                  text: "No Preference",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.deepCage ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.none ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.deepCage)
+                      // TODO: This is a hacky fix, it should be addressed in the future
+                      ? provider.setPreferredEndStatus(EndStatus.none)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
