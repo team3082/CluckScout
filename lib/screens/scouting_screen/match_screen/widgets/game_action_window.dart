@@ -69,18 +69,13 @@ class GameActionWindow extends StatelessWidget {
             child: Container(
               width: double.infinity,
               height: 50,
-              padding: const EdgeInsets.all(200),
-              decoration: BoxDecoration(
-               color: const Color.fromRGBO(255, 0, 0, 1),
-               borderRadius: BorderRadius.circular(10), 
-              ),
               child: Center(
                 child: Text(
                   "Delete",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(0, 0, 0, 1),
+                    color: Color.fromRGBO(28, 27, 31, 1),
                   ),
                 ),
               ),
