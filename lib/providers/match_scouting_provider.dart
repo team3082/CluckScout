@@ -55,7 +55,6 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   // Final Fields
   Disabled disabled;
-  RobotGoal robotGoal;
   int defenseRank;
   int drivingRank;
   int defenseTeamNumber;
@@ -73,7 +72,6 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.autoStatus = AutoStatus.none,
     this.endStatus = EndStatus.none,
     this.disabled = Disabled.None,
-    this.robotGoal = RobotGoal.other,
     this.defenseRank = 0,
     this.drivingRank = 0,
     this.notes = '',
@@ -183,7 +181,6 @@ class MatchScoutingProvider extends ChangeNotifier {
       ),
       // endStatus: endStatus,
       disabled: disabled,
-      robotGoal: robotGoal,
       defenseRank: defenseRank,
       drivingRank: drivingRank,
       notes: notes,
@@ -217,7 +214,6 @@ class MatchScoutingProvider extends ChangeNotifier {
     teleopScore = 0;
 
     disabled = Disabled.None;
-    robotGoal = RobotGoal.other;
     defenseRank = 0;
     drivingRank = 5;
     notes = '';
@@ -370,6 +366,11 @@ class MatchScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  int _countOccurrences(List<ActionType> actions, ActionType action) {
+    return actions.where((currentAction) => currentAction == action).length;
+    
+  }
+
   void _updateTeleopScore() {
     int teleopL1climb =
         _countOccurrences(teleopActions, ActionType.climbL1) * 10;
@@ -420,11 +421,6 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void setDisabled(Disabled value) {
     disabled = value;
-    notifyListeners();
-  }
-
-  void setRobotGoal(RobotGoal value) {
-    robotGoal = value;
     notifyListeners();
   }
   

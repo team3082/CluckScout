@@ -67,7 +67,6 @@ class PitData {
     return {
       'team_number': teamNumber,
       'scouter_name': scouterName,
-      'preferred_climb_level': preferredClimbLevel.toString().split('.').last,  
       'drivetrain': drivetrain.toString().split('.').last,
       'cannot_climb_auto': cannotClimbAuto,
       'climb_auto_L1': climbAutoL1,

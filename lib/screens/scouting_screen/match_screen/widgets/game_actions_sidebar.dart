@@ -19,7 +19,7 @@ class GameActionsSidebar extends StatelessWidget {
         ),
         const SizedBox(
           height: 15,
-        ),*/
+        ),
         GameActionButton(
           actionText: "L1 Climb",
           addGameAction: () => addGameAction(ActionType.climbL1),

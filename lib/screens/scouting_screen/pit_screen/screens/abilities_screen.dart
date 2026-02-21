@@ -27,7 +27,6 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              title: "Auto Climb Abilities",
               // Creates Abilities sub title and options (Select all)
               title: "Abilities",
               switches: [

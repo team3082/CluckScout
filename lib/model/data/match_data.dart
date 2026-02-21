@@ -40,7 +40,6 @@ class MatchData {
 
   // Final Round Fields
   final Disabled disabled;
-  final RobotGoal robotGoal;
   final int defenseRank;
   final int drivingRank;
   final String notes;
@@ -68,7 +67,6 @@ class MatchData {
     required this.teleopBump,
     required this.teleopTrench,
     required this.disabled,
-    required this.robotGoal,
     required this.defenseRank,
     required this.drivingRank,
     required this.notes, 

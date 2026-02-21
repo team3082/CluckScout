@@ -200,41 +200,6 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
-        // Robot Goal drop down
-        _buildDropdownRow(
-          "Robot Goal",
-          Theme(
-            data: Theme.of(context).copyWith(
-              popupMenuTheme: PopupMenuThemeData(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-            ),
-            child: DropdownButton<RobotGoal>(
-              value: context.select<MatchScoutingProvider, RobotGoal>((p) => p.robotGoal),
-              items: RobotGoal.values.map((e) => DropdownMenuItem(
-                value: e,
-                child: Text(
-                  e.toString().split('.').last,
-                  style: dropdownTextStyle,
-                ),
-              )).toList(),
-              onChanged: (val) => provider.setRobotGoal(val ?? RobotGoal.other),
-              underline: Container(),
-              icon: const Icon(
-                Icons.arrow_drop_down,
-                color: Color.fromRGBO(50, 50, 124, 1),
-                size: 24,
-              ),
-              isDense: true,
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-              dropdownColor: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              elevation: 4,
-            ),
-          ),
-        ),
         // Driving drop down
         _buildDropdownRow(
           "Driving",

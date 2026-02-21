@@ -32,11 +32,10 @@ enum Position {
 }
 
 // Possible end status and auto status options like climbing
-enum EndStatus {
-  none,
-  L1,
-  L2,
-  L3,
+enum Disabled {
+  None,
+  off,
+  on
 }
 enum AutoStatus {
   none,
