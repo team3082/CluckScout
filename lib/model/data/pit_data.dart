@@ -14,18 +14,21 @@ class PitData {
   final Drivetrain drivetrain;
 
   // Abilities
-  final int Hub;
-  final int Capacity;
-  final int Bump;
-  final int Trench;
+  final int cannotClimbAuto;
+  final int climbAutoL1;
+
+  final int cannotClimbL1;
+  final int climbL1;
+  final int climbL2;
+  final int climbL3;
+
+
+  final int bump;
+  final int trench;
 
   // Preferred Climb
-  final ClimbLevel preferredClimbLevel;
-
-  // End status
-  final int L1;
-  final int L2;
-  final int L3;
+  final int prefersAutoClimbLevel;
+  final int prefersClimbLevel;
 
   // Preferred Starting Zone and End Status
   final StartingZone preferredStartingZone;
@@ -39,14 +42,21 @@ class PitData {
     required this.teamNumber,
     required this.scouterName,
     required this.drivetrain,
-    required this.Hub,
-    required this.Capacity,
-    required this.preferredClimbLevel,
-    required this.L1,
-    required this.L2,
-    required this.L3,
-    required this.Bump,
-    required this.Trench,
+    
+    required this.cannotClimbAuto,
+    required this.climbAutoL1,
+    
+    required this.cannotClimbL1,
+    required this.climbL1,
+    required this.climbL2,
+    required this.climbL3,
+    
+    required this.bump,
+    required this.trench,
+
+    required this.prefersAutoClimbLevel,
+    required this.prefersClimbLevel,
+
     required this.preferredStartingZone,
     required this.preferredEndStatus,
     required this.notes,
@@ -59,13 +69,16 @@ class PitData {
       'scouter_name': scouterName,
       'preferred_climb_level': preferredClimbLevel.toString().split('.').last,  
       'drivetrain': drivetrain.toString().split('.').last,
-      'Hub': Hub,
-      'Capacity': Capacity,
-      'L1': L1,
-      'L2': L2,
-      'L3': L3,
-      'Bump': Bump,
-      'Trench': Trench,
+      'cannot_climb_auto': cannotClimbAuto,
+      'climb_auto_L1': climbAutoL1,
+      'cannot_climb_L1': cannotClimbL1,
+      'climb_L1': climbL1,
+      'climb_L2': climbL2,
+      'climb_L3': climbL3,
+      'bump': bump,
+      'trench': trench,
+      'prefers_auto_climb_level': prefersAutoClimbLevel,
+      'prefers_climb_level': prefersClimbLevel,
       'preferred_starting_zone':
           preferredStartingZone.toString().split('.').last,
       'preferred_end_status': preferredEndStatus.toString().split('.').last,
@@ -82,14 +95,16 @@ class PitData {
         (e) => e.toString().split('.').last == map['drivetrain'],
         orElse: () => Drivetrain.swerve,
       ),
-      Hub: map['Hub'] ?? 0,
-      Capacity: map['Capacity'] ?? 0,
-      preferredClimbLevel: map['preferred_climb_level'] ?? 0,
-      L1: map['L1'] ?? 0,
-      L2: map['L2'] ?? 0,
-      L3: map['L3'] ?? 0,
-      Bump: map['Bump'] ?? 0,
-      Trench: map['Trench'] ?? 0,
+      cannotClimbAuto: map['cannot_climb_auto'] ?? 0,
+      climbAutoL1: map['climb_auto_L1'] ?? 0,
+      cannotClimbL1: map['cannot_climb_L1'] ?? 0,
+      climbL1: map['climb_L1'] ?? 0,
+      climbL2: map['climb_L2'] ?? 0,
+      climbL3: map['climb_L3'] ?? 0,
+      bump: map['bump'] ?? 0,
+      trench: map['trench'] ?? 0,
+      prefersAutoClimbLevel: map['prefers_auto_climb_level'] ?? 0,
+      prefersClimbLevel: map['prefers_climb_level'] ?? 0,
       preferredStartingZone: StartingZone.values.firstWhere(
         (e) => e.toString().split('.').last == map['preferred_starting_zone'],
         orElse: () => StartingZone.top,

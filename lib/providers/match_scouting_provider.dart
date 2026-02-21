@@ -113,18 +113,75 @@ class MatchScoutingProvider extends ChangeNotifier {
       teamNumber: teamNumber,
       position: position,
       scouterName: scouterName,
-      autoStatus: autoStatus,
-      autoHub: autoHub,
-      teleopHub: teleopHub,
-      autoBump: autoBump,
-      autoTrench: autoTrench,
-      teleopBump: teleopBump,
-      teleopTrench: teleopTrench,
-      //autoHubDurations: autoHubDurations,
-      //autoHubTimeStamp: autoHubTimeStamp,
-      //teleopHubDurations: teleopHubDurations,
-      //teleopHubTimeStamp: teleopHubTimeStamp,
-      endStatus: endStatus,
+      
+      //count occurances of auto buttons
+      autoL1climb: _countOccurrences(
+        autoActions,
+        ActionType.climbAutoL1,
+      ),
+      autoAttemptedClimb: _countOccurrences(
+        teleopActions,
+        ActionType.attemptedClimb,
+      ), 
+      autoUsedDepot: _countOccurrences(
+        teleopActions,
+        ActionType.usedDepot,
+      ),
+      autoUsedOutpost: _countOccurrences(
+        teleopActions,
+        ActionType.usedOutpost,
+      ),
+      autoBump: _countOccurrences(
+        teleopActions,
+        ActionType.bump,
+      ),
+      autoTrench: _countOccurrences(
+        teleopActions,
+        ActionType.trench,
+      ),
+      intialTime: _countOccurrences(
+        autoActions,
+        ActionType.timeIntial,
+      ),
+      finalTime: _countOccurrences(
+        autoActions,
+        ActionType.timeFinal,
+      ),
+
+      //count occurances of teleop actions
+      teleopL1climb: _countOccurrences(
+        teleopActions,
+        ActionType.climbL1,
+      ),
+      teleopL2climb: _countOccurrences(
+        teleopActions,
+        ActionType.climbL2,
+      ),
+      teleopL3climb: _countOccurrences(
+        teleopActions,
+        ActionType.climbL3,
+      ),
+      teleopAttemptedClimb: _countOccurrences(
+        teleopActions,
+        ActionType.attemptedClimb,
+      ),
+      teleopUsedDepot: _countOccurrences(        
+        teleopActions,
+        ActionType.usedDepot,
+      ),
+      teleopUsedOutpost: _countOccurrences(
+        teleopActions,
+        ActionType.usedOutpost,
+      ),
+      teleopBump: _countOccurrences(
+        teleopActions,
+        ActionType.bump,
+      ),
+      teleopTrench: _countOccurrences(
+        teleopActions,
+        ActionType.trench,
+      ),
+      // endStatus: endStatus,
       disabled: disabled,
       robotGoal: robotGoal,
       defenseRank: defenseRank,
@@ -135,27 +192,16 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   // Calculates Auto Score
   void _updateAutoScore() {
-    
-    // Gets points from auto climb (using: if, else if, else)
-    int autoStatusPoints = autoStatus == AutoStatus.none
-        ? 0
-        : 15;
-        /*: endStatus == AutoStatus.L1
-            ? 15
-            : endStatus == AutoStatus.L2
-                ? 15
-                : 15;*/
-
-    // Adds up the time scoring and converts to points (example: 5 points per second)
-    //final double autoHubTotal = autoHubDurations.fold(0.0, (sum, item) => sum + item);
+    int autoL1climb =
+        _countOccurrences(autoActions, ActionType.climbAutoL1) * 3;
     autoHub = autoHubDurations.fold(0.0, (sum, item) => sum + item);
     int autoHubPoints = (autoHub* 5).toInt();
 
-    // Auto score is points from climbing + points from hub
-    autoScore = autoStatusPoints + autoHubPoints;
-  }
+    autoScore = autoL1climb +
+//shooting count 
+        autoHubPoints;
+          }
 
-// Adds 1 to the match number and clears all the starting values on the scouting app
   void resetFields() {
     matchNumber++;
     teamNumber = 0;
@@ -239,32 +285,50 @@ class MatchScoutingProvider extends ChangeNotifier {
   
   // When the corresponding button is clicked, updates the list of actions that shows up on the right in the scouting app
   String _getActionString(List<ActionType> actionTypes) {
-    return actionTypes.map((action) {
-      switch (action) {
-        case ActionType.Hub:
-          if (counter % 2 == 0){
-            if (page == 0){
-              return autoHubDurations;
+    return actionTypes
+        .map((action) {
+          switch ( action) {
+           case ActionType.Hub:
+            if (counter % 2 == 0){
+              if (page == 0){
+                return autoHubDurations;
+              } else {
+                return teleopHubDurations;
+              }
             } else {
-              return teleopHubDurations;
+              return "Shooting timer started";
             }
-          } else {
-            return "Start Shooting";
+           case ActionType.climbAutoL1:
+              return "Auto L1 Climb";
+            case ActionType.climbL1:
+              return "L1 Climb";
+            case ActionType.climbL2:
+              return "L2 Climb";
+            case ActionType.climbL3:
+              return "L3 Climb";
+            case ActionType.attemptedClimb:
+              return "Attempted Climb";
+            case ActionType.usedDepot:
+              return "Used Depot";  
+            case ActionType.usedOutpost:
+              return "Used Outpost";
+            case ActionType.bump:
+              return "Bump";
+            case ActionType.trench:
+              return "Trench";
+            case ActionType.timeIntial:
+              return "";
+            case ActionType.timeFinal:
+              return "";
           }
-        case ActionType.L1:
-        case ActionType.L2:
-        case ActionType.L3:
-        case ActionType.Bump:
-          return "Bump";
-        case ActionType.Trench:
-          return "Trench";
-      }
-    }).toList().join(', ');
+        })
+        .toList()
+        .join(', ');
   }
 
   void setPosition(Position position) {
     this.position = position;
-    AppPreferences.saveScoutingPosition(position);
+    AppPreferences.saveScoutingPosition(position);;
     notifyListeners();
   }
 
@@ -307,20 +371,33 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void _updateTeleopScore() {
-    final double teleopHubTotal = teleopHubDurations.fold(0.0, (sum, item) => sum + item);
-    int teleopHubPoints = (teleopHubTotal * 5).toInt();
+    int teleopL1climb =
+        _countOccurrences(teleopActions, ActionType.climbL1) * 10;
+    int teleopL2climb =
+        _countOccurrences(teleopActions, ActionType.climbL2) * 20;
+    int teleopL3climb =
+        _countOccurrences(teleopActions, ActionType.climbL3) * 30;
+    int teleopAttemptedClimb =
+        _countOccurrences(teleopActions, ActionType.attemptedClimb) * 0;
+    int teleopUsedDepot =
+        _countOccurrences(teleopActions, ActionType.attemptedClimb) * 0;
 
-    // Gets points from end game climb (using: if, else if, else)
-    int endStatusPoints = endStatus == EndStatus.none
-        ? 0
-        : endStatus == EndStatus.L1
-            ? 10
-            : endStatus == EndStatus.L2
-                ? 20
-                : 30;
+    // TODO: Address in #6
+    // int endStatusPoints = endStatus == EndStatus.none
+    //     ? 0
+    //     : endStatus == EndStatus.park
+    //         ? 2
+    //         : endStatus == EndStatus.shallowCage
+    //             ? 6
+    //             : 12;
 
-    // Teleop score is points from climbing + points from hub
-    teleopScore = teleopHubPoints + endStatusPoints;
+    teleopScore = teleopL1climb +
+        teleopL2climb +
+        teleopL3climb +
+        teleopAttemptedClimb +
+        //shooting points
+        teleopUsedDepot; //+
+        //endStatusPoints;
   }
 
   void removeTeleopAction() {

@@ -161,3 +161,48 @@ class AutoPointsDisplay extends StatelessWidget {
     );
   }
 }
+
+class AutoLeaveButton extends StatelessWidget {
+  const AutoLeaveButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final provider = context.read<MatchScoutingProvider>();
+    return Selector<MatchScoutingProvider, bool>(
+      selector: (_, provider) => provider.autoLeave,
+      builder: (_, autoLeave, __) {
+        return Align(
+          alignment: Alignment.center,
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: autoLeave
+                  ? const Color.fromRGBO(50, 50, 124, 1)
+                  : const Color.fromARGB(255, 220, 220, 223),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+            ),
+            onPressed: () {
+              provider.setAutoLeave(!autoLeave);
+            },
+            child: SizedBox(
+              height: 60,
+              width: double.infinity,
+              child: Center(
+                child: Text(
+                  "Shooting",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: autoLeave
+                        ? Color.fromRGBO(233, 233, 233, 1)
+                        : Color.fromRGBO(28, 27, 31, 1),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}

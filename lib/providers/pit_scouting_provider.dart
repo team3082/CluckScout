@@ -22,15 +22,28 @@ class PitScoutingProvider extends ChangeNotifier {
   Drivetrain drivetrain = Drivetrain.swerve;
 
   // Abilities
-  int L1 = 0;
-  int L2 = 0;
-  int L3 = 0;
-  int Bump = 0;
-  int Trench = 0;
-  int Hub = 0;
-  int Capacity = 0;
+  int cannotClimbAuto = 0;
+  int climbAutoL1 = 0;
+  
+  int cannotClimbL1 = 0;
+  int climbL1 = 0;
+  int climbL2 = 0;
+  int climbL3 = 0;
+
+  int bump = 0;
+  int trench = 0;
+
+  int swerve = 0;
+  int tank = 0;
+  int mecanum = 0;
+  int other = 0;
+
   // Preferred Playstyle
-  ClimbLevel preferredClimbLevel = ClimbLevel.none;
+  int preferredAutoClimbLevel = 1;
+  int preferredClimbLevel = 1;
+  
+  
+
   StartingZone preferredStartingZone = StartingZone.top;
   EndStatus preferredEndStatus = EndStatus.none;
 
@@ -43,16 +56,25 @@ class PitScoutingProvider extends ChangeNotifier {
     this.teamNumber = 0,
     required this.scouterName,
     this.drivetrain = Drivetrain.swerve,
-    this.L1 = 0,
-    this.L2 = 0,
-    this.L3 = 0,
-    this.Bump = 0,
-    this.Trench = 0,
-    this.Hub = 0,
-    this.Capacity = 0,
-    preferredClimbLevel= ClimbLevel.L1,
-    preferredStartingZone = StartingZone.top,
-    this.preferredEndStatus = EndStatus.none,
+    
+    this.cannotClimbAuto = 0,
+    this.climbAutoL1 = 0,
+
+    this.cannotClimbL1 = 0,
+    this.climbL1 = 0,
+    this.climbL2 = 0,
+    this.climbL3 = 0,
+    
+    this.bump = 0,
+    this.trench = 0,
+    
+    this.swerve = 0,
+    this.tank = 0,
+    this.mecanum = 0,
+    this.other = 0,
+
+    this.preferredAutoClimbLevel = 0,
+    this.preferredClimbLevel = 0,
     this.notes = '',
   });
 
@@ -61,14 +83,25 @@ class PitScoutingProvider extends ChangeNotifier {
     tabIndex = 0;
     teamNumber = 0;
     drivetrain = Drivetrain.swerve;
-    L1 = 0;
-    L2 = 0;
-    L3 = 0;
-    Bump= 0;
-    Trench = 0;
-    Hub = 0;
-    Capacity = 0;
-    preferredClimbLevel = ClimbLevel.L1;
+    
+    cannotClimbAuto = 0;
+    climbAutoL1 = 0;
+    
+    cannotClimbL1 = 0;
+    climbL1 = 0;
+    climbL2 = 0;
+    climbL3 = 0;
+
+    bump = 0;
+    trench = 0;
+
+    swerve = 0;
+    tank = 0;
+    mecanum = 0;
+    other = 0;
+
+    preferredClimbLevel = 0;
+
     preferredStartingZone = StartingZone.top;
     preferredEndStatus = EndStatus.none;
     notes = '';
@@ -80,54 +113,67 @@ class PitScoutingProvider extends ChangeNotifier {
       teamNumber: teamNumber,
       scouterName: scouterName,
       drivetrain: drivetrain,
-      L1: L1,
-      L2: L2,
-      L3: L3,
-      Bump: Bump,
-      Trench: Trench,
-      Hub: Hub,
-      Capacity: Capacity,
-      preferredClimbLevel: preferredClimbLevel,
+      
+      cannotClimbAuto: cannotClimbAuto,
+      climbAutoL1: climbAutoL1,
+
+      cannotClimbL1: cannotClimbL1,
+      climbL1: climbL1,
+      climbL2: climbL2,
+      climbL3: climbL3,
+
+      bump: bump,
+      trench: trench,
+
+      prefersAutoClimbLevel: preferredClimbLevel,
+      prefersClimbLevel: preferredClimbLevel,
+      
       preferredStartingZone: preferredStartingZone,
       preferredEndStatus: preferredEndStatus,
+
       notes: notes,
     ));
     reset();
   }
 
   // Setters for various fields
-  void setL1(int value) {
-    L1 = value;
+  void setCannotClimbAuto(int value) {
+    cannotClimbAuto = value;
     notifyListeners();
   }
 
-  void setL2(int value) {
-    L2 = value;
+  void setAutoClimbL1(int value) {
+    climbAutoL1 = value;
     notifyListeners();
   }
 
-  void setL3(int value) {
-    L3 = value;
+  void setCannotClimbL1(int value) {
+    cannotClimbL1 = value;
+    notifyListeners();
+  }
+
+  void setClimbL1(int value) {
+    climbL1 = value;
+    notifyListeners();
+  }
+
+  void setClimbL2(int value) {
+    climbL2 = value;
+    notifyListeners();
+  }
+
+  void setClimbL3(int value) {
+    climbL3 = value;
     notifyListeners();
   }
 
   void setBump(int value) {
-    Bump = value;
+    bump = value;
     notifyListeners();
   }
 
   void setTrench(int value) {
-    Trench = value;
-    notifyListeners();
-  }
-
-  void setHub(int value) {
-    Hub = value;
-    notifyListeners();
-  }
-
-  void setCapacity(int value) {
-    Capacity = value;
+    trench = value;
     notifyListeners();
   }
 
@@ -145,7 +191,13 @@ class PitScoutingProvider extends ChangeNotifier {
     drivetrain = value;
     notifyListeners();
   }
-  void setPreferredClimbLevel(ClimbLevel value) {
+
+  void setPreferredAutoClimbLevel(int value) {
+    preferredAutoClimbLevel = value;
+    notifyListeners();
+  }
+
+  void setPreferredClimbLevel(int value) {
     preferredClimbLevel = value;
     notifyListeners();
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/services.dart';
 import 'package:cluck_scout/model/enums.dart';
 
 class GameActionsSidebar extends StatelessWidget {
@@ -14,33 +13,56 @@ class GameActionsSidebar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        /*GameActionButton(
-          actionText: "Lvl. 1 Climb",
-          addGameAction: () => addGameAction(ActionType.L1),
+        GameActionButton(
+          actionText: "Attempted Climb",
+          addGameAction: () => addGameAction(ActionType.attemptedClimb),
         ),
         const SizedBox(
           height: 15,
         ),*/
         GameActionButton(
-          actionText: "Trench",
-          addGameAction: () => addGameAction(ActionType.Trench),
+          actionText: "L1 Climb",
+          addGameAction: () => addGameAction(ActionType.climbL1),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        GameActionButton(
+          actionText: "L2 Climb",
+          addGameAction: () => addGameAction(ActionType.climbL2),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        GameActionButton(
+          actionText: "L3 Climb",
+          addGameAction: () => addGameAction(ActionType.climbL3),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        GameActionButton(
+          actionText: "Used Outpost",
+          addGameAction: () => addGameAction(ActionType.usedOutpost),
+        ),
+        const SizedBox(height: 15),
+        GameActionButton(
+          actionText: "Used Depot",
+          addGameAction: () => addGameAction(ActionType.usedDepot),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
           actionText: "Bump",
-          addGameAction: () => addGameAction(ActionType.Bump),
+          addGameAction: () => addGameAction(ActionType.bump),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Hub Shooting",
-          addGameAction: () => addGameAction(ActionType.Hub),
-        ),
-        const SizedBox(
-          height: 15,
+          actionText: "Trench",
+          addGameAction: () => addGameAction(ActionType.trench),
         ),
       ],
     );

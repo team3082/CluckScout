@@ -27,41 +27,60 @@ class AbilitiesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
+              title: "Auto Climb Abilities",
               // Creates Abilities sub title and options (Select all)
               title: "Abilities",
               switches: [
                 SwitchField(
+                  text: "Cannot Climb",
+                  getValue: () => provider.cannotClimbAuto,
+                  setValue: (value) => provider.setCannotClimbAuto(value),
+                ),
+                SwitchField(
+                  text: "L1 Climb",
+                  getValue: () => provider.climbAutoL1,
+                  setValue: (value) => provider.setAutoClimbL1(value),
+                ),
+              ],
+              secondTitle: "Can Use",
+              secondSwitches: [
+                SwitchField(
                   text: "Bump",
-                  getValue: () => provider.Bump,
+                  getValue: () => provider.bump,
                   setValue: (value) => provider.setBump(value),
                 ),
                 SwitchField(
                   text: "Trench",
-                  getValue: () => provider.Trench,
+                  getValue: () => provider.trench,
                   setValue: (value) => provider.setTrench(value),
                 ),
               ],
             ),
             const SizedBox(width: 15),
             SwitchColumn(
-              // Creates End Abilities sub title and options (Select all)
-              title: "End Abilities",
+              title: "End Climb Abilities",
               switches: [
                 SwitchField(
-                  text: "L1",
-                  getValue: () => provider.L1,
-                  setValue: (value) => provider.setL1(value),
+                  text: "Cannot Climb",
+                  getValue: () => provider.cannotClimbL1,
+                  setValue: (value) => provider.setCannotClimbL1(value),
                 ),
                 SwitchField(
-                  text: "L2",
-                  getValue: () => provider.L2,
-                  setValue: (value) => provider.setL2(value),
+                  text: "L1 Climb",
+                  getValue: () => provider.climbL1,
+                  setValue: (value) => provider.setClimbL1(value),
                 ),
                 SwitchField(
-                  text: "L3",
-                  getValue: () => provider.L3,
-                  setValue: (value) => provider.setL3(value),
+                  text: "L2 Climb",
+                  getValue: () => provider.climbL2,
+                  setValue: (value) => provider.setClimbL2(value),
                 ),
+                SwitchField(
+                  text: "L3 Climb",
+                  getValue: () => provider.climbL3,
+                  setValue: (value) => provider.setClimbL3(value),
+                ),
+
               ],
               // Creates Drivetrain sub title and options (Can only select one)
               secondTitle: "Drivetrain",
@@ -139,7 +158,7 @@ class SwitchColumn extends StatelessWidget {
             secondTitle!,
             style: const TextStyle(
               fontSize: 25,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.bold,                       
             ),
           ),
           const SizedBox(height: 5),
@@ -163,7 +182,7 @@ class SwitchField extends StatelessWidget {
     required this.text,
     required this.getValue,
     required this.setValue,
-    this.height = 54.3,
+    this.height = 50,
     this.bottomMargin = 10,
   });
 
@@ -210,3 +229,5 @@ class SwitchField extends StatelessWidget {
     );
   }
 }
+
+                

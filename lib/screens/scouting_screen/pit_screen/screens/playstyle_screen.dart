@@ -2,8 +2,6 @@
 
 // Library of basic UI functions and other basics (Not specific to 3082)
 import 'package:flutter/material.dart';
-//import 'package:flutter/widgets.dart';
-// For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
 // References enums.dart (which stores info about what is included in types of actions, ways to be disabled...)
 import 'package:cluck_scout/model/enums.dart';
@@ -32,37 +30,88 @@ class PlaystyleScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SwitchColumn(
-              // Creates End Preference sub title and options (an only select one)
+              title: "Auto Climb Pref.",
+              switches: [
+                SwitchField(
+                  text: "Cannot Climb",
+                  getValue: () => provider.preferredAutoClimbLevel == 1 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredAutoClimbLevel(1),
+                  height: height,
+                  bottomMargin: bottomMargin,
+                ),
+                SwitchField(
+                  text: "L1 Climb",
+                  getValue: () => provider.preferredAutoClimbLevel == 3 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredAutoClimbLevel(3),
+                  height: height,
+                  bottomMargin: bottomMargin,
+                ),
+              ],
+              secondTitle: "End Climb Pref.",
+              secondSwitches: [
+                SwitchField(
+                  text: "Cannot Climb",
+                  getValue: () => provider.preferredClimbLevel == 1 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(1),
+                  height: height,
+                  bottomMargin: bottomMargin,
+                ),
+                SwitchField(
+                  text: "L1 Climb",
+                  getValue: () => provider.preferredClimbLevel == 3 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(3),
+                  height: height,
+                  bottomMargin: bottomMargin,
+                ),
+                SwitchField(
+                  text: "L2 Climb",
+                  getValue: () => provider.preferredClimbLevel == 4 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(4),
+                  height: height,
+                  bottomMargin: bottomMargin, 
+                ),
+                SwitchField(
+                  text: "L3 Climb",
+                  getValue: () => provider.preferredClimbLevel == 5 ? 1 : 0,
+                  setValue: (value) => provider.setPreferredClimbLevel(5),
+                  height: height,
+                  bottomMargin: bottomMargin,
+                ),
+              ],
+            ),
+            const SizedBox(width: 15),
+            SwitchColumn(
               title: "End Preference",
               switches: [
                 SwitchField(
-                  text: "L1",
+                  text: "Climbing @ End",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.L1 ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.climb ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.L1)
+                      ? provider.setPreferredEndStatus(EndStatus.climb)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "L2",
+                  text: "Shooting @ End",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.L2
+                      provider.preferredEndStatus == EndStatus.shooting
                           ? 1
                           : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.L2)
+                      ? provider.setPreferredEndStatus(EndStatus.shooting)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
                 ),
                 SwitchField(
-                  text: "L3",
+                  text: "No Preference",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.L3 ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.none ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.L3)
+                      // TODO: This is a hacky fix, it should be addressed in the future
+                      ? provider.setPreferredEndStatus(EndStatus.none)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,

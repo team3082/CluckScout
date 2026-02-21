@@ -4,9 +4,6 @@
 import 'package:flutter/material.dart';
 // For sharing data between files and other basics (Not specific to 3082)
 import 'package:provider/provider.dart';
-//import 'package:cluck_scout/model/data/pit_data.dart';
-//import 'package:cluck_scout/providers/match_scouting_provider.dart';
-//
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
 
 // Creates Comment sub title as well as questions to answer and info about SWIFT
@@ -39,7 +36,7 @@ class SubmitScreen extends StatelessWidget {
         const SizedBox(height: 10),
         SizedBox(
           child: Text(
-            "How many fuel could they store?     What was their estimated rate of fuel scoring?     Anyting else?         ...         Make sure to mention SWIFT bracelets when talking to people from other teams, and trade them if you like the ones they’ve got. This helps people associate kindness and fun with our team, and may also get you some new friends in the process. Help spread the SWIFT message of inclusivity and fun! Also, Evan will be very happy with you if you trade SWIFT bracelets. Make Evan happy! - Elliot",
+            "Make sure to mention SWIFT bracelets when talking to people from other teams, and trade them if you like the ones they’ve got. This helps people associate kindness and fun with our team, and may also get you some new friends in the process. Help spread the SWIFT message of inclusivity and fun! Also, Evan will be very happy with you if you trade SWIFT bracelets. Make Evan happy! - Rohan ",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
         ),

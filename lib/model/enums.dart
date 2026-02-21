@@ -2,25 +2,24 @@
 
 // Sets up options for action types
 enum ActionType {
-  L1,
-  L2,
-  L3,
+  climbAutoL1,
+  climbL1,
+  climbL2,
+  climbL3,
+  attemptedClimb,
+  bump,
   Hub,
-  Bump,
-  Trench,
+  trench,
+  usedDepot,
+  usedOutpost,
+  timeIntial,
+  timeFinal,
 }
 
-// Ways of being disabled
-enum Disabled {
-  None,
-  off,
-  on
-}
-// Different robot objectives
-enum RobotGoal {
-  shooter,
-  passing,
-  other
+enum EndStatus {
+  none,
+  climb,
+  shooting,
 }
 // Starting position at beginning of match
 enum Position {

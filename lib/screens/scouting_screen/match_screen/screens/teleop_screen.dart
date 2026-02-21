@@ -13,6 +13,8 @@ import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_ac
 //
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
+int teleopCounter = 0;
+
 class TeleopScreen extends StatelessWidget {
   const TeleopScreen({super.key});
 
@@ -53,25 +55,14 @@ class TeleopScreen extends StatelessWidget {
                     actionWindowHeight: 215,
                   ),
                   const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L1,
-                    text: "Lvl. 1 Climb",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L2,
-                    text: "Lvl. 2 Climb",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L3,
-                    text: "Lvl. 3 Climb",
-                  ),
-                  /*const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.L3,
-                    text: "Used Depot",
-                  ),*/
+                  // TODO: Fix in second MR
+                  // EndStatusButton(
+                  //   status: EndStatus.park,
+                  //   text: "Shooting",
+                  // ),
+                  const SizedBox(height: 163),
+                 
+
                 ],
               ),
             )
