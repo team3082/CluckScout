@@ -16,9 +16,8 @@ enum ActionType {
 
 enum EndStatus {
   none,
-  park,
-  shallowCage,
-  deepCage,
+  climb,
+  shooting,
 }
 
 enum Position {

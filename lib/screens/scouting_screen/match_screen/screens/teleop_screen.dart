@@ -45,10 +45,11 @@ class TeleopScreen extends StatelessWidget {
                     actionWindowHeight: 215,
                   ),
                   const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.park,
-                    text: "Shooting",
-                  ),
+                  // TODO: Fix in second MR
+                  // EndStatusButton(
+                  //   status: EndStatus.park,
+                  //   text: "Shooting",
+                  // ),
                   const SizedBox(height: 163),
                  
 

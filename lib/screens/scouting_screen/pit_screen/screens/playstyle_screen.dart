@@ -80,9 +80,9 @@ class PlaystyleScreen extends StatelessWidget {
                 SwitchField(
                   text: "Climbing @ End",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.park ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.climb ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.park)
+                      ? provider.setPreferredEndStatus(EndStatus.climb)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
@@ -90,11 +90,11 @@ class PlaystyleScreen extends StatelessWidget {
                 SwitchField(
                   text: "Shooting @ End",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.shallowCage
+                      provider.preferredEndStatus == EndStatus.shooting
                           ? 1
                           : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.shallowCage)
+                      ? provider.setPreferredEndStatus(EndStatus.shooting)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,
@@ -102,9 +102,10 @@ class PlaystyleScreen extends StatelessWidget {
                 SwitchField(
                   text: "No Preference",
                   getValue: () =>
-                      provider.preferredEndStatus == EndStatus.deepCage ? 1 : 0,
+                      provider.preferredEndStatus == EndStatus.none ? 1 : 0,
                   setValue: (value) => value == 1
-                      ? provider.setPreferredEndStatus(EndStatus.deepCage)
+                      // TODO: This is a hacky fix, it should be addressed in the future
+                      ? provider.setPreferredEndStatus(EndStatus.none)
                       : provider.setPreferredEndStatus(EndStatus.none),
                   height: height,
                   bottomMargin: bottomMargin,

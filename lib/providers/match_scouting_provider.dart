@@ -131,7 +131,7 @@ class MatchScoutingProvider extends ChangeNotifier {
         teleopActions,
         ActionType.trench,
       ),
-      endStatus: endStatus,
+      // endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
       drivingRank: drivingRank,
@@ -282,21 +282,22 @@ class MatchScoutingProvider extends ChangeNotifier {
     int teleopUsedDepot =
         _countOccurrences(teleopActions, ActionType.attemptedClimb) * 0;
 
-    int endStatusPoints = endStatus == EndStatus.none
-        ? 0
-        : endStatus == EndStatus.park
-            ? 2
-            : endStatus == EndStatus.shallowCage
-                ? 6
-                : 12;
+    // TODO: Address in #6
+    // int endStatusPoints = endStatus == EndStatus.none
+    //     ? 0
+    //     : endStatus == EndStatus.park
+    //         ? 2
+    //         : endStatus == EndStatus.shallowCage
+    //             ? 6
+    //             : 12;
 
     teleopScore = teleopL1climb +
         teleopL2climb +
         teleopL3climb +
         teleopAttemptedClimb +
         //shooting points
-        teleopUsedDepot +
-        endStatusPoints;
+        teleopUsedDepot; //+
+        //endStatusPoints;
   }
 
   void removeTeleopAction() {

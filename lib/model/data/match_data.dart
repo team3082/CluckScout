@@ -32,7 +32,7 @@ class MatchData {
   final int teleopTrench;
 
   // Teleop Booleans
-  final EndStatus endStatus;
+  // final EndStatus endStatus;
 
   // Final Round Fields
   final Disabled disabled;
@@ -61,7 +61,6 @@ class MatchData {
     required this.teleopUsedOutpost,
     required this.teleopBump,
     required this.teleopTrench,
-    required this.endStatus,
     required this.disabled,
     required this.defenseRank,
     required this.drivingRank,
@@ -75,29 +74,30 @@ class MatchData {
       'team_number': teamNumber,
       'position': position.toString().split('.').last,
       'scouter_name': scouterName,
-      // Auto Coral
+      // Auto Climb
       'auto_climb_L1': autoL1climb,
-      'auto_Attempted_Climb': autoAttemptedClimb,
-      // Auto Algae
+      'auto_attempted_climb': autoAttemptedClimb,
+      // Auto Actions
       'auto_used_outpost': autoUsedOutpost,
       'auto_used_depot': autoUsedDepot,
       'auto_bump': autoBump,
       'auto_trench': autoTrench,
-      // Teleop Coral
+      // Teleop Climb
       'teleop_climb_L1': teleopL1climb,
       'teleop_climb_L2': teleopL2climb,
       'teleop_climb_L3': teleopL3climb,
-      'teleop_Attempted_Climb': teleopAttemptedClimb,
-      // Teleop Algae
+      'teleop_attempted_climb': teleopAttemptedClimb,
+      // Teleop Actions
       'teleop_Used_Depot': teleopUsedDepot,
       'teleop_Used_Outpost': teleopUsedOutpost,
       'teleop_bump': teleopBump,
       'teleop_trench': teleopTrench,
       // Teleop Booleans
-      'end_none': endStatus == EndStatus.none ? 1 : 0,
-      'end_park': endStatus == EndStatus.park ? 1 : 0,
-      'end_shallow': endStatus == EndStatus.shallowCage ? 1 : 0,
-      'end_deep': endStatus == EndStatus.deepCage ? 1 : 0,
+      // Examples below
+      // 'end_none': endStatus == EndStatus.none ? 1 : 0,
+      // 'end_park': endStatus == EndStatus.park ? 1 : 0,
+      // 'end_shallow': endStatus == EndStatus.shallowCage ? 1 : 0,
+      // 'end_deep': endStatus == EndStatus.deepCage ? 1 : 0,
       // Final Fields
       'disabled': disabled.toString().split(".").last,
       'defense_rank': defenseRank,
@@ -114,34 +114,35 @@ class MatchData {
       position: Position.values
           .firstWhere((e) => e.toString().split('.').last == map['position']),
       scouterName: map['scouter_name'],
-      // Auto Coral
+      // Auto Climb
       autoL1climb: map['auto_climb_L1'],
       autoAttemptedClimb: map['auto_attempted_climbAttempted_Climb'],
       intialTime: map['intial_time'],
       finalTime: map['final_time'],
-      // Auto Algae
+      // Auto Actions
       autoUsedOutpost: map['auto_Used_Outpost'],
       autoUsedDepot: map['auto_Used_Depot'],
       autoBump: map['auto_Bump'],
       autoTrench: map['auto_Trench'],
-      // Teleop Coral
+      // Teleop Climb
       teleopL1climb: map['teleop_L1_climb'],
       teleopL2climb: map['teleop_L2_climb'],
       teleopL3climb: map['teleop_L3_climb'],
       teleopAttemptedClimb: map['teleop_Attempted_Climb'],
-      // Teleop Algae
+      // Teleop Actions
       teleopUsedOutpost: map['teleop_Used_Outpost'],
       teleopUsedDepot: map['teleop_Used_Depot'],
       teleopBump: map['teleop_Bump'],
       teleopTrench: map['teleop_Trench'],
       // Teleop Booleans
-      endStatus: map['end_deep'] == 1
-          ? EndStatus.deepCage
-          : map['end_shallow'] == 1
-              ? EndStatus.shallowCage
-              : map['end_park'] == 1
-                  ? EndStatus.park
-                  : EndStatus.none,
+      // Example of boolean code
+      // endStatus: map['end_deep'] == 1
+      //     ? EndStatus.deepCage
+      //     : map['end_shallow'] == 1
+      //         ? EndStatus.shallowCage
+      //         : map['end_park'] == 1
+      //             ? EndStatus.park
+      //             : EndStatus.none,
       // Final Fields
       disabled: Disabled.values
           .firstWhere((e) => e.toString().split('.').last == map['disabled']),

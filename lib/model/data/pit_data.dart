@@ -8,7 +8,7 @@ class PitData {
   // Drivetrain Specifications
   final Drivetrain drivetrain;
 
-  // Abilitiesczx
+  // Abilities
   final int cannotClimbAuto;
   final int climbAutoL1;
 
@@ -21,7 +21,7 @@ class PitData {
   final int bump;
   final int trench;
 
-  // Preferred Coral
+  // Preferred Climb
   final int prefersAutoClimbLevel;
   final int prefersClimbLevel;
 
