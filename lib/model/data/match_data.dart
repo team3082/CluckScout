@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:cluck_scout/model/enums.dart';
 
 class MatchData {
@@ -8,37 +9,35 @@ class MatchData {
   final String scouterName;
 
   // Auto Coral
-  final int autoCoralL1;
-  final int autoCoralL2;
-  final int autoCoralL3;
-  final int autoCoralL4;
-  final int autoDropped;
+  final int autoL1climb;
+  final int autoAttemptedClimb;
 
   // Auto Algae
-  final int autoNetAlgae;
-  final int autoProcessorAlgae;
-  final int autoAlgaeRemoved;
+  final int autoUsedDepot;
+  final int autoUsedOutpost;
+  final int autoBump;
+  final int autoTrench;
+
+  // Auto Hub Shooting
+  final List<double> autoShootingTimes;
 
   // Auto Booleans
   final bool autoLeave;
-  
-  // Auto Hub Shooting
-  final double autoHubShootingTime;
 
   // Teleop Coral
-  final int teleopCoralL1;
-  final int teleopCoralL2;
-  final int teleopCoralL3;
-  final int teleopCoralL4;
-  final int teleopDropped;
+  final int teleopL1climb;
+  final int teleopL2climb;
+  final int teleopL3climb;
+  final int teleopAttemptedClimb;
 
   // Teleop Algae
-  final int teleopProcessorAlgae;
-  final int teleopNetAlgae;
-  final int teleopAlgaeRemoved;
+  final int teleopUsedDepot;
+  final int teleopUsedOutpost;
+  final int teleopBump;
+  final int teleopTrench;
   
   // Teleop Hub Shooting
-  final double teleopHubShootingTime;
+  final List<double> teleopShootingTimes;
 
   // Teleop Booleans
   final EndStatus endStatus;
@@ -54,25 +53,23 @@ class MatchData {
     required this.teamNumber,
     required this.position,
     required this.scouterName,
-    required this.autoCoralL1,
-    required this.autoCoralL2,
-    required this.autoCoralL3,
-    required this.autoCoralL4,
-    required this.autoDropped,
-    required this.autoNetAlgae,
-    required this.autoProcessorAlgae,
-    required this.autoAlgaeRemoved,
+    required this.autoL1climb,
+    required this.autoAttemptedClimb,
+    required this.autoUsedDepot,
+    required this.autoUsedOutpost,
+    required this.autoBump,
+    required this.autoTrench,
+    required this.autoShootingTimes,
     required this.autoLeave,
-    required this.autoHubShootingTime,
-    required this.teleopCoralL1,
-    required this.teleopCoralL2,
-    required this.teleopCoralL3,
-    required this.teleopCoralL4,
-    required this.teleopDropped,
-    required this.teleopNetAlgae,
-    required this.teleopProcessorAlgae,
-    required this.teleopAlgaeRemoved,
-    required this.teleopHubShootingTime,
+    required this.teleopL1climb,
+    required this.teleopL2climb,
+    required this.teleopL3climb,
+    required this.teleopAttemptedClimb,
+    required this.teleopUsedDepot,
+    required this.teleopUsedOutpost,
+    required this.teleopBump,
+    required this.teleopTrench,
+    required this.teleopShootingTimes,
     required this.endStatus,
     required this.disabled,
     required this.defenseRank,
@@ -88,31 +85,29 @@ class MatchData {
       'position': position.toString().split('.').last,
       'scouter_name': scouterName,
       // Auto Coral
-      'auto_coral_L1': autoCoralL1,
-      'auto_coral_L2': autoCoralL2,
-      'auto_coral_L3': autoCoralL3,
-      'auto_coral_L4': autoCoralL4,
-      'auto_dropped': autoDropped,
+      'auto_L1_climb': autoL1climb,
+      'auto_attempted_climb': autoAttemptedClimb,
       // Auto Algae
-      'auto_net_algae': autoNetAlgae,
-      'auto_processor_algae': autoProcessorAlgae,
-      'auto_algae_removed': autoAlgaeRemoved,
+      'auto_used_depot': autoUsedDepot,
+      'auto_used_outpost': autoUsedOutpost,
+      'auto_bump': autoBump,
+      'auto_trench': autoTrench,
+      // Auto Hub Shooting
+      'auto_shooting_times': jsonEncode(autoShootingTimes),
       // Auto Booleans
       'auto_leave': autoLeave ? 1 : 0,
-      // Auto Hub Shooting
-      'auto_hub_shooting_time': autoHubShootingTime,
       // Teleop Coral
-      'teleop_coral_L1': teleopCoralL1,
-      'teleop_coral_L2': teleopCoralL2,
-      'teleop_coral_L3': teleopCoralL3,
-      'teleop_coral_L4': teleopCoralL4,
-      'teleop_dropped': teleopDropped,
+      'teleop_L1_climb': teleopL1climb,
+      'teleop_L2_climb': teleopL2climb,
+      'teleop_L3_climb': teleopL3climb,
+      'teleop_attempted_climb': teleopAttemptedClimb,
       // Teleop Algae
-      'teleop_processor_algae': teleopProcessorAlgae,
-      'teleop_net_algae': teleopNetAlgae,
-      'teleop_algae_removed': teleopAlgaeRemoved,
+      'teleop_used_depot': teleopUsedDepot,
+      'teleop_used_outpost': teleopUsedOutpost,
+      'teleop_bump': teleopBump,
+      'teleop_trench': teleopTrench,
       // Teleop Hub Shooting
-      'teleop_hub_shooting_time': teleopHubShootingTime,
+      'teleop_shooting_times': jsonEncode(teleopShootingTimes),
       // Teleop Booleans
       'end_none': endStatus == EndStatus.none ? 1 : 0,
       'end_park': endStatus == EndStatus.park ? 1 : 0,
@@ -135,31 +130,33 @@ class MatchData {
           .firstWhere((e) => e.toString().split('.').last == map['position']),
       scouterName: map['scouter_name'],
       // Auto Coral
-      autoCoralL1: map['auto_coral_L1'],
-      autoCoralL2: map['auto_coral_L2'],
-      autoCoralL3: map['auto_coral_L3'],
-      autoCoralL4: map['auto_coral_L4'],
-      autoDropped: map['auto_dropped'],
+      autoL1climb: map['auto_L1_climb'] ?? 0,
+      autoAttemptedClimb: map['auto_attempted_climb'] ?? 0,
       // Auto Algae
-      autoNetAlgae: map['auto_net_algae'],
-      autoProcessorAlgae: map['auto_processor_algae'],
-      autoAlgaeRemoved: map['auto_algae_removed'],
+      autoUsedDepot: map['auto_used_depot'] ?? 0,
+      autoUsedOutpost: map['auto_used_outpost'] ?? 0,
+      autoBump: map['auto_bump'] ?? 0,
+      autoTrench: map['auto_trench'] ?? 0,
+      // Auto Hub Shooting
+      autoShootingTimes: map['auto_shooting_times'] != null 
+          ? List<double>.from(jsonDecode(map['auto_shooting_times']))
+          : [],
       // Auto Booleans
       autoLeave: map['auto_leave'] == 1,
-      // Auto Hub Shooting
-      autoHubShootingTime: (map['auto_hub_shooting_time'] ?? 0.0).toDouble(),
       // Teleop Coral
-      teleopCoralL1: map['teleop_coral_L1'],
-      teleopCoralL2: map['teleop_coral_L2'],
-      teleopCoralL3: map['teleop_coral_L3'],
-      teleopCoralL4: map['teleop_coral_L4'],
-      teleopDropped: map['teleop_dropped'],
+      teleopL1climb: map['teleop_L1_climb'] ?? 0,
+      teleopL2climb: map['teleop_L2_climb'] ?? 0,
+      teleopL3climb: map['teleop_L3_climb'] ?? 0,
+      teleopAttemptedClimb: map['teleop_attempted_climb'] ?? 0,
       // Teleop Algae
-      teleopNetAlgae: map['teleop_net_algae'],
-      teleopProcessorAlgae: map['teleop_processor_algae'],
-      teleopAlgaeRemoved: map['teleop_algae_removed'],
+      teleopUsedDepot: map['teleop_used_depot'] ?? 0,
+      teleopUsedOutpost: map['teleop_used_outpost'] ?? 0,
+      teleopBump: map['teleop_bump'] ?? 0,
+      teleopTrench: map['teleop_trench'] ?? 0,
       // Teleop Hub Shooting
-      teleopHubShootingTime: (map['teleop_hub_shooting_time'] ?? 0.0).toDouble(),
+      teleopShootingTimes: map['teleop_shooting_times'] != null
+          ? List<double>.from(jsonDecode(map['teleop_shooting_times']))
+          : [],
       // Teleop Booleans
       endStatus: map['end_deep'] == 1
           ? EndStatus.deepCage

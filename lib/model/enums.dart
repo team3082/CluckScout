@@ -1,12 +1,15 @@
 enum ActionType {
-  coralL1,
-  coralL2,
-  coralL3,
-  coralL4,
-  netAlgae,
-  processorAlgae,
-  removeAlgae,
-  dropped,
+  // Coral (Climb) actions
+  L1climb,
+  L2climb,
+  L3climb,
+  attemptedClimb,
+  // Algae actions
+  usedDepot,
+  usedOutpost,
+  bump,
+  trench,
+  // Hub shooting
   hubShooting,
 }
 
@@ -40,7 +43,6 @@ enum StartingZone {
 }
 
 enum Disabled {
-  // ignore: constant_identifier_names
   None,
   off,
   on

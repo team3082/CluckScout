@@ -96,73 +96,65 @@ class MatchScoutingProvider extends ChangeNotifier {
       teamNumber: teamNumber,
       position: position,
       scouterName: scouterName,
-      autoCoralL1: _countOccurrences(
+      autoL1climb: _countOccurrences(
         autoActions,
-        ActionType.coralL1,
+        ActionType.L1climb,
       ),
-      autoCoralL2: _countOccurrences(
+      autoAttemptedClimb: _countOccurrences(
         autoActions,
-        ActionType.coralL2,
+        ActionType.attemptedClimb,
       ),
-      autoCoralL3: _countOccurrences(
+      autoUsedDepot: _countOccurrences(
         autoActions,
-        ActionType.coralL3,
+        ActionType.usedDepot,
       ),
-      autoCoralL4: _countOccurrences(
+      autoUsedOutpost: _countOccurrences(
         autoActions,
-        ActionType.coralL4,
+        ActionType.usedOutpost,
       ),
-      autoDropped: _countOccurrences(
+      autoBump: _countOccurrences(
         autoActions,
-        ActionType.dropped,
+        ActionType.bump,
       ),
-      autoNetAlgae: _countOccurrences(
+      autoTrench: _countOccurrences(
         autoActions,
-        ActionType.netAlgae,
+        ActionType.trench,
       ),
-      autoAlgaeRemoved: _countOccurrences(
-        autoActions,
-        ActionType.removeAlgae,
-      ),
-      autoProcessorAlgae: _countOccurrences(
-        autoActions,
-        ActionType.processorAlgae,
-      ),
+      autoShootingTimes: _extractShootingTimes(autoActions, autoActionTimes),
       autoLeave: autoLeave,
-      autoHubShootingTime: _calculateHubShootingTime(autoActions, autoActionTimes),
-      teleopCoralL1: _countOccurrences(
+      teleopL1climb: _countOccurrences(
         teleopActions,
-        ActionType.coralL1,
+        ActionType.L1climb,
       ),
-      teleopCoralL2: _countOccurrences(
+      teleopL2climb: _countOccurrences(
         teleopActions,
-        ActionType.coralL2,
+        ActionType.L2climb,
       ),
-      teleopCoralL3: _countOccurrences(
+      teleopL3climb: _countOccurrences(
         teleopActions,
-        ActionType.coralL3,
+        ActionType.L3climb,
       ),
-      teleopCoralL4: _countOccurrences(
+      teleopAttemptedClimb: _countOccurrences(
         teleopActions,
-        ActionType.coralL4,
+        ActionType.attemptedClimb,
       ),
-      teleopDropped: _countOccurrences(
+      teleopUsedDepot: _countOccurrences(
         teleopActions,
-        ActionType.dropped,
+        ActionType.usedDepot,
       ),
-      teleopNetAlgae: _countOccurrences(
+      teleopUsedOutpost: _countOccurrences(
         teleopActions,
-        ActionType.netAlgae,
+        ActionType.usedOutpost,
       ),
-      teleopProcessorAlgae: _countOccurrences(
+      teleopBump: _countOccurrences(
         teleopActions,
-        ActionType.processorAlgae,
+        ActionType.bump,
       ),
-      teleopAlgaeRemoved: _countOccurrences(
+      teleopTrench: _countOccurrences(
         teleopActions,
-        ActionType.removeAlgae,
+        ActionType.trench,
       ),
-      teleopHubShootingTime: _calculateHubShootingTime(teleopActions, teleopActionTimes),
+      teleopShootingTimes: _extractShootingTimes(teleopActions, teleopActionTimes),
       endStatus: endStatus,
       disabled: disabled,
       defenseRank: defenseRank,
@@ -175,37 +167,34 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actions.where((currentAction) => currentAction == action).length;
   }
 
-  double _calculateHubShootingTime(List<ActionType> actions, List<double?> times) {
-    double total = 0;
+  List<double> _extractShootingTimes(List<ActionType> actions, List<double?> times) {
+    List<double> shootingTimes = [];
     for (int i = 0; i < actions.length; i++) {
       if (actions[i] == ActionType.hubShooting && times[i] != null) {
-        total += times[i]!;
+        shootingTimes.add(times[i]!);
       }
     }
-    return total;
+    return shootingTimes;
   }
 
   void _updateAutoScore() {
-    int autoCoralL1Points =
-        _countOccurrences(autoActions, ActionType.coralL1) * 3;
-    int autoCoralL2Points =
-        _countOccurrences(autoActions, ActionType.coralL2) * 4;
-    int autoCoralL3Points =
-        _countOccurrences(autoActions, ActionType.coralL3) * 6;
-    int autoCoralL4Points =
-        _countOccurrences(autoActions, ActionType.coralL4) * 7;
-    int autoNetAlgaePoints =
-        _countOccurrences(autoActions, ActionType.netAlgae) * 4;
-    int autoProcessorAlgaePoints =
-        _countOccurrences(autoActions, ActionType.processorAlgae) * 6;
+    int autoL1climbPoints =
+        _countOccurrences(autoActions, ActionType.L1climb) * 3;
+    int autoUsedDepotPoints =
+        _countOccurrences(autoActions, ActionType.usedDepot) * 4;
+    int autoUsedOutpostPoints =
+        _countOccurrences(autoActions, ActionType.usedOutpost) * 6;
+    int autoBumpPoints =
+        _countOccurrences(autoActions, ActionType.bump) * 2;
+    int autoTrenchPoints =
+        _countOccurrences(autoActions, ActionType.trench) * 2;
     int autoLeavePoints = autoLeave ? 3 : 0;
 
-    autoScore = autoCoralL1Points +
-        autoCoralL2Points +
-        autoCoralL3Points +
-        autoCoralL4Points +
-        autoNetAlgaePoints +
-        autoProcessorAlgaePoints +
+    autoScore = autoL1climbPoints +
+        autoUsedDepotPoints +
+        autoUsedOutpostPoints +
+        autoBumpPoints +
+        autoTrenchPoints +
         autoLeavePoints;
   }
 
@@ -285,22 +274,22 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   String _getActionName(ActionType action) {
     switch (action) {
-      case ActionType.coralL1:
-        return "Coral L1";
-      case ActionType.coralL2:
-        return "Coral L2";
-      case ActionType.coralL3:
-        return "Coral L3";
-      case ActionType.coralL4:
-        return "Coral L4";
-      case ActionType.dropped:
-        return "Dropped";
-      case ActionType.netAlgae:
-        return "Net Algae";
-      case ActionType.processorAlgae:
-        return "Processor Algae";
-      case ActionType.removeAlgae:
-        return "Removed Algae";
+      case ActionType.L1climb:
+        return "L1 Climb";
+      case ActionType.L2climb:
+        return "L2 Climb";
+      case ActionType.L3climb:
+        return "L3 Climb";
+      case ActionType.attemptedClimb:
+        return "Attempted Climb";
+      case ActionType.usedDepot:
+        return "Used Depot";
+      case ActionType.usedOutpost:
+        return "Used Outpost";
+      case ActionType.bump:
+        return "Bump";
+      case ActionType.trench:
+        return "Trench";
       case ActionType.hubShooting:
         return "Hub Shooting";
     }
@@ -310,22 +299,22 @@ class MatchScoutingProvider extends ChangeNotifier {
     return actionTypes
         .map((action) {
           switch (action) {
-            case ActionType.coralL1:
-              return "Coral L1";
-            case ActionType.coralL2:
-              return "Coral L2";
-            case ActionType.coralL3:
-              return "Coral L3";
-            case ActionType.coralL4:
-              return "Coral L4";
-            case ActionType.dropped:
-              return "Dropped";
-            case ActionType.netAlgae:
-              return "Net Algae";
-            case ActionType.processorAlgae:
-              return "Processor Algae";
-            case ActionType.removeAlgae:
-              return "Removed Algae";
+            case ActionType.L1climb:
+              return "L1 Climb";
+            case ActionType.L2climb:
+              return "L2 Climb";
+            case ActionType.L3climb:
+              return "L3 Climb";
+            case ActionType.attemptedClimb:
+              return "Attempted Climb";
+            case ActionType.usedDepot:
+              return "Used Depot";
+            case ActionType.usedOutpost:
+              return "Used Outpost";
+            case ActionType.bump:
+              return "Bump";
+            case ActionType.trench:
+              return "Trench";
             case ActionType.hubShooting:
               return "Hub Shooting";
           }
@@ -406,18 +395,20 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void _updateTeleopScore() {
-    int teleopCoralL1Points =
-        _countOccurrences(teleopActions, ActionType.coralL1) * 2;
-    int teleopCoralL2Points =
-        _countOccurrences(teleopActions, ActionType.coralL2) * 3;
-    int teleopCoralL3Points =
-        _countOccurrences(teleopActions, ActionType.coralL3) * 4;
-    int teleopCoralL4Points =
-        _countOccurrences(teleopActions, ActionType.coralL4) * 5;
-    int teleopNetAlgaePoints =
-        _countOccurrences(teleopActions, ActionType.netAlgae) * 4;
-    int teleopProcessorAlgaePoints =
-        _countOccurrences(teleopActions, ActionType.processorAlgae) * 6;
+    int teleopL1climbPoints =
+        _countOccurrences(teleopActions, ActionType.L1climb) * 2;
+    int teleopL2climbPoints =
+        _countOccurrences(teleopActions, ActionType.L2climb) * 3;
+    int teleopL3climbPoints =
+        _countOccurrences(teleopActions, ActionType.L3climb) * 4;
+    int teleopUsedDepotPoints =
+        _countOccurrences(teleopActions, ActionType.usedDepot) * 4;
+    int teleopUsedOutpostPoints =
+        _countOccurrences(teleopActions, ActionType.usedOutpost) * 6;
+    int teleopBumpPoints =
+        _countOccurrences(teleopActions, ActionType.bump) * 2;
+    int teleopTrenchPoints =
+        _countOccurrences(teleopActions, ActionType.trench) * 2;
 
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
@@ -427,12 +418,13 @@ class MatchScoutingProvider extends ChangeNotifier {
                 ? 6
                 : 12;
 
-    teleopScore = teleopCoralL1Points +
-        teleopCoralL2Points +
-        teleopCoralL3Points +
-        teleopCoralL4Points +
-        teleopNetAlgaePoints +
-        teleopProcessorAlgaePoints +
+    teleopScore = teleopL1climbPoints +
+        teleopL2climbPoints +
+        teleopL3climbPoints +
+        teleopUsedDepotPoints +
+        teleopUsedOutpostPoints +
+        teleopBumpPoints +
+        teleopTrenchPoints +
         endStatusPoints;
   }
 
