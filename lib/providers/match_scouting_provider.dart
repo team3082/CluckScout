@@ -263,7 +263,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     List<String> items = [];
     for (int i = 0; i < autoActions.length; i++) {
       if (autoActions[i] == ActionType.hubShooting && autoActionTimes[i] != null) {
-        items.add("Hub Shooting: ${autoActionTimes[i]!.toStringAsFixed(1)}s");
+        items.add("Hub ${autoActionTimes[i]!.toStringAsFixed(1)}s");
       } else {
         items.add(_getActionName(autoActions[i]));
       }
@@ -275,7 +275,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     List<String> items = [];
     for (int i = 0; i < teleopActions.length; i++) {
       if (teleopActions[i] == ActionType.hubShooting && teleopActionTimes[i] != null) {
-        items.add("Hub Shooting: ${teleopActionTimes[i]!.toStringAsFixed(1)}s");
+        items.add("Hub ${teleopActionTimes[i]!.toStringAsFixed(1)}s");
       } else {
         items.add(_getActionName(teleopActions[i]));
       }

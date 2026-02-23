@@ -45,22 +45,9 @@ class TeleopScreen extends StatelessWidget {
                     actionWindowHeight: 215,
                   ),
                   const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.park,
-                    text: "Parked",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.shallowCage,
-                    text: "Shallow Cage",
-                  ),
-                  const SizedBox(height: 15),
-                  EndStatusButton(
-                    status: EndStatus.deepCage,
-                    text: "Deep Cage",
-                  ),
-                  const SizedBox(height: 20),
                   TeleopHubShootingButton(),
+                  const SizedBox(height: 10),
+                  TeleopTimeShooting(),
                 ],
               ),
             )
@@ -151,6 +138,29 @@ class TeleopHubShootingButton extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class TeleopTimeShooting extends StatelessWidget {
+  const TeleopTimeShooting({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Selector<MatchScoutingProvider, double>(
+      selector: (_, provider) => provider.teleopDisplayedTime,
+      builder: (context, displayedTime, __) {
+        return Center(
+          child: Text(
+            "Current Time: ${displayedTime.toStringAsFixed(1)}s",
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Color.fromRGBO(28, 27, 31, 1),
             ),
           ),
         );

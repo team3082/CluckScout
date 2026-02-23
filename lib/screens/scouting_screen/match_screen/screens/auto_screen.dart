@@ -46,10 +46,11 @@ class AutoScreen extends StatelessWidget {
                     actionWindowWidth: double.infinity,
                     actionWindowHeight: 224,
                   ),
-                  const SizedBox(height: 16),
-                  const AutoLeaveButton(),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   TimerButton(),
+                  const SizedBox(height: 10),
+                  const AutoLeaveButton(),
+                  const SizedBox(height: 10),
                 ],
               ),
             )
@@ -97,6 +98,29 @@ class TimerButton extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class TimeShooting extends StatelessWidget {
+  const TimeShooting({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Selector<MatchScoutingProvider, double>(
+      selector: (_, provider) => provider.autoDisplayedTime,
+      builder: (context, displayedTime, __) {
+        return Center(
+          child: Text(
+            "Current Time: ${displayedTime.toStringAsFixed(1)}s",
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Color.fromRGBO(28, 27, 31, 1),
             ),
           ),
         );
