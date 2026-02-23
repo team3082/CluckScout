@@ -7,6 +7,7 @@ enum ActionType {
   processorAlgae,
   removeAlgae,
   dropped,
+  hubShooting,
 }
 
 enum EndStatus {

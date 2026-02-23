@@ -37,8 +37,10 @@ class TeleopScreen extends StatelessWidget {
                 children: [
                   GameActionWindow(
                     getScoreString: (provider) =>
-                        provider.getTeleopActionString(),
-                    deleteFunction: (provider) => provider.removeTeleopAction(),
+                        provider.getTeleopActionWithHubString(),
+                    deleteFunction: (provider) => provider.removeLastTeleopItem(),
+                    undoFunction: (provider) => provider.undoLastTeleopDelete(),
+                    hasUndoItems: (provider) => provider.hasTeleopDeletedItems,
                     actionWindowWidth: double.infinity,
                     actionWindowHeight: 215,
                   ),
@@ -57,6 +59,8 @@ class TeleopScreen extends StatelessWidget {
                     status: EndStatus.deepCage,
                     text: "Deep Cage",
                   ),
+                  const SizedBox(height: 20),
+                  TeleopHubShootingButton(),
                 ],
               ),
             )
@@ -100,6 +104,51 @@ class EndStatusButton extends StatelessWidget {
                   color: endStatus == status
                       ? const Color.fromRGBO(247, 247, 247, 1)
                       : const Color.fromRGBO(28, 27, 31, 1),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class TeleopHubShootingButton extends StatelessWidget {
+  const TeleopHubShootingButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Selector<MatchScoutingProvider, bool>(
+      selector: (_, provider) => provider.teleopHubShooting,
+      builder: (context, isRunning, __) {
+        final provider = Provider.of<MatchScoutingProvider>(context, listen: false);
+        return Center(
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: isRunning
+                  ? const Color.fromRGBO(50, 50, 124, 1)
+                  : const Color.fromARGB(255, 220, 220, 223),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            onPressed: () {
+              provider.toggleTeleopHubShooting();
+            },
+            child: SizedBox(
+              height: 100,
+              width: double.infinity,
+              child: Center(
+                child: Text(
+                  isRunning ? "Hub Shooting" : "Hub Shooting",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: isRunning
+                        ? const Color.fromRGBO(233, 233, 233, 1)
+                        : const Color.fromRGBO(28, 27, 31, 1),
+                  ),
                 ),
               ),
             ),

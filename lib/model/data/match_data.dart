@@ -21,6 +21,9 @@ class MatchData {
 
   // Auto Booleans
   final bool autoLeave;
+  
+  // Auto Hub Shooting
+  final double autoHubShootingTime;
 
   // Teleop Coral
   final int teleopCoralL1;
@@ -33,6 +36,9 @@ class MatchData {
   final int teleopProcessorAlgae;
   final int teleopNetAlgae;
   final int teleopAlgaeRemoved;
+  
+  // Teleop Hub Shooting
+  final double teleopHubShootingTime;
 
   // Teleop Booleans
   final EndStatus endStatus;
@@ -57,6 +63,7 @@ class MatchData {
     required this.autoProcessorAlgae,
     required this.autoAlgaeRemoved,
     required this.autoLeave,
+    required this.autoHubShootingTime,
     required this.teleopCoralL1,
     required this.teleopCoralL2,
     required this.teleopCoralL3,
@@ -65,6 +72,7 @@ class MatchData {
     required this.teleopNetAlgae,
     required this.teleopProcessorAlgae,
     required this.teleopAlgaeRemoved,
+    required this.teleopHubShootingTime,
     required this.endStatus,
     required this.disabled,
     required this.defenseRank,
@@ -91,6 +99,8 @@ class MatchData {
       'auto_algae_removed': autoAlgaeRemoved,
       // Auto Booleans
       'auto_leave': autoLeave ? 1 : 0,
+      // Auto Hub Shooting
+      'auto_hub_shooting_time': autoHubShootingTime,
       // Teleop Coral
       'teleop_coral_L1': teleopCoralL1,
       'teleop_coral_L2': teleopCoralL2,
@@ -101,6 +111,8 @@ class MatchData {
       'teleop_processor_algae': teleopProcessorAlgae,
       'teleop_net_algae': teleopNetAlgae,
       'teleop_algae_removed': teleopAlgaeRemoved,
+      // Teleop Hub Shooting
+      'teleop_hub_shooting_time': teleopHubShootingTime,
       // Teleop Booleans
       'end_none': endStatus == EndStatus.none ? 1 : 0,
       'end_park': endStatus == EndStatus.park ? 1 : 0,
@@ -134,6 +146,8 @@ class MatchData {
       autoAlgaeRemoved: map['auto_algae_removed'],
       // Auto Booleans
       autoLeave: map['auto_leave'] == 1,
+      // Auto Hub Shooting
+      autoHubShootingTime: (map['auto_hub_shooting_time'] ?? 0.0).toDouble(),
       // Teleop Coral
       teleopCoralL1: map['teleop_coral_L1'],
       teleopCoralL2: map['teleop_coral_L2'],
@@ -144,6 +158,8 @@ class MatchData {
       teleopNetAlgae: map['teleop_net_algae'],
       teleopProcessorAlgae: map['teleop_processor_algae'],
       teleopAlgaeRemoved: map['teleop_algae_removed'],
+      // Teleop Hub Shooting
+      teleopHubShootingTime: (map['teleop_hub_shooting_time'] ?? 0.0).toDouble(),
       // Teleop Booleans
       endStatus: map['end_deep'] == 1
           ? EndStatus.deepCage

@@ -32,21 +32,24 @@ class AutoScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(width: 15),
+        
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   GameActionWindow(
                     getScoreString: (provider) =>
-                        provider.getAutoActionString(),
-                    deleteFunction: (provider) => provider.removeAutoAction(),
+                        provider.getAutoActionWithHubString(),
+                    deleteFunction: (provider) => provider.removeLastAutoItem(),
+                    undoFunction: (provider) => provider.undoLastAutoDelete(),
+                    hasUndoItems: (provider) => provider.hasAutoDeletedItems,
                     actionWindowWidth: double.infinity,
                     actionWindowHeight: 224,
                   ),
                   const SizedBox(height: 16),
                   const AutoLeaveButton(),
-                  const SizedBox(height: 40),
-                  const AutoPointsDisplay(),
+                  const SizedBox(height: 20),
+                  TimerButton(),
                 ],
               ),
             )
@@ -57,33 +60,45 @@ class AutoScreen extends StatelessWidget {
   }
 }
 
-class AutoPointsDisplay extends StatelessWidget {
-  const AutoPointsDisplay({super.key});
+class TimerButton extends StatelessWidget {
+  const TimerButton({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Selector<MatchScoutingProvider, int>(
-      selector: (_, provider) => provider.autoScore,
-      builder: (_, points, __) {
-        return Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              "Auto: ",
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(28, 27, 31, 1)),
+    return Selector<MatchScoutingProvider, bool>(
+      selector: (_, provider) => provider.autoHubShooting,
+      builder: (context, isRunning, __) {
+        final provider = Provider.of<MatchScoutingProvider>(context, listen: false);
+        return Center(
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: isRunning
+                  ? const Color.fromRGBO(50, 50, 124, 1)
+                  : const Color.fromARGB(255, 220, 220, 223),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
             ),
-            Text(
-              "$points pts",
-              style: const TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(104, 140, 219, 1)),
+            onPressed: () {
+              provider.toggleAutoHubShooting();
+            },
+            child: SizedBox(
+              height: 100,
+              width: double.infinity,
+              child: Center(
+                child: Text(
+                  isRunning ? "Hub Shooting" : "Hub Shooting",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: isRunning
+                        ? const Color.fromRGBO(233, 233, 233, 1)
+                        : const Color.fromRGBO(28, 27, 31, 1),
+                  ),
+                ),
+              ),
             ),
-          ],
+          ),
         );
       },
     );
