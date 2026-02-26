@@ -42,12 +42,11 @@ class TeleopScreen extends StatelessWidget {
                     undoFunction: (provider) => provider.undoLastTeleopDelete(),
                     hasUndoItems: (provider) => provider.hasTeleopDeletedItems,
                     actionWindowWidth: double.infinity,
-                    actionWindowHeight: 215,
+                    actionWindowHeight: 309,
                   ),
                   const SizedBox(height: 15),
                   TeleopHubShootingButton(),
                   const SizedBox(height: 10),
-                  TeleopTimeShooting(),
                 ],
               ),
             )

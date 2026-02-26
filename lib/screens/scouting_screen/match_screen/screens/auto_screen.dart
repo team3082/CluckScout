@@ -44,7 +44,7 @@ class AutoScreen extends StatelessWidget {
                     undoFunction: (provider) => provider.undoLastAutoDelete(),
                     hasUndoItems: (provider) => provider.hasAutoDeletedItems,
                     actionWindowWidth: double.infinity,
-                    actionWindowHeight: 224,
+                    actionWindowHeight: 245,
                   ),
                   const SizedBox(height: 10),
                   TimerButton(),
