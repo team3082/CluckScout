@@ -66,7 +66,13 @@ class EndStatusButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = context.read<MatchScoutingProvider>();
     return Selector<MatchScoutingProvider, EndStatus>(
-      selector: (_, provider) => provider.endStatus,
+      selector: (_, provider) => provider.endNone == EndStatus.none
+          ? EndStatus.none
+          : provider.endClimb == EndStatus.climb
+              ? EndStatus.climb
+              : provider.endShooting == EndStatus.shooting
+                  ? EndStatus.shooting
+                  : EndStatus.none,
       builder: (_, endStatus, __) {
         return ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -77,7 +83,7 @@ class EndStatusButton extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           ),
           onPressed: () => provider
-              .setEndStatus(endStatus == status ? EndStatus.none : status),
+              .setEndNone(endStatus == status ? EndStatus.none : status),
           child: SizedBox(
             height: 55,
             width: double.infinity,

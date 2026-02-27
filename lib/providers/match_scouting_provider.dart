@@ -25,7 +25,9 @@ class MatchScoutingProvider extends ChangeNotifier {
   List<ActionType> teleopActions = List<ActionType>.empty(growable: true);
   List<double?> teleopActionTimes = List<double?>.empty(growable: true);
   int teleopScore;
-  EndStatus endStatus;
+  EndStatus endClimb;
+  EndStatus endNone;
+  EndStatus endShooting;
 
   // Final Fields
   Disabled disabled;
@@ -74,7 +76,9 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.autoLeave = false,
     this.autoScore = 0,
     this.teleopScore = 0,
-    this.endStatus = EndStatus.none,
+    this.endClimb = EndStatus.climb,
+    this.endNone = EndStatus.none,
+    this.endShooting = EndStatus.shooting,
     this.disabled = Disabled.None,
     this.defenseRank = 0,
     this.drivingRank = 0,
@@ -157,7 +161,9 @@ class MatchScoutingProvider extends ChangeNotifier {
         ActionType.trench,
       ),
       teleopShootingTimes: _extractShootingTimes(teleopActions, teleopActionTimes),
-      endStatus: endStatus,
+      endClimb: endClimb,
+      endNone: endNone,
+      endShooting: endShooting,
       disabled: disabled,
       defenseRank: defenseRank,
       drivingRank: drivingRank,
@@ -216,7 +222,9 @@ class MatchScoutingProvider extends ChangeNotifier {
 
     teleopActions.clear();
     teleopActionTimes.clear();
-    endStatus = EndStatus.none;
+    endClimb = EndStatus.climb;
+    endNone = EndStatus.none;
+    endShooting = EndStatus.shooting;
     teleopScore = 0;
     
     // Reset teleop hub shooting
@@ -414,11 +422,11 @@ class MatchScoutingProvider extends ChangeNotifier {
     int teleopTrenchPoints =
         _countOccurrences(teleopActions, ActionType.trench) * 0;
 
-    int endStatusPoints = endStatus == EndStatus.none
+    int endStatusPoints = endNone == EndStatus.none
         ? 0
-        : endStatus == EndStatus.climb
+        : endClimb == EndStatus.climb
             ? 2
-            : endStatus == EndStatus.shooting
+            : endShooting == EndStatus.shooting
                 ? 6
                 : 12;
 
@@ -465,8 +473,20 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   bool get hasTeleopDeletedItems => _deletedTeleopActions.isNotEmpty;
 
-  void setEndStatus(EndStatus endStatus) {
-    this.endStatus = endStatus;
+  void setEndNone(EndStatus endNone) {
+    this.endNone = endNone;
+    _updateTeleopScore();
+    notifyListeners();
+  }
+
+  void setEndClimb(EndStatus endClimb) {
+    this.endClimb = endClimb;
+    _updateTeleopScore();
+    notifyListeners();
+  }
+
+  void setEndShooting(EndStatus endShooting) {
+    this.endShooting = endShooting;
     _updateTeleopScore();
     notifyListeners();
   }

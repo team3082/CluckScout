@@ -40,7 +40,9 @@ class MatchData {
   final List<double> teleopShootingTimes;
 
   // Teleop Booleans
-  final EndStatus endStatus;
+  final EndStatus endNone;
+  final EndStatus endClimb;
+  final EndStatus endShooting;
 
   // Final Round Fields
   final Disabled disabled;
@@ -71,7 +73,9 @@ class MatchData {
     required this.teleopBump,
     required this.teleopTrench,
     required this.teleopShootingTimes,
-    required this.endStatus,
+    required this.endNone,  
+    required this.endClimb,  
+    required this.endShooting,
     required this.disabled,
     required this.defenseRank,
     required this.drivingRank,
@@ -111,9 +115,9 @@ class MatchData {
       // Teleop Hub Shooting
       'teleop_shooting_times': jsonEncode(teleopShootingTimes),
       // Teleop Booleans
-      'end_none': endStatus == EndStatus.none ? 1 : 0,
-      'end_climb': endStatus == EndStatus.climb ? 1 : 0,
-      'end_shooting': endStatus == EndStatus.shooting ? 1 : 0,
+      'end_none': endNone == EndStatus.none ? 1 : 0,
+      'end_climb': endClimb == EndStatus.climb ? 1 : 0,
+      'end_shooting': endShooting == EndStatus.shooting ? 1 : 0,
       // Final Fields
       'disabled': disabled.toString().split(".").last,
       'defense_rank': defenseRank,
@@ -160,13 +164,9 @@ class MatchData {
           ? List<double>.from(jsonDecode(map['teleop_shooting_times']))
           : [],
       // Teleop Booleans
-      endStatus: map['end_climb'] == 1
-          ? EndStatus.climb
-          : map['end_shooting'] == 1
-              ? EndStatus.shooting
-              : map['end_none'] == 1
-                  ? EndStatus.none
-                  : EndStatus.none,
+      endNone: map['end_none'] == 1 ? EndStatus.none : EndStatus.none,
+      endClimb: map['end_climb'] == 1 ? EndStatus.climb : EndStatus.climb,
+      endShooting: map['end_shooting'] == 1 ? EndStatus.shooting : EndStatus.shooting,
       // Final Fields
       disabled: Disabled.values
           .firstWhere((e) => e.toString().split('.').last == map['disabled']),
