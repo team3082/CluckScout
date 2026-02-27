@@ -14,22 +14,27 @@ class PitScoutingProvider extends ChangeNotifier {
   Drivetrain drivetrain = Drivetrain.swerve;
 
   // Abilities
-  int coralL1 = 0;
-  int coralL2 = 0;
-  int coralL3 = 0;
-  int coralL4 = 0;
+  int cannotClimbAuto = 0;
+  int climbAutoL1 = 0;
+  
+  int cannotClimbL1 = 0;
+  int climbL1 = 0;
+  int climbL2 = 0;
+  int climbL3 = 0;
 
-  int removeAlgae = 0;
-  int processorAlgae = 0;
-  int netAlgae = 0;
+  int bump = 0;
+  int trench = 0;
 
-  int park = 0;
-  int shallowClimb = 0;
-  int deepClimb = 0;
+  int swerve = 0;
+  int tank = 0;
+  int mecanum = 0;
+  int other = 0;
 
   // Preferred Playstyle
-  int prefersCoral = 0;
-  int preferredCoralLevel = 1;
+  int preferredAutoClimbLevel = 1;
+  int preferredClimbLevel = 1;
+  
+  
 
   StartingZone preferredStartingZone = StartingZone.top;
   EndStatus preferredEndStatus = EndStatus.none;
@@ -42,18 +47,25 @@ class PitScoutingProvider extends ChangeNotifier {
     this.teamNumber = 0,
     required this.scouterName,
     this.drivetrain = Drivetrain.swerve,
-    this.coralL1 = 0,
-    this.coralL2 = 0,
-    this.coralL3 = 0,
-    this.coralL4 = 0,
-    this.removeAlgae = 0,
-    this.processorAlgae = 0,
-    this.netAlgae = 0,
-    this.prefersCoral = 0,
-    this.preferredCoralLevel = 1,
-    this.park = 0,
-    this.shallowClimb = 0,
-    this.deepClimb = 0,
+    
+    this.cannotClimbAuto = 0,
+    this.climbAutoL1 = 0,
+
+    this.cannotClimbL1 = 0,
+    this.climbL1 = 0,
+    this.climbL2 = 0,
+    this.climbL3 = 0,
+    
+    this.bump = 0,
+    this.trench = 0,
+    
+    this.swerve = 0,
+    this.tank = 0,
+    this.mecanum = 0,
+    this.other = 0,
+
+    this.preferredAutoClimbLevel = 0,
+    this.preferredClimbLevel = 0,
     this.notes = '',
   });
 
@@ -62,18 +74,25 @@ class PitScoutingProvider extends ChangeNotifier {
     tabIndex = 0;
     teamNumber = 0;
     drivetrain = Drivetrain.swerve;
-    coralL1 = 0;
-    coralL2 = 0;
-    coralL3 = 0;
-    coralL4 = 0;
-    removeAlgae = 0;
-    processorAlgae = 0;
-    netAlgae = 0;
-    park = 0;
-    shallowClimb = 0;
-    deepClimb = 0;
-    prefersCoral = 0;
-    preferredCoralLevel = 1;
+    
+    cannotClimbAuto = 0;
+    climbAutoL1 = 0;
+    
+    cannotClimbL1 = 0;
+    climbL1 = 0;
+    climbL2 = 0;
+    climbL3 = 0;
+
+    bump = 0;
+    trench = 0;
+
+    swerve = 0;
+    tank = 0;
+    mecanum = 0;
+    other = 0;
+
+    preferredClimbLevel = 0;
+
     preferredStartingZone = StartingZone.top;
     preferredEndStatus = EndStatus.none;
     notes = '';
@@ -85,73 +104,67 @@ class PitScoutingProvider extends ChangeNotifier {
       teamNumber: teamNumber,
       scouterName: scouterName,
       drivetrain: drivetrain,
-      coralL1: coralL1,
-      coralL2: coralL2,
-      coralL3: coralL3,
-      coralL4: coralL4,
-      removeAlgae: removeAlgae,
-      processorAlgae: processorAlgae,
-      netAlgae: netAlgae,
-      prefersCoral: prefersCoral,
-      preferredCoralLevel: preferredCoralLevel,
-      park: park,
-      shallowClimb: shallowClimb,
-      deepClimb: deepClimb,
+      
+      cannotClimbAuto: cannotClimbAuto,
+      climbAutoL1: climbAutoL1,
+
+      cannotClimbL1: cannotClimbL1,
+      climbL1: climbL1,
+      climbL2: climbL2,
+      climbL3: climbL3,
+
+      bump: bump,
+      trench: trench,
+
+      prefersAutoClimbLevel: preferredClimbLevel,
+      prefersClimbLevel: preferredClimbLevel,
+      
       preferredStartingZone: preferredStartingZone,
       preferredEndStatus: preferredEndStatus,
+
       notes: notes,
     ));
     reset();
   }
 
   // Setters for various fields
-  void setPark(int value) {
-    park = value;
+  void setCannotClimbAuto(int value) {
+    cannotClimbAuto = value;
     notifyListeners();
   }
 
-  void setShallowClimb(int value) {
-    shallowClimb = value;
+  void setAutoClimbL1(int value) {
+    climbAutoL1 = value;
     notifyListeners();
   }
 
-  void setDeepClimb(int value) {
-    deepClimb = value;
+  void setCannotClimbL1(int value) {
+    cannotClimbL1 = value;
     notifyListeners();
   }
 
-  void setCoralL1(int value) {
-    coralL1 = value;
+  void setClimbL1(int value) {
+    climbL1 = value;
     notifyListeners();
   }
 
-  void setCoralL2(int value) {
-    coralL2 = value;
+  void setClimbL2(int value) {
+    climbL2 = value;
     notifyListeners();
   }
 
-  void setCoralL3(int value) {
-    coralL3 = value;
+  void setClimbL3(int value) {
+    climbL3 = value;
     notifyListeners();
   }
 
-  void setCoralL4(int value) {
-    coralL4 = value;
+  void setBump(int value) {
+    bump = value;
     notifyListeners();
   }
 
-  void setRemoveAlgae(int value) {
-    removeAlgae = value;
-    notifyListeners();
-  }
-
-  void setProcessorAlgae(int value) {
-    processorAlgae = value;
-    notifyListeners();
-  }
-
-  void setNetAlgae(int value) {
-    netAlgae = value;
+  void setTrench(int value) {
+    trench = value;
     notifyListeners();
   }
 
@@ -170,13 +183,13 @@ class PitScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setPrefersCoral(int value) {
-    prefersCoral = value;
+  void setPreferredAutoClimbLevel(int value) {
+    preferredAutoClimbLevel = value;
     notifyListeners();
   }
 
-  void setPreferredCoralLevel(int value) {
-    preferredCoralLevel = value;
+  void setPreferredClimbLevel(int value) {
+    preferredClimbLevel = value;
     notifyListeners();
   }
 

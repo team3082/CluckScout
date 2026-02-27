@@ -46,6 +46,7 @@ class MatchData {
   final Disabled disabled;
   final int defenseRank;
   final int drivingRank;
+  final int accuracyRank;
   final String notes;
 
   MatchData({
@@ -74,6 +75,7 @@ class MatchData {
     required this.disabled,
     required this.defenseRank,
     required this.drivingRank,
+    required this.accuracyRank,
     required this.notes,
   });
 
@@ -110,13 +112,13 @@ class MatchData {
       'teleop_shooting_times': jsonEncode(teleopShootingTimes),
       // Teleop Booleans
       'end_none': endStatus == EndStatus.none ? 1 : 0,
-      'end_park': endStatus == EndStatus.park ? 1 : 0,
-      'end_shallow': endStatus == EndStatus.shallowCage ? 1 : 0,
-      'end_deep': endStatus == EndStatus.deepCage ? 1 : 0,
+      'end_climb': endStatus == EndStatus.climb ? 1 : 0,
+      'end_shooting': endStatus == EndStatus.shooting ? 1 : 0,
       // Final Fields
       'disabled': disabled.toString().split(".").last,
       'defense_rank': defenseRank,
       'driving_rank': drivingRank,
+      'accuracy_rank': accuracyRank,
       'notes': notes,
     };
   }
@@ -158,18 +160,19 @@ class MatchData {
           ? List<double>.from(jsonDecode(map['teleop_shooting_times']))
           : [],
       // Teleop Booleans
-      endStatus: map['end_deep'] == 1
-          ? EndStatus.deepCage
-          : map['end_shallow'] == 1
-              ? EndStatus.shallowCage
-              : map['end_park'] == 1
-                  ? EndStatus.park
+      endStatus: map['end_climb'] == 1
+          ? EndStatus.climb
+          : map['end_shooting'] == 1
+              ? EndStatus.shooting
+              : map['end_none'] == 1
+                  ? EndStatus.none
                   : EndStatus.none,
       // Final Fields
       disabled: Disabled.values
           .firstWhere((e) => e.toString().split('.').last == map['disabled']),
       defenseRank: map['defense_rank'],
       drivingRank: map['driving_rank'],
+      accuracyRank: map['accuracy_rank'],
       notes: map['notes'],
     );
   }

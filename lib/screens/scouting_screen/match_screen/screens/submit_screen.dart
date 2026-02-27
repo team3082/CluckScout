@@ -225,6 +225,42 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
+              _buildDropdownRow(
+          "Accuracy (%)",
+          Theme(
+            data: Theme.of(context).copyWith(
+              popupMenuTheme: PopupMenuThemeData(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+            child: DropdownButton<int>(
+              value: context.select<MatchScoutingProvider, int>((p) => p.accuracyRank),
+              items: [for (var i = 0; i <= 100; i += 10)
+                DropdownMenuItem(
+                  value: i,
+                  child: Text(
+                    "$i",
+                    style: dropdownTextStyle,
+                  ),
+                )
+              ],
+              onChanged: (val) => provider.setAccuracyRank(val ?? 0),
+              underline: Container(),
+              icon: const Icon(
+                Icons.arrow_drop_down,
+                color: Color.fromRGBO(50, 50, 124, 1),
+                size: 24,
+              ),
+              isDense: true,
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+              borderRadius: BorderRadius.circular(10),
+              dropdownColor: Colors.white,
+              elevation: 4,
+            ),
+          ),
+        ),
       ],
     );
   }

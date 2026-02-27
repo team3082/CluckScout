@@ -31,6 +31,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   Disabled disabled;
   int defenseRank;
   int drivingRank;
+  int accuracyRank;
   int defenseTeamNumber;
   String notes;
 
@@ -77,6 +78,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.disabled = Disabled.None,
     this.defenseRank = 0,
     this.drivingRank = 0,
+    this.accuracyRank = 0,
     this.notes = '',
     this.defenseTeamNumber = 0,
   });
@@ -159,6 +161,7 @@ class MatchScoutingProvider extends ChangeNotifier {
       disabled: disabled,
       defenseRank: defenseRank,
       drivingRank: drivingRank,
+      accuracyRank: accuracyRank,
       notes: notes,
     );
   }
@@ -179,15 +182,15 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void _updateAutoScore() {
     int autoL1climbPoints =
-        _countOccurrences(autoActions, ActionType.L1climb) * 3;
+        _countOccurrences(autoActions, ActionType.L1climb) * 15;
     int autoUsedDepotPoints =
-        _countOccurrences(autoActions, ActionType.usedDepot) * 4;
+        _countOccurrences(autoActions, ActionType.usedDepot) * 0;
     int autoUsedOutpostPoints =
-        _countOccurrences(autoActions, ActionType.usedOutpost) * 6;
+        _countOccurrences(autoActions, ActionType.usedOutpost) * 0;
     int autoBumpPoints =
-        _countOccurrences(autoActions, ActionType.bump) * 2;
+        _countOccurrences(autoActions, ActionType.bump) * 0;
     int autoTrenchPoints =
-        _countOccurrences(autoActions, ActionType.trench) * 2;
+        _countOccurrences(autoActions, ActionType.trench) * 0;
     int autoLeavePoints = autoLeave ? 3 : 0;
 
     autoScore = autoL1climbPoints +
@@ -223,6 +226,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     disabled = Disabled.None;
     defenseRank = 0;
     drivingRank = 5;
+    accuracyRank = 0;
     notes = '';
   }
 
@@ -339,8 +343,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   // Tracks deleted actions for undo
-  List<ActionType> _deletedAutoActions = [];
-  List<double?> _deletedAutoActionTimes = [];
+  final List<ActionType> _deletedAutoActions = [];
+  final List<double?> _deletedAutoActionTimes = [];
 
   void removeLastAutoItem() {
     if (autoActions.isNotEmpty) {
@@ -390,31 +394,31 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   void setMatchNotes(String value) {
-    this.notes = value;
+    notes = value;
     notifyListeners();
   }
 
   void _updateTeleopScore() {
     int teleopL1climbPoints =
-        _countOccurrences(teleopActions, ActionType.L1climb) * 2;
+        _countOccurrences(teleopActions, ActionType.L1climb) * 10;
     int teleopL2climbPoints =
-        _countOccurrences(teleopActions, ActionType.L2climb) * 3;
+        _countOccurrences(teleopActions, ActionType.L2climb) * 20;
     int teleopL3climbPoints =
-        _countOccurrences(teleopActions, ActionType.L3climb) * 4;
+        _countOccurrences(teleopActions, ActionType.L3climb) * 30;
     int teleopUsedDepotPoints =
-        _countOccurrences(teleopActions, ActionType.usedDepot) * 4;
+        _countOccurrences(teleopActions, ActionType.usedDepot) * 0;
     int teleopUsedOutpostPoints =
-        _countOccurrences(teleopActions, ActionType.usedOutpost) * 6;
+        _countOccurrences(teleopActions, ActionType.usedOutpost) * 0;
     int teleopBumpPoints =
-        _countOccurrences(teleopActions, ActionType.bump) * 2;
+        _countOccurrences(teleopActions, ActionType.bump) * 0;
     int teleopTrenchPoints =
-        _countOccurrences(teleopActions, ActionType.trench) * 2;
+        _countOccurrences(teleopActions, ActionType.trench) * 0;
 
     int endStatusPoints = endStatus == EndStatus.none
         ? 0
-        : endStatus == EndStatus.park
+        : endStatus == EndStatus.climb
             ? 2
-            : endStatus == EndStatus.shallowCage
+            : endStatus == EndStatus.shooting
                 ? 6
                 : 12;
 
@@ -438,8 +442,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   }
 
   // Tracks deleted actions for undo
-  List<ActionType> _deletedTeleopActions = [];
-  List<double?> _deletedTeleopActionTimes = [];
+  final List<ActionType> _deletedTeleopActions = [];
+  final List<double?> _deletedTeleopActionTimes = [];
 
   void removeLastTeleopItem() {
     if (teleopActions.isNotEmpty) {
@@ -483,6 +487,11 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void setDrivingRank(int value) {
     drivingRank = value;
+    notifyListeners();
+  }
+
+  void setAccuracyRank(int value) {
+    accuracyRank = value;
     notifyListeners();
   }
 

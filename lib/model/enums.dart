@@ -1,23 +1,22 @@
 enum ActionType {
-  // Coral (Climb) actions
+  // Climb actions
   L1climb,
   L2climb,
   L3climb,
   attemptedClimb,
-  // Algae actions
+  // Mobility actions
   usedDepot,
   usedOutpost,
   bump,
   trench,
-  // Hub shooting
+  // Shooting actions
   hubShooting,
 }
 
 enum EndStatus {
   none,
-  park,
-  shallowCage,
-  deepCage,
+  climb,
+  shooting,
 }
 
 enum Position {
