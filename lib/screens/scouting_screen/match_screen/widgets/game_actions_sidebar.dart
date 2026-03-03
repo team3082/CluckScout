@@ -15,6 +15,31 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
+          actionText: "Bump",
+          addGameAction: () => addGameAction(ActionType.bump),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        GameActionButton(
+          actionText: "Trench",
+          addGameAction: () => addGameAction(ActionType.trench),
+        const SizedBox(
+          height: 15,
+        ),
+        GameActionButton(
+          actionText: "Used Depot",
+          addGameAction: () => addGameAction(ActionType.usedDepot),
+        ),
+        const SizedBox(height: 15),
+        GameActionButton(
+          actionText: "Used Outpost",
+          addGameAction: () => addGameAction(ActionType.usedOutpost),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        ),GameActionButton(
           actionText: "L1 Climb",
           addGameAction: () => addGameAction(ActionType.L1climb),
         ),
@@ -38,32 +63,6 @@ class GameActionsSidebar extends StatelessWidget {
         GameActionButton(
           actionText: "Attempted Climb",
           addGameAction: () => addGameAction(ActionType.attemptedClimb),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        GameActionButton(
-          actionText: "Used Depot",
-          addGameAction: () => addGameAction(ActionType.usedDepot),
-        ),
-        const SizedBox(height: 15),
-        GameActionButton(
-          actionText: "Used Outpost",
-          addGameAction: () => addGameAction(ActionType.usedOutpost),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        GameActionButton(
-          actionText: "Bump",
-          addGameAction: () => addGameAction(ActionType.bump),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        GameActionButton(
-          actionText: "Trench",
-          addGameAction: () => addGameAction(ActionType.trench),
         ),
       ],
     );

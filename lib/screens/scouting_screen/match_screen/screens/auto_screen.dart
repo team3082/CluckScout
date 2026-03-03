@@ -27,8 +27,8 @@ class AutoScreen extends StatelessWidget {
                 GameActionsSidebar(
                   addGameAction: provider.addAutoAction,
                 ),
-                // const SizedBox(height: 55),
-                // const AutoPointsDisplay(),
+                 const SizedBox(height: 55),
+                 const AutoPointsDisplay(),
               ],
             ),
             const SizedBox(width: 15),
@@ -128,7 +128,7 @@ class TimeShooting extends StatelessWidget {
     );
   }
 }
-
+/*
 class AutoLeaveButton extends StatelessWidget {
   const AutoLeaveButton({super.key});
 
@@ -173,3 +173,4 @@ class AutoLeaveButton extends StatelessWidget {
     );
   }
 }
+/*

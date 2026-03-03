@@ -22,7 +22,7 @@ class MatchData {
   final List<double> autoShootingTimes;
 
   // Auto Booleans
-  final bool autoLeave;
+  // final bool autoLeave;
 
   // Teleop Coral
   final int teleopL1climb;
@@ -63,7 +63,6 @@ class MatchData {
     required this.autoBump,
     required this.autoTrench,
     required this.autoShootingTimes,
-    required this.autoLeave,
     required this.teleopL1climb,
     required this.teleopL2climb,
     required this.teleopL3climb,
@@ -100,8 +99,6 @@ class MatchData {
       'auto_trench': autoTrench,
       // Auto Hub Shooting
       'auto_shooting_times': jsonEncode(autoShootingTimes),
-      // Auto Booleans
-      'auto_leave': autoLeave ? 1 : 0,
       // Teleop Coral
       'teleop_L1_climb': teleopL1climb,
       'teleop_L2_climb': teleopL2climb,
@@ -135,10 +132,9 @@ class MatchData {
       position: Position.values
           .firstWhere((e) => e.toString().split('.').last == map['position']),
       scouterName: map['scouter_name'],
-      // Auto Coral
+      // Auto
       autoL1climb: map['auto_L1_climb'] ?? 0,
       autoAttemptedClimb: map['auto_attempted_climb'] ?? 0,
-      // Auto Algae
       autoUsedDepot: map['auto_used_depot'] ?? 0,
       autoUsedOutpost: map['auto_used_outpost'] ?? 0,
       autoBump: map['auto_bump'] ?? 0,
@@ -147,8 +143,6 @@ class MatchData {
       autoShootingTimes: map['auto_shooting_times'] != null 
           ? List<double>.from(jsonDecode(map['auto_shooting_times']))
           : [],
-      // Auto Booleans
-      autoLeave: map['auto_leave'] == 1,
       // Teleop Coral
       teleopL1climb: map['teleop_L1_climb'] ?? 0,
       teleopL2climb: map['teleop_L2_climb'] ?? 0,

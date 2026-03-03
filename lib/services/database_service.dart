@@ -43,7 +43,6 @@ class DatabaseService {
               auto_bump INTEGER,
               auto_trench INTEGER,
               auto_shooting_times TEXT,
-              auto_leave INTEGER,
               teleop_L1_climb INTEGER,
               teleop_L2_climb INTEGER,
               teleop_L3_climb INTEGER,

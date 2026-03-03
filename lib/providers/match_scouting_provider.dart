@@ -18,7 +18,6 @@ class MatchScoutingProvider extends ChangeNotifier {
   // Auto Actions
   List<ActionType> autoActions = List<ActionType>.empty(growable: true);
   List<double?> autoActionTimes = List<double?>.empty(growable: true);
-  bool autoLeave;
   int autoScore;
 
   // Teleop Actions
@@ -127,7 +126,6 @@ class MatchScoutingProvider extends ChangeNotifier {
         ActionType.trench,
       ),
       autoShootingTimes: _extractShootingTimes(autoActions, autoActionTimes),
-      autoLeave: autoLeave,
       teleopL1climb: _countOccurrences(
         teleopActions,
         ActionType.L1climb,
@@ -189,22 +187,8 @@ class MatchScoutingProvider extends ChangeNotifier {
   void _updateAutoScore() {
     int autoL1climbPoints =
         _countOccurrences(autoActions, ActionType.L1climb) * 15;
-    int autoUsedDepotPoints =
-        _countOccurrences(autoActions, ActionType.usedDepot) * 0;
-    int autoUsedOutpostPoints =
-        _countOccurrences(autoActions, ActionType.usedOutpost) * 0;
-    int autoBumpPoints =
-        _countOccurrences(autoActions, ActionType.bump) * 0;
-    int autoTrenchPoints =
-        _countOccurrences(autoActions, ActionType.trench) * 0;
-    int autoLeavePoints = autoLeave ? 3 : 0;
-
-    autoScore = autoL1climbPoints +
-        autoUsedDepotPoints +
-        autoUsedOutpostPoints +
-        autoBumpPoints +
-        autoTrenchPoints +
-        autoLeavePoints;
+    
+    autoScore = autoL1climbPoints
   }
 
   void resetFields() {
@@ -213,7 +197,6 @@ class MatchScoutingProvider extends ChangeNotifier {
 
     autoActions.clear();
     autoActionTimes.clear();
-    autoLeave = false;
     autoScore = 0;
     
     // Reset auto hub shooting
@@ -374,12 +357,6 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   bool get hasAutoDeletedItems => _deletedAutoActions.isNotEmpty;
 
-  void setAutoLeave(bool bool) {
-    autoLeave = bool;
-    _updateAutoScore();
-    notifyListeners();
-  }
-
   void setTabIndex(int tabIndex) {
     this.tabIndex = tabIndex;
     notifyListeners();
@@ -413,30 +390,18 @@ class MatchScoutingProvider extends ChangeNotifier {
         _countOccurrences(teleopActions, ActionType.L2climb) * 20;
     int teleopL3climbPoints =
         _countOccurrences(teleopActions, ActionType.L3climb) * 30;
-    int teleopUsedDepotPoints =
-        _countOccurrences(teleopActions, ActionType.usedDepot) * 0;
-    int teleopUsedOutpostPoints =
-        _countOccurrences(teleopActions, ActionType.usedOutpost) * 0;
-    int teleopBumpPoints =
-        _countOccurrences(teleopActions, ActionType.bump) * 0;
-    int teleopTrenchPoints =
-        _countOccurrences(teleopActions, ActionType.trench) * 0;
-
+    
     int endStatusPoints = endNone == EndStatus.none
         ? 0
         : endClimb == EndStatus.climb
-            ? 2
+            ? 10
             : endShooting == EndStatus.shooting
-                ? 6
-                : 12;
+                ? 20
+                : 30;
 
     teleopScore = teleopL1climbPoints +
         teleopL2climbPoints +
         teleopL3climbPoints +
-        teleopUsedDepotPoints +
-        teleopUsedOutpostPoints +
-        teleopBumpPoints +
-        teleopTrenchPoints +
         endStatusPoints;
   }
 
