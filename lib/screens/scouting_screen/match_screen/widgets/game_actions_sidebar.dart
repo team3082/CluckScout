@@ -21,7 +21,10 @@ class GameActionsSidebar extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        GameActionButton(
+
+        // If on the Auto page, turns the L2 & L3 climb buttons off
+        if (true == true) ...[
+          GameActionButton(
           actionText: "L2 Climb",
           addGameAction: () => addGameAction(ActionType.L2climb),
         ),
@@ -32,9 +35,11 @@ class GameActionsSidebar extends StatelessWidget {
           actionText: "L3 Climb",
           addGameAction: () => addGameAction(ActionType.L3climb),
         ),
-        const SizedBox(
+                const SizedBox(
           height: 15,
         ),
+        ],
+        
         GameActionButton(
           actionText: "Attempted Climb",
           addGameAction: () => addGameAction(ActionType.attemptedClimb),
