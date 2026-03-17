@@ -60,8 +60,10 @@ class SubmitScreen extends StatelessWidget {
 
   Widget _buildScoreSection() {
     return Column(
+
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        /*
         const Text(
           "Auto Score",
           style: TextStyle(
@@ -91,6 +93,8 @@ class SubmitScreen extends StatelessWidget {
             fontSize: 30,
           ),
         ),
+        */
+        /*
         Selector<MatchScoutingProvider, int>(
           selector: (context, model) => model.teleopScore,
           builder: (context, score, child) {
@@ -103,11 +107,10 @@ class SubmitScreen extends StatelessWidget {
               ),
             );
           },
-        ),
+        ),*/
       ],
     );
   }
-
   Widget _buildRankings(BuildContext context) {
     final provider = context.read<MatchScoutingProvider>();
     const TextStyle dropdownTextStyle = TextStyle(
@@ -225,7 +228,7 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
-              _buildDropdownRow(
+        _buildDropdownRow(
           "Accuracy (%)",
           Theme(
             data: Theme.of(context).copyWith(
@@ -261,13 +264,62 @@ class SubmitScreen extends StatelessWidget {
             ),
           ),
         ),
+         _buildDropdownRow(
+          "f/s (Fuel per Second)",
+          Theme(
+            data: Theme.of(context).copyWith(
+              popupMenuTheme: PopupMenuThemeData(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+            child: DropdownButton<String>(
+              value: context.select<MatchScoutingProvider, String>((p) => p.fuelPerSecond),
+              items: [
+                DropdownMenuItem<String>(
+                  value: "0",
+                  child: Text("0", style: dropdownTextStyle),
+                ),
+                DropdownMenuItem<String>(
+                  value: "0-1",
+                  child: Text("0-1", style: dropdownTextStyle),
+                ),
+                DropdownMenuItem<String>(
+                  value: "1-3",
+                  child: Text("1-3", style: dropdownTextStyle),
+                ),
+                DropdownMenuItem<String>(
+                  value: "3-5",
+                  child: Text("3-5", style: dropdownTextStyle),
+                ),
+                DropdownMenuItem<String>(
+                  value: "5+",
+                  child: Text("5+", style: dropdownTextStyle),
+                ),
+              ],
+              onChanged: (val) => provider.setfuelPerSecond((val ?? 0) as String),
+              underline: Container(),
+              icon: const Icon(
+                Icons.arrow_drop_down,
+                color: Color.fromRGBO(50, 50, 124, 1),
+                size: 24,
+              ),
+              isDense: true,
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+              borderRadius: BorderRadius.circular(10),
+              dropdownColor: Colors.white,
+              elevation: 4,
+            ),
+          ),
+        ),
       ],
     );
   }
 
   Widget _buildDropdownRow(String label, Widget dropdown) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 4),
+      margin: const EdgeInsets.symmetric(vertical: 5),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [

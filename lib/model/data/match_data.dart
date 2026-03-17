@@ -49,6 +49,7 @@ class MatchData {
   final int defenseRank;
   final int drivingRank;
   final int accuracyRank;
+  final String fuelPerSecond;
   final String notes;
 
   MatchData({
@@ -80,7 +81,8 @@ class MatchData {
     required this.defenseRank,
     required this.drivingRank,
     required this.accuracyRank,
-    required this.notes,
+    required this.fuelPerSecond,
+    required this.notes, 
   });
 
   Map<String, dynamic> toMap() {
@@ -123,6 +125,7 @@ class MatchData {
       'defense_rank': defenseRank,
       'driving_rank': drivingRank,
       'accuracy_rank': accuracyRank,
+      'fuel_per_second': fuelPerSecond,
       'notes': notes,
     };
   }
@@ -173,6 +176,7 @@ class MatchData {
       defenseRank: map['defense_rank'],
       drivingRank: map['driving_rank'],
       accuracyRank: map['accuracy_rank'],
+      fuelPerSecond: map['fuel_per_second'],
       notes: map['notes'],
     );
   }

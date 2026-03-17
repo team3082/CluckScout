@@ -27,6 +27,7 @@ class TeleopScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 GameActionsSidebar(
                   addGameAction: provider.addTeleopAction,
+                  isAuto: false,
                 ),
               ],
             ),

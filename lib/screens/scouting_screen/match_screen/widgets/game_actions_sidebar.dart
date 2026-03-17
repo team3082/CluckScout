@@ -1,17 +1,25 @@
+import 'package:cluck_scout/providers/match_scouting_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cluck_scout/model/enums.dart';
+import 'package:cluck_scout/screens/scouting_screen/match_screen/screens/auto_screen.dart' as auto_screen;
+import 'package:provider/provider.dart';
 
 class GameActionsSidebar extends StatelessWidget {
   final void Function(ActionType) addGameAction;
+  final bool isAuto;
+
 
   const GameActionsSidebar({
     super.key,
     required this.addGameAction,
+    this.isAuto = false
   });
 
   @override
   Widget build(BuildContext context) {
+    final isAutoPage = context.findAncestorWidgetOfExactType<auto_screen.AutoScreen>() != null;
+
     return Column(
       children: [
         GameActionButton(
@@ -23,7 +31,7 @@ class GameActionsSidebar extends StatelessWidget {
         ),
 
         // If on the Auto page, turns the L2 & L3 climb buttons off
-        if (true == true) ...[
+        if (!isAutoPage) ...[
           GameActionButton(
           actionText: "L2 Climb",
           addGameAction: () => addGameAction(ActionType.L2climb),

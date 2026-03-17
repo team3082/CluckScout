@@ -5,11 +5,16 @@ import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_ac
 import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_actions_sidebar.dart';
 
 class AutoScreen extends StatelessWidget {
+
   const AutoScreen({super.key});
+  
+  
 
   @override
   Widget build(BuildContext context) {
+    
     final provider = context.read<MatchScoutingProvider>();
+    
     return Column(
       children: [
         const Divider(
@@ -26,6 +31,7 @@ class AutoScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 GameActionsSidebar(
                   addGameAction: provider.addAutoAction,
+                  isAuto: true,
                 ),
                 // const SizedBox(height: 55),
                 // const AutoPointsDisplay(),
@@ -134,6 +140,7 @@ class AutoLeaveButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     final provider = context.read<MatchScoutingProvider>();
     return Selector<MatchScoutingProvider, bool>(
       selector: (_, provider) => provider.autoLeave,
@@ -156,7 +163,7 @@ class AutoLeaveButton extends StatelessWidget {
               width: double.infinity,
               child: Center(
                 child: Text(
-                  "Left Starting Zone",
+                  "Has Auto",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

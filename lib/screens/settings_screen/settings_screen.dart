@@ -31,7 +31,7 @@ class SettingsScreenState extends State<SettingsScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Incorrect Password. If you are trying to break in, do not :(',
+            'Incorrect Password. I don\'t know why you would break in just don\'t :)',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w600,
