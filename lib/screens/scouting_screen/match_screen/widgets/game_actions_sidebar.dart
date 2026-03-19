@@ -23,34 +23,15 @@ class GameActionsSidebar extends StatelessWidget {
     return Column(
       children: [
         GameActionButton(
-          actionText: "L1 Climb",
-          addGameAction: () => addGameAction(ActionType.L1climb),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-
-        // If on the Auto page, turns the L2 & L3 climb buttons off
-        if (!isAutoPage) ...[
-          GameActionButton(
-          actionText: "L2 Climb",
-          addGameAction: () => addGameAction(ActionType.L2climb),
+          actionText: "Bump",
+          addGameAction: () => addGameAction(ActionType.bump),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "L3 Climb",
-          addGameAction: () => addGameAction(ActionType.L3climb),
-        ),
-                const SizedBox(
-          height: 15,
-        ),
-        ],
-        
-        GameActionButton(
-          actionText: "Attempted Climb",
-          addGameAction: () => addGameAction(ActionType.attemptedClimb),
+          actionText: "Trench",
+          addGameAction: () => addGameAction(ActionType.trench),
         ),
         const SizedBox(
           height: 15,
@@ -68,15 +49,32 @@ class GameActionsSidebar extends StatelessWidget {
           height: 15,
         ),
         GameActionButton(
-          actionText: "Bump",
-          addGameAction: () => addGameAction(ActionType.bump),
+          actionText: "L1 Climb",
+          addGameAction: () => addGameAction(ActionType.L1climb),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        // If on the Auto page, turns the L2 & L3 climb buttons off
+        if (!isAutoPage) ...[
+          GameActionButton(
+          actionText: "L2 Climb",
+          addGameAction: () => addGameAction(ActionType.L2climb),
         ),
         const SizedBox(
           height: 15,
         ),
         GameActionButton(
-          actionText: "Trench",
-          addGameAction: () => addGameAction(ActionType.trench),
+          actionText: "L3 Climb",
+          addGameAction: () => addGameAction(ActionType.L3climb),
+        ),
+                const SizedBox(
+          height: 15,
+        ),
+        ],
+        GameActionButton(
+          actionText: "Attempted Climb",
+          addGameAction: () => addGameAction(ActionType.attemptedClimb),
         ),
       ],
     );

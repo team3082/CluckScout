@@ -30,6 +30,10 @@ class PitScoutingProvider extends ChangeNotifier {
   int mecanum = 0;
   int other = 0;
 
+  int turret = 0;
+  int stationary = 0;
+  int noShooter = 0;
+
   // Preferred Playstyle
   int preferredAutoClimbLevel = 1;
   int preferredClimbLevel = 1;
@@ -64,6 +68,10 @@ class PitScoutingProvider extends ChangeNotifier {
     this.mecanum = 0,
     this.other = 0,
 
+    this.turret = 0,
+    this.stationary = 0,
+    this.noShooter = 0,
+
     this.preferredAutoClimbLevel = 0,
     this.preferredClimbLevel = 0,
     this.notes = '',
@@ -91,6 +99,10 @@ class PitScoutingProvider extends ChangeNotifier {
     mecanum = 0;
     other = 0;
 
+    turret = 0;
+    stationary = 0;
+    noShooter = 0;
+
     preferredClimbLevel = 0;
 
     preferredStartingZone = StartingZone.top;
@@ -115,6 +127,10 @@ class PitScoutingProvider extends ChangeNotifier {
 
       bump: bump,
       trench: trench,
+
+      turret: turret,
+      stationary: stationary,
+      noShooter: noShooter,
 
       prefersAutoClimbLevel: preferredClimbLevel,
       prefersClimbLevel: preferredClimbLevel,
@@ -180,6 +196,21 @@ class PitScoutingProvider extends ChangeNotifier {
 
   void setDriveTrain(Drivetrain value) {
     drivetrain = value;
+    notifyListeners();
+  }
+
+  void setTurret(int value) {
+    turret = value;
+    notifyListeners();
+  }
+
+  void setStationary(int value) {
+    stationary = value;
+    notifyListeners();
+  }
+
+  void setNoShooter(int value) {
+    noShooter = value;
     notifyListeners();
   }
 

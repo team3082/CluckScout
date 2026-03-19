@@ -21,6 +21,10 @@ class PitData {
   final int bump;
   final int trench;
 
+  final int turret;
+  final int stationary;
+  final int noShooter;
+
   // Preferred Climb
   final int prefersAutoClimbLevel;
   final int prefersClimbLevel;
@@ -48,6 +52,10 @@ class PitData {
     required this.bump,
     required this.trench,
 
+    required this.turret,
+    required this.stationary,
+    required this.noShooter,
+
     required this.prefersAutoClimbLevel,
     required this.prefersClimbLevel,
 
@@ -70,6 +78,9 @@ class PitData {
       'climb_L3': climbL3,
       'bump': bump,
       'trench': trench,
+      'turret': turret,
+      'stationary': stationary,
+      'no_shooter': noShooter,
       'prefers_auto_climb_level': prefersAutoClimbLevel,
       'prefers_climb_level': prefersClimbLevel,
       'preferred_starting_zone':
@@ -96,6 +107,9 @@ class PitData {
       climbL3: map['climb_L3'] ?? 0,
       bump: map['bump'] ?? 0,
       trench: map['trench'] ?? 0,
+      turret: map['turret'] ?? 0,
+      stationary: map['stationary'] ?? 0,
+      noShooter: map['no_shooter'] ?? 0,
       prefersAutoClimbLevel: map['prefers_auto_climb_level'] ?? 0,
       prefersClimbLevel: map['prefers_climb_level'] ?? 0,
       preferredStartingZone: StartingZone.values.firstWhere(

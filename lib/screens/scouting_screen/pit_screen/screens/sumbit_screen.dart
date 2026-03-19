@@ -33,7 +33,7 @@ class SubmitScreen extends StatelessWidget {
         const SizedBox(height: 10),
         SizedBox(
           child: Text(
-            "Make sure to mention SWIFT bracelets when talking to people from other teams, and trade them if you like the ones they’ve got. This helps people associate kindness and fun with our team, and may also get you some new friends in the process. Help spread the SWIFT message of inclusivity and fun! Also, Evan will be very happy with you if you trade SWIFT bracelets. Make Evan happy! - Elliot",
+            "Make sure to talk to the team and other members about SWIFT Bracelets! They're a great way to start a conversation without it seeming awkward, and you get some cool bracelets along with it! - Torsten Z 2026",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
         ),

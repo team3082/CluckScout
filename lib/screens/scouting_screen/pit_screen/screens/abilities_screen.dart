@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // needed for FilteringTextInputFormatter
 import 'package:provider/provider.dart';
 import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
@@ -10,16 +11,37 @@ class AbilitiesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = context.read<PitScoutingProvider>();
 
-    return Column(
+    return SingleChildScrollView(
+      child: Column(
       children: [
         const Divider(
           color: Colors.grey,
           thickness: 2,
         ),
+        
+        // const Text(
+        //       "Hopper Capacity",
+        //       style: TextStyle(
+        //       color: Color.fromRGBO(28, 27, 31, 1),
+        //       fontWeight: FontWeight.bold,
+        //       fontSize: 25,
+        //       ),
+        //     ),
+        //     //const SizedBox(height: 2),
+        //     TextField(
+        //       keyboardType: TextInputType.number,
+        //       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+        //       decoration: const InputDecoration(
+        //         contentPadding: EdgeInsets.all(8),
+        //         filled: true,
+        //         fillColor: Color.fromRGBO(233, 233, 233, 1),
+        //       ),
+        //   ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            
             SwitchColumn(
               title: "Auto Climb Abilities",
               switches: [
@@ -46,6 +68,25 @@ class AbilitiesScreen extends StatelessWidget {
                   getValue: () => provider.trench,
                   setValue: (value) => provider.setTrench(value),
                 ),
+              ],
+              thirdTitle: "Shooting",
+              thirdSwitches: [
+                SwitchField(
+                  text: "Turret",
+                  getValue: () => provider.turret,
+                  setValue: (value) => provider.setTurret(value),
+                ),
+                SwitchField(
+                  text: "Stationary Shooter",
+                  getValue: () => provider.stationary,
+                  setValue: (value) => provider.setStationary(value),
+                ),
+                SwitchField(
+                  text: "None",
+                  getValue: () => provider.noShooter,
+                  setValue: (value) => provider.setNoShooter(value),
+                ),
+              
               ],
             ),
             const SizedBox(width: 15),
@@ -101,10 +142,12 @@ class AbilitiesScreen extends StatelessWidget {
                   setValue: (_) => provider.setDriveTrain(Drivetrain.other),
                 ),
               ],
+              
             ),
           ],
         ),
       ],
+      )
     );
   }
 }
@@ -114,6 +157,8 @@ class SwitchColumn extends StatelessWidget {
   final List<SwitchField> switches;
   final String? secondTitle;
   final List<SwitchField>? secondSwitches;
+  final String? thirdTitle;
+  final List<SwitchField>? thirdSwitches;
 
   const SwitchColumn({
     super.key,
@@ -121,11 +166,14 @@ class SwitchColumn extends StatelessWidget {
     required this.switches,
     this.secondTitle,
     this.secondSwitches,
+    this.thirdTitle,
+    this.thirdSwitches,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SingleChildScrollView(
+      child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
@@ -154,7 +202,25 @@ class SwitchColumn extends StatelessWidget {
           const SizedBox(height: 5),
           ...secondSwitches!,
         ],
+        if (thirdTitle != null && thirdSwitches != null) ...[
+          Container(
+            width: 220,
+            height: 2,
+            color: Colors.grey,
+          ),
+          const SizedBox(height: 10),
+          Text(
+            thirdTitle!,
+            style: const TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,                       
+            ),
+          ),
+          const SizedBox(height: 5),
+          ...thirdSwitches!,
+        ],
       ],
+      )
     );
   }
 }
@@ -218,5 +284,7 @@ class SwitchField extends StatelessWidget {
     );
   }
 }
+
+
 
                 

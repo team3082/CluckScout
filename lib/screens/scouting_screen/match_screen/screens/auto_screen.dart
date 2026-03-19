@@ -7,14 +7,9 @@ import 'package:cluck_scout/screens/scouting_screen/match_screen/widgets/game_ac
 class AutoScreen extends StatelessWidget {
 
   const AutoScreen({super.key});
-  
-  
-
   @override
   Widget build(BuildContext context) {
-    
     final provider = context.read<MatchScoutingProvider>();
-    
     return Column(
       children: [
         const Divider(
@@ -140,7 +135,6 @@ class AutoLeaveButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     final provider = context.read<MatchScoutingProvider>();
     return Selector<MatchScoutingProvider, bool>(
       selector: (_, provider) => provider.autoLeave,
