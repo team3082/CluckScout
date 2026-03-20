@@ -265,7 +265,7 @@ class SubmitScreen extends StatelessWidget {
           ),
         ),
          _buildDropdownRow(
-          "f/s (Fuel per Second)",
+          "Fuel Per Second",
           Theme(
             data: Theme.of(context).copyWith(
               popupMenuTheme: PopupMenuThemeData(

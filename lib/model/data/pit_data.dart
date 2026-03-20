@@ -8,6 +8,8 @@ class PitData {
   // Drivetrain Specifications
   final Drivetrain drivetrain;
 
+  final int hopperCapacity;
+
   // Abilities
   final int cannotClimbAuto;
   final int climbAutoL1;
@@ -21,9 +23,8 @@ class PitData {
   final int bump;
   final int trench;
 
-  final int turret;
-  final int stationary;
-  final int noShooter;
+
+  final Shooter shooter;
 
   // Preferred Climb
   final int prefersAutoClimbLevel;
@@ -40,6 +41,8 @@ class PitData {
     required this.teamNumber,
     required this.scouterName,
     required this.drivetrain,
+
+    required this.hopperCapacity,
     
     required this.cannotClimbAuto,
     required this.climbAutoL1,
@@ -52,9 +55,7 @@ class PitData {
     required this.bump,
     required this.trench,
 
-    required this.turret,
-    required this.stationary,
-    required this.noShooter,
+    required this.shooter,
 
     required this.prefersAutoClimbLevel,
     required this.prefersClimbLevel,
@@ -70,6 +71,7 @@ class PitData {
       'team_number': teamNumber,
       'scouter_name': scouterName,
       'drivetrain': drivetrain.toString().split('.').last,
+      'hopper_capacity': hopperCapacity,
       'cannot_climb_auto': cannotClimbAuto,
       'climb_auto_L1': climbAutoL1,
       'cannot_climb_L1': cannotClimbL1,
@@ -78,9 +80,7 @@ class PitData {
       'climb_L3': climbL3,
       'bump': bump,
       'trench': trench,
-      'turret': turret,
-      'stationary': stationary,
-      'no_shooter': noShooter,
+      'shooter': shooter.toString().split('.').last,
       'prefers_auto_climb_level': prefersAutoClimbLevel,
       'prefers_climb_level': prefersClimbLevel,
       'preferred_starting_zone':
@@ -99,6 +99,7 @@ class PitData {
         (e) => e.toString().split('.').last == map['drivetrain'],
         orElse: () => Drivetrain.swerve,
       ),
+      hopperCapacity: map['hopper_capacity'] ?? 0,
       cannotClimbAuto: map['cannot_climb_auto'] ?? 0,
       climbAutoL1: map['climb_auto_L1'] ?? 0,
       cannotClimbL1: map['cannot_climb_L1'] ?? 0,
@@ -107,9 +108,10 @@ class PitData {
       climbL3: map['climb_L3'] ?? 0,
       bump: map['bump'] ?? 0,
       trench: map['trench'] ?? 0,
-      turret: map['turret'] ?? 0,
-      stationary: map['stationary'] ?? 0,
-      noShooter: map['no_shooter'] ?? 0,
+      shooter: Shooter.values.firstWhere(
+        (e) => e.toString().split('.').last == map['shooter'],
+        orElse: () => Shooter.none,
+      ),
       prefersAutoClimbLevel: map['prefers_auto_climb_level'] ?? 0,
       prefersClimbLevel: map['prefers_climb_level'] ?? 0,
       preferredStartingZone: StartingZone.values.firstWhere(

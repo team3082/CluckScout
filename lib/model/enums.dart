@@ -35,6 +35,12 @@ enum Drivetrain {
   other,
 }
 
+enum Shooter {
+  turret,
+  stationary,
+  none,
+}
+
 enum StartingZone {
   top,
   middle,

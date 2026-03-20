@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // needed for FilteringTextInputFormatter
+import 'package:flutter/services.dart'; // needed for filteringTextInputFormatter
 import 'package:provider/provider.dart';
 import 'package:cluck_scout/model/enums.dart';
 import 'package:cluck_scout/providers/pit_scouting_provider.dart';
@@ -19,24 +19,28 @@ class AbilitiesScreen extends StatelessWidget {
           thickness: 2,
         ),
         
-        // const Text(
-        //       "Hopper Capacity",
-        //       style: TextStyle(
-        //       color: Color.fromRGBO(28, 27, 31, 1),
-        //       fontWeight: FontWeight.bold,
-        //       fontSize: 25,
-        //       ),
-        //     ),
-        //     //const SizedBox(height: 2),
-        //     TextField(
-        //       keyboardType: TextInputType.number,
-        //       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-        //       decoration: const InputDecoration(
-        //         contentPadding: EdgeInsets.all(8),
-        //         filled: true,
-        //         fillColor: Color.fromRGBO(233, 233, 233, 1),
-        //       ),
-        //   ),
+        const Text(
+              "Hopper Capacity (if given a range enter lowest)", // larah fanclub where
+              style: TextStyle(
+              color: Color.fromRGBO(28, 27, 31, 1),
+              fontWeight: FontWeight.bold,
+              fontSize: 24,
+              ),
+            ),
+            //const SizedBox(height: 2),
+            TextField(
+              maxLength: 3,
+              keyboardType: TextInputType.number,
+              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+              decoration: const InputDecoration(
+                contentPadding: EdgeInsets.all(8),
+                filled: true,
+                fillColor: Color.fromRGBO(233, 233, 233, 1),
+              ),
+              onChanged: (value) =>
+                provider.setHopperCapacity(int.parse(value))
+              
+          ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +57,7 @@ class AbilitiesScreen extends StatelessWidget {
                 SwitchField(
                   text: "L1 Climb",
                   getValue: () => provider.climbAutoL1,
-                  setValue: (value) => provider.setAutoClimbL1(value),
+                  setValue: (value) => provider.setAutoClimbL1(value), // 67
                 ),
               ],
               secondTitle: "Can Use",
@@ -73,18 +77,21 @@ class AbilitiesScreen extends StatelessWidget {
               thirdSwitches: [
                 SwitchField(
                   text: "Turret",
-                  getValue: () => provider.turret,
-                  setValue: (value) => provider.setTurret(value),
+                  getValue: () =>
+                      provider.shooter == Shooter.turret ? 1 : 0,
+                  setValue: (_) => provider.setShooter(Shooter.turret),
                 ),
                 SwitchField(
                   text: "Stationary Shooter",
-                  getValue: () => provider.stationary,
-                  setValue: (value) => provider.setStationary(value),
+                  getValue: () =>
+                      provider.shooter == Shooter.stationary ? 1 : 0,
+                  setValue: (_) => provider.setShooter(Shooter.stationary),
                 ),
                 SwitchField(
                   text: "None",
-                  getValue: () => provider.noShooter,
-                  setValue: (value) => provider.setNoShooter(value),
+                  getValue: () =>
+                      provider.shooter == Shooter.none ? 1 : 0,
+                  setValue: (_) => provider.setShooter(Shooter.none),
                 ),
               
               ],
@@ -172,8 +179,7 @@ class SwitchColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
@@ -220,7 +226,7 @@ class SwitchColumn extends StatelessWidget {
           ...thirdSwitches!,
         ],
       ],
-      )
+
     );
   }
 }

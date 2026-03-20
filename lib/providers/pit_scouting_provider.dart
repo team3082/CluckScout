@@ -13,6 +13,8 @@ class PitScoutingProvider extends ChangeNotifier {
   // Drivetrain Specifications
   Drivetrain drivetrain = Drivetrain.swerve;
 
+  int hopperCapacity = 0;
+
   // Abilities
   int cannotClimbAuto = 0;
   int climbAutoL1 = 0;
@@ -30,9 +32,7 @@ class PitScoutingProvider extends ChangeNotifier {
   int mecanum = 0;
   int other = 0;
 
-  int turret = 0;
-  int stationary = 0;
-  int noShooter = 0;
+  Shooter shooter = Shooter.none;
 
   // Preferred Playstyle
   int preferredAutoClimbLevel = 1;
@@ -52,6 +52,8 @@ class PitScoutingProvider extends ChangeNotifier {
     required this.scouterName,
     this.drivetrain = Drivetrain.swerve,
     
+    this.hopperCapacity = 0,
+
     this.cannotClimbAuto = 0,
     this.climbAutoL1 = 0,
 
@@ -68,9 +70,7 @@ class PitScoutingProvider extends ChangeNotifier {
     this.mecanum = 0,
     this.other = 0,
 
-    this.turret = 0,
-    this.stationary = 0,
-    this.noShooter = 0,
+    this.shooter = Shooter.none,
 
     this.preferredAutoClimbLevel = 0,
     this.preferredClimbLevel = 0,
@@ -83,6 +83,8 @@ class PitScoutingProvider extends ChangeNotifier {
     teamNumber = 0;
     drivetrain = Drivetrain.swerve;
     
+    hopperCapacity = 0;
+
     cannotClimbAuto = 0;
     climbAutoL1 = 0;
     
@@ -99,9 +101,7 @@ class PitScoutingProvider extends ChangeNotifier {
     mecanum = 0;
     other = 0;
 
-    turret = 0;
-    stationary = 0;
-    noShooter = 0;
+    shooter = Shooter.none;
 
     preferredClimbLevel = 0;
 
@@ -117,6 +117,8 @@ class PitScoutingProvider extends ChangeNotifier {
       scouterName: scouterName,
       drivetrain: drivetrain,
       
+      hopperCapacity: hopperCapacity,
+
       cannotClimbAuto: cannotClimbAuto,
       climbAutoL1: climbAutoL1,
 
@@ -128,9 +130,7 @@ class PitScoutingProvider extends ChangeNotifier {
       bump: bump,
       trench: trench,
 
-      turret: turret,
-      stationary: stationary,
-      noShooter: noShooter,
+      shooter: shooter,
 
       prefersAutoClimbLevel: preferredClimbLevel,
       prefersClimbLevel: preferredClimbLevel,
@@ -143,33 +143,57 @@ class PitScoutingProvider extends ChangeNotifier {
     reset();
   }
 
-  // Setters for various fields
+  // Setters for various fields I LOVE GAMBLING SPIN THE WHEEL WOOOHOOO ALL ON BLACK BABY
   void setCannotClimbAuto(int value) {
+    if(climbAutoL1 == 1) {
+      climbAutoL1 = 0;
+    }
     cannotClimbAuto = value;
     notifyListeners();
   }
 
   void setAutoClimbL1(int value) {
+    if(cannotClimbAuto == 1) {
+      cannotClimbAuto = 0;
+    }
     climbAutoL1 = value;
     notifyListeners();
   }
 
   void setCannotClimbL1(int value) {
+    if(climbL1 == 1) {
+      climbL1 = 0;
+    }
+    if(climbL2 == 1) {
+      climbL2 = 0;
+    }
+    if(climbL3 == 1) {
+      climbL3 = 0;
+    }
     cannotClimbL1 = value;
     notifyListeners();
   }
 
   void setClimbL1(int value) {
+    if(cannotClimbL1 == 1) {
+      cannotClimbL1 = 0;
+    }
     climbL1 = value;
     notifyListeners();
   }
 
   void setClimbL2(int value) {
+    if(cannotClimbL1 == 1) {
+      cannotClimbL1 = 0;
+    }
     climbL2 = value;
     notifyListeners();
   }
 
   void setClimbL3(int value) {
+    if(cannotClimbL1 == 1) {
+      cannotClimbL1 = 0;
+    }
     climbL3 = value;
     notifyListeners();
   }
@@ -199,18 +223,8 @@ class PitScoutingProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setTurret(int value) {
-    turret = value;
-    notifyListeners();
-  }
-
-  void setStationary(int value) {
-    stationary = value;
-    notifyListeners();
-  }
-
-  void setNoShooter(int value) {
-    noShooter = value;
+  void setShooter(Shooter value){
+    shooter = value;
     notifyListeners();
   }
 
@@ -236,6 +250,11 @@ class PitScoutingProvider extends ChangeNotifier {
 
   void setComments(String value) {
     notes = value;
+    notifyListeners();
+  }
+
+  void setHopperCapacity(int value) {
+    hopperCapacity = value;
     notifyListeners();
   }
 

@@ -47,15 +47,17 @@ class PitScreen extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 10),
-        IndexedStack(
-          index: context.select<PitScoutingProvider, int>(
-              (provider) => provider.tabIndex),
-          children: const [
-            TeamScreen(),
-            AbilitiesScreen(),
-            PlaystyleScreen(),
-            SubmitScreen()
-          ],
+        Expanded(
+          child: IndexedStack(
+            index: context.select<PitScoutingProvider, int>(
+                (provider) => provider.tabIndex),
+            children: const [
+              TeamScreen(),
+              AbilitiesScreen(),
+              PlaystyleScreen(),
+              SubmitScreen()
+            ],
+          ),
         ),
       ],
     );
