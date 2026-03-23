@@ -60,6 +60,7 @@ class DatabaseService {
               defense_rank INTEGER,
               driving_rank INTEGER,
               accuracy_rank INTEGER,
+              no_shooting BOOLEAN,
               fuel_per_second TEXT,
               notes TEXT
             );

@@ -34,6 +34,7 @@ class MatchScoutingProvider extends ChangeNotifier {
   int defenseRank;
   int drivingRank;
   int accuracyRank;
+  bool noShooting;
   String fuelPerSecond;
   int defenseTeamNumber;
   String notes;
@@ -84,6 +85,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     this.defenseRank = 0,
     this.drivingRank = 0,
     this.accuracyRank = 0,
+    this.noShooting = false,
     this.fuelPerSecond = '0',
     this.notes = '',
     this.defenseTeamNumber = 0,
@@ -170,6 +172,7 @@ class MatchScoutingProvider extends ChangeNotifier {
       defenseRank: defenseRank,
       drivingRank: drivingRank,
       accuracyRank: accuracyRank,
+      noShooting: noShooting,
       fuelPerSecond: fuelPerSecond,
       notes: notes,
     );
@@ -238,6 +241,7 @@ class MatchScoutingProvider extends ChangeNotifier {
     defenseRank = 0;
     drivingRank = 5;
     accuracyRank = 0;
+    noShooting = false;
     fuelPerSecond = "0";
     notes = '';
   }
@@ -516,7 +520,16 @@ class MatchScoutingProvider extends ChangeNotifier {
 
   void setAccuracyRank(int value) {
     accuracyRank = value;
+    if(value != -10){
+      setNoShooting(false);
+    } else {
+      setNoShooting(true);
+    }
     notifyListeners();
+  }
+
+  void setNoShooting(bool value){
+    noShooting = value;
   }
 
   void setfuelPerSecond(String value) {

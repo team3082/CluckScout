@@ -49,6 +49,7 @@ class MatchData {
   final int defenseRank;
   final int drivingRank;
   final int accuracyRank;
+  final bool noShooting;
   final String fuelPerSecond;
   final String notes;
 
@@ -81,6 +82,7 @@ class MatchData {
     required this.defenseRank,
     required this.drivingRank,
     required this.accuracyRank,
+    required this.noShooting,
     required this.fuelPerSecond,
     required this.notes, 
   });
@@ -125,6 +127,7 @@ class MatchData {
       'defense_rank': defenseRank,
       'driving_rank': drivingRank,
       'accuracy_rank': accuracyRank,
+      'no_shooting': noShooting,
       'fuel_per_second': fuelPerSecond,
       'notes': notes,
     };
@@ -176,6 +179,7 @@ class MatchData {
       defenseRank: map['defense_rank'],
       drivingRank: map['driving_rank'],
       accuracyRank: map['accuracy_rank'],
+      noShooting: map['no_shooting'],
       fuelPerSecond: map['fuel_per_second'],
       notes: map['notes'],
     );

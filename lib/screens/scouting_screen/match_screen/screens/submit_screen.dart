@@ -240,11 +240,12 @@ class SubmitScreen extends StatelessWidget {
             ),
             child: DropdownButton<int>(
               value: context.select<MatchScoutingProvider, int>((p) => p.accuracyRank),
-              items: [for (var i = -10; i <= 100; i += 10)
+              items: 
+              [for (var i = -10; i <= 100; i += 10)
                 DropdownMenuItem(
                   value: i,
                   child: Text(
-                    i == -10 ? "No shooting" : "$i",
+                    i == -10 ? "No Shooting" : "$i",
                     style: dropdownTextStyle,
                   ),
                 )
