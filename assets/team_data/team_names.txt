@@ -1,51 +1,9163 @@
-GEARS
-Bright Bears
-Blue Twilight
+The Juggernauts
+Team 4 ELEMENT
+Robocards
+The CogSquad
+Team007
+Paly Robotics
+Roosevelt RoboRiders
+Red Knights
+MORT
+Triskadekamanics
+The Rulers
+Mustechs
+Bomb Squad
+The Brick Bombers
+Team 18
+Big Red
+The Rocketeers
+ComBBAT
+Double Deuce
+PNTA Pilgrim Nuclear Technology Alliance
+Crusaders 2020
+Raider Robotix
+Team RUSH
+Pierson Whalers
+Caught in a Brainstorm
+FURY
+Jenks Prime Movers
+Killer Bees
+Rockets
+Sigma Squared
+Junior Plaids
+Nonnebots
+The 39th Aero Squadron
+Checkmate
+RoboWarriors
+P.A.R.T.S. (Precision Alvirne Robotics Team Systems)
+TechnoKats Robotics Team
+Category5
+Chief Delphi
+Team E.L.I.T.E.
+Robotic Knights
+Wings of Fire
+Robotworks Y
+Area 53
+Team 55
+R.O.B.B.E.
+Leopards
+The Riot Crew
+RamTech
+Kingman FIRST Robotics Team 60 (The Bionic Bulldogs)
+BVT Robotics
+Team 62
+McDowell Robotics Team 63
+Gila Monsters
+The Huskie Brigade
+Grizzly Robotics
+The HOT Team
+Truck Town Thunder
+HYPER
+More Martians
+Team Hammond
+The Illumination
+Team CHAOS
+RoboRaiders
+Team 77
+AIR STRIKE
+Team 79 Krunch
+Robocolt
+MetalHeads
+Chuck 84
+B.O.B. (Built on Brains)
+Team Resistance
+Diablo
+TJ²
+Team 89
+Team 90
+RoboPats
+NEW Apple Corps
+The  TechnoJays
+Grasshoppers
+JESTER
+Bionic Beef
+Team 98
+The Wildhats
+Striker
+The Gearheads
+Cybersonics
+Team Universal
+Team 105
+Team 106
+Team R.O.B.O.T.I.C.S.
+SigmaC@T Robotics Team
+Team 109
+WildStang
+Plus One
+Eaglestrike
+MVRT
+Epsilon Delta
+Steel Dragons
+Robonauts
+Youth Tech Academy Red Dragons
+Rhode Warriors
+NASA Knights
+Team - Cosmos
+Team 124
+NUTRONs
+Gael Force
+Bluetonium
+The Botcats
+Brain Busters
+CHAOS
+Radioactive Mustangs
+B.E.R.T.
+Team Discovery
+Penn Robotics Black Knights
+Killer Kardinals
+Entropy
 Tigers
-Trojan Robotics
-Wind Chill
-Centurions
-NoMythic
-BearBotics
+WOBOT
+Operation Orange
+T-Rx
+Team 146
+Deep Thunder
+Robowranglers
+Tough Techs
+Team 153
+The TechnoNuts
+RPM  - Robotics Plus Mayhem
+AZTECHS
+The Cobras
+Alpine Robotics
+Team 161
+Team 162
+Team 163
+Das Goat
+Chop Shop
+Children of the Corn
+Flashbacks
+Team 169
+Cheese Curd Herd
+Northern Force
+RAGE Robotics ⚙️
+Arctic Warriors
+Buzz Robotics
+Aces High
+Bobcat Robotics
+The 2nd Law Enforcers
+Children of the Swamp
+S.P.A.M.
+Birds Of Prey
+ThunderQuest
+F.R.E.D.
+The Alliance
+Blizzard
+Gompei and the HERD
+X-CATS
+GRT
+MORT Beta
+CyberKnights
+Team 197
+Deep Blue
+The FEDS
+Team 202
+SOUPERBOTS
+Eastern Robotic Vikings
+METALCRAFTERS
+DRRT
+MAK
+Robotics And Creative Engineering
+The Dirty Birds
+Team 215
+More RoboDawgs
+ThunderChickens
+Team Impact
+Team 221
+Tigertrons
+Xtreme Heat
+The Tribe
+TechFire
+Hammerheads
+Team 227
+GUS
+Division By Zero
+Gaelhawks
+High Voltage
+Team 232
+The Pink Team
+Cyber Blue
+Motown Live Wires
+Techno-Ticks
+Black Magic Robotics
+Crusaders
+Team 239
+TEMPEST
+Astros
+RoboDawgs 3D
+Adambots
+Lobstah Bots
+Da Bears
+Team 248
+The Bulldogs
+The Dynamos
+Team 252
+Boba Bots
+The Cheesy Poofs
+Team 255
+Robo-Rams
+Team 257
+Sea Dawgs
+LABRATs
+Team 260
+Team 261
+Aftershock
+Team 264
+Moderate Heat
+Team 266
+Demolition Squad
+Team 268
+CooneyTech
+Falcons
+Mechanical Marauders
+Cyber Crusaders
+Rhodes Maniacs
+Madcows!
+Team 277
+Team 278
+Tech Fusion
+TnT
+The GreenVillains
+Team 282
+The Generals
+The Crew
+Floyd Robotics
+The RoboDawgs
+Team 290
+CIA - Creativity In Action
+PantherTech
+SPIKE
+Beach Cities Robotics
+Grizzly Robotics Team
+Northern Knights
+Dragons 2
+Team 298
+Valkyrie Robotics
+AAME
+P.R.O.B.O.T.S.
+The Dragons
+The T.E.S.T. Team
+GWHS Robo Griffins
+CRT
+Monsters
+RECHARGED
+Red Jammers
+HeatWave
+Demeter
+The Megatron Oracles
+Team 315
+LUNATECS
+Mechanical Geek Squad
+Big Bad Bob
+RoboLancers
+Team Knight Riders
+Lights Out
+Chips
+Respawn Robotics
+Teamsuperpowermaticultramegasuperlativeawesometasticdelcioushowlingunieagles
+Penn Robotics Golden Rooks
+Mohawks
+The Beach Bots
+The Bulldogs
+MEGALODONS
+TechKnights
+Skillz Tech Gear Botz
+Hard Working Hard Hats
+Pandemic
+Kilroy Robotics
+G.R.R. (Greater Rochester Robotics)
+Miss Daisy
+Burning Magnetos
+Metal-In-Motion
+NORSTAR
+RoboHawks
+Norwell Robotics
+Team 349
+Timberlane Robotics
+Team 351
+The Green Machine
+POBots
+G-House Pirates
+Enigma
+Royal Assault
+Robotic Eagles
+Hawaiian Kids
+The Revolution
+Team 361
+The Muses
+Team Fusion 364
+Miracle Workerz
+Team 367
+Team Kika Mana
+High Voltage Robotics
+Cyber Warriors
+RoboKnights
+Falcons 
+The IceBreakers
+Robotic Plague
+Team 376
+The Circuit Stompers
+The RoboCats
+G-FORCE
+Tornadoes
+Twisted Blizzard
+Brazilian Machine
+SPARKY 384
+Team Voltage
+Maximum Oz
+Titanium Rampage
+Full Metal Jackets (FMJ393)
+Team 394
+2 Train Robotics
+Knight Riders
+The Thundering Herd
+Eagle Robotics
+The Blue Dragons
+Copperhead Robotics
+Team 402
+⚒️   404 ART Not Found  ⚒️
+The Chameleons
+Mumford Chargers
+Team 407
+The RoboTicks
+Team 409
+Psychos
+The Creeping Crawlers
+Team 413
+Smokie and the Bandits
+RoBoCRAFT
+Regs
+Stangbot
+Purple Haze
+NDV Dragon Bots
+Team 420
+The Warriors
+The Mech Tech Dragons
+Simple Machines
+Rust Belt Robotics
+Spartans
+Zombie Apocalypse Counter Task Force
+LANCE-A-LOT
+BoroBlasters
+Two Many Bobcats
+MORT GAMMA
+PinkZilla
+The Final Countdown
+Firebirds
+Kraken
+Robodogs
+Purple Rain
 Talon Robotics
+El Camino Creek Problem-Solving Programmers
+The Suspects
+DEVIL DOGS
+Redstone Robotics
+Freelance Robotics
+Philly's Extreme Team
+Robodogs
+Team Roboto
+Crandroids
+The Blair Robot Project
+Cat Attack Robotics
+Rockem Sockem Robotics
+Siege Robotics
+⚙️ The Grease Monkeys ⚙️
+Rampage Robotics
+Xavier Robotics
+Westside Boiler Invasion
+The Rambunctious Rams
+LEGObots
+Team 464
+GearHeads
+LEGOndary
+Center of Mass
+Aftershock
+Las Guerrillas
+Grizzly Robotics
+Cyber Tigers
+RoboDevils!!
+Team 475
+Wildcats
+Critical Mass
+Hybrid
+The Hitchhikers
+Roboforce
+Positronic Panthers
+Spartans
+Team XBOT
+Technotics
+Titan Robotics Club
+Team 493
+Martians
+Team 495
+Royals
+Orange Crush
+The Cobra Commanders
+Toltechs
+Team 500/Team USA
+The PowerKnights
+Robo Rockers
+Frog Force
+Team 504
+Team 505
+BroBots
+Solid Orange Academy of Robotics (SOAR)
+Team 508
+Red Storm
+Hawaii Five-10
+The Robodox
+Team 512
+Renegade Robotics
+Entropy
+TechnoKnights
+StuyPlus
+Team 517
+Blue Steel
+Robo Masters
+Team 520
+L33T CREW ("leet crew")
+ROBO WIZARDS
+Team 524
+Swartdogs
+Saxon Sparks
+Red Dragons
+The Persuaders
+The Mansfield Hornets
+The PSIcotics
+G-Force
+Team 536
+Charger Robotics
+Renaissance Robotics
+Titan Robotics
+TALON 540 Godwin Robotics
+Surgeons of Steel
+ROBO-DAWGS
+Technotics
+Falcon Engineering And Robotics
+Robostangs
+DevilDawgs
+NanKnights
+Team 551
+The Blue Grease Crew
+Montclair Robotics
+Flaming Cardinals
+Elm City Robo Squad
+Camdenton 4-H LASER HWE #3
+Camdenton 4-H LASER HWE #4
+SPARK - Students Pursuing Applied Robotics Knowledge
+Thrashers
+Longwood RoboLions
+Camdenton 4-H LASER ORI #3
+Hot Wired 566
+Nerds of the North
+Rambots 569
+Team Phoenix
+Paragon Robotics
+Mech Warriors
+Team 574
+Frankfort First Lego League #1
+Nerd Kings
+Tiger Techs
+Fairport Robotics
+Team 579
+Viking Robotics
+Blazing Bulldogs
+Viking Electros
+Team 583
+Cyber Penguins
+Robo Mustangs
+The Hedgehogs
+Jagtronx
+Falkon Robotics
+Chahta Warriors
+Power Surge
+Team 592
+Joe Walker - B.R.O.S. (Brothers Reaching Over Success)
+Joe Walker - Whiplash
+SciClones
+The Wolverines
+Team Duct Tape
+The Robodox
+RamRod Robotics
+BayBots
+MTC
+FBI - Fascinating Bot Intelligence
+Quixilver
+Astromechs
+Cyber Eagles
+Mindstorm Overlords
+Team 608
+VentureBOTS
+Crescent Coyotes
+Saxons
+Chantilly Robotics
+NeoWarriors
+Night Hawks
+Knights
+Southampton Indians
+Enginerds
+E.A.R.T.H. Squad (Edison Achieving Real Technological Heights)
+Cavalier Robotics
+Warbots
+Team 621
+Team 622
+Oakton Cougar Robotics
+CRyptonite
+Team 625
+Team 627
+Northern RobArctic
+Team 630
+J-Lo
+Falcon Robotics
+Rage
+Team 635
+Rascals
+MR. T
+Operation Oxidation
+Code Red Robotics
+Edison Robotics
+Team 641
+BRR(Big Red Robotics)
+Team 643
+Team Mambo
+Team 645
+Team 646
+CYBERWOLVES
+QC ELITE  Flaming Squirrels
+MSET Fish
+Hella's Angels
+Yo Bot
+Bobcats
+NOSIDE
+Mechateuthis Dux
+Team 655
+B.E.A.S.T.  - Bringing Excitement and Science Together
+Team 659
+Dragons
+Rocky Mountain Robotics
+Power Sharks
+Team 664
+Motor Monkeys
+The TorMentors
+Team 667
+The Apes of Wrath
+Homestead Robotics
+Team 671
+Team 674
+Tech High Robotics
+Team 676
+Murphy's Outlaws
+Team 679
+Team 681
+Team 684
+Team 685
+Bovine Intervention
+The Nerd Herd
+Team 688
+Team 690
+Project 691 Robotics
+The Fembots
+StuyPulse
+Bison Robotics
+Circuit Breakers
+Panda Robotics
+Hamilton Microbots
+Team 699
+Team 700
+RoboVikes
+Bagel Bytes
+Team Phoenix
+Warriors
+Cyberhawks
+Hatters Robotics
+Femme Tech Fatale
+Panther Bot
+Robeson full force
+Steel Raiders
+Panthera
+Team 715
+Who'sCTEKS
+Team 731
+Technobots
+Shark Attack
+Gearheads 746
+Flight Crew
+Kingsville CavalGears
+Ctrl V
+TechnoTide
+barn2robotics
+Chargers
+High Desert Droids
+FROSTBYTE
+Team 755
+Crazy Train
+South-Kent Youth Robotics
+Systemetric
+Team 760
+TechPUPS
+Patriots
+Scoopers
+Cobblers
+M-A Bears
+TechnoWarriors
+Eaglebotics
+Team 770
+SWAT
+Sabre Bytes Robotics
+Kingsville CavalGears
+SATech Saints
+Team 779
+TigerBots
+Kinetic Knights
+Kilowatts
+Mobotics
+The HazBots
+Horsepower
+Team 802
+Lowcountry Castaways
+MetalMorphosis/Mad Scientists
+Igniters
+The Brooklyn Blacksmiths
+Monster Mechanics
+Mechanical Mayhem
+The TechnoWizards
+The Mechanical Bulls
+Wild Cards
+The Midnight Mechanics
+Megaforce
+Advanced Power
+Anomaly
+The Steel Armadillos
+Team DeltaTech
+Team 822
+SWAT Robotics
+SWiVaGus Maximus
+Robotics Eagle
+The Digital Goats
+The RatPack
+Ka Mikini Hui O Mililani
+OSCAR
+HPA Robotics
+SparTechs
+The Sting
+The RoboBees
+Webbinators
+Rosie Robotics
+Aragon Robotics Team
+The BioMechs
+Falcon Robotics
+Wildcats
+Cutting Edge
+The Funky Monkeys
+PHRED
+HuskyBots
+Wolfpack
+Team 850
+Froggers
+ARC Robotics
+Thunderstorms
+Iron Bears
+Superior Roboworks
+Demons Robotics
+BOING
+Gondobots
+Lightning Robotics
+The Queens of Modnar
+WARP7
+The SmartTeens of the Turabo Valley
+Absolute Value
+TechHOUNDS
+PowerCord
+TEAM  R. I. C. E.
+Robotechs
+Techno-Devils
+Team 873
+Isis
+Team FrostByte
+Thunder Robotics
+Pi Rho 'botics @ North Star
+Metal Gear
+Team 879
+Border Patrol
+Team 881
+Ironmen
+Mechanical Mules
+Ro-bovines
+Wildcats
+Team 887
+Robotiators
+The Cougars
+Neverending Chaos
+Team ASCII
+The Power Chargers
+Blue Steel
+Team 4
+Team Desert Storm
+Team 6
+The Zebracorns
+Team 8
+Delphi Heritage RoboHawks
+RoboTroopers
+D Cubed
+Platt Tech Panthers
+UMR
+East York Cybernetics "The Cybernauts"
+Botz of Prey
+Junkyard Crew
+The Foley Freeze
+Iron Lyons
+Bendale Robotics
+NextGen
+Team 915
+Team 917
+Team 918
+PANTHERA TIGRIS
+Team 920
+ULTIMATE:  United Longhorn Team Inspiring Mental Attitude Towards Engineering
+Code Red
+The Capacitors
+Team 927
+Hounds of Steel
+Mukwonago BEARs
+Perpetual Chaos
+The Circuit Chargers
+Trigos
+Team 934
+RaileRobotics
+Big Dogs
+Nerd Herd
+Code Gold
+Hiphopanonymous
+Digital Demolition
+Arrow Robotics
+Roboteers
+Great Balls of Fire
+Team Banana
+Creepy Crafters
+Hannibal Gear Gals
+NRG (Newport Robotics Group)
+Wolverine Robotics
+Team 950
+Team Illuminati
+Scorpion Robotics
+Ctrl C
+Eagle Cybertechnology 
+SWARM - South and West Albany Robotics Maniacs
+Team 959
+Circuit Breakers
+Buckaroo Brutes
+Thunderbots
+South Bulldogs Robotics
+Bearcat Robotics
+Heights Tigers
+Iron Lions
+RAWC (Robotics Alliance Of West Covina)
+Hollis Lightning
+The Cardinals
+Spartan Robotics
+Iron Claw
+Greybots
+Nautae
+Synergy Robotics
+Circuit Breakerz
+Cometbots
+Team 979
+ThunderBots
+Snobotics
+The Knights
+Team 984
+HIGHROLLERS
+Steel Phoenix
+Palo
+The Deadly Viper Assassination Squad
+BroncoBots
+Oakwood Robotics
+Monkey Wrenchers
+Mecha Knights
+Spartan Robotics
+The Overcookers
+MechaRAMS
+Cybearcats
+Hacksaw
+CircuitRunners Robotics
+Chaminade Robotics
+Fast Eddie Robotics
+The Tyrants
+Team Lugnut
+Bolt Action
+B.C. Hawks
+CRUSH
+The Phoenix
+Bad Robots
+Pi Hi Samurai
+Evolution
+Home Advantage
+Pike RoboDevils
+Sons Of The Beach
+The Prank Monkeys
+Archer GEeks
+Bedford Express
+Kil-A-Bytes
+Impi Warriors
 Cougars
+Mechatronic Maniacs
+UBERGEEKS
+Wolverine Robotics
+Combined Minds
+The Boilermakers
+Team CLUTCH
+Eclipse
+T12
+Central Tech Robotics
+The SCREAM Team
+Lakota Robotics
+Chief Sealth Robotics
+Pythons
+Impending Disaster
+Team 1042
+Batteries Not Included
+MSJ Robotics
+Aztechs
+Team Echoes
+Mustang Robotics
+Archangel Robotics
+Technical Terminators
+Team 1052
+Gears of Glebe
+Knightmares
+Frank's Garage
+Hot Rocks
+The Blue Knights
+PVC Pirates
+Team 1059
+Dust Devils
+Storm Troopers
+Team MG
+Wild Beast
+The Moose
+Junior Billikens
+The Ninjaneers
+Technobots
+Royal Robotrons
+Team MAX
+Harker Robotics
+The Force Team
+Team 1074
+Sprockets
+PiHi Samurai
+All Stars
+Chaparral Robotic Eng And Tech Explorers Murrieta Amazing Grace Inventors Coalit
+Resurgence Robotics
+Tech Warriors
+Railroaders
+Team Emoticons
+IronColts
+Aquatic Robotics
+Blue Cheese
+Titronics Digerati
+Scarborough Warriors At The Top
+Team Mercury
+Team 1090
+Oriole Assault
+The Rabid Rabbits
+Cougars
+Channel Cats
+Metal Minds
+ZULU
+Site 3 Engineering
+Rockwood Robotics "Rock-Bots"
+DiscoTechs
+Inverse Polarity
+Mustangs
+M'Aiken Magic
+Frankenbots
+TechnoEagles
+The Prep
+patriots
+Panther Robotics
+The RoboHawks
+Binary Bulldogs
+Power Hawks Robotics
+Huskies
+Urban Assault
+Simbotics
+Deus Ex Machina
+Team 1116
+NERDS INC.
+Pup Cups
+Milpitas Xtreme Robotics
+Railbots
+AIM ⛟ Robotics
+UberBots
+Broncos
+SPARX
+Lotus Robotics
+Team 1129
+Phantoms 
+Robo-Techs
+R.A.P.T.A.R. (Robotics Adventure Professionals of Tidewater and Richmond)
+The Hug A Bots
+Schmoebotics
+Nutty Genius's
+Rocket Sauce
+Eagle Engineering
+The Chamblee Gear Grinders
+MAGNADON
+TAS Megawatts
+SH Robo Uknighted
+Cruzin' Comets
+COQUITRON
+Magic
+The Herdinators
+Harvard Westlake Robotics
+T. O. Robotics
+Storm System
+The Hitchhikers
+Blue Stars
+Timberwolves
+Harrisonburg High School Blue Streaks
+SciBorgs
+Under Control
+Landsharks
+The Corps
+Ramona Rampage
+Titanium Robotics
+Highland 1
+The Robotics Team
+Trojan Horses
+Project NEO
+Team Paradise
+Highlander Robotics
+Knightmares
+Malvern Robotics
+Fairbanks Robarctics
+We Tek Too
+MECHA-JAGS
+DURT  (De Smet United Robotics Team)
+Atomsmashers
+St Francis of Assisi Team 1
+Patriots
+the peasants
+Cobra Robotics
+The X-Bots
+Brick City Flame
+The Ravens
+Gearheads
+ANONOBOTS
+Eagles
+Team 1192
+S.O.A.R. (Students of Applied Robotics)
+TorBots
+Team 1199
+Team 1200
+CSI:Monroe
+Ranger Robotics
+PANDEMONIUM
+Eagles
+Badgerbots
+Wrench Warriors
+Metool Brigade
+RoboHornets
+Team TACKLE
+Robotnics
+Sentinels
+GROVES
+The Grizzlies
+Machine Tool
+Knights
+SCH Robotics
+Iron Eagles
+Rockhoppers - Hilltopper Robotics
+Nerdbotics
+Falcons
+Twisted Dimension
+Team 1224 - The Pius Princesses
+The Gorillas
+Team 1226
+Techno-Gremlins
+RoboTribe
+Tidal Shift
+The Lehman Lionics
+RAMS ROBOTICS
+Maximum Strength
+Phoenix Rising
+Cybernetic Panthers
+EcoRobotics
+Vita Dogs
+Sappers
+THEORY6
+Team S.M.I.L.E.Y
+Dragons
+Viking Robotics
+Monarch Robotics
+Agincourt Skunkworks
+Blood, Sweat, and Gears
+TITANium Allies
+Robo Rats
+Gator-Bots
+TechTigers Robotics
+Tech Force
+Blarglefish
+Highlanders
+Parallel Universe
+SeaBot
+Paradigm Shift
+Panthers
+Robo Lions Team1261
+the STAGS
+Austin High School/Marshall Space Flight Center
+The Devil Duckies
+Purgolder Robotics
+Red Dragons
+Tyrannikal Mechanikal
+Wolf Bytes
+Pi-Robots
+Kaizen Blitz
+The Robotomies
+B.E.A.R.S
+Cold Fusion
+Ragin' C-Biscuits
+Mustang Robotics
+DART
+The Biggest Birds
+Kevlar Cranes
+Aluminum Assault
+RAVEN Robotics
+Gearheadz
+Robowolves
+Circuit Breakers
+RNS Joysticks
+Pandamaniacs
+Pack of Parts
+The Golems
+Full Metal Jackets
+Team 1297
+205 Terminators
+Dominators
+EVO
+The Robotic Raiders
+Team Lionheart
+WYOHAZARD
+N.O. Botics
+Ice Cubed
+BadgerBOTS
+Robosaints
+Wildcat Robotics
+Diamond Eagles
+Runnymede Robotics
+Kell Robotics
+Syntax Error
+Robo-Knights
+Digital Fusion
+Issaquah Robotics Society
+Flash
+"Beltway: The Learning Machine"
+GRAYT Leviathons (Genesee Robotics Area Youth Team)
+MadTown Robotics
+Sporks
+Inverse Paradox
+Cy-Ridge Robotics
+SBOTZ
+The ViPrs
+Quiet Riot
+Broot Force
+SWIFT
+OT Devils
+Cognitive Hazard
+The Untouchables
+Team 1337
+Birds of Prey
+Angelbotics
+Spartan Robotics
+The Renegades
+Lord of the Bots
+DV ROBOTICS
+Platinum Dragons
+Trobotics
+E-Robotics
+Electric Anarchy
+Inter-tribal Robotics Group
+The Rambots
+TKO
+Huskie Robotics
+The Spartans
+Stallions
+Écoles secondaires l'Essor et Lajeunesse
+High Voltage
+The Generals
+Scalawags
+Orbit Robotics
+Nightmare Robotics
+Team 1364
+The Bot Docs
+Roughriders
+Blue Bears
+Perpetual Motion
+Minotaur
+Thermogenesis
+Cosmic Gold
+Lambda^3
+Spontaneous Combustion
+Amped Up
+Trobots
+The Spaceballs
+Adams 12 Aliens
+Hilo Viking Robotics
+Gear Devils
+Steel Dragons
+ETEP Team
+Vineland High School Fighting Clan
+The Brainstormers
+The Trobots
+Rudy's Rangers
+Eagle Robotics
+The Body Electric
+MEKHEADS
+The Metal Moose
+KINEMATRIX
+Nordic Legions
+The Juggernaut
+Los Picachos
+Pyrobots
+Oh!  know
+1398 Robo-Raiders
+Mekanicats
+Freedom FORCE
+Team 1403 Cougar Robotics
+Shocks
+Finney Falcons
+Team Robius
+The ElectroCats
+The Saintinators
+Team 1409
+The Kraken
+Trojens
+The Comet Warriors
+Skrappy 1413
+IHOT
+The Flying Pumpkins
+Overlake Robotics Branch
+Titans
+Vae Victis
+Rustic Roboteers
+Dept. of Exceptional Robots
+Team CHAOS
+The Neon Knights
+Error Code Xero
+Cougartronics
+Team 1427
+T-Birds
+TEAM KAOS
+WRONG Doers
+Metal Beavers
+Tiger Techies
+The pi-Rats
+Jackets
+Robot Rams
+The A Team
+Mays RBOT
+Warriors
+RAVENS
+Ehecatl
+Lightning
+Webb Spark
+Robo Knights
+Panther Robotics
+Parsons Vikings
+Robocats
+XQ Robotix Team 1450
+RoboKnights
+Omnicats
+RoboCubs
+NEC
+GrizzlyBots
+TRONN
+Red Tie Robotics
+Bearcats
+Robolution
+Golden Hawks
+Tekeez
+Transformers
+ Wolves
+Code Breakers
+Webb Robotics
+HSRO
+Hicksville J-Birds
+The Labcoats
+DA Bears
+GENESIS
+Titans
+LOOSE CONNECTIONS
+Der Eisenflug
+Texas Torque
+The OZ Men
+SWAT Team
+Robatos Locos
+The Riveters
+Grizzlies
+Hoggzilla
+Team 1485
+Knight Robotics
+Blood Sweat Gears
+Sparta's Rockets
+Team CAUTION
+Falcons
+Red Devils
+IGUANA #1496
+Ram Robotics
+The Polar Pilots
+Metal-Morphose
+Team THRUST
+Technical Difficulties
+Spartonics
+Desperate Penguins
+Roybotics
+Metal Muscle
+Warlocks
+RoboWizards
+Screamin Eagles
+Wildcats
+Rolling Thunder
+The Big Red
+Cyclones
+The Vikes
+MorTorq
+Fightin' Grizzlies
+AMP'D UP
+Raider Robotics
+Mechanical Mayhem
+Omega - 13
+DOTM - Defenders of the Multiverse
+MARS (Mega Awesome Robotic Systems)
+Gladiators
+Deerfield High School Warriors
+Bionic Battalion
+MTR (Monroe Trojan Robotics)
+CyberCards
+Vikings
+Team Lake Effect
+Royals
+Triple Strange
+Abramson Robotic Soldiers
+Knights of Alloy
+Robotic Knights
+The Holy Cows
+Clover Eagle Robotics
+Flaming Chickens
+MidloCanics
+Heart of London
+The Riddler Revolution
+One Byte Short
+DSF Robotics
+Chaos, Inc.
+"Where's Waldo?"
+Highlanders
+Fire TraXX
+The Botics Squad
+The Grapes of Wrath
+CougarBots
+KC Robotics Team
+Oceanside Kraken
+CryoFrost
+Robo Raiders
+12 Volt Bolt
+ACCIdent
+Devil Tech
+RoboPanthers
+Roboducks
+RMSEL Robotics
+ROBO-CATS
+J.A.G.S.
+Think Tank Technologies (T3)
+AMMOKNIGHTS
+Shock-a-bots
+Mechanicatz
+Haywire Robotics
+Demons
+CALibrate Robotics
+The Hammer Heads
+Kfar Galim
+MisCar
+Team 1575
+Voltrix
+Steampunk
+The Purple RoboSnails
+Shevach-Mofet
+The Blue Monkeys
+Team 1581
+Dantziger
+Ridge View Academy Rambotics
+Pirates
+Scitobor Robotics
+The Crunken Masters
+DYNAMIC (Desgin Young New Advance Minds In Competition) BOTICS
+Titaniums
+Greece Gladiators
+Bionic Tigers
+2 Hot 2 Trot
+Double X
+The Dragons
+The Instigators
+BxAero
+TeamTalon 1598
+CircuiTree
+ROBO KINGS AND QUEENS
+Quantum Samurai
+CougarBots
+Libas
+Mekheads
+RoboHawks
+Division Dragons
+Rough Riders
+West Allied Robotics -W.A.R.
+⛴ Blackwater Robotics ⛴
+NOS
+Robo-Sharks
+StARC
+weequahic indians
+The Mighty Bulldogs
+Capital Robotics 
+Up-A-Creek Robotics
+Robolution
+Eniac
+Team Spyder
+Banner Bots
+The Green Grinches
+Winnovation
+Falcon Robotics
+SENAI Mechatronics
+Garrett Coalition (GaCo)
+Rockin Robots
+RoboBuffs
+Wreckers
+TECHNOTICS
+Reds Robotics
+Sab-BOT-age
+Where's Waldo?
+Techno-Cats
+Bob's Builders in Black
+The Robo-Skunks
+Butte Bot Builders
+Precision Guessworks
+Iron Devils
+G3 Robotics
+Lakerbotics
+Prodigies of Technology
+TBA
+LakeView Legends
+Washington High School RoboKatz
+The Non Conformants
+Screaming Eagles
+Angry Scotsmen
+Hamosad
+Tech Heads
+Harlem Knights
+Griffitrons
+Raptor Force Engineering
+Weapons of Mass Construction
+REDSKINS
+Broncobotix
+The Jaganators
+FHJCC  Eagles
+Buchanan Bird Brains
+Robo T-Birds
+Lake Effect 
+UPS (Ultimate Protection Squad)
+The Pascack PI-oneers
+Qunatum Ninjas
+Citrus Circuits
+Fort Erie Secondary School
+Eye Bots
+Techno Titans
+The Chimeras
+Tech-Know Commandos
+Team Navigator
+Highlander Robotics
+Team Stick Shift
+Blazing Bengals
+Orbit
+EaglesBots
+CougarBots
+Robo Lobos
+Walt Disney Robo Warriors
+Bearly Robotics- "Your Best Alloy"
+RoboRevolution
+Gyros
+Metal Cougars (MC^2)
+Robocats
+Gatorbotics
+Robocubs
+None
+RAT's 
+Steelers
+Vikings
+Ratchet Rockers
+NH Indians
+AMP'D Robotics
+Sparks
+The Ravonics Revolution
+RAPTORS
+Dawgma
+Gears
+MORE Robotics
+RDA
+Redbird Robotics
+D'Penguineers
+The Fighting Pi
+The Umbrella Corporation
+PhyXTGears
+Tidal Force
+Rebel Innovators
+The FBI - FIRST Bots of Independence
+Weber Fever
+Worcester Public School Girls All Star
+N.E.R.D.S. (Nifty Engineering Robotics Design Squad)
+REX
+B.L.I.N.G.  (Bausch & Lomb Inspires & Nurtures Growth)
+Team Inconceivable!
+Team Driven
+Fresta Valley Robotics Club
+Hilltopper Robotics
+PolarBots
+1734 Sesame Street
+Green Reapers
+Robot Casserole
+Project X
+Team 1738
+Chicago Knights Robotics
+Cyber Colonels
+Red Alert
+Shockwave
+Short Circuits
+Robo-Rays Robotics
+The P-51 Mustangs
+Team OTTO
+Harrison Boiler Robotics
+Lab Rats
+Wapack Renaissance Robotics
+ThunderStorm Robotics
+The Warriors
+Tonka
+Goz-Bot
+Nitro Knights
+Jaguarbotics
+Argos
+Wolverines
+Technomancers
+Potatoes
+Robo-Titans
+STEAMpunk Tigers
+Paséliens
+Liberty Robotics
+E1Bots
+TM
+Widget Warriors
+Nashoba Robotics
+Digital Hawks
+Alpha Woverines
+North Gwinnett Robotics
+The Brazilian Trail Blazers
+Athena's Engineers
+Tigerbytes
+Declaration
+Viking Robotics
+Chill Out
+G. St. Techies
+Wolves Robotics
+Lindblom Electric Eagles
+RADICAL RAYTOWN ROBOTICS
+Falcon Firebots
+Litchbots
+Blue Springs Robocats
+The Robotics Team
+The Flying Circuits
+Ravage
+Cliffhangers
+Team 1881
+Voyagers
+Round Table Robotics
+The Aviators
+N.I.R.D.
+Carver Clutch
+RoboTigers
+Phoenix
+RoboKnights
+Wired-Up!
+Bravebotics
+The Dapper Dans
+Team Stealth
+Vikings
+Northmen
+HOT BOTS
+S.W.A.T.
+Redbird Robotics
+Red Devil Robotics
+The MidKnight Inventors
+CATATRONICS
+FRESH
+Blackbird Robotics
+Roboegal
+Phoenix In Fight
+Black Scots
+"The Green Machine"
+Llano Estacado RoboRaiders
+Team Talos
+The Quacken
+Havoc
+Electric Calamari
+The New Victorians
+1824
+The Cyborgs
+Team 1826, The Fuse
+THE HIVE
+BoxerBots
+Carbonauts
+Mighty Bookers
+Screaming Eagles
+Duck Tape
+Team BEAN
+Evolution
+Wreckless Creation
+The MilkenKnights
+Madi
+Bobcats
+Techattack
+Diggers
+Crazy Bred......Yeeeeaah!!
+Twisted E.G.O.
+Trobots
+The Eggineers
+Cyber Panthers
+Le Vortex
+WRATH
+SOUP
+Griffins
+Mechanicats
+Manic Mechanics
+Team Amore
+Ruskin Eagles
+The Chomp Bots
+MagnoBots
+Gear Heads
+Citrus Sparks
+Spartans
+RoboJacks
+Alphabots
+SHARC
+Red Raiders 
+Titan it up!
+Automata
+RoboBuffs
+The Cardinals
+The Prowlers
+Space Cookies
+The Lightning Arx
+Panter Machine
+Steel Lions
+CRT
+Purple Haze
+Beachbotics
+Mechanical Mafia
+Minor High School
+Warriors of East Harlem
+Gamma Elite
+Rebel Robotics
+Dragons
+Griffins
+Comet Robotics
+Hawks
+Russet Robotix
+West Robotics
+Haze
+EOT
+Bullbots
+High Tech Parrots
+The Elite
+Lambda Corps
+Concussive Engineers
+Red Hot Chile Dragons
+Westside Wolves
+Saints Robotics
+Rough Riders
+Ramrod
+Exploding Bacon
+Warbots
+KCbotics
+WeBeRoyBotics
+Birds of Prey
+ShoreBots
+G-Tech
+Hawlets
+Techno-Horns
+Team Combustion
+Livewire
+The MidKnight Inventors
+Firebird Robotics
+MP Robotics
+T.O.M. (Teckies Operating Machinery)
+NC GEARS
+Knights of the Heights
+McMain Hurricanes
+Oz-Ram
+The MidKnight Inventors
+Jags
+Team 8-Bit
+Tempest
+FoxyBots
+Comets
+Hornets
+RoboRustlers
+Doncaster Destroyers
+AI
+Team Happycat
+Elysium
+Manhattan High School
+THE KUHNIGHTS
+Tech Tigers 1940
+Detroit Rocks Robotics
+Cinderella Tel-Nof
+Neat Team
+Airforce High School
+Most Wanted Robotics
+ FG
+BlacKnight Robotics
+GreenGang
+shapira
+Emek Hefer
+Ort Singolovsky
+Arming High School
+ElectroBunny
+Beit Yerah
+UA
+LighTeam
+Bengal Bots
+GO DARBY!
+GreenvilleSeniorHigh
+Zilch
+PSC Robotics
+Firebirds
+Knights
+The Janksters
+Bulldogs
+Searing Engineering
+Burning Tiger   #1973
+Weber Tech
+Team QUEEN
+The Missing Lynx
+The PowerSquids
+Bulldogs
+The Brigade
+The Gearheads
+Cougar Robotics
+Skunk Works Robotics
+Raider Robotics
+Robohawks
+Team Titanium
+Broncobots
+The Sweetie Pies
+Viking Robotics
+Colts
+The Dragons
+Raytown South Robocards
+Quixote
+Fatal Error
+Wildcat Robotics
+STAGROBOTICS
+Robodogz
+O.U.T.E.R L.I.M.I.T.
+TEAM ROCK
+HERMES
+Tualatin Robotics
+Thunderducks
+Aerobotechs
+Robots of the Round Table
+VTEC
+Robo-Titans
+The Lightning Bots
+SMH Robotics
+@ Zenith
+Cybergnomes
+Spartans
+Static shock
+Mighty Monkey Wrenches
+Trojans
+Robo Runners
+F.A.R. 
+Titan Robotics
+PiraTech
+Warrior Pride
+Aztecs
+Senai
+Robotic Dragons
+Phantom Robotics
+Neo-Tech Robotics
+RoboTigers
+Brainy-Actz
+Funky Monkeys
+Eagles
+IncrediBULLS
+The Rockin' Bots
+Boulder Valley Black Knights
+Oranje Lions
+Sky Bandits
+Rockford Robotics
+DERT - Dunlap Eagles Robotics Team
+(RC)2
+Robo-trees
+Frequency 2043
+Big Red Robotics
+Robo-Techs
+Bear Metal
+Team Challenger
+The Pink Panthers
+Sartech
+SEB
+The Beattie Bulldogs
+KnightKrawler
+Southern Tier Robotics
+Tech Vikes
+RoboForce
+OP Robotics
+AV CyberBulls
+The Hitchhikers
+ECHS Robotics
+Pioneers
+CORE 2062
+Green Machine
+The Panther Project
+The Lions
+PFTB of Doom
+Apple Pi
+Metal Jackets
+Black Widow
+Royals
+Autonomous Eagles
+Carver RoboTechs
+EagleForce
+Robohoundz
+Enigma Robotics
+ Scots
+Laser Robotics
+Robotic Wolves
+4H ALARM Robotics
+Torbotics
+Icarus
+Team Blitz
+Robots by the C
+RoboDogs
+BFG (Building Future Generations)
+IO
+Buff 'n Blue
+Olympians
+Beaufort Robotics 
+Bowtie Brigade
+Direct Current
+RoboActive
+Phoenix Force Robotics
+Bulldogs
+Blue on Blue
+M Squared
+Team Paradox
+Fisherman
+The Colonels
+University Park
+The Junkyard Dogs
+Angry Bots
+Team Awkward Turtle
+Knight Vision
+CHS
+Eagles
+PHP Robo Warriors
+Nightmares
+Rock County Robotics
+The West Georgia Wolvotics
+SCAR (Sequoyah Computer Animation and Robotics)
+doncaster 
+Mecha Clerks
+Team Tators
+X-Factor
+Urban Science
+BCLA
+JQUS
+SciTech
+Ultraviolet
+Alpha+
+Mustangs
+H.E.A.T.
+Aztecs
+Presentation Invasion
+Impossible Mission Force
+The Oxford RoboCats
+Road Runners
+Team Synergy
+Spartronics
+Lakeview
+Team Tobor
+Gators
+HAZMATS
+CHUCK
+Mechaknights
+CV Bearbots
+W-Squared
+PMSA Monty Pythons
+S*M*A*S*H
+Chassell Robotics
+AzTechs
+Wire Freaks
+Apollo 
+the ausTIN CANs
+RoboPirates
+Robocats
+MacAttacks
+ChromePanthers
+The Core
+BisonBots
+Bluebotics
+Radical Tech
+Aluminum Falcons
+KING TeC
+Galvanized Guardians
+RoboDogs
+Steel Unit-E
+Robo Rocks
+Iron Eagles
+The Fighting Calculators
+MAD SCIENTIST ASSOCIATION
+The Robettes
+RioBotics
+Zero Gravity
+GEARS
+Tyborgs
+Tigerbots
+Team Injun Ingenuity
+RAMAZOIDZ
+Dogs of Steel
+Team Volt
+Critical Mass
+woodland Robotics
+Team Hero
+Flux Core
+YAK Attack
+EPIC Robotics
+Fondy Fire
+Béésh Bá'áh Alchini
+Las Pumas
+Paradigm Shift Robotics
+Robo-Lions
+BCR Blackout
+TGM
+BEAST Robotics
+Cyber-Eagles
+Rambots
+Juggernauts
+Ehret Patriots
+Bright Bears
+Makif Dalet
+Rabin HS
+Yarka High School
+Ort IAI
+The Spikes
+AXIOM
+ASSIT
+ Akkoleon
+robodim
+Kiryat Motzkin
+Megahurts
+Blue Twilight
+FHS Robodawgs
+Abes
+B-ROC
+RoboPhoenix
+Rebel Robotics
+Bronco's
+Tigers
+CougarTech
+ROBOSHOP
+General Angels
+OnyxTronix
+Deus ex Machina
+Alternating Current
+Abraxas Metal Heads
+Genese Team
+The Junkyard Robo's
+Technocrats
+Brute Force
+SWAT team
+Cyber Claw
+BRATECC
+The Chips
+PANTHERS
+The Army of Sum
+FB HT
+KISS
+Lancerbotics
+Hawks
+The Mavericks
+Twisted Transistors
+Afula High School
+1/4 Twenties
+Transformers
+Casa Robotics
+Robo-Panthers
+Trojan Robotics
+Fe Maidens
+Colegio Sacramentinas
+Dragons
+Metalheads
+The Mechanix Coalition
+Fuego
+Bello Bots
+STARS of Cypress 
+AVENGING PLUTO
+The Butlers
+YWCA DELTA F.O.R.C.E.
+Panteras
+Irvington Blue Knights 4-H
+RoboTech Pirates
+Hydra Robotics
+FLYT
+F-Tech
+Team Lucky
+Sapulpa Robotics Team
+Blue Valley CAPS Robotics
+Sargon
+Titan Crusaders
+EngiNERDs
+Gear It Forward
+Robolopes
+Mercy Robotics-Xcentrics
+Sprockets
+Team Phoenix
+Technohorns
+The Saunders Droid Factory
+Kearnage
+Cel-Techs
+Trial and Error
+Mechahunes
+Hurriquake
+Region 1 Robotics
+Metal Mayhem
+The Legion
+Red River Robotics
+System Meltdown
+Bearbotics
+RoboLobos
+Tech Titan's POWER-Storm
+PACE Invaders
+Olympic Robotics
+Triple Helix Robotics
+Oregon RoboHawks
+Lions
+Tesla Robotics
+Lancer Robotics
+South Robotics
+Maximus Roboticus
+IBOTS
+Eagle Pride
+Robo-Hooters
+The Crickets
+Jesuit Robotics
+Dragon Robotics
+RoboCOMETS
+C Company
+Team Mako 2378
+Jag Robotics
+The Ark
+Colbert Roboleopards
+Ninjineers
+Obelisk Trio
+Trojans
+Alternative Robotics
+Pirate Robotics
+Oklahoma STORM
+Wildcats
+Tiger Drive
+Pagwire
+Robotichauns
+Eagles
+OKC 4-H Robotics - Ninja Munkees
+SeeHawks
+Cyborgs
+Tech Walkers 2398
+The Fighting Unicorns
+Wyoming!?
+PATRIOTS
+RoboJackets
+Plasma Robotics
+Team NEY Techs (TNT)
+Techno Trojans
+CowDogs
+Roaring Bears
+Shrapnel Sergeants
+Da Bears
+Blue Valley CAPS Metal Mustangs
+Rebel Alliance
+Robototes
+Panthers
+Spartans
+WiredCats
+RoboCougars
+tomahawks
+Team MonRobot
+RoboTitans
+RTR Team Robotics
+Bucket O' Bolts
+The KwarQs
+Robot Mafia
+Hydra
+Techno Beavers
+Panthers
+The Blockheads
+CyberStorm
+TechnoColts
+RoboSpartans
+Tech Tigers
+Blue Devils Gear Heads
+Soldiers of Technology
+Bearacudas
+Lancer Robotics
+'Iobotics
+Bearbotics
+Saints
+Spartechs
+Blue Thunder
+Kamehameha RoboWarriors
+RoboKAP
+Pleasanton Slingshots
+Vikes
+SLT
+Out of Orbit Robotics
+Wind Chill
+PWNAGE
+Soaring Eagles
+Rambotx
+HRC 2455
+Team Recycle It!
+The Law
+Team Chaos
+Golden Hawks
+Na Paniolo
+METAL-SKINS
+Digi Bots
+The Siege 
+Trojans
+KauaiBots
+Menehune Robots
+Sabertron
+Team Appreciate
+Idabots
+Team BJORG
+Team Mean Machine
+Centurions
+Goldstrikers
+Excel
+Caution!
+The Limited
+Marauder Rascals
+Westwood Robotics
+Phoenix
+Iron Paws
+Roboteers
+Clawbotz
+Team Implosion
+Overclocked
+CocoNuts
+Mechanical Animals
+Plasma Pumas
+The Insomniacs
+eagles
+NoMythic
+Robokong
+Hive Mind
+Tru Blu Patriots
+RoboNatick
+BearBotics
+Industrial Revolution 2499
+Herobotics
+Bionic Polars
+Talon Robotics
+Warrior Robotics
+The Governors
+The Electric Sheep
+Saber Robotics
+Armada
+Tigerbots
+anishinaabe
+Cougars
+Duluth East Daredevils
 T.E.R.T.O.L.A.
+3M MHS
+MR.E
+Green Wrenches
+Spartan Robotics
+Robotics 9000
+SERT
+Royal Robotics
+Tech Storm
+Roosevelt Rough Riders
+The pHalcons
+Crimson Robotics
+RoboDoves
+Open Circuits
+Inconceivable
+RoboHawks
+FLASH Power
+Juarez Aztec Eagles
+Lumberjack Robotics
+TIGEARS
+Carver Bears
+Space RAIDers
 The Plaid Pillagers
+Krypton Cougars
+SPARC
+Go4bots
+TitanBot
+HCRC
+Quantum Mechanics
+Electric Sheep
+Redcat Robos
 Millerbots
+Skynet
+Penguin Empire
+Pirates
+The Warhawks
+RoboRams
+RadioActive Roaches
+SOTAbots
+SciBot
+Normality Zero
+RoboDog
+St Paul East Side RobEASTs
+Robinson
+Toros
+Red Hawks
+Technovations
+Universitiers
+Miguel
+STORM
+Artist Engineers
+SHS
+Chief robot
+governors
+Mustang
+RoboHuskie
+White Hurricane
+Chilean Heart
+Pingry Robotics
+LIC Robodogs
+Mecha-Knights
+Bulldog Robotic Team
+PantherBots
+Orange Dynamite
+Flame of The West
+Impact
+Copper Bots
+DiscoBots
+JAVA
+The Codebandits
+Nemesis
+RedTails
+Hawks
+Brobot
+Naskcorpions
+Illuminati
+Ferrous Bulldog Inovations 
+Raider bots
+Neofighters
+FULL THROTTLE
+Team Falcon
+Steel Hawks
+Falcons
+Steel Stingers
+Metal and Soul
+Seamonsters
+Irish Robotics
+The Fighting RoboVikings
+MiGHT
+Beaverworx
+Jacktown Vectors
+The Corsairs
+Protobots
+Mountaineer Area RoboticS (MARS)
+Robo Reds
+The Mad Hatters
+The Charge
+Titans
+Bucs
+Team 1
+lovenpeace
+BotCatz
+ARC Robotics
+Evolution
+Techies
+Pirates
+Halcones
+Thunderbolts
+SteeleBots
+Pittsburg Pirates
+The Gryphons
+Lake Monsters
+Phantom Catz
+Rebel Robotics
+HOTBOTZ
+Pittsburgh Central Catholic Robotics
+Pitt Pirates
+Dark Matter
+Trojans
+PowerSurge
+Cyborg Mustangs
+Infinite Loop
+Meyer Robotics
+ELAHLYA
+Highlander Engineering and Technology
+Master Robotics
+Polar Rams
+The Flying Platypi
+Quasics
+Team Thundercats
+Σ-Motion
+RoboWarriors
+Pengbots
+Trailblazers
+RoboKrew
+The Foothillers
+Lobos
+CougarBots
 Knights of the Valley
+North Montco Vortex
+KY Bots
+Absent Algorithms
+Osfia
+Tenacious Technicians
+Nilton Lins
+ABCTech
+Ecorse Robo Raiders
+Brauder
+Atlantis
+Vex Minas
+Lady G-House Pirates
+Boneyard Robotics 2682
+Team Haven
+The Memphis MechWarriors
+Team Apprentice
+'Iolani Robotics
+Team Alpha
+Rebels
+fire fox
+Roaring Robotics
+WE ROBOT
+Merge Robotics
+Viking Robotics
+Lake Effect Robotics
+Iron Wolves
+JetStream
+Centaurus Robotics
+Power Surge 4-H Robotics
+Red Hawk Robotics
+♨️ BBQ ♨️
+Ranger Force
+Team OKC e'possums (Σ 1/n! x 10³)
+Ketronix Robotix
+Red Watch Robotics
+Fang
+Charge Robotics
+Team Rocket
+Avalanche Robotics
+Ice Princesses
+Red Pebble Rebels
+♨️ TACO ♨️
+Storm Robotics Team
+Pigmice
+RoBobcats
+Wizards
+Bucket of Bolts
+Method 2 Madness
+Berkner Rambots 
+Incognito
+Turner Lions
+The 7th Direction
+SPARK Robotics
+Team Overdrive
+B.A.D. (Built And Dangerous!)
+Roboneers
+IronHorse Robotics
+Tigers
+Radioactive Robotics
+Stryke Force
+ROBOTS IN MOTION
+Code Red Robotics the Stray Dogs
+IronDogz
+Jackson Area Robotics
+Blackwell Resistance
+CH1RP
+RoboPRIDE
+Engineers of Tomorrow
+Prometheus
+Team Chaos
+TEXPLOSION
+Shaker Robotics
+Sabercats
+Ohm's Claw
+Knight & Nerdy
+The Teslas
+Firebirds
+Ghost in the Machine
+K-Botics
+StormBots
+Gear Heads
+Blue Devil Mechanics
+Bluff City Bots
+Team Dynamite
+TASER
 The Automatons
+Roc Robotics
+Wave Robotics
+The Tiki Bots
+Knights of Sir MacHinery
+Riverside RoboTigers
+Warriors
+The Livonia Warriors
+Roboscorpions
+Bionic Black Hawks
+Shazbotz
+Team Beta
+Freebirds
+Eaglebots
+Daedalus
+PCDS Blue Tide
+NECHS
+Mustangs
+Metal Heads
+Stampede Robotics
+O'Botics
 FireBears
 The MegaHertz
+Rangers
+Ursa Major
+Cyberwolves
+Crevolution
+DM High Voltage
+Hot Spot Robotics
+The Prototypes
 BEASTBOT
+Planetary Drive
+Black Ops
+Blasterbots
+Infinity's End
+UTC Westhill Vikings
+Sigma Phoenix
+ROBOTEKNIX
+Phoenix Robotics
+ElkLogics
+Regal Eagles
+Beantown Botz
+CyberCats
+NWR
+Iron Eagles
+CyberHawks
+DevilBotz
+LigerBots
+Oriole Robotics
+Finger Puppet Mafia
+Lady Cans
+Nuts n' Boltz
+F.R.E.D (FIRST Robotics Engineering and Design)
+EngiKnights
+Falcons
+Blue Bots
+The Beaverbots
+The Hawk Collective
+Hottie Botties
+Parkway North Robohobos
+ACE Robotics
+Blazenbots
+MechaMonarchs
+R3 - Rapoport Raven Robotics
+Flying Hedgehogs
+The Mighty Penguins
+Rocket Sock'em Robots
+NYACK
+NeoBots
+PlaZmachines
+Sultans of Turkiye
+Sentinel Prime Robotics
+Lion Robotics
+DeceptiKangs
+Zebra Bots
+Jack in the Bot
+CoolBots
+Panther Robotics
+ROBOT RAMBLER 
+TIGER PRIDE
+Pandamonium
+Bionic Bears
+Woodward RoboDogs
+Gearheads
+Night Wolves
+Robo-Hawks
+Falcon
+RoboCon
+Aggies
+2924 Murphy's Lawyers
+North Central Tech Center
+Robo Sparks
+NEST Robotics
+Viking Robotics
+Emeral Ridge JAGBOTS
+Sonic Squirrels
+Pueo Power Engineering
+BASH
+Tech Tigers 
+NACI Robotics
+Gatorzillas
+HSE Tigers
+The Alternative Experience
+BLURR-Ben Logan Ultra Raider Robotics
+Panda Robotics
+ROBO Dynamics
+Titanium Tigers
+Steel Mustangs
+Novas
+ROBO-TIGERS
+Prototype
+pwnage
+Devastators
+Benson High Robotics Club
+Brackenbots
+South Dallas Bots
+E-STEM EAGLES
+Knights1
+Grizzly's
+Robotarians
+Automation Nation
+Crimson Tide Engineers
+EagleBots
+AnaDroids
+Robopanthers
+Iron Vikings
+Tiger Tech
+Columbus IronWorks
+Aftermath
+eSchool eBots
+ROBO-IDAHO
+Gears and Buccaneers
+Mad Rockers
+Walton Robotics
+Team Viral
+The Spartabots
+Sir LancerBots
+Cavaliers
+RO-BEAUMONT
+Whidbey Island Wildcats
+Bulldogs
+Phoenix Metal
+Robo-Noles
+Vikings Robotics
+Tech Know Logic
+Cyber Comets
+Rogue Robotics
+RoboRiot
+Star Tech
+Hotwire
+Boxer Bots
+The S.S. Prometheus
+InTech MegaBots
+ASTECHZ
+"Mountain Force Robotics"
+Cougars Gone Wired
+VikingBots
+TJHS
+Jeffersontown Robochargers
+Chieftain Robotics
+Roboblazers
+TAN(X)
+Bx Quixote
+RoboChargers
+Red Rock Robotics
+Robotitans
+Team Magma
+High Scalers
+The Red Plague
+RoboWarriors
+Spartans
+Zombots
+Tech Heads
+Ranger Robotics
+CyCreek Crusaders
+Patriots
 Nordic Storm
-ICE
+Firebirds
+SMbld
+The  Agency
+MKS Explosion
+STARK Industries
+My Favorite Team
+DARC
+Orange Crush Robotics
+Seraphim Systems
+Robot Commando Squad
+Mecha Titans
+Master Team
+Galileo
+Droid Rage
+DROBA Warriors
+LOBOTS
+Inter-district Computers and Engineering
+Wildcat Robotics
+red knights
+Spartans Robotics Club
+Cobalt Catalysts
+Da Vinci Dragons
+Team 0xBE4
+Gear Gremlins
+GWHS RoboFanatics
+EVIT Robotics 2017
+BremerTron
+Makif Yud
+VB Stingers
+IceStorm
+Furious George
+Pirates
+MHS Jaquers
+ANNDROIDS
+Riverside Envirobotics
+The Narcoleptic Doxins
+Huskie Robotics
+Spartan Robotics
+HOLTZ-STARS
+Tichon Tel Aviv
+Jatt High School
+Robovikes
+TarNation
+Team Pronto 3070
+Certified NOOBS
+Backwoods Bots
+firstinlod
+New School Robotics
+Ha-Dream Team
+Ort Arad
+Robobrain
+The RoboWarriors
+So-Called Robotics
+RoboEagles
 Chicken Bot Pie
+Artemis
+PatriORT
+Broncoweiss
+Ben Shemen
+Kill-O-Bites
+Bot-N
+Chaotic Robotics
+100 Scholars
+Nazareth Ilit
+Bearcats
+Blich
+Pilots
+The Village Bulldogs
+Blue Lightning
+Waterford Robotics
+The Lightning Turtles
+Tech-No-Tigers
+Iron Plaid
+The Cyber Rams
+ Lagablab
+The Contenders
+Tilden Techers
+PR9
+GA Robotics
+SeaBots
+RoboCougars
+GSERT Falcons
+To be determined
+Robo-Panthers
+Phoenix
+Harfangs
+Rockets
+RoboKnights
+Alloy Fingerprints
+The Alluminators
+Wildcogs
+Cyberian Huskies
+Pirates of the Pythagorean
+FlashPoint
+The Aluminum Narwhals
+Green MacHHHHine
+The ERRORs
+Gladiators
+Thunder Down Under
+Coronado Robotics
+The Accelerators
+Robotic Colonels
+O.R.C.A.
+T-Birds
+Innovators Robotics
+Oxford Omega
+Flagship
+PiBots
+Aperture
+NTC Night Hawks
+KRYPTO-KNIGHTS
+TeraViks
+GRANBY GRUNTS
+Munster Horsepower
+Joltz
+PANDAMONIUM!
+Mustangs
+Cyberstorm
+KTC-Monsters
+Robo-Razzaitore "THE RAZZ"
+Globots
+Solista
+Iron Lancers
+PrepaTec - TECBOT
+F. R. O. G. - FIRST Robotics Organization of Grove
+Tronic Titans
+RoBoComm-X
+ROARBOTS
+Stealth Tigers
+NewBots
+Rooks
+Mechanical Misfits
+Warriors
+Saint-Borgs
+Bearded Dragons
+HURRICANES
+HorsePOWER
+IgKnighters
+ROBODAWGS
+Knight Vision
+Purple Precision
+Fearless Falcons
+The A.N.T.
+MECHAlosaurs
+Pittsford Panthers
+Athena's Warriors
+EPIC
+Blaze Robotics
+Super Gurus
+DECAbotz
+Arcadia Titan Robotics
+The Robotics Factory
+Circuit Breakers
+Mecha-51
+The Wingnuts
+High Visibility
+Falco Tech
+The BRAINS
+Robo Ninjas
+Team SPORK
+HexHounds
+Robotomy
+Raptacon
+Ross Rambotics
+KnightBots
+The Unlikely Mix
+Steampunk Penguins
+Patriots
+Royal T-Wrecks
+Fighting Scots
+WildBots
+NHS Robotics
+Falcons
+The Y Team
+YME Stingbots
+Thunder Tech
+High Tech Hounds
+Apollo
+MRT
+L&M
+Panther Robotics
+TREAD (Trojan Robotics, Engineering, Art, & Design)
+Mechanics of Mayhem
+KM Royals
+Robot Bantam
+Robotics of Central Kitsap (ROCK 3223)
+Lion Hit Squad
+Wolverine Robotics
+Eagle Tech
+RoboWolves
+Rocket
+Hawktimus Prime
+PrototypeX
+PioTech
+South Bend's Finest
+Bots of the Round Table
+Red Arrows
+Mustang
+TRIFORCE
+Event Horizon
+Cyborg Ferrets
+Birds of Prey
+Team Orion
+Ogden Dragon Army
+ILLUMICATS
+Amperes
+Granite City Gear Heads
+Ravens
+Vandals
+Robopack
+Kennedy Robotics
+Savage Pride
+Rustlers
+SuperNURDs
+WarriorBorgs
+Vortechs
+MADAWGS
+Thoroughbots
+SHARP
+Bears Robotics
+Luggernauts
+The Elites G3
+nerd nation
+Arrowheads
+Robots-R-Us
+Mariner Robotics
+Valhallabots
+CATA-BOTS
+Dragonbots
+Ravage Robotics
+Cybercats
+Rocktown Robotics
+The Regulators
+TOOLCATS
+ProDigi
+Electric Lakers
+Spingarn Senior High School
+Rhode Rebels
+VBots
+Dallas Robo Tigers
+3283 Coyote Robotix
+Camdenton  LASER 3284
+the rocket surgeons
+Punchers
+Soaring Eagle
+Robo Bears LOWbotics
+Au Pirates
+The Aluminum Falcon
+OtterBots
+Backwoods Engineers
+STEMdroids
+Neon Knights
 Full Metal Jackets
+ArrowBots
+The Warehouse Crew
+Midwest WARRIORS
+Patriots
+TurboTrojans
+Metallic Thunder
+Matbotz
+Trojans
+Robo Dawgs
+JHS Beavers
+Friarbots
+Black Hawk Robotics
+KB-BOT
+EagleBots
+Mechatronics
+Mechanical Mustangs
+Mountaineers
+D-Bug
+Q & E Robotics
+RoboDragons
+Galactic Geeks Robotics
+Miracles & Machines (M&Ms)
+Superior Robotics
+Eagle Evolution
+Potential Energy
+The Metrobots
+Valle Verde Robotics
+DATC
+NoHoRobo
+Wildbots
+System of the Corn
+Tar Heel Robots
+HustlerTech
+Cougars
+Eagle Robotics
+Cy-Borgs
+Zimanators
+Panthrobotics
+BumbleB
+Union City EagleX Robotics
+Option 16
+HSA-Recon
+Space Dragons
+Metal Jackets
+Kamikaze Comets
+Static
+T-BOTS
+Ratchet
+3352 Flaming Monkeys 4-H Robotics Club
+Freer Robotics Team
+PrepaTec - TecDroid
+Purple Vipers
+MC2STEM Maniacs
+COMETS
+Y.T.P.T - J.E.T.S
+Royal Robotics
+Hyperion
+Governators
+Eagle Robotics
+Eagle
+Panhandle Pirates
+Plowbots
+Ogichidaa Robotics
+Spirit of the United Neretva
+TIGERS
+Aftershock
+The Bonds ThunderBolts
+Team RoboHawk
+Jackson Hole RoboBroncs
+North Stars
+RoboScorps
+Raiders
+OD-BS
+Mécani-Wolf
+Alchesay Falcon Team
+Droid Rage
+Les Béliers
+makif omer
+Sunset BisonBots
+RoboticST
+Tornades
+Les Aigles d'Or
+Flash in memory of Margarita Gusak
+TEC Tigers
+ANATOLIAN EAGLEBOTS
+T-Robots
+Horns of Havoc
+Knight Riders
+Imperium Machinamentum
+Robolions
+Crushing Crusaders
+Lions
+RCTC
+Eagletrons
+ROBOMonkeys
+Cyber Wolf Robotics
+Robo Bibb
+ALChemists
+Ottoman RoboTecnics
+Wild Cards
+cyberCubs
+Boiling Point
+Miami MEngs
+Team Intrepid
+The Flo-Falcons
+Mad Cows
+Hackbots
+The RAMS 
+YCLA Eagles
+Akins Robotoics
+RoboRiot
+RoHawks
+Team 3420
+Tachyon TECs
+Robo Champs
+The Raider
+Corax
+PULSARS
+Random Nuts
+The ANOMALY
+GreengineerZ
+DEM BOTS
 Z Bots
-Stampede
-Governors
-Dragon Robotics
-Army Ants
-Data Bits
-Rodeo Robotics
-MPArors
+Robot Revolution
+LiveWire
+MacBotics
+Code Blue
+Team PyroTech
+Brentwood Indians
+Operation PEACCE Robotics
+FERVOT
+Red Neck Robotics
+Sim-City
+The Omega Factor
+VIKINGS ROBOTICS
+Windham Windup
+MAGNAtech
+The Spanish Inquisition
+Cyborg Zombies
+Jagbots
+PrepaTec - Buluk
+Team Sprocket
+BAYMEN
+The Crop?
+Code Orange
+Chaos Vortex
+PrepaTec - LamBot
+crimson tide
+PrepaTec - ABTOMAT
+Bronc Botz
+Arrowbotics
+Cold Smoke
+Short Circuit
+Cyclone Robotics
+STEM&m's
+Red Pride Robotics
+Eagle Army
+Category 5
+Viper Drive
+FUTURE Dinos
+Putnam Area Robotics Team (P.A.R.T.s)
+RETRO ROBOT SQUAD
+The Quadrangles
+MindCraft Robotics
+The RoboTech Collection
+ THIS IS NOT THE TEAM-Go to 9381 
+Jankopotamus
+River's Edge Robotics
+Roboteenz
+Firebots
+Octo(PI)Rates
+WRX
+Girls of Steel
+Fighting Z-Bots
+YETI Robotics
+Ubotics #3507
+Archimedes
+Team Fallout
+PrepaTec - Tectronic
+Road Dogs
+Spartatroniks
+Misfit Toys
+Wayne High Robotics
+Pneubotic Mustangs
+RoboChiefs
+S.E.V.E.R.E.
+LHS Panthers
+Hannibal Robo Pirates
+RoboColts
+Noble Nuts
+CBoT´S4
+The Blizzard
+The Nuts & Bolts of Fury
+PrepaTec - Blue Ignition
+PrepaTec - Balam Esmeralda
+Up Next
+Kobayashi Maru
+Patriotix
+2XR
+Piranhas
+Mekano
+House of Cards
+Galaktech Invaders
+Electro Eagles
+Delta Force
+RoboJackets
+Byting Bulldogs
+Wildcats
+Brebotics
+S.P.E.E.D
+C4 Robotics
+Spartiates
+Bots in Blue
+Buc'n'Gears
+VIRUS
+Royal Oak Kenwood Academy
+Straughn Robotics 3549
+Robotronix
+The T-Birds
+South Philly Rambots
+LC Botkickers
+Aluminati
+GET SMART
+Robo-Sharks
+FBR Techno Tarheels
+Thundercats
+MechaWolves
+RoboRaiders
+LiveWire Robotics 3562
+Nantyr Bot-aneers
+EGL Robotics
+Team T.R.E.A.D.S. (Tomorrows Robotic Engineering And Design Specialists)
+Gone Fishin'
+The Aviators
+Linden RoboEagles
+The Patrionator
+Pheonix 3570
 Mustang Robotics
+Wavelength
+The Ohms
+HIGH TEKERZ
+Okanogan FFA 
+Clover Park High School Warriors
+Saint's Robotics
+NASA/JCPenney/FSA HS *STAR*
+Marinerds
+THINC Robotics Alliance
+Phobots
+Saints
+Rogue Robots of 4-H
+Pride in the Tribe-Caveman Robotics
+Gorilla Gearheads
+the Talon
+Cape Coral
+Root Two
+Wild WarBots "WWB"
+Sharks
+Invictus
+Techtonics
+Massive Attack
+Rocket Robotics
+Robo-Rangers
+SEStematic Eliminators
+Dolphin Robotics
+Clockwork
+Spartan Sprockets
+RoboMos
+Cyber Coyotes
+Goon Squad
+black storm
+BearMetal
+TECHNOLOGIC
+Jaguars
+Duct Tape Dragons
+Islanders
+Team Tidy Cats
+GearHogs
+Spartans
+The Love Machine
+Reavers
+Team Phenomena
+Cold Logic
+Petoskey Paladins
+BLACKHAWKS
+Average Joes
+Rocket Robotics
+r
+The Robomingos
+Soaring Colts
+Some Assembly Required
+Parish Robotics
+The Jungle Robotics
+Scott's Bros
+PACERobotics- Philly ALL CITY Engineers
+Stampede
+The Vincents
+D-Techs
+Catalyst 3633
+Bridgeport Spark City
+Flying Legion
+Generals
+The Daleks
+TigerTrons
+Cogs
+Panthers
+The Flying Toasters
+Huskies
+Thunderbots
+Warriors
+Runtime Error
+INTEGRA BAHCESEHIR
+Millennium Falcons
+Sparta Robotica
+I-Robotics
+RoboRaptors
+TRIBE
+xKRT
+Botcats
+TechTigers
+Tractor Technicians
+Dexter Dreadbots
+Lincoln Cyborgs
+Robo - Beavers
+Mighty Patriots
+LIGHTSABERS
+RoboWolves
+FrostByte  
+CPR - Cedar Park Robotics
+Lions
+Titans
+Bolton Bear Bots
+Mecanum Knights
+TroBots
+CarbonKnights
+Wolverines
+Robo TORS
+C.Y.B.O.R.G. Seagulls
+CloverBots
+Eagletrons
+RedShift Robotics
+Don Bots
+rattlers
+Elemental Dragons
+Robo-Raiders
+DATC
+Team DAVE
+Electric Eagles
+Searider Robotics
+Turkeybots
+The Patriots
+Norsemen
+GORT
+RoboRaiders
+Rock N' Robotics
+GearHead Pirates
+NAHS Warbotz
+Foximus Prime
+C.A.R.D.S
+Devil Bots
+Panthers
+Panthinators
+The Metalling Kids
+Royal Robotics
+MechSperts
+RoboSapiens
+Arrowbots
+Railsplitters
+TechnoDogs
+Lumberjacks
+RTC Megalodons
+FSS Cyber Falcons
+Iron Mustang
 RoboCats
+War Eagle Robotics
+CHF S.O.A.R.
+CRAVEN COUNTY ROBOTICS
+WARP (Wasatch Academy Robotics Program)
+Hitchhikers
+Junkyard Battalion
+STEM Whalers
+Cougears
+Charger Robotics
+Green Wave Robotics
+TEKnights
+Mansfield Robotics
+Bionic Bulldogs
+Thunder Cats
+Gadgeteers
+Momentum
+The Raiders
+Nu-Bots
+MoHawk Warriors
+The Raging Tornadoes
+Kings
+StarBots
+VorTX
+Roto Raptors
+xx^3 xy^2 
+Oakbotics
+Storm Robotics
+CORE G IX
+Gold Hawks
+Eagle Bots
+robobulls
+Governors
+Retribution
+Chaotech
+Ragnarok Robotics
+Team Optix
+Gator Robotics
+Tower View Robotics
+Roaring Robo-Panthers
+BulahBots!
+TrekNorth First City Robotics
+Dragon Robotics
+RamFerno
+Adom Ajans Robotics
+Anonymous Robotics
+SMARTBOTS
+Robo Raccoons
+Sinton Robotics Team
+Spartans
+4-H WildCards
+Guardian of Greene
+The TerraBots
+ort
+TC Titans
+ASTRO DOGS
+Droids
+BlitzCreek
+Yooper Troopers
+DITEC ARME
+Arrowhead Robotics
+RoboTeam
+NOFARIM
+3W (Woodland Wildcat What-cha-ma-call-its)
+Bean City Bots
+Tech Squad
+The Hope Hoopsters
+Robot Unicorns
+Cardinal Robotics
+Bot-tanicals
+Robo Wildcats
+Bit by Bit Robotics Team
+ROCK'EM SHOCK'EM ROBOTICS
+Chargers
+Wild Robotocats
+MekaMustangs
+On Track Robotics
+Toxic Sushi
+ATEMS
+Army Ants
+CyberTitans
+Prepa Tecmilenio WinT
+Knight Owls
+Technical Assassins
+Robo Dragons
+Rangers
+Electric Fire
+Mustangs
+RAMbots 4-H Club
+✨RoboPOP✨
+Lightning Robotics
+BroncoBots
+North Spokane Yetis
+Tigers
+Overland BlazerBots
+Phoenix Robos
+AcRT
+Pirates
+	Chargerbots
+Bits & Bots
+The Three Ring Circuits
+PiBotics
+NF Raiders
+Project Viking
+Bloctopus Crime
+Roboticons
+Robo-Raptors
+Pirabots
+Neon Krakens
+TechTamers
+HVA RoHAWKtics
+Tri-Botics
+Sequim Robotics Federation "SRF"
+Ort Hilmi Shafe
+12 Pretty Duckies
+AmpAces
+Hopkinsville/Christian County 4-H Robotics Team
+Da Bears
+Muddrew's Crew
+The FIRST 3833
+Crab-bots
+Vulcan
+Titans
+808 Robotics
+Roc City Robotix
+SWOLVERINES
+Teens 'Nto Technology
+Gresham Robo Rats
+Shock-a-Bots
+ROBO RACERS
+Kentucky Wildbots
+Yellow Jackets
+The First Robotic Cardinals
+Spectrum   -△◅
+Bots in Shining Armour
+Absolute Zero
+The Short Circuits
+Pridetronics
+Robo Warrios
+The Mighty Trojans
+Kingsbury Falcons
+McKinney Masterminds
+MetalStorm
+Wolfpack Robotics
+Random Genetics
+Steel Talon
+Iron Scorpion 4-H Robotics
+Pantherbotics
+Deus Volt
+Riley WildBots
+Blazing Eagles
+Timberwolves Robotics
+Mechanized Mustangs
+Tyler Lee
+Fighting Gobblers
+THE Trojan Robotics
+Pan-Tech
+Broward Bulldogs
+Lightening Wave
+Red Storm Robotics
+Mabton LugNutz
+DABOT
+Wildcats
+Charter Bots
+Tiki Techs
+WHEA Sharkbots
+Lunas
+Data Bits
+Spartans #2
+Shockers
+More Titans
+3484
+Leptechons
+Breaking Away
+Rodeo Robotics
+Roboponies
+K-T Extinction
+Ventura Robotics
+MPArors
+RAW-Robotics 
+Team Neutrino
+Atomic Dragons
+SMART  Spruce Mountain Area Robotics Team
+Cockadoodle Dominators
+The Dirty Mechanics
+PrepaTec - Taman Keet
+Robats
+RoboBlitz 3936
+Breakaway
+Radix Robotics
+Botetourt 4-H Robotics
+CyberTooth
+FRC TEAM 3941 Absolute Zero Electricity - Northern Chesapeake STEM, Inc.
+Northark Pioneers
+Bulltronics
+All Knights
+Cobratics, Inc
+Tiger Robotics
+The Last Crusaders
+BAWSS
+d'Y Robotics
+RoboGym Robotics
+SUITS
+Troy Robotics
+ROBATS
+4-H Electrotechs
+4-H Gears
+Itamitas
+4-H Robo Rangers
+Schrodinger's Cat
+Mech Tech
+BEast Robotics
+MBA Execs
+Incognito Robotics
+Urban Robots
+Dolphins
+Sultan Robotics Team 3965
+Gryphon Command
+Trojans Robotics
+Higher Voltage
+Phoenix
+Duncan Dynamics
+Kai Orbus
+Raider Robos
+Pirate Robotics
+E=mCD
+Les Dragons
+Electric Hornets
+Predateurs 
+Bouledogues
+Solaris
+Scorpions
+Loups
+Bobcats
+Topper Robotics
+Sonic Howl
+Express-O
+Les Audacieux
+Scarabot
+Classics
+Tech for Kids
+KnightVision
+Eagles Robotics Xperience
+Humanoids
+Goldenlions FIRST Robotics
+Automata
+RIKITIK
+Screaming Chickens
+Redneck Robotics
+Shadetree Robotics
+Texsquad
+RAMS ROBOTICS
+OSTC-SE Robotics
+TriSonics
+M.A.R.S. Rovers
+Hostile Gato Robotics
+CIBorgs
+Les Cactus
+Theodore Roosevelt's Disco Haircut
+DNA Robotics
+PrepaTec - Nautilus
+BANANABOTS
+Bad News Bots
+Clockwork Mania
+Pixelators
+Jags
+Ashebots
+Bulldogs
+Knight Bots
+Mechanical Paradise
+Cyber Tribe
+igKnightion
+Warriors
+Buff Sci-borgs
+TechnoSaints
+War Eagles
+Decatur Robotics
+Centre Punch
+The Beak Squad
+SpartanBots
+NullPointerException
+4-H Force Team
+4-H Chrome Clovers
+Pelham πthons Team 4034
+Torbotix
+Short Circuit
+Hot Springs Tronix
+Binary Robotics
+MakeShift Robotics
+Grease Monkeys
+Iron Tigers
+Murphy's Lawyers
+NerdHerd
+SCREAMIN' EAGLES
+Toxic Drones
+Schrodinger's Dragons
+Cyber Dogz
+Redshift
+Knoch Knights Robotics
+Biohazard
+Sabin-Sharks
+WolfTrack
+Team Ascension
+The Aeronauts
+NRG
+Chancho's Robotics
+Klamath Basin Robotics - STEAMPUNK
+BoomBots
+SpareParts
+Bearcat Robotics
+SciBorgs
+Électro Choc Gérald-Godin
+TriKzR4Kidz
+InZombiacs
+Nerds of Prey
+MechMate
+The Incredible Hawk
+Bearbotics
+Lo-Ellen Robotics
+Silicon Synapse
+Diatonic Carbonites
+Demon Robotics
+RoboKatz
+Shark Bytes
+Robo Tigers
+Texan Robotics
+M*A*S*H
+Warriors
+Quantum Leap
+Team Reboot
+Metal Masters
+Ranching Robots
+The Legendary Iron Wolverines
+Nuclear Launch Detected
+Technical Difficulties
+Team Tesla
+Voodoo Voltage
+Insidious Aftershock
+Stealth Robotics
+Reb Teks
+DRIFT
+Jackson Robotics
+Hardwired
+The Cyber Wolves
+Team RoXI
+Ctrl-Z
+Devilbots
+Viking Robotics Team
+The Falcons
+St. Francis High School
+Spartans
+Roborioles
+Cheney Circuit Cyclone
+ChiefBotsFTS
+Bots of Prey
+Team Storm
+Randolph Robotics
+Reynolds Robo Raiders
+DEEP SPACE 9'ers
+Some Assembly Required
+EagleBots
+IHS Robotics
+Pallindrones
+Team Breaking Lights
+SCC
+Wired Up
+Roaring Riptide
+AERO
+Jagwires
+Viking  Robotics
+Ossining OBOTS
+Tribe Robotics
+Integration By Parts
+Confidential
+Decepta-Kings
+LoggerBots
+TankBots
+Global Citizenship Experience High School
+The Blue Devils
+Iron Patriots
+Scotbots
+ S2-Boltz
+RoboRams
+Iron Patriots
+Vulcans
+Wilde Lake Robotics
+Arc Flash
+Easy as Pi
+WIRED
+Monarch Robotics
+Shorebots
+MARS/WARS
+Semi con-duck-tors
+WorBots
+Sabercats
+Vikings
+The SWAGbots
+The GLAMbots
+FRobotics
+SCRAP 4151
+Hoya Robotics
+Project Y
+Perpetual Recursion
+SHARC
+Ninjaneers
+Imaginarium
+Leilehua Robotics
+CardinalBotics
+The RoBucs
+T-Bird TECH
+A3 BigBots
+Westlake Robotics 
+Rocket Robotics
+Appalachian Automation 
+Robostang
+Aquilon
+Warrior Robotics
+What The FRaC
+BayBots
+Buyukcekmece  Robotic
+Bark Bots
+Mustang Robotics
+Coded Summit
+Iron Tigers
+Bulldawgs
+MC Rocs
+Tahisco Techs
+Iron Riders
+Quack Attack
+Viking Robotics
+Bit Buckets
+Wreck-techs
+The Resistance
+Alameda Aztechs Robotics
+RoboRams
+Columbus Space Program
+Chargers
+Hephaestus
+IMC
+Jaguar Robotics
+Raptors
+Genesis
+QAVTC Devils
+Lacoochee Cowboys
+RoboCats
+   OG
+Power Penguins
+The Vitruvian Bots
+ROBOBEAR
+RoboKronos
+ROBOCUBS
+Robo Vikes
+PyroBotics
+AC PATRIOTS
+TigerBytes
+JagBots
+Psycho Tech
+Techno Ferrets
+MetalCow Robotics
+Robo-Flames
+TRIBOTS
+Blue Ops Robotics
+Scitobors
+Navigator Robotics
+RED!
+The Frolicking Nerds
+Robo-Flight-Transformer
+The Robo-Rays
+RoboCats
+Huskies
+quarks
+iRobotics
 Magnetech
+TopperBots
+Oakville Robotics 3
+AHS Robotics
+Bark Botz
+RoboRaiders
+impulse robotics
+Team Lance-A-Bot
+Resistance Robotics
+WARPSPEED
+TroTek Warriors
+Steel Tigers
+Fresh T.E.C.H.
+Excelsior!
+The Steel Battalion
+Robo Dragons
+Resurrected Robotics
+CougarBots
+Bits & Pieces
+Tektronix
+Comet-tron
+The Gallup GearHeads
+Cardinal Robotics
+Raid Zero
+Varsity Robotics
+Robodores
+Cyborg Cats
+CyberDogs
+Thornhill Secondary School
+Robo Dragons
+BEAR (Blue Earth Area Robotics)
+Raptors
+Tecmilenio - RoboHawk - 4262
+CyberDragon
+The Fellowship of the Springs
+Secret City Wildbots
+GhostBotics
+Brave Bots
+Beehive Robotics
+CardinalBots
+Crusaders
+Los Bandidos
+Maverick Robotics
+n/a
+Western Hills RoboStangs
+Surf City Vikings
+Thingamajiggers
+DABOT
+RoboRevolution
+N-Gen
+ Bulldogs
+Cowboys
+INSPIRE Robotics
+ScotBot4284
+Camo-Bots
+Imperial Robotics
+Trojans
+Worcester Beach Bots
+Autobots
+Bots on Wheels
+AstroBots
+PorterBots
+Komodo
+StarTREC
+Hudson Stingers
+Trident Robotics
+WENORoBoTS
+Lectric Longhorn Ranch
+BCS RoboSharks
+The Lion Kings
+SM Energy New Tech Narcissists
+Robophins
+Iron Rams
+Robokomodos
+Trojan Thunderbolts
+ABSOLUTE ROBOTICS
+4-H Botsmiths
+NUKES
+Swampscott Currents
+Springfield Urban League Abe-Ro-Bots
+Falcons
+Trobotics
+Tech Busters
+Mo-Bots
+Ladies FIRST
+The Joker
+Vikings
+Clockwork
+BGCircuit Breakers
+HTA
+RoboRangers
+Team Rocket
+Q Branch
+Furious Falcons
+Lutheran Roboteers
+Rambunction
+RoboSwag
+RoboCats
+Team MOSI
+Alberta Tech Alliance (ATA)
+Metallic Clouds
+Ramageddon Robotics
+Red Devil Robotics
+Falcons
+Topsail FIRST Robotics
+Panther Robotics
+Demon Robotics
+MaxTech
+SLCSE
+AutoPilots
+Crimson Dragons
+Mechanical End
+Bonneville Bots
+Viking Robotics
+Harmony
+Broncobots
+Generals
+Krewe de Reauxbotics
+PengWINs
+Samurai Code - Peñoles - John Deere
+BIG Furious George
+Spartans
+Ollibotics
+North Robotics
+Spudnik
+Roxbotix
+Gems
+Unbolted Puppeteers
+Metal Jackets
+Torch Club
+Rawbotics
+Tigers
+BullBots
+Brick City Bots
+PROJECT X
+Prepa Tecmilenio - ART
+PRDG
+RooBotics
+Roosevelt Robotics
+Westend Gearbusters
+The Marauders
+Boyne City Blaze
+Dark Knights
+Greased Lightning
+Dynomite
+Twisted Devils
+Team Trobot
+The P-TECH Fly-Bots
+Benzene Bots
+The Bryan Automatons
+Mecha-maniacs
+TBD
+Ridgebotics
+Virtual Bot
+ATA Coregears
+BraveBots
+The Deceivers
+Team Opportunity
+Dundee Vi-Borgs
+Gear Grinders 
+TEAM Clutch Robotics
+Gladiators
+Cerbotics - Peñoles
+CETMOV - Peñoles
+Connectors
+PrepaTec - ROULT - Peñoles
+Nuts & Colts
+The Atoms Family
+Robotic Legends
+Virtualosity
+Panthera Machina
+Ground Zero
+Cyber Senators
+Jiao Da Fu Zhong
+Steel Stallions
+Golden Gears Robotics
+HighTide
+EPIC Robotz
+Skynet
+IMPULSE
+Team Rewind
+Swarm Storm
+FORGE Robotics
+Twisted Angels
+MARS' Minions
+Olympia Robotics Federation
+ROBOTZ Garage
+First Noble Team
+The Red Hot Chili Bots
+SLAM Robotics
+The Burger Bots
+Mech Cadets
+Controlled Chaotic Robotics
+Infernobotix
+LeoTechs
+Green MASHine
+Ramen
+Full Metal Jackets
+The Blaze
+Team Illusion
+WC4-H
+Robo Hamsters
+Titanium Titans
+Fernbank LINKS
+R.A.I.D. (Raider Artificial Intelligence Division)
+TiGears
+SPARTRONS
+SuperNOVA
+Delta Prime Robotics 4-H
+Silver Circuit
+Terrier Byte Bots
+W.A.F.F.L.E.S.
+ASMSA FIRST
+Materia Oscura
+Hixson Wiredcats
+UC-Botics
+Team Rembrandts
+ID Robotics
+21st Century Robotics
+4-H DEADLOX
+Tribe Tech Robotics
+Blue Prints
+Oologah
+Shockwave
+Cybertribe
+TechRaiders
+Richmond Knights
+Chrono
+The Red Hornet
+Scrapping Hornets
+Kittitas County Robotics/ Team Haywire
+Sonoran Storm Robotics
+SKy-Net
+Team X
+The Highlanders
+RoboHounds
+Humans
+The Octoπ
+Wildcats
+B. C. Robotics
+McDonogh Robotics
+PioNerds
+TARminators
+Steel Stallions
+Mechanical Bulls
+Bobcats
+Power Amplified
+Otter Chaos
+Circuit Breakers
+Calvert STEAM Works
+Stag
+Hyperion
+Owl Robotics
+Optimus Pride
+King's Robotics
+Misfit Toys
+Harrison Robotics
+Team SCREAM
+MCROBO
+Sigma 6
+Renaissance Robotics
+Léoméga
+Big Reds
+Automatons
+AI Robotics
+D3A
+STEAMpunk
+LAN Jaguars FIRST Robotics
+Phoenix
+Wired Wizards
+PA Bruins
+MinuteBots
+RoboRoos
+Enginuity
+KAOTIC Robotics
+OrangeLab
+CAVineers
+Titanium Talons
+The Illuminators
+The Levitating Potatoes
+GOLDEN KNIGHTS
+Shockwave
+WestyTek Robotics
+Omak FFA Wonders
+Iron Bulls
+Something's Bruin
+Robotic Rangers
+Robotic Tigers
+Patriobots
+Bad News Bots
+Sprocketology
+TBD
+FullMetal Falcons
+TDU II
+FIRST DRaFT
+Gatordone
+TerrorBytes
+Sentinel Robotics
+ECR Robotics
+Orange Chaos
+Skyline Robotics
+TERAdactyls
+The Mechanized Mafia
+Robot Commander
+Phoenix
+Estacado Robodors
+Rambots
+Barlow Robotics
+Rambotics
+Average Joe's
+Gemini
+Red Nation Robotics
+RoboFiends
+CometBots
+RoboEagles
+Conductors
+Rangeview Robotics
+Robohawks
+Robosaurus
+SentinelFox Engineering
+Husky Robotics
+PRIMO
+Jersey Voltage
+LVHS Tech Club
+AdamasBots
+GreenBlitz
+Hunchbacks
+M3 Mighty Mechanical Mustangs
+Rapid Acceleration
+Phéminix
+Infinity
+Hackers
+SABERBOTS
+ICARUS INNOVATED
+Team Fortress
+Tech Titans
+Circuit Birds
+Calgary First Nation team
+Forza One - Peñoles
+Intimitrons from Area 51
+Calgary Ismaili Team 
+Team 4606, "Larry"
+C.I.S.
+Duct Tape Warriors
+Mechanicatz
+BearTecs
+OZone
+RoboRockets
+Barker Redbacks
+Purple Monkey Dishwasher
+Steel Trojans
+Team Pharaohs
+DAUN
+Newman Robotics
+HawkBots
+Tec de Monterrey Robotics
+Yotta Robota
+CAT 5
+Flyer Robotics
+Rebel Alliance
+Trappers
+Iron Centaurs
+Manning Robotics
+Sintian Robotics
+Dorado Bots
+Robodragons
+Tsuu T'ina
+Monti-Pythons
+Bobcats
+The Wolfbotz
+PrepaTec - Botbusters
+PHRD Robotics Team
+BambieBotz
+Jagbots
+The RoboSpartans
+Metallic Panthers 4640
+TALON Inc.
+Rebels
+Butte Built Bots
+Dragonbots
+The Chicago Style BotDogs
+Wildcard Robotics
+Vista Vortex
+Techno-Tech
+HeavyMech
+The Vo
+FrostBots
+Ironmen 2
+Ironmen Robotics
+Mountaineers
+Stateline Robotics
+Rock Solid Robotics
+Saints Robotics
+Trojanbots
+Warriors
+----
+Cypher
+Byte Sized Robotics
 Cyber Tigers
 Butler Bots
+Predators
+Robowolves
+Synergy 
+Spartans
+Galileo Robotics
+The Pirates
+Mechaneers
+Youth in Black
+Solar Engineering
+RoboJacks
+Eagles
+Battery Chargers
+RHHS Robotics Team
+CyberCavs
+Dragonators
+AzTech Eagles
+Murphy's law
+CyBears
+Full Metal Robotics
+eSharks
+Aztlavolt
+Nay Ah Shing
 Spartobots
+Saints Bot
+ROyal BOTS
+WD-40
+Falcons
+Metal Mallards
+Talk Nerdy to Me
+Atomic Armadillos
+Chowchilla Robotics
+RoboAzTechs
+Tigers
+Raider Robotics
+ESCT-Flammes
+Wolves
+Warriors (Team W.I.R.E.)
+Cyberdogz
+Menahga Gigabot$
+Northern Lights Robotics
+Full Metal Kats
+Bulls
+FORCE
+G-Force
+Stem-azing
+Bot-Busters
+The Flying Aces
+TracBots
+Adom Robotics
+The Millennium Falcons
+Big Bay de Noc Bear Bots
+Purple Raiders
+Westerner Robotics
+RoboPanthers
+Bulldogs
+R2JAG2
+Tiger Bots
+Cyberian Soldiers
+Prepa Tecmilenio - EARTH - 4723
+ShakedTech
+GeDarcaNator
+Robo Dynasty
+RoboFX
+ROCORI Robotics
+EMU Robotics
+Terminators
+MONARCH-E
+SWC Robotics
+Scarlett Robotics
+The Iron Plainsmen
+Prepa Tecmilenio - DEROF - Peñoles
+Temp
+Atomigators
+Patribots
+Normanhurst Nitro
+Sparta Bots
+WingNuts
+JaliScience 4742
+STEAM Engine
+Ninjas
+Mets Robotics
+Tecmilenio - Alebrijes - 4746
+Millennium Falcons
+Bulldog (Auto)'bots
+Pisgah Robotics
+Bert
+Robo Warriors
+Ursus Robotica
+Bexley Lions
+RoBenedicts
+M^3
+Talos
+RoboBlazers
+Devil Robotics
+Golden Eagles
+The Robockets
+Robo-Saints
+i to the Fourth Robotics
+The Memphis MechWarriors
+PWRUP
+Team SCREAM Jr.
+C4
+Cody "The Green Comet"
+Nerdvana
+EDW Robotics
+Match
+Optimistic Skyz
+Steel Horses
+The Drop Bears
+Aztech Robotics
+S.C.O.T.S. Bots
+Spirit Robotics
 Stormbots
+RoboSapiens
+Tenacious Drones
+RoboSpartans
+PrepaTec - Borrebots
+The RoboRavens
+ATOM
+Cougar Robotics
+Nicolet FEAR
+Axiom
+Can't Control
+VB Electras
+Yigal-Alon
+Pandroids
+Desert Storm
+OOBotics
+infinity
+Eastbots
+Cyber Dragons
+Bryant HS
+Toxic Robos
+Lazbuddie Robotics
+Rage Against the Machines
+Blacktown Boys Cybernetic Phoenix
+U.M.M (Unidentified Moving Machines)
+The Superbots
+Port PiraTech
+Robotic Warriors
+Knights
+Jag Squad
+Tigers
+Black Knight Robotics
+I AM Robot
+Majestic Eagles
+Crosby Robotics Team
+NOT PAY FOR THIS TEAM
+WE MARS Incubator
+ELECTROPANTHERS
+Gadget Girls
+One Degree North
+The Herd
+Flat Mountain Mechanics
+Huey Tlatoani
+CyberUs
+Bemidji LumberBots
+Metal Manes
+BerryBotics
+The Coltenoids
+Deceptibots
+Minerbotics
+RoboEagles
+Titanium Tigers
+ROBOT  2E
+FIRST PARTICIPATE
+CroBots
+Bangarang
+RoboColts
+Junkyard Dawgs
+Zai
+Under Currents
+none
+The Panthers
+Optimal Robotics
+Botrregos
+Mystery Science Robotics
+The Eagles
+Lion's Pride
+G.I. Frost Bots
+Techno-Logic Trojans
+Black Knights
+Rock City Robots
+Mr. Parks' Robotics
+JungleBots
+The Eliminators
+RoboCats
+Trobots
+Ramageddon
+Brearley/Chapin Double X
+Jets
+Leopards
+The CyBears
+Salesian Ironmen
+Beastbots
+Manning Mountaineers
+The Chicago Style BotPups
+INNovation Station
+Magic Island Robotics
+Garnet Squadron
+The Wildebots
+Mustangs
+Bot-Provoking
+Andromeda One
+The Collective
+Thunderstamps
+Duxbury Dragons
+Bionics
+East Cobb Robotics
+CyberKnights
+Panthers
+Huskyteers
+Panthers
+Spartronics
+H.V.L Robotics
+Sir Lancerbot
+The Roboctopi
+Team Ronin
+Belle River Boltheads
+KDHS HAWKTOBOTS
+Tartans
+LaserBots
+STEM Pythons
+The Resistance
+GalacTech
+Marauders
+Arabian Knights
+Maroon Monsoon
+Electric Mayhem
+Edwardsville Technologies
+Cougar Robotics
+Code Green
+Gear Warriors
+T-Rex
+Viral Vortex
+Santa Cruz Robotics
+Falcons
+Allspark9
+Knight Vision
+RoboBibb
+Spartech
+"R Cubed"  
+The Hi Fives
+Titanium-Wrecks
+The Alpha Dogs
+Fenix
+Buccaneers
+Robo Panthers
+Centaures
+CDS Cyclones
+Les Carnicas
+Laser Beam
+Palindrome Robotics
+LA Tech
+RoboSharks
+Lynx
+Robocats
+Staley Robotics
+Polibot San Carlos
+Shock and Awe-sum
+Knight Tech Robotics
+RoboJets
+Roosevelt Robotics
+FIRE
+Condor Force Robot
+That ONE Team-OurNextEngineers
+RoboHawks
+Iron FeNix
+ICE Cubed
+River
+BORUSAN ROBOTICS
+Gator Gears
+Bluestanbul
+Team RobotISTs
+Revolt Robotics
+Iron Lion
+Tiger Robotics
+DevilStorm Robotics
+Canine Crusaders
+Grifftechs
+Olympus Robotics
+IronBots
+Bullseye
+elkSPLOSION
+Iron Eagles
+MegaRams
+Yooper Troopers
+Jaguars
+Basement Bots
+Horsepower
+Sparbotics
+Molten Steel
+Kingston Robo-Cards
+Rockets
+RHS FIRST Robotics Enterprise: Team SPOT
+The Golden Machine
+TESLA
+Momentum
+HAMMERHEADS
+Fast and Serious
+Dragon Robotics
+Topperbotics
+Gravity Loop
+Boyd-Buchanan Robotics
+Apophis
+Phantomechanics
+(robo)LIONS
+Techno Inventors of Puerto Rico
+Tiger Dynasty
+Desert star
+Gryffingear
+Trobots
+Wildcats
+SWAT Bots Robotics
+Huntington Robotics
+Pirates
+The Droids You're Looking For
+Gearbox Heroes
+CavBOTS
+Bright Shiny Things
+Rat Rod Robotics
+Furious Disco Ninjas
+Raider Robotics
+Pacific Steel
+Iron Panthers
+Event Horizon (5027)
+Seacoast Robotics
+Batchelor Institute
+The Second Mouse
+Full Metal Mustangs
+The Falcons
+Beavertronics
+River City Robotics
+eNimkii
+The Robo Devils
+Panther BOTS
+MEGIDDO LIONS
+Irish Iron
+BoltBot
+CyBears
+Native Bots
+Challenger
+MBA Big Red Robots
+SpartaBot
+Jacked Up Jackets
+DV CONQUISTABOTS
+Spartronics
+Minerbots
+Cow Town Robotics
+Fast Eddie Robotics
+The RoboLobos
+Lakers
+Noobum Roboticum
+robodogs
+MegaHurtz Robotics
+RoboBusters
+CGLA Mustang Innovators
+The Midnight Cicadas
+IgKnight
+1
+Warriors
+BuzzBots
+Opcom
+Knights #5065
+Singularity
+Steiner Steel Storm
+The Outsiders
+The Iron Giants
+Gearnotics
+Charger Robotics
+Raider Robotics
+Sparks
+RoboMustangs
+RoboJackets
+Richardson Stormbots
+RoboCards
+ROBO-KAOS
+LGS
+Robot Alchemy Manipulators 
+Lumbernators
+Northmen Robotics
+PUMAS
+Team FridgeBot
+LakerBots
+Cadillac Connectors
+Marsden High School
+Engadine Robots
+Robo-Nerds
+TorqueNados
+Squirrels
+Titanium Tigers
+Tech-Sets
+Blizzard
+RoBeauce
+The Teutonic Force
+Phantom
+STING - R
+Northport Robotics
+Romanoid
+Braves
+The Underbots
+MECH&Cheese
+BreakerBots
+PioTech
+High Impact Technologies
+The Neurotoxins
+Can-O-Bolts
+Gladiator Robotics
+Roboherd
+SaxonBots
+The Gongoliers
+Combustible Lemons
+Titanium Tigers
+Knight Riders
+Silicon Claymore
+Comets
+Kainai High School K-Bots
+Team STEAM
+Robo-Jags
+Trobots
+robOTies
+Mechadogs
+West Torrance Robotics
+Hawks on the Horizon
+Electromagnetic Panthers (EMP)
+Red Hurricane
+Shenzhen Middle School Team
+Digital Devils
+Undercogs
+Rockets Robots2014
+RoboClovers
+PrepaTec - Blue Steel
+RoboWolves
+Black Unicorns
+MechaPirates
+Iron Kodiaks
+Maine East FIRST
+Nellis Eagles
+Systematic Targeting Of Robotic Mayhem (S.T.O.R.M.)
+GRIFFINITE
+RoboDominators
+Raw Steel
+LISD TECHnicians
+WolfBotics
+Rusty Knights
+Hornets
+New Berlin Blitz
+TroyBotics
+Hybrid Hornets
+RoboTitans
+Alotobots
+EAST at HHS
+Dolphins
+Bearcats
+Laker Battleships
+Roboprime Cardinals
+Richmond Hill
+Bengal Robotics
+Chargers
+Trojan Technicians
+The Big Red Theory
+The Aluminum Warriors
+Robusters
+Yangtze
+Fabricators
+Vi-Bots
+Guardian Angels
+The Armadillos 
+Bobcats
+Deus Ex Machina
+Gators
+Fennville RoboHawks
+Enterprise 
+Purple People Eaters
+RoboBills
+Hatchets
+The Nerdy Birds
+Les Sénateurs
+Metal Heads
+Explorer Robotics
+Chieftainators
+Devil Bots
+TITANICS
+Dial-Up Grizzlies
+Cybears
+TEAM ON IT
+Area 5188: Classified Robotics
+Team K.I.S.S.
+Falcon Fury
+LANCERobotics
+Toros
+Pantheon
+Gobles Voltage
+The Renegade
+Breaking Bot
+Northwestern High
+Knight Tech
+Robot Dolphins From Outer Space
+Alchesay Falcon
+North Branch Bad News Broncos
+NewRo Bots
+Volatile Chaos Inhibitors
+Robocats
+FullMetal-Jackets
+A's Gurias
+Coolidge Robotics
+TALON Robotics
+Rectify
+Milpitas Xtreme Robotics
+Tuiuteam
+TAMSformers Robotics
+St. Ignace SHIELD
+The Mighty CavBots
+Steagles 5215
+E-Ville Empire
+Robocats
+System Overload
+TeknoSquad 5219
+Rockets
+Project Freelance
+JackBotics
+Hillman Gearheads
+Panther Power
+The Shambotz
+Syn. Surgers
+Eagle Elite
+Astros
+Heritage Hawkbots
+The Resistance
+The Radical Jays
+Talons
+Golden Eagles
+Marauder Bots
+Gears of Fortune
+Man O' War Robotics
+Bears
+Falconators
+The Royal Stags
+Udder Chaos
+Tribe Tech FRC
+⚙️ RoboCats ⚙️
+Aegis
+LNHS
+Warriors
+Tech Tribe
+Red Devil Robotics
+Robo-Saxons
+Revere Robotics
+Kinetic
+C3 WAYbots
+Cyber Tigers
+Bigfork Backwoods Bots 5253
+HYPE
+Robotic Tigers
+Atomics
+CometKaze
+Flyers
+Magic Smoke
+Owosso Robotics
+Cyber Shock
+Robotum Manus
+Robo-Bucs
+The Integers
+Radical Impact
+Cougar
+The BioMech Falcons
+Sonic Sci-borgs
+KULTUR LISESI
 Open Circuits
+Argobots
+desert robot
+Wolverine Robotics
+T.I.M.E.-Bots
+Edgar Allan Ohms
+Rowville SC
+Los Clasicos
+Bionic Eagles
+Shockers
+PyroNinjas
+Railroader Robotics
+Torque
+The Monarchs
+Sea Kings Robotics
+Trojonix
+FLARE
+Spartan Robotics
+Medabots
+Mechanical Howl
+Emperius
+Cougar-Tron Squad
+Metal Crusaders
+Industrial Revolution
+Aldernating Current
+Iron Falcons
+BOLTZAP
+E-TECH CHARGERS
+Winger Tech
+Mustangs
+RBT
+Transformers
+Power Train
+Stone
+Yangtze Wuhan
+R2
+Mechanical Dragon
+Wuhan Yangtze
+Robbery
+Mecha Ravens
+Colombian Space Stars
+Lobotics - Peñoles
+CIBERBOTS
+Ice Bots
+Panther Robot
+The Architects
+@RedhawkRobotics
+DigiDigger
+Cyber Hornets
+Medicengineers
+Southern River
+Mechanized Mayhem
+Hawks
+Hurricanes
+Optimus PRIN
+Griffin Robotics
+APCR
+Agents of S(A^3)S
+CBTIS 001 FRESNILLO
+Lightning Bots
+Toaster Tech
+Can't C#
+BUHOS77
+Falcons
+Longhorn 
+Real Steel
+RoboLoCo
+Hurricanes
+FAIRmingos
+The Cardinals
+The Greyhounds
+Environmental Charter High School
+Rhinos
+BOLTS
+Atlas Engineering
+Gryphons
+Charger Robotics
+RoboEagles
+Hope Robotics
+T-STEM Robotics
+Controlled Chaos
+LoCo Raptors
+WARP
+Fightin' Robotic Owls
+Wreckless Robotics
+Aluminosity
+Gearaffes
+Red Bank High School
+Celt-X
+Wolfpack Robotics
+Kennedy Kinetics
+Chargers
+Eaglebotics
+RoboTalons
+Impossible Robotics
+Stellar Robotics
+Pearadox
+Bears
+TaRDIS
+Eagle Robotics
+The Sonic Screwdrivers
+Berkelium
+Velocity
+BirchBots
+Stormgears
+HopCo  Robo
+Rogue Robots
+RVA Coder Collective
+E.J. Lajeunesse
+Steel Talons
+Breaking Bots
+Black Knights
+Pirate Robolution
+Titan Robotics
+AutoPilots
+Blinding Light
+Falcon Robotics
+RoboMomoTrufflez
+Cyber Cats
+Rocky Balboabots
+Technological Terrors
+Huskies
+Les Chevaliers
+Arsenal
+Mechanical Monarchy
+Les PATenteux
+VObotik
+Rushing Peacock
+Pink Detectives
+Team Robotica
+The Dancing Bots
+Prototype
+SHREC 5450
+Supernova
+Aurora Robot
+RED COMET
+Obsidian
+shenzhen pingshan high school 
+hua nan shi fan da xue fushu zhong xue
+Falcobots
+Digital Minds
+Ipswich TIGERS
+Strike Zone
+Victorian Engineered Robotic Nation or V.E.R.N.
+2Paw Robotics
+Iron Eagles
 Bluejacket Robotics
+Binary Bots
+Shanghai Xiang Ming High School Of China
+RoboTractors
+Chaos Theory
+FLARE
+The Cowpunchers
+W.Hi.R.R.
+The Wyld Stallyns
+Team Spitfire.
+Clairemonster
+Thunder
+Y Bridge 4H
+NuBotX - National University Academy Robotics Experience
+Pershing Doughbots
+Cafe Bot
+FYRE
+Bristol Bots
+Roarbotics
+GD-Bots
+Career Academy Robotics - Wolf Pack
+Manual T-Bots
+Robotic Turmoil
+Tiger Robotics
+Baronbotix
+CSI Golden Eagle Robotics
+The Dark Byte
+Hard Reset
+Winner's Circle Robo Jockey's
+SMAbotics
+Bizarbots Robotics
+Aluminati
+Robo Knights
+Foxes
+The Wired Devils
+Bearium
+Jaguars Robotics & ROVs
+Bobcats
+Cobrots
+Smithville Tiger Trons
+The Loose Connections
+V2 - Volts Squared
+Midcoast MAINEiacs Robotics Team
+Robotic Eagles
+Wolfbots
+Like a Boss
+The Da Vinci Coders
+Cortechs Robotics
+Pizza Mecánica
+Monroe Robotics
+MavBots
+Blue Power Robotics
+Iron Maple
+The Engineers on Fire
+Techno Wolves
+LASS Robotics
+Duck and Cover
+WOLF TEAM ROBOTICS
+Stargazer
+Redneck RoboWarriors
+MacroProcessors
+Alcona Tool Cats
+Type C - Peñoles
+Cyber Phoenix
+Ultime
+Visalia Vanquishers
+Greenhills Lawnmowers
+Orange Crush
+The Panther Bots
+Electric Horse Power
+Onaway Onabots
+Bionic Bison
+Titan Alliance
+Dia and the Brobots feat. J-Kwelin
+Vikingbots
+DVHS Cyborgs
+Lincoln High School Tigers
 Shakopee Sabers
+RoboHerd
+M.I.N.T.T.Z - Mechanically Insane Nerdy Tech Teenz
+SWIFT Robotics
+PiedmontSTEM
+⚒️ A.R.T. ⚒️
+The Talons
+Psi Factor
+Gryphon Robotics
+BRONChO BOTS
+Harding Revolution
+SENSORED
+Robo'Lyon
+The Poros Robotics
+Spartans
+Carriagetown Robotics
+BB-R8ERS
+Ad Astra
+Gear Grinders
+Central Lake Trobotics
+Raider Robotics
+AnchorBots
+Phalanx
+GRANBOTS
+Auburn Girls
+Sugar Rush
+Code Red Robotics
+Solid Rock
+Tech Titans
+Ookpik
+RATCHET
+Rosbots
+Ivanhoe
+P.A.N.T.H.E.R.S.
+SHOCK
+Team Terminator
+Kinematic Wolves
+Metro Mechanical Monsters
+Trojanbots
+BRAEZEN KNIGHTS
+Hornets
+Rex Machina
+SistamatiK
+ICRobotics
+Blood, Sweat & Gears
+Bond Brigade
+Titan Robotics
+Reign Robotics
+Red Devils
+Alumiboti
+Manta Mechanics
+Far North Robotics
+Devil Robotics
+GI Joz
+NRHS TigerBytes
+Wolverine Robotics
+RoboMaidens
+sjmp
+The Sentinels
+Taiyuan Beijing Team
+Semia Team 1
+STEMLAB® SCHOOL
+The WarriorBots
+Feixueqingzang
+Team DaoZu
+Blue Hurricane
+Team Firewall
+Lassiter Robotics
+COOL School
+Turbulence
+Neon Tigers
+Robo-Raptors
+ThunderDogs
+Team Sycamore
+Miners RC
+Green Machine
+Northern Lights
+PLS
+RoboJags
+Community Team 1
+Cyberian Huskies
+Robo Hornets
+Robotic Rams
+TIGER TECH Robotics
+TrojanBots
+Nu-matic Ninjas
+πrtz (Pi-rates)
+cyborg chakra
+Community Team 2
+The Nomads
+SpartanDroids
+The Asimovians
+Hyde Cyber Wolves
+Jesterminators
+Demacia
+Moona
+North Community High School Polars
+JukeBots
+Loose Wires
+Pegasus Robotics
+Byron Robotics
+Mumford Mechanical Mustangs
+TBD
+FHS 
+Community Team 4
+Spider-Bots
+BadgerBots
+Melbourne RoboCats 5648
+The Pithons
+Carbonite Crusaders
+Maynard Jackson RoboJags
+Eagles
+Iron Mosquitos
+Phoenix
+KelRot
+Panther-bots
+Rawhide Robotics
+STORMBOTICS
+Team Supreme
+Symmetrical Chaos
+RoboCards
+Cardinal Commanders
+Ground Control
+Big Red Robotics
+FENERBAHÇE DOGUS SPARC
+Purple Lightning
+The Digital Eagles
+NHHS1
+Techmen
+Al-Hayah
+ROBIN, Robótica Inemita
+First Nations-STEM
+CougBorgs
+The Gearhounds
+WiredCats
+The H.E.R.O.E.S
+The Subatomic Smarticles
+Knightrise
+Girls on Fire
+KYS Robotics
+Dragonbots
+Equus Engineering
+R.A.V.E.N.
+Titans of Tech
+Robo Terriers
+Wirecats
+The Outliers
+Robo Cats
+CK Cyber Pack
+SubZero Robotics
+Team Tiger
+ChiefBots
+Springport High School
+Hamady Hawks
+Heavy Duty Eagles
+Prepa Tecmilenio - Faraday
+Bearcats
+Raider Robotics
+Robo Sapiens
+SOTA Cyberdragons
+RAIJINbotics
+Robotowatomi
+Eagles Crew
+Weird & Wired
+DESERT EAGLES - JOHN DEERE
+Tahquamenon Phenomenon
+Roseville High School Robotics
+Zebrotics
+Rudyard Nerf Herders
+The O-Bots
+Battling Bathers
+Hemlock's Gray Matter
+Beecher Cyber Bucs
+F.R.O.G.S
+DRC
+PrepaTec - Keybot
+Sasquach
+Campion Bears
+Pink Titans
+Jagobotics
+Wolf Pack
+Plutonium Panthers 5722
+Robert Land Academy
+Spartan Robotics
+Cerberus
+RHUMBOTZ
+Omegabytes
+MC2
+MAD Dragons
+The Professionals
+Tiny Giants
+ROBOTIGERS
+NGeek
+RoboReign
+Control Freaks
+Kingsmen Robotics
+Mars Style
+warriors
+Crestbots
+Trojanators
+Coyotes
+Gators
+Robo-Wolves
+RoboRunners
+Gearheads
+Human Error
+Athena
+Adna Pirate Robotics
+Tokyo Technical Samurai
+Martian Mechanics
+Myerbott
+Bevbotics
+St. Joseph Academy Flashes
+Brooks Academy Robotics
+Central Catholic Robotics
+REC'in Crew
+Eagletrons
+C-Bots
+TroBotics
+The Marinators
+Illawarra
+FranklinBots - TEAM HYDRA
+Lightning Robotics
+Grasshopper Bots
+ToroBots
+ET Robotics
+VPE and Veritas Robotics
+Leuzinger Resistors
+Radio Rangers R^2
+ReMIT 
+Marfa Robohorns
+The Mighty Morphin Power Bots
+YAFL Mechatronics
+Maximum Overload
+CRHS RoboCats
+Phoenix
+Static Storm
+The Power-Struck Girls
+CB Tech
+Harvesters
+Petchey Robotics Team
+Sullivan 4H-Newport
+RoboDucks
+Vassar Voltage
+The Shield
+Pro-Botics
+NEXUS Robotics
+Eagle Spec Ops
+The Other Owls
+Proto-Titans
+Magic Island Robotics
+CTC Inspire
+Los STEMateros
+Apex Robotics
+TORCH
+SMbly Required
+Basement Lions
+CANbotics
+Revive Robotics
+The Jesubots 5809
+X-Bots Robotics
+BONDS
+Drewbotics
+Morpheus
+ROBOTA
+Bond Science Engineer
+Gra-V Robotics
+Uni-Rex
+Riviera Robotics
+Mecha Makos
+PathFinder
+The Saunders Robotics Club
+WolfByte
+ACE
+Orion
+Amherst Robotics
+Avis Automata
+Code Purple
+Flying Riots
+Awtybots
+LIFE Engineering
+Revolution Maker
+FULL OF AMBITION
+Team-5833
+R3P2
+Sage Hill Robotics
+Mechanic Mutts
+Unity4Tech
+Mitochondria
+Blue Whales
+Shock Wave
+The Patriots
+Royal Robotics
+Flurb
+Phoenix Tech
+Twisted Gears
+SouthCoast Corsairs
+Ironclad
+ROBO C3
+Joker
+Guangzhou  lego xueyuan
+Striking Vikings
+Illusion Robotics 
+FEAR The Termigators
+GLITCH
+Blue Collar Bruisers
+Bullbots
+Walnut Valley Robotics
+Golden Hurricane
+i
+Full Metal Muskrats
+ManGeKyo
+Atomic Disco Robotic Engineers
+Hypercubed
+Robo-Pelicans
+Droide
+Fe [Iron] Tigers
+fighters science
+UTM Veracruz
+QHHS Aqueducks
+League of Logic
+Chickadees
+Wiredcats
+Farmersville Robotics
+Prepa Tecmilenio BorderBots
+ICE Cubed
+ARTEMIS
+Mechalodons
+The Great Lakers
+Shadow of Orion
+AF North HS
+TVHS Dragons
+Titan Robotics
+Spice Gears
+Gray Storm
+Villanova WiredCats
+LAAE
+PrepaTec IMPERATOR
+M.E.T.A. Robotics
+Commandobots
+Tec Milenio Durango
+UASGC Robosquad
+Energy HEROs
+International Grammar School
+CyberJags
+Peddie Robotics
+Fire 6
+APEX Robotics
+RoboFalcons
+FROST
+The Fighting Mongooses
+BattleCats
+The Wire Clippers
+ThorBots
+Iron 101
+RoboCorps
+Titanium Badgers
+CC Shambots
+Spartans
+Cardinal Gibbons Cyber Chiefs
+Supertronix
+PARAGON
+Copper Hawks
+Patriotics
+Robotic Warriors
+Mercy Midnight Storm
+ELEKTRON
+Supernova
+Pumatrons
+JoCo RoBos
+VIKotics
+Binary Power
+scots
+WildC.A.T.S.
+Golden Gate Robotics
+Holden High Robotics
+Da Moose
+Globetrotters
+MetalBoost
+Raider Robotics
+Lunar Kitties
+Bots of Prey
+Prepa Tecmilenio - Quetzales
+JudgeMent Call Robotics
+Crowbotics
+Tech Tigers
+TigerBots
+MI Robotics
+Razor Steel Robotics
+Lakes Lancers
+BREAD
+Cast Iron Orcas
+Warriors
+The Bad News Gears
+Robotic Pioneers
+|CTRL| (Absolute Control)
+The SPartans
+Robojags
+PrepaTec - Lebotics
+TechGarage
+Trojans
+Makers Assemble
+RoBuck
+NOLABOTS
+Portable Chargers
+Trailblazers
+Falcons
+CAT 5 CyberCanes
+Blue Wave Robotics
+PrepaTec - Titanium Rams
+Mission Eagle ROBO-RANGERS
+the pythons
+perSEVERE
+CA Frost High School
+The Praetorians
+Power Struck Girls
+HB Oiler Robotics
+Freedom FORCE
+Little Apple Cyborgs
+English Skunkworks
+Beavertronics
+Raider Robotics Team
+Juarezbots
+Moonshots
+Mechanical Dragons
+Beta Blues
+CyberSaders
+Rosemary Rebels+POIC
+Roboplugs
+Apex
+East Grand Rapids Robotics
+Thunderbotz
+Merrill's Circuits of Destruction
+Blast Furnace Bots
+Salina Robocats
+Project Bucephalus
+┌ Iron Fangs ┐
+Galaxia in memory of David Zohar
+Narooma High RoboRebels
+Panthers
+TRIGON
+Chargers 5991
+Pirates
+Istech Robotics Society
+Captain Retros
+Servo Serpents
 R.U.R.
+Knightling Boltz
+The Chillbots
+Byte Force
+Firehawk Robotics
+CIP
+ZooBOTix
+SUM
+f(x) Robotics
+Cardinaltronics
+Albury High School
+RoboPod
+Lions
+CYBERHEART
+Tecmilenio - Teravolts - 6010
+Cyber Trojans
+STEAMROLLERS
+Robowolves
+ARC
+Juicy Bots
+Tiger Robotics
+PrepaTec - Cyberius
+TICK
+Metabots
+John Glenn Robotics
+Team T.I.G.E.R.S
+Wrench Warmers
+DISCBOTS
+R Factor
+Adroit Androids
+Tiger Strike
+Brain Waves
+Rs Artisan
+Railbots
+Tarbiya 360
+Falcons
+Pirate Robotics
+Gadget Agents
+Eagle Storm
+House of Ulladulla
+Peninsula Robotics
+Vikings 51
+ITOBOT
+Cypress Circuits
+Getobotics
+Cougar Robotics
+Robocamp
+Tesla Tigers
+Circuit Breakers
 Sabre Robotics
+Tecking
+Proctor Frostbyte
+Ant-valanche
+Pegasus
+Wee Waa Bush Bots
+Rocktaπ
+Clarke Road Trojans
+Robusters
+The Dukes
+BOSS
+Brotherhood of Steel
+Thunderbots
+ROBOTURK
+System Overload Robotics
+Circuit Serpents
+Carbon Crusaders
+WHAM (Willyama High Advanced Mechatronics)
+QLD Pineapples
+IstanBULLS
+Titanium Dragons
+Rambler Robotics
+The Underdogs
+Delta Overload
+BHS Robotics
+Gryphon Machine
+The Aluminators
+Triton Tech 6072
+Cav-Bots
+RoboBucks
+Leland Zebrotics
+ReVamp
+Wiking Kujon
+RoboRams
+JET SET
+A.D. Johnston First
+Digital Dislocators
+Calgary Tech Coalition (CTC)
+Overlooking
+Swoop Robotics
+Green Devil Bots
+Ignition
+Cybertronic Lancers
+Stephenson Eagles
+Cyber Cougars
+Wayland Wildcats
+Eagle 1
+Q-Bots
+Unplugged
+Manic Mechanics
+PARDUX
+UPSM Cobrots
+Botcats
+bIrobot
+Knight Riders
+MS Mobots
+Strange Quarks
+Mustangs
+Space Pirates
+Desert Eagles in memory of Yehonatan Maimon
+Firebirds with Skills
+PrepaTec - TecGear
+CyberJagzz
+DRAGONBOTS
+Longhorn Robotics
+Doc Botics
+Paul Bentley Laforet
+Cyberstangs
+M.A.R.C. 1
+Hamilton CyberHawks
+Ellington Saints
+Cougar Robotics
+Wingspan
+Dunedoo Central School
+Prototype Pumas
+CyberStangs
+RoboVikes
+Potential Energy
+Mad Scientist Club
+Overdrive
+Jagbots
+Robo-Blazers
+BHS Pumatrons
+M.O.T.O.R (More Than Our Robot)
+Warp Speed, Scotty !
+Vipers
+NLR Robotics
+Iron Rangers
+b a s h
+Robo Ram
+Arctos
+The Robo Ravens 6136
+Falcon Robotics
+Dogbotics 1
+ThunderBotz
+SMT Titans - The 'Tita'BOTS
+O'Connor Robotics
+Cross Keys High School
+APEX Automation
+Angelbots Gold
+War Eagles
+Blackjacks
+Tonkabots
+CASS Electro Knights
+hand by hand
+Bluebotics
+Red Devil Robotics
+Robo-Falcons
+Blue Crew
+Universal Robots
+ElektraBots
+PrepaTec - Infinity Robotics Team
+Marshall Mechs
+PiRbot2
+ALIANZA MEDELLIN
+Bombatrons
+Equilibrium
+Cap Alpaca 6162
+Mustangs
+Moonshot Slaybots
+Aurora
+Thorobotics
+CB Bearbots
+alzahrawi
+Chaos Squad
+Prepa Tecmilenio Vitronik
+⚛ Chain Reaction ⚛
+The Mad Dogs
+Elgin Metal Mayhem
+Kaprekar's Constants
+EVW Mystery Machine
+MTS
+Atomic-Robotic-Dogs
+Techno Titans
+PhotonBox
+Mechanical Lions
+Cryptic Cyborgs
+Royals
+RIGS - Robotics Inspired Greenland Students
+C4 (Capital City Chaotic Coders)
+TV Patriots
+Hope BotCats
+Narrabri High School- Kaputar Klockworks
+Sting Robotics
+Cyber Raiders
+Cybernetic Crusaders
+RoboKryptonite
+IEA Robotim
+The Legend of Robotics
+The Aftershocks
+GOLDBOTS
+Spontaneous Disassembly
+Semia United
+Bayou Bots
+E-Hawks - Peñoles
+PrepaTec - XRAMS
+The Highlanders
+The Centurions
+Titanium Knights Robotics
+Team Pedare
+SD Tech
+Shandong T
+Beichen
+Mechstangs
+Robo Warriors
+The Dragons Lair
+Hayden Robotics
+Kaniva College
+Team Quantum
+PHEnix
+Armored Eagles
+movers and shakers 
 Bomb-Botz
+Tecmilenio - TAURUS - 6218 
+Cuttin' Edge Robotics
+The Golden Griffins
+Vandals
+Flying Tigers
+Arsenal of Engineering
+Saint Dominators
+SLC Roarin' Robotics
+Blue Devils
+Robohovers
+MAT Robotics
+spartans
+Team Koi
+AKINCILAR
+Florya Bisons
+Phoe-Bots
+Madson
+Robo-Nerds
+Robots at The Center of the Universe
+Martin Motion
+Popcorn Penguins
+The Irrational Engineers
+Eagles of the Knight
+CowTech
+Chaos Theory
+Energy NERDs
+Light SaBres
+Overlooking 2
+Union Knight Robotics
+Millbrook High School
+The Northwoodians
+Nerointellect-sim Engineering & Robot Design Soiree   N.E.R.D.S.
+Greeneville High School Robotics
+Citadel
+EAGLE
+Stable Circuits
+Atonement Academy CrewStators
+Courtland High School
+SPCS - Hafabots
+SPCS - Koko Tek
+Hippocampinae
+Hippocampus
+DM Robotics The WolfPack
+Code Error 404
+Disruptive Innovation
+FE Freedom Engineers
+Tecmilenio ENKI-NOVA 6319
+Iron Hawks
+■ R-Cubed  Rouse Raider Robotics ■
+OneClay ARMORY
+Hayden Robotics
+The Blue Devils
+Reset Robotics
+⚡ Baltimore Bolts ⚡
+The Fighting Gophers
+Mechanical Advantage
+The Bucks' Wrath
+6330 - Arc Angels
+Sabotage
+Bull City Botics
+Scavenger Robotics
+Aluminati
+Terminal Velocity
+Javawockies
+Terror Bytes
+DRIVING STEEL
+Pelican Falls First Nations High School
+The Marist Manatees
+Firestorm Robotics
+BT Robotics
+Steel Ridge
+Yale Jiggawattz
+Nimrod Nation
+Cybears Robotics Team
+St. James Lions
+PrepaTec - HORUS
+Albany High Indians
+Clawbots
+Rundle College Robotics
+LAUNCH TEAM
+EFZ Robotics
+Jiayi Superhuman Strength
+Patriots
+MetaRobotics
+The Spring Konstant
+The Buhlean Operators
+TechKnow Difficulties
+Quanzhou No.5 Middle School
+The Blazer
+Shengxue Corps
+BirdBots
+Ten Ton
+Imperial star destroyer
+RAM Rodz Robotics
+The ElectroLights
+Unknown
+Mercenary Robotics
+Texas Titans
+Spencer Robotics
+Chi-squared Robotics
+River City Robotics
+NanChong Union
+MC²
+Further Dream
+Howdy Bots
+LYNX
+Terabyte of Ram
+ORION ROBOTICS
+Red Raider Robotics
+RoboHornz
+PLUG&PLAY
+Hisar Ravens
+TrueMoe
+Guangzhou research robot club
+Discobots Canada
+WonderWorks Robotics
+Matster Mechanist
+Hephaestus
+Ursuline Bearbotics
+Dimension Creator
+Pioneer
+MITO
+Xindu No.2 High School 
+Steel Tempest
+Romero Robotics
+Kilo-bots
+Tinspiratio
+The Manhattan Project
+8-bit RAMs
+GÖKTÜRKLER
+D.P. Todd Secondary
+Brazilian Storm
+EntreBots
+Cyber/Scorpions
+Tecmilenio - DEVOLT - 6407
+Syntechs Robotics
+Odrinias
+Supreme Eagles
+Gravediggers
+For Sale By Owner
+Degrees of Freedom
+Voyager
+Gultepe Robotics Team 6415
+MEVOLUTION ROBOTIC TEAM
+Fridolins
+The Missfits
+Kernel Chaos
+Fire Island Robotics
+WarriorBots
+GearHeadz
+Ward Melville Iron Patriots
+Stealth Panther Robotics
+The Conclave
+Robo Gladiators
+Glendale
+STEMINEERS
+4th Dimension
+Kalsedon
+NoktaParantez
+Valkyries
+HZ4Z
+Bossley Park High School Wolfgang
+Jetson's Robotics
+PARS ROBOTICS
+The Pacific Quakers
+MEF THUNDER FTD
+tanx
+Canobolas
+Turbo Turtle
+Modern Americans
+AEMBOT
+PrepaTec Chihuahua- Sigma Robotics
+CTEC Robotics
+Redhawks
+Bad 2 the Bone - Bingara Central School
+LBJ Early College High School 
+DigiBots
+The Reaper
+Wired Warriors
+GPrep Thumpin Pup
+Bog Bots!
+Chicken Strips
+The Coded Collective
+Oregon Trail Academy Wi-Fires
+Roots Charter High School
+Semiahmoo Robotics
+AG Robotik
+Air Guardians
+Iron Stallions
+techJOYnT
+Robotic Reapers
+Danger Noodle Danger
+Mystic Biscuit
+Tiger Tech
+Tiger Robotics
+The Positronic Panthers
+Junkyard Dogs
+Templeton STEM
+Lee County High School Trobots
+H-TECH
+Rock Star Robotics
+Indigo Dynamics
+Helium-3
+Supernova Star Squad
+Conqueror of Istanbul
+CASHS Bot Team
+AZTECH Robotics
+SAGE Robotics
+Deus Ex Machina
+Wildcat Robotics
+Prepa Tecmilenio - CHARGER
+TechKnowLogic
+Mecha Mustangs
+Ten More Tons
+Clockwork Knights
+RoboRams
+Bronco Bolts
+Panther Robotics
+Short Circuits
+Pangburn S.W.A.T.
+Red Steel
+Wings of Liberty
+Future Star
+AREA 27
+Pymble P-Platers
+Castle Robotics
+Innovos Robotics
+GearCats
+DARC SIDE
+Iron Dragon
+FCHS Jagwires
+ElectroPanthers
+Steel Boot Robotics
+Tecmilenio CYBORG HAWKS  6507
+Hastings Heroes
+Southern River
+Pymble Pride
+Oberoi
+Coastal Catastrophe 6512
+The Wyverns
+Sutton Robotics League
+Unimatics
+Robonados
+So-Kno Robo
+JagBots
+The Vegas Vortechs
+GreenAms Robotics Team
+FPT
+Tomaree High School
+Condobolin
+Wilder Wolves FRC
+Greater Sydney Robotics
+Cyber Rangers
+RamShock
+Terror Bytes
+Beantown Blitz
+Ra
+Redhawks
+TechnoPaths
+BeaverTech noducks
+Saints Scholars
+Edison Sustainabots
+TheDarkSide
+WIHS Robotics
+Linc-Bots
+Success Robotics Team
+Dynamo
+T-FROGS
+Technomancers
+pumaTECH
+A-Team Robotics
+Tawas Braves
+Naatsisʼáán Robotics
+Flaming Metal Robotics
+Perry RAMBOTS
+caseville eagles
+Wildcat Robotics
+MOOTeam
+RoboCats
+Roboticus
+Phoenix Robotics
+Ad Astra
+Spartan Robotics 6556
+S.R.U - Special Robotics Unit
+Aluminum Sting
+Bay-Arenac
+Charging Champions
+Omecha Wolf Pack
+She Heroes
+ROBO CORR
+TDSS Titans
+Team Bobcat
+Battering Rams
+The Broken Drill Bits
+Decatur Robotics Team
+Gladiators
+Whiteford Bobcats
+Lakeview Wildcats
+Forest Area
+Alanson Viking Robotics
+Ferradermis
+Tempe T-Rex
+High School Science Education
+South City International School
+G D Goenka
+Komplete Kaos Inc
+Positive Charge
+Hancock Robotics
+Vestabots
+Human Error
+AHC Transformers
+Hózhóogo Naasháa Doo (Walk in Beauty)
+Tuskin' Raiders
+WCA Cougars
+Counter-Torque Robotics
+Cardinal Robotics
+SaviTech
+Panther Powered Robotics 6591
+Sexton Redbots
+HyperDrive Robotics
+EV ROBOTICS
+QUAKE
+Ashley BearBots
+Eagles
+Northport Wildcats
+Tech Heads
+Easy Company
+Belle Bots
+Cornerstone Crushers
+Tecmilenio - Equipo ITAC - 6604
+Prepa Tecmilenio -  Imperium Fons
+Prepa Tecmilenio Pink Hawks 6606
+Tecmilenio - ARMY ROBOT TECHNOLOGY - 6607
+Prepa Tecmilenio - ARCADIA
+Suwannee Bulldogs
+Robot Roll Call
+WolverBots
+NexGen Robotics
+Gogebic Range Robotics
+ROBOTEDIST
+Bellevillains
+Mechanical Pumas
+NASA BHS Black Hawks Robotics Club
+WARHBOTS
+GravitechX
+Voltage Vikings
+Artemis
+Stan Robotix
+Robot Maroc
+Marinette RoboMarines
+İEA Robotics
+Robohana
+Niles Nordic Knights
+KMS BOTKICKERS
+Concord Boyne Kestrels
+F.U.N.  (Fiercely Uknighted Nation)
+Rocket Robotics
+Northview Robotics
+Robo-Elephants
+Tecmilenio Phoenix Forces 6634
+JaXon Falcon Works
+Full Metal Beavers
+BetaWolves
+Fulton Pirates
+The Mechanical Minds
+Metal Eagles
+GSLRobotX
+Stingers of Steel
+Walnuts and Bolts
+Atomic Automatons
+Alloy Obsession
+Belton Robotics Spacemakers
+PrepaTec - VOLTEC
+MechaSpartans
+CHA Circuits 
+Tribebots
+Golden Bots
+Tigres
+West Wyalong
+Central Robobcatics
+Texan Robotics
+Ryu Botics
+Arborbotics
+Rockbotics
+CouBots
+MarkerBots
+Polaris
+FalconX
+Kamikaze Krew
+LADYBOTS
+C-Otters
+Hephaestus
+STEM Clippers
+Scorpion
+ATL Eagles Robotics
+Red Cat Robots
+Adamas Robotics
+Fusion Corps
+Alexis Tech Warriors
+MIT Iron Eagles
+Ingenious Innovators
+Prepa Tecmilenio - Thunder Hawks - 6676
+Team Avengers
+DKRobotics
+TESLA Robotics
+TRIObotics
+FHC Warriors
+A.S.T.R.O. Vikings
+The ROAR-Botics
+RoboCats
+Amped Up
+Bionic Broncos
+Owltronics
+West Valley Middle College Robotics Team
+Robit
+MV roboPride
+Torque
+Robofalcons
+TrailBLAZERS
+INNOBOTICS
+GalvaKnights
+Cardinal Dynamics
+EUROBOTICS
+Thunder Robotics
+Patriot Robotics
+Phoenix
+PrepaTec - StingBots
+Prince George Secondary School Robotics Club
+Mid Pacific Owl Robotics
+Wildcat5e
+Golem
+RCW Jaguar Robosapiens
+Lobos Conalep
+S.P.U.D. INC
+Southside Robotics
+Millennial Falcons
+Mountaineers
+A. R. Johnson's Panthers
+Hephzibah High Robotics
+Circuit Br8kers
+SPARTANS
+Rocket Dogs
+P.O.W.E.R.
+Walker-Hackensack-Akeley
+Tindley Trailblazers
+LED Robotics
+Mechanical Mounties
+Raiders Robotics
+WildBOTS
+MITOX
+HOT Bots
+The Fast and the Curious
+RobCoBots
+CCS Nuclear Knights
+Record Robotics
+BHS RoboRaiders
+PSJA North Raiders
+Sydney TAFE
+Rauner College Prep
+Knights of the Sea
+H.R.T
+Excalibur
+Tel Shevaa
+G3 - Glue Gun & Glitter
+Space monkeys
+Augmented Jays
+Tiger Engineering
+MEHLVILLE RC
+DAPCEP
+Mustangs
+East Jefferson High School
+MustangRobotics
+tERAbytes
+HenBotix
+RoboFlash
+charger robotics
+CBA RoboKings
+Trailbots
+Overdrive
+Cross Creek Razorbacks
+Apex Robotics FPHS
+Otternauts
+Rebel
+Oscats
+FUSION
+Flash Drives
+Columbus City Schools Walnut Ridge Scotts
+AtomStorm
+Denison Robo-Jackets
+Future Star
+Semia United
+Raven
+The Marist Manta Rays
+Max Throttle Mavericks
+Oh-Kno Robo
+Valor
+Robot Crabshell 
+Snot Otters
+HAI-Panda
+Team Wolfpack
+Quack Attack
+Mineola Wild Reds
+REAL Robotics
+William Tennent Robotics
+Aviators
+Starship Robotics
+Gunnery Gears
+Andover Snowflakes
+Pangaea
+Ellipse
+The Memphis MechWarriors
+POPCORN PENGUINS
+10 Factorial
+Navigator
+Viking Robotics
+Tecmilenio - Scorpion Bots - 6820
+Rogue Techs
+THE SHISHKABOTS
+USM Robotics - Wildcats
+LVA Robot Pigeons
+STRONGHORNS
+Experiment 6826
+hexagon
+Hazel Green
+Ignite Robotics
+Hogbotics
+A-05 Annex
+STEAMex
+Python Robotics
+Bionic Warriors
+Steel Satyr
+The Tinkerers
+Tecmilenio - Bellum - 6837
+X-SHARC
+Terminators
+Trojan Robotics
+Cerberus 2.0
+Polaris
+Guardian Gears
+Provotypes
+River Bots
+MAGNETUDE
+Les Lions
+Hades
+Juventics
+Cell-Ticks
+Empereurs
+JV BX
+JaegersTec
+Viking Robotics
+Badger Robotics
+RoboRaptors
+Mechanized Garbage
+Fern Creek Tiger Robotics
+Big Metal Lakers 6859- BML Robotics
+Equitum Robotics
+The Tyros Team
+The Reavers
+Squirrels
+GryphTech Robotics
+Manitoulin Metal
+Markham Space Invaders
+Panthera Tech
+Cadet Robotics
+Gladiateurs
+BEAM Robotics
+QC DogSquad
+Panthera Ferro
+The Generals
+Mediterra
+Amazon Warriors Robotics
+UHS Wolfpack
+Mechanical Mustangs
+SJB Odyssey
+Aquatic Robotics
+Universal Serial Brawlers (USB)
+South Lions Roarbotics
+Fahrenheit Robotics
+Leviathan Robotics
+Deep-Space Robotics
+The Pilots
+Synthesizers
+Dalton Catabots
+Foothills Robotics
+DC Current
+Legendary Cyber kNights
+Indians
+Big Cat Robotics
+Bladerunners
+Iced Java
+Mechanical Madness 4-H
+CABOTS - Fresnillo PLC - Conalep Caborca
+Astraea Robotics
+The Undergraduate School of Carrots 
+Macon Bots FRC
+Hoodie-bots
+Knights Robotics
+STRIKE
+MEXICAN HOPE
+TeraWatts
+Raiders of the ARC- TEAR-A-BYTE
+Reybots
+The G.O.A.T
+Infuzed
 SAKURA Tempesta
+Mill Creek Steel Talons
+SO BOTZ
+InterGalactic Transformers
+North Crawford Robotics Club
+Retro5ive
+Bulldogs
+Iron Thunder
+Voyageur Robotics
+Napa Cellar Rats
+The Commodores
+Force Fusion
+Technados
+Apache Genesis
+Royal Blue Robotics [RB]^2
+Hogarth Hornets
+W.A.Robotics
+RobotiCats
+The Franklinton Firebirds
+Blue Armadillos
+Cuivre & Or
+Hill Robotics
+The Red Company 
+SMART
+Archytas
+Scorps
+The Brainy Bunch- Ingram Tom Moore HS
+Vault 6936
+McCallie Robotics
+STEM3 West Robotics
+The Houde Academy
+Violet Z
+IronPulse Robotics
+SAIE
+Blue Bears
+Wolverines
+Children of the Corn
+F & E
+Savage Tumaz
+EAGLES
+F.E.W Bots
+The Breakfast Club
+Spartans
+Vector Machines
+Quetzals
+Titans of Industry
+Los Chilis
+SHAM-ROCK-BOTICS ☘
+A.C.E.S. (Army of Christian Engineering Students)
+CougarBots
+Organized Chaos
+The Rusty Huskies
+SIbots
+Antares
+Blood Sweat and Gears
+BearBots (FRC)
+Tecmilenio XibalBots 6965
+Sons Of God 
+A.T.Vortex
+Team Pi
+Cyborgs6969
+Barbarian
+The Sky Savior
+NEXUS Robotics
+Obliq Tech 
+Zia Robotics
+The Neil McNeil Brotherhood Bots
+Electric Eagles
+Cyber Squad
+QuickStrike Niagara
+The 5 Nighters
+VERTIES
+Clockwork Concord
+Team CEL Paraguay
+Tecmilenio - STEMHAWKS - 6983
+Magical Monkey
+ENKA TECH
+PPT Bots
+Falcon Automation
+ACI35
+KAISER
+Ambition
+Crosbotics
+FrancoBots
+Dragons 
+Citadel
+NOMAD
+Koalafied
+Bad wolf
+Unipards
+B.E.S.T.
+Newton's 4th Law
+Buning Power
+风云蹦豆
+Robots A-Gogo
+Ossining Owls
+RAHS Phoenix
+IMC
+RROOTT
+YakRob
+Carp & Donkey
+SINFEN ROBOTICS
+ROBOFEN
+Rainerum Robotics
+ACCN Techtronix
+YIWU TEAM
+Bannerlords
+PV Shock Bots
+Fellowship of the Gear
+EOLOTICS - Peñoles
+Rubber Ducks
+IM ROBOT
+TC Robotics
+ACE Robotics
+Tamworth Titans
+ENFORCERS
+BETA
+Team Vinity
+Radioactive Rebels Robotics
+Binary Battalion
+Scotbotics
+The ROBOlympians
+Duanesburg Jr./Sr. High School
+Raptors
+Manna Roosters 7033
+2B Determined
+MEF Thunders
+The Beta Bots
+Jeunes D'Argent - FresnilloPLC
+Totino-Grace Pizza Pi's
+❌⭕
+POTROBOTS
+Doomsday Dogs
+Poly Rabbotics
+RoboPirates
+FeneRobotics
+MCCrusaders
+UNIMATE
+Magic Frog
+Red River Rage
+Marine Machines
+SARNIC
+RoboDons
+Falcotronix
+Robo Huskies
+SC Sailors
+Quantum Steam
+The F.A.S.T. Team - Fowlerville Area Scientific Technicians
+Titanators
+StrathDroids
+Bot-E Builders
+Riverside Military Academy Eagle Bots
+Wagner TRILOBYTES
+Voltron Robotics
+Wolverine 1 
+Faulkner County Library Gadget Droids
+Team Streak
 Mechanical Masterminds
+Taipei 101
+ADİL
+ITU-Robee
+O.G.R.E. (Opelika's Greatest Robotics Engineers)
+Ottawa Hills High School
+Reapers
+Gearbreakers
+WestTech Sentinels
+Hawk of Flames
+BENG DOU
+Co-Bot
+Vision
+NEYC
+Rogozin
+Green Hekma
+Hillman Pyrobots
+Wired Warriors
+IOROBOT
+BCS
+Somerset Robodogs
+KnightOwls
+Bionic Bulldogs
+Veritas Valiants
+Alpha Omega
+HiMach
+Educated Business
+The Archers 
+Seoul High School
+Osan Middle/High School
+Noble Mechanical Knights
+Genesee Robotic Wolves
+PrepaTec - Daedalus
+Robo Remedy @ Manitowoc Lutheran High School
+The Bot Brothers
+PBG AREA ROBOTICS
+MPV StingerBots
+Blazer Robotics
+volTRan
+Clare Chaos Theory
+Heights Bytes
+RAD Robotics
+EverGreen
+Control Rising
+Robo-Raiders
+Red Lion Bots
+Électriks
+Robotic Dragons
+ScotBots
+Sunset RoboBison
+ThunderChicas
+Keller Fusion Robotics
+WYSIWYG
+Emerald City Robotics
+8-bit Destroyers - Cranebrook HS
+Tigerbotics
+Atom.OS
+LongMetal Robotics
+XLR8
+Pilbara Protons
+Future Shock
+Mavericks
+Axeman
+STEAM Makers
+rOctopus
+System Reset
+Titanium Titans
+Project 212
+Wing It
+AERO
+OKSEF ROBOTICS
+Cyberhounds
+Saydel High School Robotics Team---Vulcan Eagles
+The Cyber-Eagles
+NexTech Hydra
+RoboHawks
+Infinity Robotics
+Rising Falcons
+Faster Than Light
+WuKong
+Ogemaw Overdrive
+Real Robotics
+Owltonomous
+Aetos Dios (Eagles of Zeus)
+TheROK
+The Robotic Rangers
+Metal Heads
+μBotics
+The Conspirators
+Burnaby Central Secondary
+Ludington O-Bots
+LeopardBots - Peñoles
+Maraudeurs
+A.I. Metal Pies
+RHODE REBELS
+Perkins Pirates
+Red Thunder Robotics
+Spectrum ThunderBots
+Infinity
+Belmont Bytes
+Spooky Action Robotics
+Wolverine Wildcats
+AEA Robolution
+Garibaldi Robotics
+Charger Robotics
+Team Red Line
+ROC
+Turismo
+Yeti
+Crossfire
+Wellstone Lions
+Lions
+Robotic Indians
+W.A.R.
+BIT CHALLENGE
+TartanBots
+Gear Cats
+SaddleBots
+EX NIHILO
+Vancouver Rainstorms
+Gator Nation Innovators
+Blue Thunderneers
+Invictus
+iRam
+Twin River Robotics
+Tech Tigers
+Mountie Megabots
+Fearsome Gears
+Thunder
+Banting Robotics
+Crobotics
+Cyber Orioles
+Cyber Bearcats
+Freedom Gliders
+Dene Strong Engineering
+Titanium Rex
+Angry Birds
+CMA Voyagers
+Titanium Trojans (Homer Robotics Club)
+RoboJackets  7210
+Hollywood
+LCS Warriors
+Gladwin Knights
+Tiger-OPS Robotics
+Patriots
+CHARGERS ROBOTICS
+SallaBots / ULSA Laguna
+Bradford Botdogs
+Olivet Eagles
+Steel Falcons
+Viking Robotics
+The Fighting Anomalocari
+MVHS Robotics
+RoboDrakens 7224
+Mechatronic Mustangs
+Error 404
+Tornado
+Tigers
+Electronic Eagles
+Mythic Mechanix
+Team Freedom
+Pharaohs
+Hope Of Detroit Warriors
+Lee Robotics
+Red Lake Ogichidaag
+ROBOGEDİK
+UniBots
+coolker
+Hell Robotics
+Nitro Knights
+NexTech Knights Robotics
+FRC 7242
+Robo-Lobo-Bellos
+Huskies Robotics
+LionBot Robotics
+Thom Collegiate Trojans
+Magical Smurfs
+Tactical Hams
+CVH SPARTANS
+OsCODEa 0w|5
+Warrior Robotics
+Ionia Bulldogs
+Timber Wolf
+Knowmads
+Mechanical Mettle
+Irish Robotics
+Semiconductors
+Robolobos - Hiawatha Collegiate
+Mechanical Mustangs
+Diamondback Turtles  (Heritage High School)
+Mulgrave Robotics
+QBOT
+TOPPS TECH
+Cougar Robotics
+Skeleton Crew
+NBHS Steampunks
+Lisgar Robotics Club
+BCNY Gerry Robotic Lions (East Harlem)
+ISB VoltBots
+The Bandits
+Hangar 84
+Envirobots
+ZooM 7273
+Brashear Bulls Robotics
+PRIDE Robotics
+Success Initiative Robotics
+Mandela United Squadron
+Toormina High School
+Xishan Senior High School Team
+MITO Octopus
+F.G.
+Semia United 1
+Semia United 2
+Semia United 3
+Sneaky Snakes
+Enigma
+Esquimalt Atom Smashers
+NOMMA D3V1LB0TS
+Blue Eagles
+TARHUNDA
+TYANA - NİĞDE GAZOZU
+HITTITE ANGELS
+COTANAK ROBOTICS
+RoboCirak
+SPECTRUM
+TeRoBoT
+KAFKAS KARTALLARI
+TOROS
+Robotic Eagles
+Dectro
+Jackbots
+afaq school team 
+Reach Robotics
+CAPA MEE6
+Rambo Robotics
+Epping High School
+Team Muskwa
+DeepVision
+Green Lightning
+Lightning Gears
+Boring Robots
+T3
+SBA Talon Tech  #7313
+Tornadoes
+Giga Knights
+Ursuline Academy High School 
+Armor Robotics
+Nanuet Knightronz
+1UP
+Astralis
+Águila Robótica
+YVHS Robotics
+TriTron
+The RoboRaiders
+ASU  Brave Guide Right 
+Red Riot
+Metal Jackets
+Frontier High School
+The Afghan Dreamers
+C.O.U.G.A.R.S (Cybernetic Operational Unit Generated For Artificial Robotic Syst
+Bionic Riot Rebel Robotics Baton Rouge 
+Vancouver Puddle Jumpers
+Ghost
+Esquimalt Proton Pulverizers
+ThunderMiners
+DevTech117
+Lightning Blue Lizards
+IcyNights
+Ministry of Mechanics
+Wired Boars
+Pearl City Cats
+GLOW
+Texas Toast FRC
+CrossThreaded
+KDHS Robotic Owls
+Plus Ultra
+Retrobotics
+Jaguar Robotics Sponsored By Feit Electric
+Northern Horizons
+Bionic Bombers
+Channelview TechnoFalcons
+TECH Support
+Napa County Robotics - OtterBots
+PrepaTec - OVERTURE
+WildBots
+GrizzBot
+Sin City Robotics
+Green Valley Robotics
+PAIR OF DICE ROBOTICS
+Protocol X Robotics
+Gigawatts
+Convergence
+System Overload
+Wingspan
+NOS
+Iona Fusion
+Beyond The Stars
+CYBERTRONICS
+8-Bit Miners
+Lionautics
+Brain Busters
+Qubit Robotics
+Robo Lions (FRC)
+Chile Watts Robotics
+Jaguar Robotics
+Jag-Wires
+MOON STAR ROBOTICS
+Garage Robotics
+S.E.A. Monsters
+Rōnin Robotics
+S.C. Robotics
+Lithium Robotics
+oTECH Aimbots
+AvengerRobotics
+Dupo Tigers
+Lobo Robotics
+Huskies on Hogs
+Narbots
+Aurobots
+suPURDUEper Robotics
+Senior Robotics Team
+Taubatexas Robotics
+Avi and Friends
+Sushi Squad
+Disruptive Technologies
+Incandescent Mice
+ORION
+Magnetech
+Cymurghs
+Devils Burn-In
+FireBolts
+META ROBOTICS
+RAMBOT ROBOTICS
+Robo Montagnards
+R2JESU Robotics
+Mechanics!
+JXN United
+WIRED 7475
+Spongebotics
+Giddy GOATS
+ISTECH
+Cardinal Robotics
+Machine Mavericks
+istiklal
+Lincoln Panther Robotics
+Mechanically Challenged
+Wings of Steel
+Mo Co Robo
+Hudson Hybrids
+Palm Beach County Sheriff PAL WestGate
+Milagro & Village Academy
+R2R
+Boys & Girls Club of Riviera Beach
+Cyber Soldiers
+Turbo Torque
+Phoenix Force Robotics
+Circuit Bizurkers
+SHAbotics
+Robo Indians
+MARAHO
+Wingus & Dingus
+Stallion Robotics
+MARAUDERS
+Golden Gears
+CyberBuggies Northridge High School
+Radicubs
+CyBearBots
+PTU
+WILDCARDS
+Terminators Educational Robotics Team
+STartEM 
+Brainstorm Robotics
+Prowlers
+GWAMA FRC Robotics
+Lions Bots
+Muskrat
+EVE Robotics
+Dark Side Robotics
+Louisville Centrons
+Massis Robotics
+Generals FRC
+Silver Warriors
+Team MineKee
+ULTIMATE Robotics
+ElephantRobo
+SpringBots
+Regen
+Pioneers
+Welcome to team
+Kaohsiung power
+Nuts and Bolts
+Mulan
+Raiders of the Lost Spark
+Servos Strike Back
+Gophertronics
+OSO-TECH
+Dragonflies
+Purple Poison
+ANKA ROBOTICS
+Thunderbots
+Metal Mountain
+Elev8
+Timberwolf Robotics
+Maple River Robotics
+Entel Foreign language school
+Graphene 
+IZMIR ROBOTIK
+Leptechons
+Prepa Tec - MinerZ
+Hawkinators
+Le Jardin Academy
+LYBOTICS YOUTH TEAM
+DieForTonga
+Extreme Mechanism
+PERSEUS
+OSTC -  SWEET BOTS
+Green Rockets
+Maestro
+PRISER
+dasheng
+ALT-F4
+Sweet Springs Robotics Team
+Meteor Bots
+Blue Flamingos
+NSU Demons Robotics
+SESI SENAI MEGAZORD
+Lakers
+SESI SENAI ROBONÁTICOS
+Z SESI SENAI NIÓBIO
+SESI SENAI OCTOPUS
+Tro-Bots
+Optimus Robotics
+New Tech
+SESI/DN #1
+Uplift Robotics
+MULEBOTICS
+Les Sentinelles
+Stark Robotics
+FMWill
+VELABOTS - Peñoles
+Quantum Mechanics
+SESI/DN #2
+SESI/DN #3
+SESI/DN #4
+SESI/DN #5
+Embers
+RoverBots
+The Thunder
+The Salted Fishballs
+Metuchen Momentum
+H.I.I Robot
+Lishan Blue Magpie
+Wisigoths
+Aurora
+Sugar Nerds
+SymbiOHSis
 Nautilus
-Da Vinci\'s Creation
-C.A.R.D.S.
+Crosspoint at Shanghai & Suzhou United
+Trojan Horses
+Team HorsePowered
+SCA Constellations
+Blue Pride
+VORTEX
+Shenzhen Unity Stallion
+Agri-bots
+7603 VESPA ROBOTICS
+Sickle and Hammer
+ASTRO
+Liberty Robotics
+The Blackbirds
+Owlenators
+Half Bananas
+HZYulan
+Amal Hawks Robotics
+HIS 
+Revoltage
+Phoenix Robotics
+PatBots
+Cerberus
+RoboBlazers
+WHS Vikings
+illumiBOTi
+Anthem Bolts
+Iron Rangers
+Ten More Tons
+Morebotics
+YOUNG
+STORMING
+NLHS
+Bearcat Robotics
+LISA
+Deus ex machina 14
+SCIE FIRST
+Cool Guy
+An Kang Robotics Maker
+GRYPHUS ROBOTICS
+New Hawks
+SWIS ROBOTICS
+Robomania
+Asimov Effect
+Northern Exposure Robotics Division
+ENJOY VARIETY
+CK Steam UNION
+Normal Force
+BozlakS
+UWCDR
+CCHS
+NK MTC
+Cadets
+Juventics
+McMainFrame
+Feles Numine
+Monte Pacis Robotics
+Bethlehem Eagles
+Miami Beach Bots
+Minebots 7653 - Fresnillo PLC -CECyTE 18 Ciénega
+Robot In Shed
+Hamburg Robotics Team
+MC Hammers
+Thunderbots
+MagiTech
+HNMCS Robotics
+The Byting Irish
+IllumiNautili
+3RingCircuits
+Sleuth Robotics
+Big Celtic 6
+GL Gadgets
+OtterBots
+GatorBots
+Techno R4v7ns - Peñoles
+Highlanders
+Fire Hazard 7671
+SCORPIONS ROBOTICS
+Formosan Sika
+RaiderBots
+Spark Guardians
+THS RoboDogs
+Bodacious Bulldogs
+DONKERRY
+ROBOVAN
+DFORCE
+haxhax
+FUSION ROBOTICS
+Harmonia
+first nilufer team
+SZALTech
+Acabots
+Corcebots - Peñoles
+Creekside Robotics
+WMC Robotics
+Ironworks Robotics
+TSA All Stars
+Beach Bums  7692
+Craft Robotics
+THE IRON LIONS
+Trojan Thunder
+Gear Hounds 
+VeneBot Robotics
+West Tech Paladins
+Aérobot
+Lions.exe
+RoboBears
+Kimball E-TECH / HarozTec
+Mustangs Robotics
+Rottweilers Robotics
+Cutting Edge Robotics
+Tiger Nation
+Formosa Pangolin
+Mowat Mustangs
+Applewood Axemen 
+ACCN UMOJA
+Norse Code
+RedRoad
+Robo-Banditos
+JLW Formula 01
+Steam Punks
+HVPA Dragons
+Java Knights
+⚠️ Dallas Area Robotics Experience ⚠️ 
+UHS Wolfpack
+Resurrection MechaPhoenix
+Tiger Robotics
+Molokai Robotics
+PrepaTec - NUTS & VOLTS
+ShanDong Experimental High School
+Iteration Beaker
+CAAFE
+RAMs
+uNReal
+CTB Robotics Team
+Artificial Intelligence
+GreenHSGS Robotics Team
+High School of Education Sciences
+Silver Knights
+DRAMA KINGS
+RaptorBotics
+Helion
+Royal Tech Warriors
+Iron Donkeys
+RSSH
+Cosmos Robot Works
+ShanDong Experimental High School
+Wild Cards
+College Heights
+Culture
+Hancock High Tech
+TECHTOLIA ROBOTICS
+Level UP
+Alpine Robo-Bucks
+The A.E.A.-ALTimate Electric Androids
+ROBYBAM
+Tj Robotics
+STAR
+Phantom Circuits
+Bionic Blue Devils
+Atomic Dishwashers
+MEVOLUTION
+Bulldog Bytes
+Griffin Innovations
+Eagle Tech
+AutoPilots
+Carrborobotics
+Voltech
+STEM SOPÓ
+Panthers
+Rock City Robots
+The AutoMatons
+The CREW
+Infinite Voltage
+Lakewood Robotics
+The Lucky 7's
+UB Ignite
+Duval Techs
+Dunedin Talons
+MVR
+Septobots
+D' Elite Cookies
+Under Pressure
+Colyton High School
+Port Moody Robotics
+Wolverine Circuit Breakers
+St. Mary's Preparatory
+Vassar Voltage
+Mechanical Mustangs
+Power Surge
+Reynolds Reybots
+The Electro Vikings
+Oakland Panthers
+Baywatch Robotics
+Lincoln Abes
+ROBOTAYFA
+Team Zimbabwe
+Eagle Engineers
+Norse Code
+Breaker Robotics
+RipSaw Robotics
+Cougar Coders
+Phat Cache
+Electric Comets
+Frisch CouGears
+Dust Devils
+Pioneer Robotics
+Team Sabotage
+Walnut Grove Gators
+KDHS Kolts
+Cambridge Panthers
+Kalkaska Dragoneers
+FROST BYTE  Robotics
+Eagle Robotics
+Flamin' Hot Tigers
+Robot Warriors
+New Haven RoboRaptors
+RV Gearheads
+CavBots
+Wizards of Wire
+Lansing Catholic Cougars
+Williamston High School Vespidae
+Automataardvarks
+DawgBots
+Ravenna Bulldogs Robotics
+Generals Robotics
+Double Negative
+165th Airlift Wing Air National Guard Eagles
+DAMBAZE
+Robotic Sentinels
+Yooper Robotics
+KALROBOTICS
+test team turkey
+Ultimate Robotics
+BALİSTA BİLSEM
+Hayata Destek
+FALCONS
+Neville High School
+APRIKOD
+NEC@ Co-Lin
+Mechanised Chaos
+Crobotics
+Night Fury
+EMONER ROBOTICS
+TECHNO-ROB
+LVGalaxy
+The Galactic Defenders
+Yirara College
+8BIT
+Zombie Squad
+Lincoln's Horse Power....Abraham Lincoln Robotics Club
+WI-FIghterz
+Da Vinci's Creation
+Bio-Bots
+NeuraBl!nk
+DENİZYILDIZLARI_MTAL
+Kronecker Delta
+MTCPS Bathers
+Chronic Robophobia
+UPAD  Fusion
+OPFI Robo Knights
+Warriors
+Summit Electro-Dragons
+Falcon
+The Wildkatz - RoboKatz
+Mott Bears
+ATA
+The Bear Bots
+HODAbotics
+Balista
+NEBULA
+FC Mustangs
+The Fun Gang
+The RoboHawks
+South Gate High School Robotics
+Wimberley Wavelengths
+AURORA
+RoboCats
+MNIC Robotics
+AC JONES ROBOTICS
+Neuro Brytes
+PBHS Robotics Team
+TigerBots
+Rancho RAMBOTS
+Cuyahoga Heights High School
+SKYFIRST
+CCHS RazorBots
+Delta Phoenix
+Panther Tech
+Cadet Robotics
+Final FRONTIER
+OSAT
+SeQuEnCe
+Inov8
+Medford RoboTigers
+Maple Lake High School
+The Hawk Nation
+Trobots
+CyberNoles
+WHS Auto Barks
+Cool Geeks
+Gibsland-Coleman STEM Club
+Trial N' Terror
+Snow Hill Robotics
+Markham FireBirds
+Tigers
+Mountaineers
+Night Hawks
+Underdogs
+Spartan Robotics
+MARVELL MAKERS
+GTI WingNuts
+Crossett Eagles
+Scrap Cat Robotics Team Puma
+Flex Tech Robotics
+"Bear"ly Functioning
+CHS RoboDawgs
+Ripon Robotics
+Frontier
+ReCuRsIoN
+The Knack
+Bushmen Robotics
+Tigris ex Machina
+Mega MeadowBots
+The Phantoms
+Hold Team 1
+Wayi Guangzhou
+APEX Robotics
+Boston Lions
+Fortitude Robotics
+The Cheetahs
+Eco Robotics
+SCREW IT!!
+Del Sol Dragons
+Patriot Engineering
+CyberpunK
+Panther Robotics
+Raging Hawk Robotics
+Argonauts
+Robotans
+Navigator Robotics
+Tennessee Robotics Club
+Not the Droids You Are Looking For
+The Resistance Network
+Steel Bronco Robotics
+Scrapbots
+Luminous
+SAASquatch Robotics
+Highlander Robotics
+Butterfly Effect
+Potential Failures
+Sneaky Snakes
+VW Cougar Robotics
+R.O.B. (Robots Outta Bristow)
+ArtisanSoul
+ZODIAC
+Lake City Ultrabots
+Fenrir
+Neon Ryders
+Denham Venom
+The Wallace Dynasty
+LakerBots
+YAKACIK ROBOTICS
+East Palo Alto ChurroBots
+Ironwood Ridge Robotics
+Nova Robotics
+TinkRex
+Water Bears
+Rage Against the Machine Robotics
+FLARE
+EGM Robotics - BOSS BOTS
+Laissez Faire
+All Wired Up
+IEL ROBOTICS
+Robotics at Eastside Catholic (REC)
+Command B
+Butler Tech Robotics
+O Hale Gnaw
+Tornado Robotics
+Imperial Watch
+Robarks
+WOLF ARMY ROBOTICS
+Alpha Lab
+Oakland Underground Robotics
+Super Hornets
+CyberGriffins
+R3-D3 Mersin
+Tech Tigers
+Electron Affinity
+Rumble Bots
+CyberTigers
+Academy of Loudoun High School - Team Robo Loco # 5338
+DREAM
+G FORCE
+River Robotics Team
+Sequoyah High School Robotics
+UMEI Lightning Robotics
+Tech-Mates
+ALX Robotics
+ALFA ROBOTICS
+MOJO
+Robo Warriors
+Cougar Pride Robotics
+Bionic Panthers
+Rockway Robotics
+Mavnesium
+The Condors
+Greatest of All Times
+Ranger Force
+Back Road Robotics
+ORDU TOBB MESLEKİ VE TEKNİK ANADOLU LİSESİ
+Cache Money
+AREA 27
+Wildkat Robotiks FRC
+APEIRON ROBOTICS
+Grayson Robotics
+Coo-Coo Pigeons
+NAMETBD-DCLSTEM
+Knight Robotics
+Squid Worx Robotics
+Apollo Black Cat - Peñoles
+Toronto French School
+THS Robotics
+Fantastic4Robotics
+Pirate Robotics
+Sugared Knights
+Whiter Tiger
+Cyclotrons
+Royal Thunder Robotics
+Rocketeers
+Platinum Peacocks
+Hatchet Robotics
+Easton RoboRovers
+Gearing With Grace
+TigerBotics
+YORK MEMORIAL JAEGERS
+I.C.R.T.
+Mechanical Mustaches
+Pace Enginerds
+RHS BearBots
+Artnox Robotic
+Control Freaks
+Team Rabyte
+ACE INNOVATORS
+ZZRT
+Absegami Robotics
+Magnetech Vega
+Sysmik
+JayBots
+SJP Eagle Botz
+Legacy Robotics
+STEAMLes
+Byting Bulldogs
+SpicyBots
+Pirate Robotics
+RoboManiacs
+LYBOTICS Girls Team
+The Legion
+SOLUTION TURK
+Red Chair Robotics
+Tech Warriors
+Albatros OSTIMTECH
+Ekinoks
+QUANTUM RANGERS
+RoboTesla
+Tungsten
+Wildfire
+Escouade
+Tech4Peace
+Gibuu
+Uranos
+Khalkedon TEAM
+St. Augustine Prep
+Bosphorus Robotics
+Golden Horn
+Oly Rock Stars
+Chihuahuas Robotics Team
+FaTech
+Phoenix
+RADIUM
+Bahlam Bots
+ROBOCUBE
+Cognatives
+Northeast
+Aries
+Fi-Lab
+RL Robotics
+Celestial Shadow
+Brighton College Gear Zero
+BityBots 8174
+Piece of Mind
+Alien Robotics
+Vector
+Sky Honor
+Robo Falcons
+ChainsMaker
+Bilsem Robotics
+Loth Robotics
+WAO
+ROBOTTACK
+Blue Sky Eagle
+Belle Glade Boys & Girls Club
+CyberPunks
+Grand Force
+SubCat Academy 
+İsov Robotic Team
+STEAMBar
+Luminous
+Steel Stingers
+Robo Bulls
+Bullbots
+Air Tigers
+Baker Hornets
+ANATOLIAN BEES
+BeAr
+ROBARGEM
+Keystone Robotics
+Mind Over Metal
+Team NeXT
+Orenda
+SYCAMORE
+SEZMECH
+Rambotics Inc.
+Ranger Robots 
+Dragon Effect
+Trinity Christian High School
+Cyber Unicorn
+High Five
+Vision Robotics
+Generals Robotics
+German Engineering
+BG Robotics
+Space Tigers MBA Robotics
+TEDES
+The Argonauts
+Mariners
+STEM 4 ALL
+Circuit Blazers
+Hope
+Balikbayan Bots
+KoiBots
+BWW
+Girl Gang
+Robo-Riff-Raff
 Panthinators
+Beyond the Flames
+Ecobotic
+ESATA
+ESES
+INTERNATIONAL YELKIKANAT ROBOT COMMUNITY
+Nexify Robotics
+Iron Ram
+Tekno NFL
+AstroCircuits
+Delfines CBTech
+ROBEAL
+Tuku
+Grandview Ze-Bots
+ChainLynx
+Jinfeng Dynamics
+Rebel Robotics
+White cloud
+Blue sword
+Kapok
+BEY-TEK
+Robodogs
+Prepa Tecmilenio - ARMY ROBOT TECHNOLOGY
+Zombie Apocalypse Counter Task Force
+Les dragons
+Deakin Velocity
+ROBİLSA
+PROGRESSUS
+Jump Robotics
+Robin
+ATA ROBOTICS
+MCHS Knights
+Owlbot - Peñoles
+Riptide Robotics 8267
+Ashley Bears
+Patrionauts
+Double N
+WESTSIDE 1002
+Antimatter Neko
+Titanibot
+Raider Robotics
+Technical Difficulties
+OPTRON#8276
+PEI Bots
+Alpha Robotics
+Lincoln Park Academy
+K9.0 Robotics
+Allstars
+Metal Minds Robotics
+Pantherbots
+Urban Planners
+Bionic Bulldogs
+E.A.G.L.E.S. Robotics
+Team Malfunction
+Machine Hunters
+STEM+M Ravens Robotics
+Jaegers60 - Peñoles
+Golden Yellow Experience - Peñoles
+Mechanical Menaces
+Prepa Tecmilenio - Startech
+LVR Inn0vat0rs
+SparTex
+Bengals
+WIHI Robo Wolves
+Mighty Morphing Banana Slugs
+Techno Falcons
+Titan Robotics
+Sparks
+⚡️ Ｎｉ-ＴＲＯ  ⚡️
+GatorBytes
+Robot MaSTrs
+Nepean Robotics
+Sierra Linda High School Robotics
+GRIZZLY
+GFLRobotics
+WILDCAT
+ASO.TECHO
+PRISER
+Royals Robotics
+Waygooks
+The Roar
+Spartan Robots
+Les Cougars de L'Escale
+South Kamloops Titans Robotics
+RSS Robotics
+HHS Robotics
+Capybara Robotics
+BEMS
+Peter Skene Ogden Roughneck Robotics
+PolarBots
+MECO Robotics
+Botcats
+Hopper Robotics
+Paradise Rockets
+Miss Ice Bots
+Warrior 1
+KillarneyRobotics
+Carson Graham Secondary
+Alternate Reality
+TOPAZ4X4
+Titan Robotics
+CheckMate
+Wolf Corp. FRC
+Central Creativity Team Wingnuts
+Bear Force
+Penticton Robotics
+F.R.A.Y
+Pizza Byte
+m(stee) squared
+Team Spring Valley
+OV Robo Birds
+John McCrae Secondary School
+Brooklyn STEAM Machine
+Broken Eagles
+FG1946
+Newbotics
+TISS Pirates
+Oozma Kappa
+CODE Gold
+Botqueros 2 the FUTURE!
+The Prairie People
+Melanin Minds
+Black Rhinos
+Chrysaora Robotics spr. by P.G. Co. 4-H and NASA
+The CITI Pack
+GREENTECH
+Chappa
+Toro Loco
+Circuit Breakers
+Marcellus Wildbots
+Rising Stars Academy - Nebulas
+Modeltowners
+Ida Bluestreaks
+Godwin Heights High School Robotics
+Red Eye Robotics
+Coyotech Robotics
+Glow With The Flow
+Surgeons of Steel
+HCN Storm
+The Flying Octopi
+Bongo Bots
+Tech Tigers
+Tech Titans
+MLHS Mavericks
+Hudson Tigers
+WSA Panthers
+Clarenceville Trojans
+Rapid River STEM Classroom Team
+The Pebbles-Robotics of Kingsford
+Pioneers
+The Internationals
+Metal Madness
+Th3_IRON_G0@+$
+MECH Mavericks
+West Mesquite Robotics 1
+Team Mustang
+Panthers
+PANAMAFRC2020
+Mac Attack
+The Giant Diencephalic BrainSTEM Robotics Team
+Addison Panthers
+Cougar Techs
+Pentbots1
+Astrobots
+MandUlorians
+The Electric Mayhem
+Gear Jammers
+Saraland Robotics Team
+Star Fusion2
+Glendale
+SKYWALKERS
+Reaching for the Skynet
+SyZyGy
+USTEM Robotics
+Kiss Kats
+Kato Coyote's
+Oyster River Overdrive
+4.BOTS
+Battle Lake Schools
+CGLA Mustang Innovators
+Science Academy of South Texas
+Dino Nuggies
+Wolfbotics 8416
+Rambotics
+Archbishop Chapelle High School
+D - Mind Breakers
+8420 Almaty Roboman
+CRUSADERS
+Husky Howlers
+Next Express
+Tractor Technicians Next Gen
+Happy Rock Brave Bots
+Automated Amphibians
+ProtoBots
+The Outlaws
+Valence Robotics
+The Hatch Batch
+Robo-Knights
+Cyber Knights
+ROBEST Robotics
+Venus Robotics
+Raid One
+YOVi
+Snowflakes1
+Jagwire Robotics
+PE-TECH
+Scramble
+Giles
+The Android P0SSE
+Manzano Monarchs
+Sisters 1st
+Junior Squirrels
+Photon
+Wired Up
+Bounty Hunters
+Ripple Robotics
+Iron Eagles
+CyberLions
+Springport High School
+Vic8ytes
+TalaveraBots
+Hangzhou Wickham International
+BearsChallengers
+ER404
+AstroChimps
+KunPeng
+Phenyo
+TermiKnightors
+Classified
+Rancho Reapers
+Women of technology
+The Lion Kings
+Flames Robotics
+MechanicAnts
+Juniper Robotics
+ÖZKOÇ ROBOTİK
+Wall-East
+Go2robots
+Bot Camp
+Reinforcement
+Scott County Robotics
+\n
+M.E.
+The Ram Bots
+RoNex
+Malad High School 1
+The Circuit Breakers
+Dream Team
+BALROB
+Lion Robotics
+ConquEra
+Prepa Tecmilenio Golden Hawks
+Dragon Robotics
+INVENTORS
+Cartesian Robotics
+TBD
+KERNELS
+Disco Ducks
+MACK-BOTS B.I.G.
+REBELBOTS
+Team Ultraviolet
+Cyber Seven
+Zenith Polaris
 Binary-Bolts
+Enignet_0111
+Tech Inheritors of Al Khwarizmi
+Rogue-Rangers LEGACY
+Audeamus
+The Due Westerners
+Golden Warriors Robotics
+Georgia Cyber Academy Champions
+Renegades of Archer Robotics!
+Jayton J-Bots
+PizzaByte Robotics
+Brave-Solders
+Juggernauts
+Infinity Robotics
+Bombax Leopard
+Firebirds Robotics
+Rick n' Rolls
+Tech Devils
+Quack Pack
+Cavbotics
+Archangels
+Newton Squared
+Team Octabyte
+Blitz
+This Is How We Play
+Girl Scouts2
+TISB TROJAN Bengaluru
+Electro
+SHARPLINE
+Kernel Panic
+CSHS Falcon Robotics
+STEAMCo
+The Discord Droids
+Alpha Centauri
+ASCTE
+DEVOLT
+Ravens II
+Alpha Bots
+Salt lake county robotics
+Lanier Voks
+Cyber Patriots
+Calvin Christian Robotics
+Barker Greybacks
+Rivet & Rev It!
+SAZANKA Robotics
+Mad Engineers BIS
+G-FORCE
+Operation Robotics
+Sanborn Regional High School Robotics
+RoboJays
+KITS Angels FRC Akola Team
+The CyBirds
+Michigan FC
+Sasquatch Robotics
+MHS Eagles
+Cyber Sailors
+Newark School of Global Studies
+Everest 2
+CAP ROBOTICS
+Excelsior360!
+Master Builders
+BOOTSTRAPS!
+Turkistan Robotics
+Packer Pelicans
+W.I.R.E.D
+GRAFFITI
+Invincible Tyrannosaurus Warrior
+New Squirrels
+Void Warranty
+Sci Tech FRC
+MXS Bulldog Bots
+The Newark Circuit Breakers
+Ov3R1y K0Mp13X
+Pathfinder Tech
+BLUM BOBCAT ROBOTICS
+The Midnight Ostrich Runners
+Nordonia Knights
+Robo Griffins'
+Antilles Pirates 404
+Robowarriors
+Cyber Vipers
+Tigerbotics
+Oakville Dynamics
+Desert Shields Robotics Team
+Code Name M.I.T.
+Team Alpha 
+Woodpanda
+Mayhem
+MistyPanther
+CryptoHawks
+Glitch 2.0
+Argonauts
+Sparkling H2O
+SPECIALS  & +1
+Wild WYRE
+Trinity Force
+Renaissance Robotics
+Prepa Tecmilenio - DeltaT
+Spartans300
+The Mechanisms
+Rocket Rampage#8737
+Slice
+Redhawk Robotics
+Prepa Tecmilenio - Quantum Force
+Prepa Tecmilenio - Raccoons
+Argyll Attack
+SYNTAX Robotics
+Leviathans
+RoBeagles
+Knights
+BLACK SEA ROBOTICS
+Prepa Tecmilenio DEROS
+Farmersville  Robotics
+Tarpontron1cs
+Miramonte Robotics Team
+STEAMCo - Palmira
+Spectre
+Meister Robotics
+OrcaBots
+Magic Valley Logic Control
+GeodeBots
+Tar-Robo Turtles
+ARPEX
+Foresighters Robotics
+AHS TigerByte8761
+Yücelen Foundation Robotics Team
+Technical area
+Thunder Robotics
+Parallel Units
+The Black Machine
+Dark Horse Robotics
+CTEC Titans
+G.O.R.T.s
+FireBolts
+PioTech
+Magic City Wizards
+Robo Rams1
+REST Robotics
+Creekside
+Prepa Tecmilenio - DARK TECH
+SafranTech
+HSUWerx
+Messmer High School Bishops
+TED ROBOTICS
+ANTALYAMTAL ROBOT KLUBU
+TroBotics
+Apeiron
+HEVSEL
+AGAT ROBOTİCS
+Tecmilenio - TRC
+Mavericks
+Special Forces BallistaBots
+The Lost 10mm Sockets
+Departure
+Mighty Patriots
+Robo Cougars 901
+Pumpkin Bots
+Black Storm
+The Chaotics
+MEF Robotics
+FALCON ROBOTICS
+DAMAS ROBO
+IZELMAN ROBOTICS
+INDUSTRY ROBOTICS
+The MidKnight Inventors
+Milwaukee United
+MechaMarines
+Cyber Bears Robotics
+NKST36
+Our Lady of Providence Dream League
+SCREW IT
+SWLA Tech Pirates
+Precursor
+The Alphabots
+Yi Zhong Ren
+Shenzhen College Of International Education
+FERRYMAN
+Blackhole
+Barnstormers
+Coyotronics
+Buccaneer Robotics
+The Foe - Foe Engineering Group
+The ARC-TECH BEARS
+GV ROBOTICS
+TVRT-Trojanbots
+Lc3 Thunderbirds
+A New Hope
+Wapello Royalty
+Team Eagle Eyed
+Parkway Eagles
+Cougar-Trons
+EAL Robotics
+Cemberlitas 
+Denby Tars Robotics Team 
+Sa-Hali Secondary Robotics
+AutoDawgs
+Buzz City Robotics
+Blu Robotics
+PNGUoT Robotic Team 1 (PRT1)
+Wayne Enterprises Inc.
+NIS Kyran
+GWC Rambotics
+Shoshone Robotics
+Bay Robotics
+OTTER
+SAR
+Amal Space and Aviation Maale Adumim
+Flamethrowers
+Forest Hill Falcons
+CABLE TIE FIGHTERS
+Milwaukee Cyber Cheese
+BLU CRU
+Storm Robotics
+Ed Bears
+Drew Robotics
+Yukikaze Technology
+Pandamonium
+Socrates
+Lapis Lazuli
+Tsinglan FRC
+Beast from the East
+Bora Robotics
+06ANGORA
+SERCEV ROBOTICS
+ANATOLIAN DEAF ETERNALS ROBOTICS
+Dacula Droids
+Innovation Robotics
+Yoc
+TEAM ATHENA
+TISB TROJANS
+RedCards
+Saber Dynamics
+JJSJF / Gwinnett-NSBE Jr. 'SPECIAL OPS'
+Rockefeller Robotics
+The Cybirds
+Dangerous Minds
+Lynwood Tech Tips
+Express Robotic
+ArrowBot
+REDBird Robotics
+Terra Cyborg
+YÜKSELEN İNTECRO ROBOTİC
+INFINITY BR
+Green Mountain Gears
+Knight Owls
+Socratic Schematics
+Metal Manes
+West Central Area
+Flying Lions
+Project W
+Last Minute
+Wild Raccoons
+SCDS Robotics
+HandShake
+Redwolves Robotics
+Wolf Tech Robotics
+Meek High School Tigers 8897
+Royal Rebel Robotics
+CyberEagles
+Zebracakes
+Delta Force
+Falcon Dynamics - Foothill High School
+TuTu Turtles
+Milliones Mega Mechatronic Wildcats
+Avian Robotics
+Crescent Wing Robotics
+MIT (Muskogee's Innovative Team)
+G-Force Robotics
+KMC Robotics
+CrabBots
+Orangeburg Robotics
+Team Waffles
+Vulcan Mechanics
+Questionable Engineering
+Syosset SuperSonics
+ElRobotiKO
+Ko'olaupoko
+MCT Galatasaray Robotics
+uSELESScASE
+MC Robotics
+Future Martians
+Callister
+Mechameleons
+Aero
+PATH to Domination
+GFORCE
+Team NF
+Qarabagh MecHack
+Wildbots
+RoboWhales
+Ocebots
+The Space Dolphins
+Rust Belt Robotics
+Ramen Robotics
+HHS Black Ops
+SF UNITY
+Penn Robotics Golden Rooks
+Sunset Robo Knights
+Kayseri Robotics
+SOARIN
+Valkyrie
+TeraViks
+North Lions SESI/SENAI
+SESI SENAI BBTECH
+TECHMAKER ROBOTICS
+SESI/SENAI P0T1BAT (Potibat)
+SESI SENAI STEAMPUNK MONKEY FRC
+Tucanus
+G-P Robotics - Symbiosis
+B-3 Brandeis Bionic Bulldogs
+Prepa Tecmilenio - Iron Hawks
+Johnson City Joules
+Knights of Katahdin (Ka TAH din)
+CyberHuskies 9056
+G.I.R.L.
+PEÑOLES-SABINAS
+COLTech Robotics
+Prepa Tecmilenio - Desert Robotics
+Mechanical Mutts
+Critical Circuits
+THIRD LAW
+Blackbird Robotics
+Prepa Tecmilenio - SpaceHawks
+Cavalo Vendado
+The Goonies
+The Chargers
+WARGAM3S
+CELESTIAL
+SlicerTech
+TigerBots
+Skol Robotics
+Roboant
+Redskin Robotics
+Villaciraptors
+The Crown
+GOOSE
+Mechanic  storm
+ENIGMA
+Bluetonium
+No Limit
+Team Inertia
+Octobots
+SESI SENAI MEGA HARPY
+Wildcat Robotics
+stemachines
+Mark Infinity
+ACS Phoenix
+Powerful Gears
+A.W.E.
+Tower Robotics
+Veritas Robotics
+The Earthquakers
+Potentia
+Bad Weather
+MachBusters
+FireHawks
+ANKAROB
+Robo Roses
+Green Mountain Robotics
+CyborgBulls
+Prepa Tecmilenio THUNDERVOLTS
+FREEYOUNG ROBOTICS TEAM
+TechnoTalons
+Spires
+STEAMBot
+STEAMec
+Twisted Angels
+SESI SENAI ATOMIIC
+Pyro Mechanics
+RoboRavens
+Bulldog Robotics 2022
+Rotationaries
+Robotic For Future
+The Canucks & Bolts
+NE10 #CLASSICS
+Pb-ers Laguna - Peñoles
+Iron Legends
+Silverbot - Fresnillo PLC
+Mavericks
+Prepa Tecmilenio - Iron Hawks
+Salesian Ironmen
+GESTO ROBOTIC TEAM
+Mechanical Magicians
+Silver Hawks
+EOM Robotics 9127
+ITKAN Robotics
+Panorama
+Screwer
+Kız Kulesi Robotics
+Roborsa Başakşehir
+NEXT GEN Up!
+Tecmilenio - DEVOLT
+STEAMSur
+Rampage
+Bionic Vipers
+Robo Hawks
+Reserve Robotics
+The Robobots
+BILTECH
+TechM8
+Armor Robotics
+Helix
+Equinox
+Burnouts
+The Joebots
+Atlas Robotics
+RoboCats
+Labyrinth Robotics
+RoboLynx
+Rat Fight
+Bearcat Robotics
+MOSTEMRobotics
+New Tech Kraken
+Trojan Robotics - The Blacksmiths of Troy
+Iconic Panthers
+AieaBots
+Shago Robotics Team
+YAL THUNDERS
+FBO TEAM
+ALL MIGHT
+HYDRA
+Tech Vikings
+Starbots FRC
+TecRobot
+New Era Technology
+AGROBOT
+AGROTECH
+Angels of God
+ElektRobot
+Robo-Sharks
+STEAMoros
+CYPRUS ROBOTICS
+BrainMachine-FRC
+Greenspire Steel Sturgeons
+Spartan Sprockets
+Cyber One
+Ballou Robotic Knights
+Ursa Major Robotics
+PlatyPirates
+Tech Tr1be
+RoboComets
+Zeta
+PL ROBOTICS
+METATECH
+PIXEL
+Pantherbots2
+Disastrous Data
+N.E.R.D.S
+My Chemical Robots
+Technodogs
+Short-Circuited Eagles
+Gemin√-1s
+ProdiXy
+FERRÃO DE ARRAIA
+Wixom Warriors
+The Beach Botz
+SESI SENAI SHARKS
+SESI SENAI STARDUST
+TEAM FORCE
+Silicon Valley Technos
+Quake
+Aluminum Armada
+Technical Marauders1
+GRP Titans
+Redneck Robotics
+Eddies Circuit
+Falcon Force
+Fighting Falcons
+ACCE Underdogs
+Infinity
+Tecuani
+Honking Narwhals
+T-Town Tech
+DarienAdvancedRoboticsTeam (D.A.R.T.)
+Lansing Learning Hub
+Alpha #9218
+Nine Tails
+Geekos
+Ertuğrul Gazi Anatolian High School Robotic Team
+Eaglebots
+Brick and Mortar
+Hazel Park Advantage
+Wired Wildcats
+GRemlins
+Backwoods Bots
+The Cougar Coders
+Fapatech Lab
+BALta
+Haydarpasa Panthers
+IBBTECH
+Luminous Robotics Team
+Les aigles d'or
+ThunderBolts
+Taft Greyhounds
+The Dragonators
+Jaybots
+Panthers robotics
+Hydra
+EV ROBOTICS
+Hamady Hawks
+Maniac Robotics
+Belize IT
+Laker Dreadnoughts
+Cut Twice Measure Once
+SainTech Robotics
+Orchard View Cyber Cardinals
+Chassell Copper Country Cats
+William D. Ford Career Technical Center
+EliteBots
+Wingspan
+Prometheus
+Wolverine Wildcats 1
+Botmasterz
+Marshall Opportunity High School Team
+Bots of Another Color
+The Warriors
+WAATBOTS
+Built4Bibb Robotics
+Under Pressure
+Humberside Huskies
+ALD Lions
+HUNTERS ROBOTICS
+KOSOVA ROBOTICS
+Walled Lake Northern Knights
+Phoenix of Three Rivers Academy
+IGNITE Pathways Robotics
+Crowe
+Cyber Porpoises
+SHSS Robotics Team
+COYOBOTS
+Cyphersis
+MC Dodgy Bot 2023
+Mechanical Panthers
+Sparkans
+Omegatrons
+Electrical Mayhem
+PrepaTec - High Altitude Robotics
+FaroTech
+PrepaTec- SINAVOLT
+Eduwizzards22/23
+eduwizards
+The Metal Mammoths
+Bionic Bengals
+Vikings
+Zen Maker Robotics
+Caffeinated
+Harlem Rails
+TITANium
+BOGOBOTS
+Greenies
+R0b0t B0bcats
+Olympians
+PrepaTec - MechRams
+PARATECH FRC
+PORTAL
+legend's
+MonT
+RAIN7
+Spicy Chihuahuas
+Darling Rangers
+Metal Mages
+35 Roneagles
+Warhorse Robotics
+NERD Spark
+ROBOhana
+Middleton Berserkers
+Coding Comets
+CUBATRONICS
+SteamRollers
+Team 9330
+BagelBytes
+Midas' Mayhem
+Explorer1
+Starstuff
+Forge
+RouxBots
+TechJunior
+Heatwave Robotics
+Warren Warbots
+Caelum
+PowerHouse
+Rhapsodia mechanicus
+RAMS Robotics
+Westinghouse Robotics
+International Θperatives of World Affairs
+Pastabots
+VULCAN
+Nexus
+Team Forza
+SL Robotics
+E.O. JAG BOTS
+Intra Milwaukee
+CLAWBOTICS
+iDeer
+The Cashew Chickens @ Springfield Robotics
+Tech Titans
+CTEC Robotics
+Snider Panthers- "The Gold Standard"
+Team 8-Bit
+Lil' Timmy's Big Team
+Mehmet Günenç Robotics
+Pure Imagination 2.0
+Giro
+Cosmonauts
+Leopard Tech
+Knights of Polaris
+Bolts&Nuts
+Aero Jr
+Miso Mechanics
+Aluminum Panthers
+Perseverance
+The Brave Bots
+C Cubed
+AsoTech Robo-lation
+Wave Wranglers
+Yellowjackets
+Velocity Raptors
+Aydos
+LHS Steel Stingers
+Mount Vernon Wildcats
+HİTİT GRİFFİN ROBOTİCS TEAM
+DinoMights
+Nunez Robotics
+Robot X
+SESI SENAI JACTECH
+SESI SENAI RPRT HAWKS
+SESI SENAI STEEL BULLS
+SESI SENAI MecaChronos
+Toefur's Titans
+Cougar Robotics
+Başakşehir Robotics
+Imagine High Axolotls
+Static
+EsRobotik
+Team Sirius
+LUMOS ROBOTICS
+Ctrl-Alt-Defeat
+EF Academy
+K2C
+CYGNUS ROBOTICS
+Red River Resistance (3R)
+Mon Valley Mammoths
+CYBER TIGERS
+Lambda (λ)
+Robo-Colts HSISL
+CREDENTIS
+The Gear Bears
+STEAMCo - All Star
+STEAMCo - Imagina
+Overcharge
+Robot's District
+HYOBOTS
+ALPHASTORM FRC
+KRYPTON FRC
+Western Blue Tongues
+STEAMCo - UV
+TAC BEARS
+Crypto Creek
+LadyTalons
+TechWasps923
+Hanabi
+TechKnow Difficulties
+LYNK
+NIMBLE PANTHER
+ZENSHIN Robotics
+KANARITECH - FRESNILLO PLC
+G28 Robotics
+Sidereal Envoy
+Idigna
+EF5 CHAOS
+Gunderson Grizzlies
+Vyserions
+Conspiracy Robotics
+Rothschild Leadership Academy
+MOGUERA Telemechanics
+Cybears
+Medusa
+West Noble 1
+Horsepower
+Circuit Crew 9513 - Caterpillar
+Blanson RoboJags
+Panther Technik
+Tuskegee RoboFalcons
+IKE Technik
+STEAMex Scorpions
+RoboMasters
+Rock-it Robotics
+Humble Rumble
+Archimedes
+Archers
+SHS Cardinal Chaos
+NileTech
+LCG Robotics
+WIHS TEAM
+The Wolf Pack
+GOKARGETRONIC
+John Adams Robotics
+Ctrl V
+Messy Bees
+Melissa High School
+Wolves Robotics (Basic HS)
+The Knack
+ETERNAL ROBOTİCS
+SCDS1
+Stallions
+Junk Bots
+RRIT
+M st*e(squared)
+Technodogs
+Cyclone Robotics
+OLMCHS_Robo
+Caracal Robotics
+TechnoLeopards
+Lotus
+Bark River Bronconaughts
+The Mechadogs
+STRIX Robotics
+Tiger
+Rambotics
+NEO42
+Portage Pythons
+TEAM HELIOS
+KulturTech
+Tecmilenio - TurtleTech
+The Steel Vipers
+EagleTron
+Dorlion
+Dawson Dinos
+Royal Robotics
+STEAMex USA
+Taishan Robotics
+CEZERİ
+Red Storm Rookies
+StormBreakers
+AstroBots
+Milliken Mills Silver Knights
+Valiant
+Patriot Prime
+CC Shambytes
+MarauderTech
+Rock Bots
+Silver Robotics
+Loretto Lightning
+Recoil
+Player One
+Tech Devils
+Grizzly Gears
+Bad Wolf 1
+HHS NASA Snaggbotics
+Lavender Robotics
+Spartan Squared
+RobUL
+Denbot
+STEMgc
+.
+Arcade Robotics
+Bison Tech
+DESTAN
+Blues Robotics
+Rhinos
+Ashley  Bears
+ECHO
+Eureka
+Luban Robotics
+Flint
+Colorful Panda
+X-Flare Robotics
+BageTech
+CANINTECH
+MTECH
+TUIUTECH
+Creek Commanders
+Beastbots
+RJR Cyber Demons
+Power Ponies
+Paraducks
+Blue Ivy
+SESI SENAI SC CyberRain
+Bosse Bulldogs
+Lion's Byte
+ROBOSSAUROS
+Redlands Robotics
+Opus Orion
+Metal Knight
+Tronarchs
+U.FRC.
+Eltynien
+Payload
+GRIDLOCK
+U-Turn
+Dynamiques 9624
+WOLVES ROBOTICS
+JagWire Robotics
+Yellow Haze
+Erdem Robotics Team
+Yabusame Technology
+Pels
+Chargers
+Red M00n
+Pine Bluff City Robotics
+Zero Tolerance
+Cyber Rabbit
+Space Junk
+Grammar Gurus
+Tigers, Bro!
+Sibley-Ocheyedan
+Markhors
+Robotics71
+I.N.T. Robotics
+Lady Voltage
+NEIA Robotics
+POC
+The Marinators
+Ladybug
+Circuit Breakers
+Mulgrave Robotics
+Mio Thunderbotz
+Ecorse Robo Raiders
+Team Gambia
+O.V.R.T.
+Kelly Trojans
+Shallowater
+X-Ray Robotics
+SESI SENAI IPÊV4
+Camber
+Vanier Vikings
+Delgado Community College Dolphinbots
+Huskie STEAM
+Valley Lutheran Chargers
+Offshape Robotics
+The Lumberjacks
+Vanderbilt Area Schools
+AAE Knights
+ITEM # 9667 Cyborg Silverback (Independent Team of Engineers that Meet)
+Malfunctionz
+Regina Riveters
+The Gadgeteers of St. Johns County
+Robosnacks
+Colon Magi Robotics
+Volt Vespids
+Trojan Power Robotics
+COLOSSUS
+Hub City STEAM
+Electric Calamari
+Step Up
+Madison Eagles
+SIA Phoenix Rising
+Shark Robotics
+Norway Robotics
+Equipe SESI-SENAI - Cacoal
+Cardozo Unstoppable
+Crystal Oscillators
+Gwinn Modeltowners
+NEX-TECH
+Moltimun
+Haycar
+Defuse Robotics
+TOBB_BİLSEM
+Sigma
+Miami Dade College Sharkbotz
+TUBITECH
+BAYKAR Robotics
+Hamichanics
+Bionic Bucs
+Zipbombs of BGCNF
+Bayou Crusaders
+YMCABattleJacks
+CrossWired Robotics
+Nexus Robotics
+Q_Bots
+IgKnighted
+EastRamapo
+R^3   (Redwood Ranger Robotics)
+Volt-Cats
+Supersonic Circuit Breakers
+Isotope Robotics
+Discovery Polybotz
+Cy-Fly
+Iron Sharks
+The TACA Titans
+High Altitude
+Tsinelas'
+IT Kids Robotics
+Poultronix
+Wookie Mistakes
+ThunderTech Robotics
+Metal Head Robotics
+Red Hawk Robotics
+Polar Robotics
+STEAMex Katatronik
+Cross Circuit Christians
+young law
+Notus Pirates
+Warrior Robotics
+Rebel Robotics-BGCCF Joe R Lee Branch
+Knights
+Metal Maniacs
+All Saints Range Precision
+Rainbow Junkyard
+Gold Diggers
+Jasper County Devil Dogs
+Electric Dragons
+Tawas Braves
+The Quackers
+Ionic Bond
+Firefly
+CANBus in memory of Roney Tal
+STORM
+Walkerville Wildcats
+MV TITANS
+Breithaupt Bulldogs
+Lazer Sharkz
+Pickford High School Panthers
+ElectroPanthers II
+Ann Arbor Academy Blue Herons
+Arbor Prep Gators
+ED Robotics
+OIA PantherBots
+ITKAN Robotics Jr
+Team Success
+Vestabots
+Red Devil Robotics
+Robo Panthers
+Mecha Marauders
+Pantron-X
+Forge of Falcon
+Cristo Rey Jesuit Trailblazers
+LSMSA Robotics
+Raccoon Robotics
+Cast Iron Clippers
+Maritime Marauders
+LCS Cougars
+Northridge Vikings
+Magnificat MagnifiBots
+ROBOKNIGHTS
+Toronto Prep
+Victory Church of Christ Robo Knights
+FPRO
+Titans Robotics
+Cardinal Robotics
+Ravens
+Gator Gears
+Knights of the Lab Table
+Horizon Hawks Robotics
+Gladiator Robotics
+Accelerated Learning Academy
+Northgate Deep-Sea Welders Union
+Wextech Titans
+Steppe Steppers
+Cyberbots
+Alectrona
+MHS Wolfpack Team 9786
+Fathom Robotics
+R.A.M.
+Platinum Ringleaders
+Crypto Creek II
+Off-Season Demo Team 9970
+Off-Season Demo Team 9971
+Off-Season Demo Team 9972
+Off-Season Demo Team 9973
+Off-Season Demo Team 9974
+Off-Season Demo Team 9975
+Off-Season Demo Team 9976
+Off-Season Demo Team 9977
+Off-Season Demo Team 9978
+Off-Season Demo Team 9979
+Off-Season Demo Team 9980
+Off-Season Demo Team 9981
+Off-Season Demo Team 9982
+Off-Season Demo Team 9983
+Off-Season Demo Team 9984
+Off-Season Demo Team 9985
+Off-Season Demo Team 9986
+Off-Season Demo Team 9987
+Off-Season Demo Team 9988
+Off-Season Demo Team 9989
+Off-Season Demo Team 9990
+Off-Season Demo Team 9991
+Off-Season Demo Team 9992
+Off-Season Demo Team 9993
+Off-Season Demo Team 9994
+Off-Season Demo Team 9995
+Off-Season Demo Team 9996
+Off-Season Demo Team 9997
+Off-Season Demo Team 9998
+Off-Season Demo Team 9999
+Neutron Star
+Belt 2 Bot
+BotBuilders
+SCAROB (Star City Area Robotics)
+Lunar Robotics
+The Quokkas
+Gridrunners
+SEASIDE Robotics
+REBELLION
+Bubbles
+Absolute Zero
+GPS Robotics
+SESI SENAI MINERSKILLS
+Guerin Catholic Golden Gears
+Spontaneous Combustion
+The Portotypes
+Singularity
+GammaLand
+Ferzeri Legacy
+Spirit Dynamics
+Conscius Robotics
+Panther Robotics
+Casque Robotics
+Sea Dragons
+ASTRAL TECH ROBOTICS
+Front Runners
+Mehmet Günenç Robotics
+ShacShuca Robotics
+Tech On Titans
+ATEMS Robotics
+S.C.R.A.P.
+HanniBal
+CephaloSquad
+University Academic Charter School
+Ghost Bots
+WhirlyBots
+The H.E.I.S.T.
+Arrowdynamics
+Sunflower
+Critical Hit
+BLACK MAMBA
+ThunderBirdz
+Hazard5
+Phantom Talons
+Robonauts EveryBot
+Wulfa the Wolf
+TMSA MechaTiger
+Royal Turtles
+Kuanta Robotics
+Manhattan Monsters
+RoboKats
+VikingBot
+Tsunami
+Lord's Valley Robotics Team
+Turing Robotics
+ANDROMEDA
+Northeast Vikings
+ROBIS
+ArmBots
+IOTRONIC / Polivirtual FRC
+Orbotics
+PizzaByte 2.0
+Marshy Machines
+Roman Robotics
+PHS MAC-ros
+Viking Robotics
+Thunder Vikes
+Jeunes Sans Frontières
+ND Robotics
+Apex Archers
+Minot Syber-Sentinels
+SRC Robotics 2024-25
+CyberClaws
+ÇOROBOT
+ProtoWarriors
+ARC
+Nexify Robotics
+feenx
+UNIMATE - SESI SENAI SC
+West Pionners
+NOVATRON
+LANCE
+TeamAbra
+MAGNETAR
+Doomsday Engineering
+Mayhem Manufacturing
+The Valtra
+Cyber Colts
+Circuit Bakers
+BALTA
+Team Doritos
+QUANTUMBEE
+Catahoula Blue Dogs
+No Signal
+Bathtub Chickens
+#1 Sea Bass
+Crimson Jewels
+MAV MECHANICS (NASA)
+Prepa Tecmilenio - PYROX
+Leo High School
+Phoenix Robotics
+Event Horizon
+The Splash
+Midnight Circuits
+Killer Kardinals 2
+TEDRA
+REXTED
+Yücel Boru ANATOLIAN WOLVES
+WOLFS ROBOTICS
+WAMS
+ISTAF Team Infinitech
+RedFox
+Iron Byrds
+SpartanBots10249
+Chimera
+Mecha Lions
+Regal Seagulls
+Team Scrap Metal
+Vector Space
+RoboJags
+PYRONEERS
+Bionic Buzzers
+Temari Robotics
+STORM
+Hopkins Galvanized Goats
+Beaverbots
+The Erudites
+MechaWolves
+Sacred Heart Outlanders
+Kingdom Prep RC
+Interstate
+MUTUM-X
+FOREST GUARDIANS
+BIOBOTS
+PANTANALBOTS
+LUVER CONTROL
+HARVBOT
+Obama FRC
+Byte Force
+C-TEC Robotics
+Circuit Breakers
+HiveMind
+Jayhawks Robotics
+ByteForce
+CAPELLA Robotics
+The Western Blue Tongues
+CIA Robotics Presents: BIG Furious George
+MBA Imperio Robotics
+Beyond the Bell
+DeMolay Dynamics
+Perry Pumatronix
+IBBTECH-JR
+Carroll Charger Robotics
+Elevation
+Sardis Robotics
+Cyber Sharks
+BHA Tigers
+Technoka Robotics
+10338 - CircuitMakers
+BrainShift
+ITKAN Girls
+Lost in Translation
+Tera Robotics
+SESI IPÊV4
+Sirius
+Pontiac Firebirds
+Canberra CIPHER
+Robotics Bulldogs
+SUNY Poly Wildcat Robotics
+HATAY ROBOTICS
+Sting
+Capitech
+Yeah8 Tech
+Gatorbots
+Builder Bears
+Category 4 Storm Surge
+RoboRattlers
+Blue Grizzly
+Squatch Watch
+THE ANTS
+Plutonium Panthers
+Aughtonauts
+DUCKS
+The Dragon Hunters
+SPEARHEAD
+Robistim
+Sparkanovas
+Cycle-Breakers
+BI Blue Tigers 2024
+The Iron Wolverine Angels
+GOOGIRL
+Brawley Robocats
+Foxborough High School
+STEAMCo Valley Stars
+SJHS Gyro Falcons
+Mostra
+Burman Bush
+DART Doane Academy Robotics Team
+Cy-Bears
+Robo Rhinos
+ALP HUNTERS
+Robodawgz
+G-Code Generals
+TechBotTronics-1RSNC
+Flux Robotics
+Torchers
+Radical Raccoons
+RoboLab
+Coded Dragons
+Çapa Pineapple Robotics
+CB Tech
+ANKA ROBOTICS
+WhiteFox
+Kitimat Sentinels
+KAIZEN
+Solar Chill
+Okeanos
+CYBEARS
+IRS - Intelligent Robotic Systems
+Amity Robotics Club (ARC)
+Phantom Liberty
+Wild Wires
+Ursa Major
+HYPERVOLT
+Circuitron
+Jerome High School Tigers
+Robo Crusaders 1
+RoboLions
+Northmen Robotics
+UPC Raptors
+Bison Dynamics
+Atlantic Trojan Robotics
+Prepa Tecmilenio - FARADAY
+Spartan Robotics
+The Wash
+DemirozRobotics
+Federal Force
+Robo711Panthers
+Sancar Robotics
+Gamarobotics
+Bilkent Next
+Team Lance-B-Bot
+Turcia Machina
+Techno-Tornados
+Thunderbots
+NEO Robotics
+Powerhouse
+CyberStorm
+BuzzBots
+Andes Robotics
+Weavers
+TIH IIT DELHI
+Cutthroat Robotics
+Ely Robotics
+Subatomic Smarticles
+Bosse BYTEForce
+Harrison RoboWarriors
+Cibatronic
+404: Team Not Found
+Bayou Bots
+Heron Robotics
+Mechanical Princesses
+Lodestar
+CARNOTAURUS
+HARPIA ROBOTICS
+Pymble Pride II
+NASA Technomos
+Crash Test Dummies
+The Ducksons
+All Saints Catholic High School
+Beyond Grad Greyhounds
+Team Humanity Robo Falcons
+Mixed Métal
+Aluminum Tethys
+Code Red
+Ctrl Alt Defeat
+D.A.D.S
+Two Steps Ahead
+ERA Robotics
+Sun Prairie Robotics (SPR)
+Singularity Robotics
+Orcas
+5-Star
+Rookie Deers
+BATS
+Robo.Phoenixes
+Tempestas24
+ROOT_LOTUS
+Liberian Canadian Association of London
+CarbonPulse Robotics
+EAGLE WARRIORS
+United Phoenix
+TechTonic Robotics
+Robocretors Team
+35 Soaring Roneagles
+The Episcopal School of Dallas Robotics Team
+Mazenod Machinists
+Orange Overdrive
+Team VIPER
+Red Deer Community FRC
+Forté
+Grand Ledge Comets
+STEAMex Scorpions
+FARADAY- Prepa Tecmilenio
+ROBOFOX
+ASHINA
+TARMINATORS
+BoschBotics
+LGTBots by STEAMex
+The Technochauns
+Stampede
+Ridge Robotics
+Unearthed
+Windover Wing Nuts
+Binary Crows
+Compass Team
+No Cap
+Stamford Cyber-Hird TSA
+74Falconics
+Big Bay de Noc Black Bear Bolts
+FHS Bots
+Iron Eagles
+TADroid
+RoboBlazers
+Two Steps Ahead
+Steel Hawks
+Demirören Robotics
+Techno Talons
+The Foley Flare
+DAAS Jaguars
+ORC Robotics
+Team Hungary
+East Altamonte Boys & Girls Club
+Gemini Robotics
+Cougear
+AEA Alterbots
+AEA Robolution
+Spartan110
+Iron Eagle Robotics
+Overlooking 2
+Rana's Rivets
+West Sanford Boys & Girls Club
+Crusaders
+Gwinn ModelBots
+AY YILDIZ ROBOTİM
+BuzzFusion
+Smokin Batteries
+Bath High School Bee-Botics
+Michigan Collegiate Cougars
+BeeBotics
+The Last Gambit
+Merengue
+Lions Automation
+Comstock Colts
+West Coast Warriors
+YAMS TECH
+Robonoles Robotics Team
+Gear Cats
+Mechanical MacGyvers
+Reybotics
+Tiger Bytes
+PHS Spartan Synergy
+RataToaster
+North Central Academy
+SEED Robotics
+Jaguar Byte
+Blue Phoenix
+Big Reds
+Unibots
+Green MachineZ
+Genesee Wolves
+WAY Flint
+West Orange Boys and Girls Club
+South Windsor Community Robotics
+Trobots
+Wye.M.C.A -  Metro Christian Patriots
+Energize
+Innovation Station
+Artificial Architects
+The Wirewolves
+Homer Trojans
+Robo-Yotes
+Northfield Nightbots
+KAGITHANE TEKNOLOJI TAKIMI
+ERROR 448
+GOLDEN APPLE
+Galileo
+Armathronics
+Storm Surge
+Will Carleton Academy
+FORMSHOP
+RAMpage.AI
+The Ionizers
+The Circuit Sorcerers
+Team LOVE
+Lunea Lumen
+ROBOLYNX
+CuttingEdge
+The Outlaws
+T3 ROBOTICS
+Dragons
+Robot Wranglers
+Team Variant
+M.A.P.L.E.
+Bluesteel Dragons
+F²
+Amped
+Titanium Titans
+Tarpon Robotics
+Forgeon Robotics
+Silver Talon
+Tulpar
+Tie Dye Samurai
+Krono
+Hooverstan
+River Valley RADs+
+AVIATRONIX
+WJH RoboStangs
+ELP's Mad CAD-ers
+Antioch Rising
+Metalheads
+The Northern Knights
+Saigon South Dragons
+LYRON
+SWing
+ORHANIYE R SPORTS
+Eagle Engineers
+Hyper Wave
+Sea Raiders
+Wicked Robotics
+Complete Robotics
+Tiger Robotics
+The Deadbolts
+Jo-Bees
+Negev Dominion
+The Legion
+Desert Storm
+Blast Robotics
+PioBytes
+EP Robotics
+SSES Phenoms
+ACS Eagle Robotics
+SRC Robotics
+St. George
+VOLTARIA ROBOTICS
+Cezeri Robotics
+NEOCHIRON
+Montcalm Robotics
+maui cap
+Bobcats
+X.PLORE
+RISING STAR ROBOTIC TEAM
+HYPERNOVA
+Garage Gang
+Cowbots
+Bonac Bots
+Golden STEAMex
+ALTAY ROBOTICS
+ALEV ROBOTICS
+Clarksville Cyber Storm
+Aria STEAMex
+ASTERIA
+STEAMex Overheat
+Thronex
+RoboRex
+Kronos
+JMA Patriots
+SeaSide Robotics
+The Flying Cats
+Δt
+TROPICAL FORCE
+MATRIX
+Capella Robotics
+Team Epsilon
+Real Steel
+Redshift Robotics
+Phoenix Phanatics
+GC 4 Tomorrow
+FARMBots
+The Baybies
+Frostbite Robotics
+RoboTigris
+Totally Clucked Robotics
+Brainstorm
+Rambotics, Inc.
+Lyrq Robotics
+Predator Robotics
+TEKNOROB
+Blackhawk Robotics #11139
+AlphaZ
+CitrusDuckz
+Blue Lightning
+XR-Boot
+Winnacunnet
+Superior Robotics
+SkyForge Griffins
+Byte Robotics
+LionTECH
+Team Titan
+ERA Delta
+Hi Gear
+Cyber Knights
+STAR FORCE
+Danes Robotics
+Tidal Shock
+RoboRabbits
+HCSH Leopard Cat
+Revelation
+The Power of Friendship
+SAR Dynamics
+VOLT Robotics
+Panther Prime
+MangTech
+Sea Cow Robotics
+MACHS Raiders 1
+Apex Dimension
+BioHazard
+[CY]BEARCATS robotics
+Les Panthères
+FLAZIA ROBOTICS
+North Union Robotics
+The Royal Guard
+Edna Karr Robotics
+STAXX, Sponsored by NASA
+The Whistlepunks
+Azreal
+Wolfimus
+Goose Goose Duck
+Open Circuit
+White Hat Hackers
+KUZEY ROBOTICS
+Golden Ratio
+Rotatech
+PRAIRIE
+Golden Eagle Mechanics
+Cyber Knights
+Avrasya Robotics
+Northside
+Tiger Botz
+Alisal High School Robotics Team
+Alpha Phi Alpha OBL
+1st ACT
+FIRST Ignition
+KAR Robotics
+Satellites
+Hi-Sac
+Honey Badgers
+Ursuline Robotics
+Mount Toro High School Robotics Team
+AKREP LİDER ROBOTİCS
+Yadac2026
+Rockbotics -FRC
+Finaltech
+MASAL
+Batteries Not Included
+Nova
+Warrior Robotics
+Defenders 1
+Kenner BruhBots
+ARC
+SkyLab Robotics
+Phoenix Robotics
+Tri-Force
+Melrose Gear Grinders
+ETERNAL
+Purple Autobots
+Canton Rising Stars
+Trident Force
+Icebots
+Robohawks
+Merced Fusion Robotics
+Iron Corsairs
+GERMANiCİA
+ZENITH
+Hot Rods
+BEZOAR ROBOTICS
+Meowbotics - Fresnillo PLC
+MECHADUCKS
+Daniel Morgan Patriots
+Gear Owls
+STARCAL*
+The Stags
+Royal Flush
+tROBOmakEr
+Ayverdi Robotics
+Freedom Robotics
+Polaris
+Pyxis
+Purple Knight Robotics
+SteamRollers
+SIA
+G-Force
+TarryBots
+Sunrise
+SESI IPÊV4
+MARETECH
+Anomaly
+Mystery Machines
+KNHS Chelsea 11338
+Cibatronic
+PRIME Robotics
+StingVille Robotics Team
+SoulCity Circuits (JPS Robotics)
+Long Beach RoboBearcats
+Bronco Brigade
+PCSS FRC
+Guilford Gearheads
+LYNTECH - Fresnillo PLC
+Flying Tiger
+Visionary Sparks
+Access2Innovate Foundation
+Diablo Robotics
+ORA Raven Bots
+RoBumpers
+Pickle Squad
+Ignite Robotics
+Red Devil's Redemption
+SCTC ZettaBots
+GIRO
+Odyssey
+bkvictoria
+FireSharks
+Knightmare Robotics
+TURTLESS
+CECYBOTS - Peñoles
+VOLTRA
+INTERHERMES
+Saxon Sparks
+Climax-Scotts PantherBots
+G.L.E.A.M. - Grass Lake Engineering and Mechanics
+STEAM & IRON ROBOTICS
+ŞAL RoboRage
+Habsor
+Hypatia
+Gulf Tech
+Shark Bytes
+Timber Tech
+Glorious Robotics
+TBD
+The Power of Skopje
+RoboHawks
+Sturgis Trojans
+Alchemist's Return
+WGSS Delta Lab
+VOLTFORGE ROBOT TEAM
+Storm Surge
+Raptoris Robotics
+Nano Knights
+Team IIA
+Boa Constructors
+Byteforge
+Steel Stallions
+Corpus Christi
+NEW AI
+TechnoTigers
+St. Peter's High School RaiderBots
+CougarBots
+The ARC - Addison Robotics Club
+Casman EObots
+FEKAL ROBOTICS
+Ferrum Nexus
+Cougar Claw Robotics
+FutureX Robotics
+The Iron Patriots
+UMWACC Ruff Creek RoboMiners
+INVEST
+Mechcats
+St. Augustine Robotics
+Olivet Eaglebots
+SW Phoenix
+Morenci Miswired
+SHC Robotics
+Lancer Nation Robotics
+Hawikku Robotics
+Mega-CAPs
+HSHP 1HeartBeat
+Lisbon Panther Robotics
+Ignis Mechanica
+Neon
+Wixom Christian Warrior Robotics
+SEED Bulldogs Byte!
+DawgBots
+KasimTec
+Formosa Robotics
+EXODUS
+Red Line Robotics
+Cheboygan
+Bestarian NextGEN
+Chesterton Saints
+Ballou Robotic Knights
+The Southwest Sparks
+Bloomingdale Cardinals
+Pixel Knights
+Jurassic JayHawks
+Jackets
+TALONS
+Kensington Woods Robotics
+GearHeads
+Union HS
+FCCA Chrome Crew
